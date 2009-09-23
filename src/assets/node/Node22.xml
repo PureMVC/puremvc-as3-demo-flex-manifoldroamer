@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node id="22" name="Alex's Work Portal" type="portal" 
+	thumb="http://beta.manyone.net/files/17901_18000/17932/thumbs/file_17932_44x33_crop.jpg">
+	<NodeMap>
+		<Nodes>
+			<Node id="24" name="Alex's Avatar Portal" type="portal" 
+				thumb="http://beta.manyone.net/files/19501_19600/19535/thumbs/file_19535_44x33_crop.jpg"/>
+			<Node id="25" name="PHP" type="portal" 
+				thumb="http://beta.manyone.net/files/17901_18000/17938/thumbs/file_17938_44x33_crop.jpg"><NodeMap/></Node>
+			<Node id="26" name="Visual Design" type="portal" 
+				thumb="http://beta.manyone.net/files/17901_18000/17932/thumbs/file_17932_44x33_crop.jpg"/>
+		</Nodes>
+	</NodeMap>
+</Node>

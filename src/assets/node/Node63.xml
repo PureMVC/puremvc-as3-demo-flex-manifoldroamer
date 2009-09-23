@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node id="63" name="Climate Change" type="topic" 
+	thumb="http://beta.manyone.net/files/17801_17900/17846/thumbs/file_17846_44x33_crop.jpg">
+	<NodeMap>
+		<Nodes>
+			<Node id="143" name="Climate Change Communities" type="topic" 
+				thumb="http://beta.manyone.net/themes/newbase/i/default/topic_def.png"/>
+		</Nodes>
+	</NodeMap>
+</Node>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node id="24" name="Alex's Avatar Portal" type="portal" 
+	thumb="http://beta.manyone.net/files/19501_19600/19535/thumbs/file_19535_44x33_crop.jpg">
+	<NodeMap>
+		<Nodes>
+			<Node id="28" name="Alexology" type="topic" 
+				thumb="http://beta.manyone.net/files/19501_19600/19535/thumbs/file_19535_44x33_crop.jpg"><NodeMap/></Node>
+			<Node id="29" name="Avatarology" type="topic" 
+				thumb="http://beta.manyone.net/files/19501_19600/19535/thumbs/file_19535_44x33_crop.jpg"><NodeMap/></Node>
+			<Node id="30" name="Liliology" type="topic" 
+				thumb="http://beta.manyone.net/files/19501_19600/19568/thumbs/file_19568_44x33_crop.jpg"><NodeMap/></Node>
+		</Nodes>
+	</NodeMap>
+</Node>

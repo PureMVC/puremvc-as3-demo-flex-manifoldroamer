@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ServiceConfig>
+	<Service url_pre="assets/node/Node" url_post=".xml" version="local-1.0">
+		<Thumbs url_pre="assets/thumb/Thumb" url_post=".jpg"/>
+		<Node id="1"/>
+	</Service>
+</ServiceConfig>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:HBox xmlns:mx="http://www.adobe.com/2006/mxml" 
+	verticalAlign="middle"
+	click="handleClick(event)"
+	filters="{calcFilters(data as Item)}"
+	backgroundColor="0x000000" 
+	xmlns:view="org.puremvc.manifoldroamer.view.components.*">
+
+	<mx:Image source="{data.data.@thumb}"/>
+	<mx:Text fontSize="13" text="{data.data.@name}" color="#FFFFFF" selectable="false"/>	
+	<view:MoreButton id="btnMore" showMore="sendEvent(EXPAND)" 
+		visible="{(hasContent(data.data))}" 
+		width="{btnMore.visible?25:0}"/>
+		
+	<mx:Script>
+		<![CDATA[
+			
+			import mx.effects.Glow;
+			import mx.core.Application;
+			import com.adobe.flex.extras.controls.springgraph.Graph;
+			import com.adobe.flex.extras.controls.springgraph.Item;
+
+			public static const SELECT:String = 'select';
+			public static const EXPAND:String = 'expand';
+			
+			/**
+			 * A reference to the Roamer this Node is 
+			 * installed in.
+			 */
+			public function get roamer(): Roamer 
+			{
+				return parent as Roamer;
+			}
+			
+			
+			/**
+			 * Does this node have content?
+			 */
+			public function hasContent( node:XML ):Boolean
+			{
+				return ( node.NodeMap.children().length() > 0 );
+			}
+	
+			/**
+			 * Called when this node is clicked
+			 */
+			public function sendEvent( eventName:String ): void 
+			{
+				dispatchEvent(new Event(eventName,true));
+			}
+
+			/**
+			 * Called when this node is clicked
+			 */
+			public function handleClick( event:Event ): void 
+			{
+				roamer.setCurrentItem( data as Item );
+				sendEvent(SELECT);
+			}
+			
+			/**  
+			 * Calcualte filters for this Node.
+			 * <P>
+			 * This function gets called by the Roamer whenever the 
+			 * currentItem changes, or when the Item for this Node
+			 * data changes.
+			 */
+			private function calcFilters(item: Item): Array 
+			{
+				if ( roamer.currentItem == item ) 
+				{
+					return [new GlowFilter(0xFFFFFF, 0.5, 8, 8, 2, 1)];
+				} 
+				else if ( roamer.hasBeenCurrentItem( item ) ) 
+				{
+					return [new GlowFilter(0x0000FF, 0.3, 6, 6, 2, 1)];
+				} 
+				else 
+				{
+					return null;
+				}
+			}
+			
+			
+			/**  
+			 * Calculate background alpha for this Node.
+			 * <P>
+			 * This function gets called by the Roamer whenever the 
+			 * currentItem changes, or when the Item for this Node
+			 * data changes.</P>
+			 * <P>
+			 * The background alpha is solid if there is more than
+			 * than one link to this item, otherwise it is partially
+			 * transparent to show that it is at the tip of the tree.
+			 * 
+			 * @param item the Item from the graph that this node represents
+			 */
+			private function calcAlpha( item:Item ):Number
+			{
+				return ( roamer.dataProvider as Graph ).numLinks( item ) > 1 ? 1.0 : 0.3;
+			}
+			
+			
+		]]>
+	</mx:Script>				
+</mx:HBox>

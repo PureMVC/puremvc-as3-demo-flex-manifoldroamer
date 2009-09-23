@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<fc:Roamer 
+	xmlns:fc="http://www.adobe.com/2006/fc"
+	xmlns:mx="http://www.adobe.com/2006/mxml" 
+	itemRenderer="org.puremvc.manifoldroamer.view.components.Node"
+	repulsionFactor=".15" 
+	autoFit="true"
+	maxDistanceFromCurrent="2" 
+	itemLimit="50"
+	showHistory="true"
+	motionThreshold="0.01"
+	bottom="0" left="0" 
+	right="0" top="0"
+	>
+
+	<mx:Script>
+		<![CDATA[
+			import mx.events.ScrollEvent;
+			import flash.events.MouseEvent;
+			import com.adobe.flex.extras.controls.springgraph.Graph;
+			import com.adobe.flex.extras.controls.springgraph.SpringGraph;
+			import com.adobe.flex.extras.controls.springgraph.Item;
+			
+			public function setCurrentItem( item:Item ): void 
+			{
+				currentItem = item;
+			}	
+			
+			public function setCurrentItemByID( id:String ): void 
+			{
+				setCurrentItem( getGraph().find(id) );
+			}	
+				
+			public function getHistory():Array
+			{
+				return history;
+			}
+
+			public function getGraph():Graph
+			{
+				return dataProvider as Graph;
+			}
+			
+		]]>
+	</mx:Script>	
+
+		<fc:removeItemEffect>
+			<mx:Fade alphaFrom="1" alphaTo="0" duration="1000"/>				
+		</fc:removeItemEffect>
+		
+		<fc:addItemEffect>
+			<mx:Fade alphaFrom="0" alphaTo="1" duration="1000"/>
+		</fc:addItemEffect>
+	
+</fc:Roamer>
+

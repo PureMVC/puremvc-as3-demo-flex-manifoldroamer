@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml" 
+	xmlns:view="org.puremvc.manifoldroamer.view.components.*"
+	height="100%" width="542" 
+	verticalScrollPolicy="off" 
+	horizontalScrollPolicy="off">
+
+	<mx:Script>
+		<![CDATA[
+			import mx.effects.Effect;
+			import mx.effects.IEffectInstance;
+			import mx.core.Application;
+			import org.puremvc.manifoldroamer.ApplicationFacade;
+			
+			[Bindable] public var dataProvider:XML;
+			[Bindable] public var showContent:Boolean=false;
+			[Bindable] public var slide:Boolean=true;
+			
+			public function get currentHideEffect():Effect
+			{
+				if (slide) return slideOut;
+				return fadeOut;
+			}
+			
+			public function get currentShowEffect():Effect
+			{
+				if (slide) return slideIn;
+				return fadeIn;
+			}
+		]]>
+	</mx:Script>
+
+	<mx:Fade id="fadeIn" alphaFrom="0" alphaTo="1" duration="500"/>
+	<mx:Fade id="fadeOut" alphaFrom="1" alphaTo="0" duration="500"/>
+	<mx:Move id="slideIn" yFrom="3000" yTo="181" duration="750"/>
+	<mx:Move id="slideOut" yFrom="181" yTo="3000" duration="1000"/>
+
+	<!-- ManyOne Logo / App Title -->
+	<mx:Image id="logo" 
+		x="35.5" y="10" 
+		source="@Embed('/assets/ui/logo.png')" 
+		mouseDownEffect="Glow"
+		click="dispatchEvent(new Event(ApplicationFacade.RESET,true))"/>
+	<mx:Text x="34.5" y="139" text="ManyOne Networks" fontSize="12" color="#000000" fontWeight="bold"/>
+	<mx:Text x="18" y="157" text="Universal Portal Service Roamer" fontSize="9" color="#666666"/>
+
+	<view:DetailPanel 
+		id="contentPanel" 
+		showEffect="{currentShowEffect}" 
+		hideEffect="{currentHideEffect}" 
+		x="2" y="181" width="200" height="100%"
+		visible="{showContent}" 
+		dataProvider="{dataProvider}"
+		/>	
+	
+</mx:Canvas>

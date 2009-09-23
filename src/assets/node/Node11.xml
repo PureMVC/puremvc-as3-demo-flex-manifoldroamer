@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node id="11" name="Sports &amp; Recreation" type="topic" 
+	thumb="http://beta.manyone.net/files/17801_17900/17805/thumbs/file_17805_44x33_crop.jpg">
+	<NodeMap>
+		<Nodes>
+			<Node id="126" name="Sports &amp; Recreation Communities" type="topic" 
+				thumb="http://beta.manyone.net/themes/newbase/i/default/topic_def.png"><NodeMap/></Node>
+			<Node id="127" name="Ball Sports" type="topic" 
+				thumb="http://beta.manyone.net/files/18001_18100/18074/thumbs/file_18074_44x33_crop.jpg"><NodeMap/></Node>
+			<Node id="128" name="Climbing" type="topic" 
+				thumb="http://beta.manyone.net/themes/newbase/i/default/topic_def.png"><NodeMap/></Node>
+			<Node id="129" name="Contact Sports" type="topic" 
+				thumb="http://beta.manyone.net/themes/newbase/i/default/topic_def.png"><NodeMap/></Node>
+			<Node id="130" name="Equestrian" type="topic" 
+				thumb="http://beta.manyone.net/themes/newbase/i/default/topic_def.png"><NodeMap/></Node>
+			<Node id="131" name="Extreme Sports" type="topic" 
+				thumb="http://beta.manyone.net/themes/newbase/i/default/topic_def.png"><NodeMap/></Node>
+			<Node id="132" name="Fishing &amp; Hunting" type="topic" 
+				thumb="http://beta.manyone.net/themes/newbase/i/default/topic_def.png"><NodeMap/></Node>
+			<Node id="133" name="Flying &amp; Aerial" type="topic" 
+				thumb="http://beta.manyone.net/themes/newbase/i/default/topic_def.png"><NodeMap/></Node>
+			<Node id="134" name="Hiking &amp; Camping" type="topic" 
+				thumb="http://beta.manyone.net/themes/newbase/i/default/topic_def.png"><NodeMap/></Node>
+			<Node id="135" name="Motor Sports" type="topic" 
+				thumb="http://beta.manyone.net/themes/newbase/i/default/topic_def.png"><NodeMap/></Node>
+			<Node id="136" name="Other" type="topic" 
+				thumb="http://beta.manyone.net/themes/newbase/i/default/topic_def.png"><NodeMap/></Node>
+			<Node id="137" name="Running &amp; Biking" type="topic" 
+				thumb="http://beta.manyone.net/themes/newbase/i/default/topic_def.png"><NodeMap/></Node>
+			<Node id="138" name="Track &amp; Field" type="topic" 
+				thumb="http://beta.manyone.net/themes/newbase/i/default/topic_def.png"><NodeMap/></Node>
+			<Node id="139" name="Water Sports" type="topic" 
+				thumb="http://beta.manyone.net/themes/newbase/i/default/topic_def.png"><NodeMap/></Node>
+			<Node id="140" name="Winter Sports" type="topic" 
+				thumb="http://beta.manyone.net/themes/newbase/i/default/topic_def.png"><NodeMap/></Node>
+		</Nodes>
+	</NodeMap>
+</Node>
+

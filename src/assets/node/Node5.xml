@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node id="5" name="Nature &amp; Environment" type="topic" 
+	thumb="http://beta.manyone.net/files/17701_17800/17779/thumbs/file_17779_44x33_crop.jpg">
+	<NodeMap>
+		<Nodes>
+			<Node id="58" name="Nature &amp; Environment Communities" type="topic" 
+				thumb="http://beta.manyone.net/themes/newbase/i/default/topic_def.png"/>
+			<Node id="59" name="Animals" type="topic" 
+				thumb="http://beta.manyone.net/files/17801_17900/17843/thumbs/file_17843_44x33_crop.jpg"><NodeMap/></Node>
+			<Node id="60" name="Bacteria &amp; Other Lifeforms" type="topic" 
+				thumb="http://beta.manyone.net/files/17801_17900/17844/thumbs/file_17844_44x33_crop.jpg"><NodeMap/></Node>
+			<Node id="62" name="Biomes &amp; Ecosystems" type="topic" 
+				thumb="http://beta.manyone.net/files/17801_17900/17845/thumbs/file_17845_44x33_crop.jpg"><NodeMap/></Node>
+			<Node id="63" name="Climate Change" type="topic" 
+				thumb="http://beta.manyone.net/files/17801_17900/17846/thumbs/file_17846_44x33_crop.jpg"/>
+			<Node id="63.5" name="Earth" type="topic" 
+				thumb="http://beta.manyone.net/files/18401_18500/18455/thumbs/file_18455_44x33_crop.jpg"><NodeMap/></Node>
+			<Node id="64" name="Endangered Species &amp; Biodiversity" type="topic" 
+				thumb="http://beta.manyone.net/files/17801_17900/17847/thumbs/file_17847_44x33_crop.jpg"><NodeMap/></Node>
+			<Node id="65" name="Fungi" type="topic" 
+				thumb="http://beta.manyone.net/files/17801_17900/17848/thumbs/file_17848_44x33_crop.jpg"><NodeMap/></Node>
+			<Node id="66" name="Other Environmental Issues" type="topic" 
+				thumb="http://beta.manyone.net/files/17801_17900/17849/thumbs/file_17849_44x33_crop.jpg"><NodeMap/></Node>
+			<Node id="67" name="Plants" type="topic" 
+				thumb="http://beta.manyone.net/files/17801_17900/17850/thumbs/file_17850_44x33_crop.jpg"><NodeMap/></Node>
+			<Node id="68" name="Pollution" type="topic" 
+				thumb="http://beta.manyone.net/files/17801_17900/17851/thumbs/file_17851_44x33_crop.jpg"><NodeMap/></Node>
+		</Nodes>
+	</NodeMap>
+</Node>
+

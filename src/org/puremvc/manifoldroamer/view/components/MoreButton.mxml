@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Image xmlns:mx="http://www.adobe.com/2006/mxml"
+	source="{focused?over:norm}"
+	mouseOver="focused=true; "
+	mouseOut="focused=false;"
+	click="event.stopImmediatePropagation();focused=false;dispatchEvent(new Event('showMore'))"
+	>
+	<mx:Metadata>
+		[Event('showMore')]
+	</mx:Metadata>
+	<mx:Script>
+		<![CDATA[
+
+			[Bindable] private var focused:Boolean=false;
+			
+			[Embed(source="/assets/ui/NodeArrowNorm.jpg")]
+			[Bindable] protected var norm:Class;
+			
+			[Embed(source="/assets/ui/NodeArrowOver.jpg")]
+			[Bindable] protected var over:Class;
+
+		]]>
+	</mx:Script>
+
+</mx:Image>
