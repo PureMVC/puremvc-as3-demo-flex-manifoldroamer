@@ -16,7 +16,6 @@ package org.puremvc.manifoldroamer.view
 	import org.puremvc.manifoldroamer.view.components.Roamer;
 	import org.puremvc.manifoldroamer.view.components.Node;
 	import org.puremvc.manifoldroamer.ApplicationFacade;
-	import org.puremvc.manifoldroamer.model.UPSProxy;
 	import org.puremvc.manifoldroamer.model.GraphProxy;
 	
 	public class RoamerMediator extends Mediator implements IMediator

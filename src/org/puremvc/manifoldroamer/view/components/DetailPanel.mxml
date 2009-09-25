@@ -42,7 +42,7 @@
 		backgroundAlpha=".65" 
 		backgroundColor="#004080">
 		
-		<!-- The Topic or Portal graphic -->
+		<!-- The Node graphic -->
 		<mx:Image x="10" y="10" width="160" height="120"
 			maintainAspectRatio="true" scaleContent="true">
 			<mx:source>{dataProvider.@img}</mx:source>

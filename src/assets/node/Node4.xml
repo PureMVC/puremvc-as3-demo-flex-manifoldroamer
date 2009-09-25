@@ -1,43 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Node id="4" name="Home &amp; Garden" type="topic" 
-	thumb="http://beta.manyone.net/files/17701_17800/17778/thumbs/file_17778_44x33_crop.jpg">
+<Node id="4" name="Showcase" type="section" thumb="flake">
 	<NodeMap>
 		<Nodes>
-			<Node id="41" name="Home &amp; Garden Communities" type="topic" 
-				thumb="http://beta.manyone.net/themes/newbase/i/default/topic_def.png"><NodeMap/></Node>
-			<Node id="42" name="Appliances &amp; Electronics" type="topic" 
-				thumb="http://beta.manyone.net/files/17901_18000/17905/thumbs/file_17905_44x33_crop.jpg"><NodeMap/></Node>
-			<Node id="43" name="Autos &amp; Vehicles" type="topic" 
-				thumb="http://beta.manyone.net/files/17801_17900/17839/thumbs/file_17839_44x33_crop.jpg"><NodeMap/></Node>
-			<Node id="44" name="Clothing" type="topic" 
-				thumb="http://beta.manyone.net/files/17901_18000/17906/thumbs/file_17906_44x33_crop.jpg"><NodeMap/></Node>
-			<Node id="45" name="Efficiency &amp; Environmental Impact" type="topic" 
-				thumb="http://beta.manyone.net/files/17801_17900/17840/thumbs/file_17840_44x33_crop.jpg"><NodeMap/></Node>
-			<Node id="46" name="Emergency Preparation" type="topic" 
-				thumb="http://beta.manyone.net/files/17801_17900/17841/thumbs/file_17841_44x33_crop.jpg"><NodeMap/></Node>
-			<Node id="47" name="Entertaining at Home" type="topic" 
-				thumb="http://beta.manyone.net/files/17801_17900/17842/thumbs/file_17842_44x33_crop.jpg"><NodeMap/></Node>
-			<Node id="48" name="Food &amp; Cooking" type="topic" 
-				thumb="http://beta.manyone.net/files/17701_17800/17782/thumbs/file_17782_44x33_crop.jpg"><NodeMap/></Node>
-			<Node id="49" name="Furniture &amp; Decoration" type="topic" 
-				thumb="http://beta.manyone.net/files/17701_17800/17783/thumbs/file_17783_44x33_crop.jpg"><NodeMap/></Node>
-			<Node id="50" name="Garden" type="topic" 
-				thumb="http://beta.manyone.net/files/17701_17800/17785/thumbs/file_17785_44x33_crop.jpg"><NodeMap/></Node>
-			<Node id="51" name="Health &amp; Medicine" type="topic" 
-				thumb="http://beta.manyone.net/files/17801_17900/17806/thumbs/file_17806_44x33_crop.jpg"><NodeMap/></Node>
-			<Node id="52" name="Home Maintenance" type="topic" 
-				thumb="http://beta.manyone.net/files/17901_18000/17903/thumbs/file_17903_44x33_crop.jpg"><NodeMap/></Node>
-			<Node id="53" name="Kids &amp; Family" type="topic" 
-				thumb="http://beta.manyone.net/files/17901_18000/17907/thumbs/file_17907_44x33_crop.jpg"><NodeMap/></Node>
-			<Node id="54" name="Ownership/Retail" type="topic" 
-				thumb="http://beta.manyone.net/files/17901_18000/17908/thumbs/file_17908_44x33_crop.jpg"><NodeMap/></Node>
-			<Node id="55" name="Personal Finance" type="topic" 
-				thumb="http://beta.manyone.net/files/17901_18000/17909/thumbs/file_17909_44x33_crop.jpg"><NodeMap/></Node>
-			<Node id="56" name="Pets" type="topic" 
-				thumb="http://beta.manyone.net/files/17701_17800/17784/thumbs/file_17784_44x33_crop.jpg"><NodeMap/></Node>
-			<Node id="57" name="Remodeling &amp; Construction" type="topic" 
-				thumb="http://beta.manyone.net/files/17901_18000/17904/thumbs/file_17904_44x33_crop.jpg"><NodeMap/></Node>
+			<Node id="400" name="Exploring ETFs" type="section" thumb="box"><NodeMap/></Node>
+			<Node id="401" name="Mercedes Benz Focus on Fahsion" type="section" thumb="box"><NodeMap/></Node>
+			<Node id="402" name="Moonlighting Film Production Services" type="section" thumb="box"><NodeMap/></Node>
+			<Node id="404" name="RADUS" type="section" thumb="box"><NodeMap/></Node>
+			<Node id="405" name="MiniTask" type="section" thumb="box"><NodeMap/></Node>
+			<Node id="406" name="WS-Slideshow" type="section" thumb="box"><NodeMap/></Node>
+			<Node id="407" name="Brainwave" type="section" thumb="box"><NodeMap/></Node>
+			<Node id="408" name="Professor Green and the Eco Rangers" type="section" thumb="box"><NodeMap/></Node>
+			<Node id="409" name="Renju, The Game" type="section" thumb="box"><NodeMap/></Node>
+			<Node id="410" name="Sliding Puzzle Game" type="section" thumb="box"><NodeMap/></Node>
+			<Node id="411" name="Panfu" type="section" thumb="box"><NodeMap/></Node>
+			<Node id="412" name="The World's Biggest Ad" type="section" thumb="box"><NodeMap/></Node>
 		</Nodes>
 	</NodeMap>
 </Node>
-

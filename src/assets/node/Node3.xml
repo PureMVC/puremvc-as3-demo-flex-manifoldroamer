@@ -1,29 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Node id="3" name="Education &amp; Learning" type="topic" 
-	thumb="http://beta.manyone.net/files/17801_17900/17807/thumbs/file_17807_44x33_crop.jpg">
+<Node id="3" name="Contributors" type="section" thumb="flake">
 	<NodeMap>
 		<Nodes>
-			<Node id="31" name="Education &amp; Learning Communities" type="topic" 
-				thumb="http://beta.manyone.net/themes/newbase/i/default/topic_def.png"><NodeMap/></Node>
-			<Node id="32" name="Adult" type="topic" 
-				thumb="http://beta.manyone.net/themes/newbase/i/default/topic_def.png"><NodeMap/></Node>
-			<Node id="33" name="College" type="topic" 
-				thumb="http://beta.manyone.net/themes/newbase/i/default/topic_def.png"><NodeMap/></Node>
-			<Node id="34" name="Elementary" type="topic" 
-				thumb="http://beta.manyone.net/themes/newbase/i/default/topic_def.png"><NodeMap/></Node>
-			<Node id="35" name="Exploratoriums &amp; Museums" type="topic" 
-				thumb="http://beta.manyone.net/themes/newbase/i/default/topic_def.png"><NodeMap/></Node>
-			<Node id="36" name="Graduate School" type="topic" 
-				thumb="http://beta.manyone.net/themes/newbase/i/default/topic_def.png"><NodeMap/></Node>
-			<Node id="37" name="High School" type="topic" 
-				thumb="http://beta.manyone.net/themes/newbase/i/default/topic_def.png"><NodeMap/></Node>
-			<Node id="38" name="Innovations in Learning" type="topic" 
-				thumb="http://beta.manyone.net/themes/newbase/i/default/topic_def.png"><NodeMap/></Node>
-			<Node id="39" name="Middle School" type="topic" 
-				thumb="http://beta.manyone.net/themes/newbase/i/default/topic_def.png"><NodeMap/></Node>
-			<Node id="40" name="Preschool" type="topic" 
-				thumb="http://beta.manyone.net/themes/newbase/i/default/topic_def.png"><NodeMap/></Node>
+			<Node id="300" name="Clifford Hall" type="section" thumb="box"><NodeMap/></Node>
+			<Node id="301" name="Andy Adamczak" type="section" thumb="box"><NodeMap/></Node>
+			<Node id="302" name="Simon Bailey" type="section" thumb="box"><NodeMap/></Node>
+			<Node id="303" name="Matt Brailsford" type="section" thumb="box"><NodeMap/></Node>
+			<Node id="304" name="Pedr Browne" type="section" thumb="box"><NodeMap/></Node>
+			<Node id="305" name="Zjnue Brzavi" type="section" thumb="box"><NodeMap/></Node>
+			<Node id="306" name="Sean Carnell" type="section" thumb="box"><NodeMap/></Node>
+			<Node id="307" name="Chandima Cumaranatunge" type="section" thumb="box"><NodeMap/></Node>
+			<Node id="308" name="Jake Dempsey" type="section" thumb="box"><NodeMap/></Node>
+			<Node id="309" name="David Deraedt" type="section" thumb="box"><NodeMap/></Node>
+			<Node id="310" name="Dragos Dascalita" type="section" thumb="box"><NodeMap/></Node>
+			<Node id="311" name="Cédric Floury" type="section" thumb="box"><NodeMap/></Node>
+			<Node id="312" name="Duncan Hall" type="section" thumb="box"><NodeMap/></Node>
+			<Node id="313" name="Joel Hooks" type="section" thumb="box"><NodeMap/></Node>
+			<Node id="314" name="Toby de Havilland" type="section" thumb="box"><NodeMap/></Node>
+			<Node id="315" name="Jari Kemppinen" type="section" thumb="box"><NodeMap/></Node>
+			<Node id="316" name="James Knight" type="section" thumb="box"><NodeMap/></Node>
+			<Node id="317" name="Brian Knorr" type="section" thumb="box"><NodeMap/></Node>
+			<Node id="318" name="Jens Krause" type="section" thumb="box"><NodeMap/></Node>
+			<Node id="319" name="Nathan Levesque" type="section" thumb="box"><NodeMap/></Node>
+			<Node id="320" name="Neil Manuell" type="section" thumb="box"><NodeMap/></Node>
+			<Node id="321" name="Marco Secchi" type="section" thumb="box"><NodeMap/></Node>
+			<Node id="322" name="Michael Oddis" type="section" thumb="box"><NodeMap/></Node>
+			<Node id="323" name="Hasan Otuome" type="section" thumb="box"><NodeMap/></Node>
+			<Node id="324" name="Michael Ramirez" type="section" thumb="box"><NodeMap/></Node>
+			<Node id="325" name="Jim Robson" type="section" thumb="box"><NodeMap/></Node>
+			<Node id="326" name="Frederic Saunier" type="section" thumb="box"><NodeMap/></Node>
+			<Node id="327" name="Philip Sexton" type="section" thumb="box"><NodeMap/></Node>
+			<Node id="328" name="Donald Stinchfield" type="section" thumb="box"><NodeMap/></Node>
+			<Node id="329" name="Anthony Quinault" type="section" thumb="box"><NodeMap/></Node>
+			<Node id="330" name="Daniele Ugoletti" type="section" thumb="box"><NodeMap/></Node>
 		</Nodes>
 	</NodeMap>
 </Node>
-

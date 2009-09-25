@@ -8,7 +8,7 @@ package org.puremvc.manifoldroamer.controller
 
 	import org.puremvc.manifoldroamer.view.components.Roamer;
 	import org.puremvc.manifoldroamer.ApplicationFacade;
-	import org.puremvc.manifoldroamer.model.UPSProxy;
+	import org.puremvc.manifoldroamer.model.ManifoldProxy;
 
 	public class NodeClickCommand extends SimpleCommand implements ICommand
 	{
@@ -22,18 +22,18 @@ package org.puremvc.manifoldroamer.controller
 			var item:Item = roamer.currentItem as Item;
 			var id:Number = Number(item.data.@id);
 
-			// get the UPS proxy
-			var upsProxy:UPSProxy = facade.retrieveProxy(UPSProxy.NAME) as UPSProxy;
+			// get the Manifold proxy
+			var manifoldProxy:ManifoldProxy = facade.retrieveProxy(ManifoldProxy.NAME) as ManifoldProxy;
 			
-			// get the corresponding UPS node to what was clicked on in the graph
-			var node:XML = upsProxy.getNode( String( id ) );
+			// get the corresponding Manifold node to what was clicked on in the graph
+			var node:XML = manifoldProxy.getNode( String( id ) );
 			
 			// If node is not populated, fetch it otherwise the node is selected
-			if ( upsProxy.isPopulated( node ) ) 
+			if ( manifoldProxy.isPopulated( node ) ) 
 			{
 				sendNotification(ApplicationFacade.NODE_SELECTED, roamer);
 			} else {
-				upsProxy.fetchNode( node );
+				manifoldProxy.fetchNode( node );
 			}	
         }
 		

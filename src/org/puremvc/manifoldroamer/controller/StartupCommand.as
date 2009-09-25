@@ -9,7 +9,7 @@ package org.puremvc.manifoldroamer.controller
 	
 	import org.puremvc.manifoldroamer.view.ApplicationMediator;
 	import org.puremvc.manifoldroamer.view.ContentExplorerMediator;
-	import org.puremvc.manifoldroamer.model.UPSProxy;
+	import org.puremvc.manifoldroamer.model.ManifoldProxy;
 	import org.puremvc.manifoldroamer.model.GraphProxy;
 	import org.puremvc.manifoldroamer.model.ConfigProxy;
 
@@ -31,7 +31,7 @@ package org.puremvc.manifoldroamer.controller
 			// register proxies 
             facade.registerProxy( new ConfigProxy() );
             facade.registerProxy( new GraphProxy() );
-            facade.registerProxy( new UPSProxy() );
+            facade.registerProxy( new ManifoldProxy() );
             
             //facade.registerMediator( new ApplicationMediator( app ) );
             facade.registerMediator( new RoamerMediator( app.roamer ) );

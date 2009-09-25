@@ -8,18 +8,18 @@ package org.puremvc.manifoldroamer.controller
 
 	import org.puremvc.manifoldroamer.view.components.Roamer;
 	import org.puremvc.manifoldroamer.ApplicationFacade;
-	import org.puremvc.manifoldroamer.model.UPSProxy;
+	import org.puremvc.manifoldroamer.model.ManifoldProxy;
 
 	public class ConfigReadyCommand extends SimpleCommand implements ICommand
 	{
         /**
          * When configuration has been retrieved, inititialize the 
-         * UPSProxy's root node
+         * ManifoldProxy's root node
          */
         override public function execute( note:INotification ) : void    
         {
-        	var upsProxy:UPSProxy = facade.retrieveProxy( UPSProxy.NAME ) as UPSProxy;
-        	upsProxy.initializeRoot();
+        	var manifoldProxy:ManifoldProxy = facade.retrieveProxy( ManifoldProxy.NAME ) as ManifoldProxy;
+        	manifoldProxy.initializeRoot();
         }
 		
 	}

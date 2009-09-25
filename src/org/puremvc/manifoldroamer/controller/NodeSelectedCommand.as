@@ -5,10 +5,8 @@ package org.puremvc.manifoldroamer.controller
 	import org.puremvc.as3.interfaces.ICommand;
 	import org.puremvc.as3.interfaces.INotification;
 	import org.puremvc.as3.patterns.command.SimpleCommand;
-
-	import org.puremvc.manifoldroamer.view.components.Roamer;
 	import org.puremvc.manifoldroamer.ApplicationFacade;
-	import org.puremvc.manifoldroamer.model.UPSProxy;
+	import org.puremvc.manifoldroamer.view.components.Roamer;
 
 	public class NodeSelectedCommand extends SimpleCommand implements ICommand
 	{
@@ -31,13 +29,7 @@ package org.puremvc.manifoldroamer.controller
 			if (item == root) // reset history at the root
 			{
 				sendNotification(ApplicationFacade.RESET);
-			}
-			else if (item.data.@type == 'topic') // at a portal, show history
-			{
-				sendNotification(ApplicationFacade.SHOW_HISTORY);
-			}
-			else if (item.data.@type == 'portal') // at a portal, show history
-			{
+			} else { 
 				sendNotification(ApplicationFacade.SHOW_HISTORY);
 			}
 

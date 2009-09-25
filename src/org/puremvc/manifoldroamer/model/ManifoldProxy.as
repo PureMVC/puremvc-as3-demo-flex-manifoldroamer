@@ -8,31 +8,31 @@ package org.puremvc.manifoldroamer.model
 	import org.puremvc.as3.patterns.proxy.*;
 	import mx.rpc.AsyncToken;
 
-	public class UPSProxy extends Proxy
+	public class ManifoldProxy extends Proxy
 	{
-		public static const NAME:String = "UPSProxy";
+		public static const NAME:String = "ManifoldProxy";
 		
 		public static const NODE_RECEIVED:String = "nodeReceived";
 		
-		public function UPSProxy( data:Object=null )
+		public function ManifoldProxy( data:Object=null )
 		{
-			super(NAME, new XML(<UPS></UPS>));
+			super(NAME, new XML(<Manifold></Manifold>));
 			
 			// Proxy collaborators
 			configProxy = facade.retrieveProxy( ConfigProxy.NAME ) as ConfigProxy;
 			graphProxy = facade.retrieveProxy( GraphProxy.NAME ) as GraphProxy;
 			
 			// Service listeners
-			upsService.addEventListener(ResultEvent.RESULT, result);
-			upsService.addEventListener(FaultEvent.FAULT, fault);
-			upsService.resultFormat="e4x";
+			service.addEventListener(ResultEvent.RESULT, result);
+			service.addEventListener(FaultEvent.FAULT, fault);
+			service.resultFormat="e4x";
 			
 		}
 		
 		public function initializeRoot():void
 		{
 			// Set placeholder and fetch root node			
-			ups.appendChild( configProxy.root );
+			manifold.appendChild( configProxy.root );
 			fetchNode( getNode( configProxy.rootID ) );
 		}
 		
@@ -53,8 +53,8 @@ package org.puremvc.manifoldroamer.model
 		 */
 		public function fetchNode( node:XML ):void
 		{
-			upsService.url = configProxy.getRESTServiceURL( node.@id );
-			upsService.send();
+			service.url = configProxy.getRESTServiceURL( node.@id );
+			service.send();
 		}
 
 		/**
@@ -68,7 +68,7 @@ package org.puremvc.manifoldroamer.model
 		 */
 		public function getNode( id:String ):XML
 		{
-			return ups..Node.(@id == id)[0];	
+			return manifold..Node.(@id == id)[0];	
 		}
 		
 		/**
@@ -82,7 +82,7 @@ package org.puremvc.manifoldroamer.model
 		 */
 		public function setNode( node:XML ):void
 		{
-			ups..Node.(@id == node.@id)[0] = node;
+			manifold..Node.(@id == node.@id)[0] = node;
 		}
 		
 		/**
@@ -93,8 +93,8 @@ package org.puremvc.manifoldroamer.model
 		 * received node of the same id.
 		 * if the node appears in multiple places 
 		 * throughout the graph, it is replaced 
-		 * everywhere. Thus if the same topic 
-		 * were under 3 different portals, 
+		 * everywhere. Thus if the same node 
+		 * were under 3 different nodes, 
 		 * all three nodes would be replaced with
 		 * this one, which should be populated
 		 * </P>
@@ -103,13 +103,13 @@ package org.puremvc.manifoldroamer.model
 		{
 			var node:XML = event.result as XML;
 		
-			// replace the placeholder node in the UPS tree
+			// replace the placeholder node in the Manifold tree
 			setNode(node);
 			
 			// add the node to the graph
 			graphProxy.addNode( node );
 			
-			// add the portal and topic nodes under this one to the graph
+			// add the nodes under this one to the graph
 			graphProxy.traverseNode( node );
 
 			// notify that graph was changed
@@ -129,12 +129,12 @@ package org.puremvc.manifoldroamer.model
 			
 		}
 
-		public function get ups():XML
+		public function get manifold():XML
 		{
 			return data as XML;
 		}
 		
-		protected var upsService:HTTPService = new HTTPService();
+		protected var service:HTTPService = new HTTPService();
 		protected var graphProxy:GraphProxy;
 		protected var configProxy:ConfigProxy;
 	}
