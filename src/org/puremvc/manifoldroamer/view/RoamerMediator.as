@@ -26,6 +26,10 @@ package org.puremvc.manifoldroamer.view
 		public function RoamerMediator( viewComponent:Roamer )
 		{
 			super( NAME, viewComponent );
+		}
+		
+		override public function onRegister():void
+		{
 			graphProxy = facade.retrieveProxy(GraphProxy.NAME) as GraphProxy;
 			roamer.addEventListener(Node.SELECT, handleNodeSelect);
 			roamer.addEventListener(Node.EXPAND, handleNodeExpand);

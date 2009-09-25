@@ -18,6 +18,10 @@ package org.puremvc.manifoldroamer.view
 		public function ContentExplorerMediator( viewComponent:ContentExplorer )
 		{
 			super( NAME, viewComponent );
+		}
+		
+		override public function onRegister():void
+		{
 			explorer.addEventListener(ApplicationFacade.RESET, handleReset);
 		}
 

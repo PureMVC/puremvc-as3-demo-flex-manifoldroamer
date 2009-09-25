@@ -14,18 +14,13 @@ package org.puremvc.manifoldroamer.view
 		public function ApplicationMediator( viewComponent:UPSRoamer )
 		{
 			super( NAME, viewComponent );
+		}
+		
+		override public function onRegister():void
+		{
 			app.addEventListener(ApplicationFacade.RESET, handleReset);
 		}
 
-		override public function listNotificationInterests():Array
-		{
-			return [];
-		}
-
-		override public function handleNotification(note:INotification):void
-		{
-		}
-		
 		public function handleReset(event:Event):void
 		{
 			sendNotification( ApplicationFacade.RESET );
@@ -33,7 +28,7 @@ package org.puremvc.manifoldroamer.view
 		
 		protected function get app():ManifoldRoamer
 		{
-			return viewComponent as UPSRoamer;
+			return viewComponent as ManifoldRoamer;
 		}
 		
 	}

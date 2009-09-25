@@ -18,6 +18,10 @@ package org.puremvc.manifoldroamer.model
 		{
 			super( NAME, <config></config> );
 			
+		}
+		
+		override public function onRegister():void
+		{
 			// Get Client Configuration immediately
 			fetchClientConfig();				   
 		}

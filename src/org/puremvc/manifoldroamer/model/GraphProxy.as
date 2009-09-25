@@ -12,6 +12,10 @@ package org.puremvc.manifoldroamer.model
 		{
 			super( NAME, <graph><nodes/><edges/></graph> );
 			
+		}
+		
+		override public function onRegister():void
+		{
 			// Proxy collaborators			
 			configProxy = facade.retrieveProxy( ConfigProxy.NAME ) as ConfigProxy;
 			

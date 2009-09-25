@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <mx:HBox xmlns:mx="http://www.adobe.com/2006/mxml" 
 	verticalAlign="middle"
-	click="handleClick(event)"
+	click="handleClick(event)" borderStyle="solid"
+	borderColor="#FFFFFF"
 	filters="{calcFilters(data as Item)}"
 	backgroundColor="0x000000" 
 	xmlns:view="org.puremvc.manifoldroamer.view.components.*">
