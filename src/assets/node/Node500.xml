@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node id="500" name="English"  type="section" thumb="flag-usa">
+	<NodeMap>
+		<Nodes>
+			<Node id="50001" name="Goals &amp; Benefits" type="section" thumb="box">
+					<NodeMap>
+						<Document url="http://puremvc.org/component/option,com_wrapper/Itemid,31/"/>
+					</NodeMap>
+			</Node>
+			<Node id="50002" name="Conceptual Diagram" type="section" thumb="box">
+					<NodeMap>
+						<Document url="http://puremvc.org/component/option,com_wrapper/Itemid,34/"/>
+					</NodeMap>
+			</Node>
+			<Node id="50003" name="Framework Overview" type="section" thumb="box">
+					<NodeMap>
+						<Document url="http://puremvc.org/component/option,com_wrapper/Itemid,35/"/>
+					</NodeMap>
+			</Node>
+			<Node id="50004" name="Best Practices" type="section" thumb="box">
+					<NodeMap>
+						<Document url="http://puremvc.org/component/option,com_wrapper/Itemid,174/"/>
+					</NodeMap>
+			</Node>
+		</Nodes>
+	</NodeMap>
+</Node>
