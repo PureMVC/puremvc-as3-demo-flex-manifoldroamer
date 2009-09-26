@@ -7,7 +7,7 @@ package org.puremvc.manifoldroamer
 	public class ApplicationFacade extends Facade
 	{
 
-        // Notification name constants
+        // Notification and Event name constants
         public static const STARTUP:String   		= "startup";
         public static const RESET:String 			= "reset";
         public static const NODE_CLICK:String 		= "nodeClick";
@@ -16,7 +16,7 @@ package org.puremvc.manifoldroamer
         public static const SHOW_CONTENT:String 	= "showContent";
         public static const HIDE_CONTENT:String 	= "hideContent";
         public static const SCALE_GRAPH:String 		= "scaleGraph";
-        
+               
         /**
          * Singleton ApplicationFacade Factory Method
          */

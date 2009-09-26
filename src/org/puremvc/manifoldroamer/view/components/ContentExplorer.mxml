@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml" 
 	xmlns:view="org.puremvc.manifoldroamer.view.components.*"
-	height="100%" width="542" 
+	height="100%" width="100%" 
 	verticalScrollPolicy="off" 
-	horizontalScrollPolicy="off">
+	horizontalScrollPolicy="off"
+	creationComplete="initComp();">
+
+	<mx:Metadata>
+		[Event(name="toggleFullScreen", type="flash.events.Event")]
+	</mx:Metadata>
 
 	<mx:Script>
 		<![CDATA[
@@ -12,9 +17,24 @@
 			import mx.core.Application;
 			import org.puremvc.manifoldroamer.ApplicationFacade;
 			
+        	public static const FULL_SCREEN:String 	= "toggleFullScreen";
+
 			[Bindable] public var element:XML;
 			[Bindable] public var showContent:Boolean=false;
 			[Bindable] public var slide:Boolean=true;
+			
+			public function initComp():void
+			{
+				systemManager.stage.addEventListener(FullScreenEvent.FULL_SCREEN, onResize);
+			}
+			private function onResize( event:Event = null ):void
+			{
+				callLater(reset);
+			}
+			private function reset():void
+			{
+				sendEvent(ApplicationFacade.RESET);
+			}
 			
 			public function get currentHideEffect():Effect
 			{
@@ -27,6 +47,11 @@
 				if (slide) return slideIn;
 				return fadeIn;
 			}
+			
+			public function sendEvent(name:String):void
+			{
+				dispatchEvent(new Event(name,true));
+			}
 		]]>
 	</mx:Script>
 
@@ -36,14 +61,13 @@
 	<mx:Move id="slideOut" yFrom="181" yTo="3000" duration="1000"/>
 
 	<!-- Logo / App Title -->
-	<mx:VBox x="35.5" y="10" horizontalAlign="center">
+	<mx:VBox left="10" top="10" height="100%" 
+		horizontalAlign="center" rollOverEffect="Glow">
 		<mx:Image id="logo" 
 			source="@Embed('/assets/ui/logo.png')" 
-			rollOverEffect="Glow"
 			mouseDownEffect="Glow"
-			click="dispatchEvent(new Event(ApplicationFacade.RESET,true))"/>
+			click="reset()"/>
 		<mx:Text text="PureMVC Framework" fontSize="12" color="#FFFFFF" fontWeight="bold"/>
-		<mx:Text text="Manifold Roamer" fontSize="9" color="#666666"/>
 
 	</mx:VBox>
 
@@ -56,4 +80,5 @@
 		dataProvider="{element}"
 		/>	
 	
+		<mx:LinkButton right="10" bottom="10" label="Toggle Fullscreen" color="#FFFFFF" click="sendEvent(FULL_SCREEN)"/>
 </mx:Canvas>

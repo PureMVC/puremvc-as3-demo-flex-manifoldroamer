@@ -2,13 +2,7 @@
 <Node id="2" name="Ports" type="section" thumb="flake">
 	<NodeMap>
 		<Nodes>
-			<Node id="200" name="ActionScript 2" type="section" thumb="box">
-				<NodeMap>
-					<Nodes>
-						<Node id="20001" name="Standard Version" type="section" thumb="box"><NodeMap/></Node>
-					</Nodes>
-				</NodeMap>
-			</Node>
+			<Node id="200" name="ActionScript 2" type="section" thumb="box"/>
 			<Node id="205" name="ActionScript 3" type="section" thumb="box"><NodeMap/></Node>
 			<Node id="215" name="C #" type="section" thumb="box"><NodeMap/></Node>
 			<Node id="220" name="ColdFusion" type="section" thumb="box"><NodeMap/></Node>

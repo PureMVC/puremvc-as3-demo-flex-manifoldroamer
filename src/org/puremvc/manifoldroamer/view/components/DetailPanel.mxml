@@ -38,9 +38,6 @@
 		horizontalScrollPolicy="off"
 		layout="absolute" 
 		title="{dataProvider.@name}"
-		cornerRadius="20" 
-		backgroundAlpha=".65" 
-		backgroundColor="#FFFFFF"
 		>
 		
 		<!-- The Node graphic backgroundColor="#004080"
@@ -74,6 +71,10 @@
 			x="10" y="171" height="165" 
 			width="160" 
 			fontSize="8" fontFamily="Arial"/> -->
+
+	<mx:ControlBar>
+		<mx:Button label="Close"/>
+	</mx:ControlBar>
 
 	</mx:Panel>
 
