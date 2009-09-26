@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node id="200" name="ActionScript 2" type="section" thumb="flake">
+	<NodeMap>
+		<Nodes>
+			<Node id="2000" name="Standard Version" type="section" thumb="box"/>
+		</Nodes>
+	</NodeMap>
+</Node>
+

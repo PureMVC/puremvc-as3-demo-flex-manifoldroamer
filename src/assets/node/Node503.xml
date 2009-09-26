@@ -2,7 +2,7 @@
 <Node id="503" name="Chinese"  type="section" thumb="flag-china">
 	<NodeMap>
 		<Nodes>
-			<Node id="50301" name="Best Practices" type="section" thumb="box">
+			<Node id="5030" name="Best Practices" type="section" thumb="box">
 					<NodeMap>
 						<Document url="http://puremvc.org/component/option,com_wrapper/Itemid,183/"/>
 					</NodeMap>

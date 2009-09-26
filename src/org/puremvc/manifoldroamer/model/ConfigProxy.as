@@ -121,6 +121,11 @@ package org.puremvc.manifoldroamer.model
 			return service..Thumbs[0] as XML;
 		}
 
+		public function get projects():XML
+		{
+			return service..Projects[0] as XML;
+		}
+
 		public function get rootID( ):String
 		{
 			return XML(root.@id).toString();

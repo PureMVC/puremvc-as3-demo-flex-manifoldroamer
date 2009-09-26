@@ -37,7 +37,7 @@ package org.puremvc.manifoldroamer.view
 			{
 				case ApplicationFacade.SHOW_CONTENT:
 					explorer.showContent = true;
-					explorer.dataProvider = note.getBody() as XML;
+					explorer.element = note.getBody() as XML;
 					break;
 					
 				case ApplicationFacade.HIDE_CONTENT:

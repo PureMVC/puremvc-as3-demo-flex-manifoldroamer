@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node id="2000" name="Standard Version" type="section" thumb="flake">
+	<NodeMap>
+		<Nodes>
+			<Node id="2001" name="Framework" type="section" thumb="box">	
+				<NodeMap>
+					<Project repo="PureMVC_AS2" archive="AS2/PureMVC_AS2.zip"/>
+				</NodeMap>
+			</Node>
+			<Node id="2002" name="Unit Tests" type="section" thumb="box">
+				<NodeMap>
+					<Project repo="PureMVC_AS2_UnitTests" archive="AS2/PureMVC_AS2_UnitTests.zip"/>
+				</NodeMap>
+			</Node>
+			<Node id="2003" name="Demos" type="section" thumb="box"><NodeMap/></Node>
+			<Node id="2004" name="Utilities" type="section" thumb="box"><NodeMap/></Node>
+		</Nodes>
+	</NodeMap>
+</Node>

@@ -20,13 +20,13 @@ package org.puremvc.manifoldroamer.controller
 			// Get the id of the current item in the roamer
 			var roamer:Roamer = note.getBody() as Roamer;
 			var item:Item = roamer.currentItem as Item;
-			var id:Number = Number(item.data.@id);
+			var id:String = String(item.data.@id);
 
 			// get the Manifold proxy
 			var manifoldProxy:ManifoldProxy = facade.retrieveProxy(ManifoldProxy.NAME) as ManifoldProxy;
 			
 			// get the corresponding Manifold node to what was clicked on in the graph
-			var node:XML = manifoldProxy.getNode( String( id ) );
+			var node:XML = manifoldProxy.getNode( id );
 			
 			// If node is not populated, fetch it otherwise the node is selected
 			if ( manifoldProxy.isPopulated( node ) ) 

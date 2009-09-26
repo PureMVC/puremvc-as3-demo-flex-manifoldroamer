@@ -18,7 +18,7 @@
 			
 			public function set dataProvider(data:XML):void
 			{
-				contentCombo.selectedIndex = 0;
+				//contentCombo.selectedIndex = 0;
 				dp = data;
 			}
 
@@ -40,16 +40,17 @@
 		title="{dataProvider.@name}"
 		cornerRadius="20" 
 		backgroundAlpha=".65" 
-		backgroundColor="#004080">
+		backgroundColor="#FFFFFF"
+		>
 		
-		<!-- The Node graphic -->
+		<!-- The Node graphic backgroundColor="#004080"
 		<mx:Image x="10" y="10" width="160" height="120"
 			maintainAspectRatio="true" scaleContent="true">
 			<mx:source>{dataProvider.@img}</mx:source>
-		</mx:Image>
+		</mx:Image> -->
 		
 		<!-- Content Combo -->
-		<!-- TBD only show populated sections -->
+		<!-- TBD only show populated sections
 		<mx:ComboBox id="contentCombo"
 			x="10" y="141" width="160">
 			<mx:dataProvider>
@@ -62,9 +63,9 @@
 				<mx:Object label="News ({XMLList(dataProvider..NewsItem).length()})"	data="{dataProvider..NewsItem}"/>
 				<mx:Object label="Members ({XMLList(dataProvider..Member).length()})"	data="{dataProvider..Member}"/>
 			</mx:dataProvider>
-		</mx:ComboBox>
+		</mx:ComboBox> -->
 		
-		<!-- The list of items of the type selected in the content combo -->
+		<!-- The list of items of the type selected in the content combo
 		<mx:List id="items" 
 			visible="{XMLList(contentCombo.selectedItem.data).length() >0}"
 			dataProvider="{contentCombo.selectedItem.data}" 
@@ -72,7 +73,7 @@
 			change="readItem(items.selectedItem.@url)"
 			x="10" y="171" height="165" 
 			width="160" 
-			fontSize="8" fontFamily="Arial"/>
+			fontSize="8" fontFamily="Arial"/> -->
 
 	</mx:Panel>
 

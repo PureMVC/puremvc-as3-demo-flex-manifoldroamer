@@ -21,7 +21,6 @@ package org.puremvc.manifoldroamer.controller
 
 			// the item and its id
 			var item:Item = roamer.currentItem as Item;
-			var id:Number = Number(item.data.@id);
 
 			sendNotification(ApplicationFacade.HIDE_CONTENT);
 			

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node id="2001" name="Framework" type="section" thumb="flake">
+	<NodeMap>
+		<Project repo="PureMVC_AS2" archive="AS2/PureMVC_AS2.zip"/>
+	</NodeMap>
+</Node>
+
