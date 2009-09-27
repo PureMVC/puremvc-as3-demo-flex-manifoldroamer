@@ -2,7 +2,9 @@
 <mx:Application xmlns:mx="http://www.adobe.com/2006/mxml" 
 	 xmlns:view="org.puremvc.manifoldroamer.view.components.*"
 	 layout="absolute" paddingTop="0" paddingBottom="0" paddingRight="0" paddingLeft="0"
-	 creationComplete="initApp()">
+	 minWidth="920" minHeight="540"
+	 creationComplete="initApp()"
+	 >
 
 	<mx:Script>
 		<![CDATA[
