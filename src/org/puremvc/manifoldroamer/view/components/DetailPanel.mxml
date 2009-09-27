@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml"
+<mx:Panel xmlns:mx="http://www.adobe.com/2006/mxml"
 		verticalScrollPolicy="off" 
 		horizontalScrollPolicy="off"
+		layout="absolute" 
+		title="{dataProvider.@name}"
 		>
-
 	<mx:Script>
 		<![CDATA[
 			import mx.effects.Effect;
@@ -33,12 +34,6 @@
 		]]>
 	</mx:Script>
 
-	<mx:Panel height="100%" width="100%"
-		verticalScrollPolicy="off" 
-		horizontalScrollPolicy="off"
-		layout="absolute" 
-		title="{dataProvider.@name}"
-		>
 		
 		<!-- The Node graphic backgroundColor="#004080"
 		<mx:Image x="10" y="10" width="160" height="120"
@@ -72,10 +67,9 @@
 			width="160" 
 			fontSize="8" fontFamily="Arial"/> -->
 
-	<mx:ControlBar>
-		<mx:Button label="Close"/>
+	<mx:ControlBar horizontalAlign="right" height="35" paddingTop="5" verticalGap="0">
+		<mx:Button label="Close" click="visible=false"/>
 	</mx:ControlBar>
 
-	</mx:Panel>
+</mx:Panel>
 
-</mx:Canvas>
