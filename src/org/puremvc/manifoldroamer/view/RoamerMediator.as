@@ -1,22 +1,18 @@
 package org.puremvc.manifoldroamer.view
 {
 
-	import flash.events.Event;
-	import mx.core.Application;
-	import flash.events.MouseEvent;
-
-	import com.adobe.flex.extras.controls.springgraph.SpringGraph;
 	import com.adobe.flex.extras.controls.springgraph.Item;
-	import com.adobe.flex.extras.controls.springgraph.Graph;
-
+	
+	import flash.events.*;
+	
 	import org.puremvc.as3.interfaces.IMediator;
 	import org.puremvc.as3.interfaces.INotification;
 	import org.puremvc.as3.patterns.mediator.Mediator;
-
-	import org.puremvc.manifoldroamer.view.components.Roamer;
-	import org.puremvc.manifoldroamer.view.components.Node;
 	import org.puremvc.manifoldroamer.ApplicationFacade;
 	import org.puremvc.manifoldroamer.model.GraphProxy;
+	import org.puremvc.manifoldroamer.model.vo.NodeDataVO;
+	import org.puremvc.manifoldroamer.view.components.Node;
+	import org.puremvc.manifoldroamer.view.components.Roamer;
 	
 	public class RoamerMediator extends Mediator implements IMediator
 	{
@@ -99,7 +95,7 @@ package org.puremvc.manifoldroamer.view
 		
 		protected function handleNodeExpand(event:Event):void
 		{
-			sendNotification(ApplicationFacade.SHOW_CONTENT, Item(event.target.data).data);			
+			sendNotification(ApplicationFacade.NODE_EXPANDED, Item(event.target.data).data );			
 		} 
 		
 		protected function handleMouseWheel(event:MouseEvent):void

@@ -9,7 +9,8 @@
 
 	<mx:Image source="{data.data.@thumb}"/>
 	<mx:Text fontSize="13" text="{data.data.@name}" color="#FFFFFF" selectable="false"/>	
-	<view:MoreButton id="btnMore" showMore="sendEvent(EXPAND)" 
+	<view:MoreButton 
+		id="btnMore" showMore="sendEvent(EXPAND)" 
 		visible="{(hasContent(data.data))}" 
 		width="{btnMore.visible?25:0}"/>
 		
@@ -41,6 +42,7 @@
 			{
 				return ( node.NodeMap.children().length() > 0 );
 			}
+		
 	
 			/**
 			 * Called when this node is clicked
@@ -55,8 +57,13 @@
 			 */
 			public function handleClick( event:Event ): void 
 			{
-				roamer.setCurrentItem( data as Item );
-				sendEvent(SELECT);
+				if (hasContent(data.data)) 
+				{
+					btnMore.click();
+				} else {
+					roamer.setCurrentItem( data as Item );
+					sendEvent(SELECT);
+				}
 			}
 			
 			/**  

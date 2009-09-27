@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Node id="4" name="Showcase" type="section" thumb="flake">
+<Node id="4" name="Showcase" thumb="flake">
 	<NodeMap>
 		<Nodes>
-			<Node id="400" name="Exploring ETFs" type="section" thumb="box"><NodeMap/></Node>
-			<Node id="401" name="Mercedes Benz Focus on Fahsion" type="section" thumb="box"><NodeMap/></Node>
-			<Node id="402" name="Moonlighting Film Production Services" type="section" thumb="box"><NodeMap/></Node>
-			<Node id="404" name="RADUS" type="section" thumb="box"><NodeMap/></Node>
-			<Node id="405" name="MiniTask" type="section" thumb="box"><NodeMap/></Node>
-			<Node id="406" name="WS-Slideshow" type="section" thumb="box"><NodeMap/></Node>
-			<Node id="407" name="Brainwave" type="section" thumb="box"><NodeMap/></Node>
-			<Node id="408" name="Professor Green and the Eco Rangers" type="section" thumb="box"><NodeMap/></Node>
-			<Node id="409" name="Renju, The Game" type="section" thumb="box"><NodeMap/></Node>
-			<Node id="410" name="Sliding Puzzle Game" type="section" thumb="box"><NodeMap/></Node>
-			<Node id="411" name="Panfu" type="section" thumb="box"><NodeMap/></Node>
-			<Node id="412" name="The World's Biggest Ad" type="section" thumb="box"><NodeMap/></Node>
+			<Node id="400" name="Exploring ETFs" thumb="box"><NodeMap/></Node>
+			<Node id="401" name="Mercedes Benz Focus on Fahsion" thumb="box"><NodeMap/></Node>
+			<Node id="402" name="Moonlighting Film Production Services" thumb="box"><NodeMap/></Node>
+			<Node id="404" name="RADUS" thumb="box"><NodeMap/></Node>
+			<Node id="405" name="MiniTask" thumb="box"><NodeMap/></Node>
+			<Node id="406" name="WS-Slideshow" thumb="box"><NodeMap/></Node>
+			<Node id="407" name="Brainwave" thumb="box"><NodeMap/></Node>
+			<Node id="408" name="Professor Green and the Eco Rangers" thumb="box"><NodeMap/></Node>
+			<Node id="409" name="Renju, The Game" thumb="box"><NodeMap/></Node>
+			<Node id="410" name="Sliding Puzzle Game" thumb="box"><NodeMap/></Node>
+			<Node id="411" name="Panfu" thumb="box"><NodeMap/></Node>
+			<Node id="412" name="The World's Biggest Ad" thumb="box"><NodeMap/></Node>
 		</Nodes>
 	</NodeMap>
 </Node>

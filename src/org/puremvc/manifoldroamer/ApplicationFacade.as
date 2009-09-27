@@ -12,6 +12,7 @@ package org.puremvc.manifoldroamer
         public static const RESET:String 			= "reset";
         public static const NODE_CLICK:String 		= "nodeClick";
         public static const NODE_SELECTED:String 	= "nodeSelected";
+        public static const NODE_EXPANDED:String 	= "nodeExpanded";
         public static const SHOW_HISTORY:String 	= "showHistory";
         public static const SHOW_CONTENT:String 	= "showContent";
         public static const HIDE_CONTENT:String 	= "hideContent";
@@ -34,6 +35,7 @@ package org.puremvc.manifoldroamer
             registerCommand( STARTUP, StartupCommand );
             registerCommand( NODE_CLICK, NodeClickCommand );
             registerCommand( NODE_SELECTED, NodeSelectedCommand );
+            registerCommand( NODE_EXPANDED, NodeExpandedCommand );
             registerCommand( ConfigProxy.CONFIG_READY, ConfigReadyCommand );
         }
         

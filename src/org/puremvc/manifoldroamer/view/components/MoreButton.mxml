@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<mx:Image xmlns:mx="http://www.adobe.com/2006/mxml"
-	source="{focused?over:norm}"
-	mouseOver="focused=true; "
-	mouseOut="focused=false;"
-	click="event.stopImmediatePropagation();focused=false;dispatchEvent(new Event('showMore'))"
-	>
+<mx:LinkButton xmlns:mx="http://www.adobe.com/2006/mxml"
+	overSkin="{over}"
+	skin="{norm}"
+	click="event.stopImmediatePropagation();click();"
+	> 
 	<mx:Metadata>
 		[Event('showMore')]
 	</mx:Metadata>
@@ -13,13 +12,19 @@
 
 			[Bindable] private var focused:Boolean=false;
 			
-			[Embed(source="/assets/ui/NodeArrowNorm.jpg")]
+			[Embed(source="/assets/ui/NodeArrowNorm.png")]
 			[Bindable] protected var norm:Class;
 			
-			[Embed(source="/assets/ui/NodeArrowOver.jpg")]
+			[Embed(source="/assets/ui/NodeArrowOver.png")]
 			[Bindable] protected var over:Class;
+
+			public function click():void
+			{
+				focused=false;
+				dispatchEvent(new Event('showMore'));
+			}
 
 		]]>
 	</mx:Script>
 
-</mx:Image>
+</mx:LinkButton>

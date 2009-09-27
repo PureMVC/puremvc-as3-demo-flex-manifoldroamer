@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node id="2200" name="Standard Version" thumb="flake">
+	<NodeMap>
+		<Nodes>
+			<Node id="2201" name="Framework" thumb="box">	
+				<NodeMap>
+					<Framework 
+						name="ColdFusion - Standard Version Framework and Unit Tests" 
+						status="Production"
+						repo="PureMVC_CF"
+						tag="1.0" 						
+						version="1.0"
+						archive="CF/PureMVC_CF.zip" 
+						docs=""
+						forum="http://forums.puremvc.org/index.php?board=20.0"
+						owner="Andy Adamczak"/>
+				</NodeMap>
+			</Node>
+			<Node id="2203" name="Demos" thumb="box"><NodeMap/></Node>
+			<Node id="2204" name="Utilities" thumb="box"><NodeMap/></Node>
+		</Nodes>
+	</NodeMap>
+</Node>

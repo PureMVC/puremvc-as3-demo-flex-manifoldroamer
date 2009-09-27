@@ -1,25 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Node id="500" name="English"  type="section" thumb="flag-usa">
+<Node id="500" name="English"  thumb="flag-usa">
 	<NodeMap>
 		<Nodes>
-			<Node id="5000" name="Goals &amp; Benefits" type="section" thumb="box">
+			<Node id="5000" name="Goals &amp; Benefits" thumb="box">
 					<NodeMap>
-						<Document url="http://puremvc.org/component/option,com_wrapper/Itemid,31/"/>
+						<Document 
+							name="PureMVC Goals and Benefits Overview"
+							url="http://puremvc.org/component/option,com_wrapper/Itemid,31/"/>
 					</NodeMap>
 			</Node>
-			<Node id="5001" name="Conceptual Diagram" type="section" thumb="box">
+			<Node id="5001" name="Conceptual Diagram" thumb="box">
 					<NodeMap>
-						<Document url="http://puremvc.org/component/option,com_wrapper/Itemid,34/"/>
+						<Document 
+							name="PureMVC Conceptual Diagram"
+							url="http://puremvc.org/component/option,com_wrapper/Itemid,34/"/>
 					</NodeMap>
 			</Node>
-			<Node id="5002" name="Framework Overview" type="section" thumb="box">
+			<Node id="5002" name="Framework Overview" thumb="box">
 					<NodeMap>
-						<Document url="http://puremvc.org/component/option,com_wrapper/Itemid,35/"/>
+						<Document 
+							name="PureMVC Framework Overview with UML"
+							url="http://puremvc.org/component/option,com_wrapper/Itemid,35/"/>
 					</NodeMap>
 			</Node>
-			<Node id="5003" name="Best Practices" type="section" thumb="box">
+			<Node id="5003" name="Best Practices" thumb="box">
 					<NodeMap>
-						<Document url="http://puremvc.org/component/option,com_wrapper/Itemid,174/"/>
+						<Document 
+							name="PureMVC Best Practices and Implementation Idioms"
+							url="http://puremvc.org/component/option,com_wrapper/Itemid,174/"/>
 					</NodeMap>
 			</Node>
 		</Nodes>

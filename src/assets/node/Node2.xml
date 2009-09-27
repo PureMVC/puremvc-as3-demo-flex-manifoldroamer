@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Node id="2" name="Ports" type="section" thumb="flake">
+<Node id="2" name="Ports"  thumb="flake">
 	<NodeMap>
 		<Nodes>
-			<Node id="200" name="ActionScript 2" type="section" thumb="box"/>
-			<Node id="205" name="ActionScript 3" type="section" thumb="box"><NodeMap/></Node>
-			<Node id="215" name="C #" type="section" thumb="box"><NodeMap/></Node>
-			<Node id="220" name="ColdFusion" type="section" thumb="box"><NodeMap/></Node>
-			<Node id="225" name="Haxe" type="section" thumb="box"><NodeMap/></Node>
-			<Node id="230" name="Java" type="section" thumb="box"><NodeMap/></Node>
-			<Node id="235" name="JavaScript" type="section" thumb="box"><NodeMap/></Node>
-			<Node id="240" name="Objective C" type="section" thumb="box"><NodeMap/></Node>
-			<Node id="245" name="PHP" type="section" thumb="box"><NodeMap/></Node>
-			<Node id="250" name="Python" type="section" thumb="box"><NodeMap/></Node>
-			<Node id="255" name="Ruby" type="section" thumb="box"><NodeMap/></Node>
+			<Node id="200" name="ActionScript 2" thumb="box"/>
+			<Node id="205" name="ActionScript 3" thumb="box"/>
+			<Node id="215" name="C #" 			thumb="box"/>
+			<Node id="220" name="ColdFusion" 	thumb="box"/>
+			<Node id="225" name="Haxe" 			thumb="box"><NodeMap/></Node>
+			<Node id="230" name="Java" 			thumb="box"><NodeMap/></Node>
+			<Node id="235" name="JavaScript" 	thumb="box"><NodeMap/></Node>
+			<Node id="240" name="Objective C" 	thumb="box"><NodeMap/></Node>
+			<Node id="245" name="PHP" 			thumb="box"><NodeMap/></Node>
+			<Node id="250" name="Python" 		thumb="box"><NodeMap/></Node>
+			<Node id="255" name="Ruby" 			thumb="box"><NodeMap/></Node>
 		</Nodes>
 	</NodeMap>
 </Node>

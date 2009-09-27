@@ -12,6 +12,7 @@
 
 	<mx:Script>
 		<![CDATA[
+			import org.puremvc.manifoldroamer.model.vo.NodeDataVO;
 			import mx.effects.Effect;
 			import mx.effects.IEffectInstance;
 			import mx.core.Application;
@@ -19,7 +20,7 @@
 			
         	public static const FULL_SCREEN:String 	= "toggleFullScreen";
 
-			[Bindable] public var element:XML;
+			[Bindable] public var nodeData:NodeDataVO;
 			[Bindable] public var showContent:Boolean=false;
 			[Bindable] public var slide:Boolean=false;
 			
@@ -55,11 +56,12 @@
 		mouseDownEffect="Glow"
 		click="reset()"/>
 
-	<view:DetailPanel backgroundColor="#FFFFFF"
+	<view:ContentPanel 
+		backgroundColor="#FFFFFF"
 		showEffect="{fadeIn}" 
 		hideEffect="{fadeOut}"
 		left="100" right="100" top="100" bottom="100"
 		visible="{showContent}" 
-		dataProvider="{element}"/>	
+		nodeData="{nodeData}"/>	
 	
 </mx:Canvas>

@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Node id="503" name="Chinese"  type="section" thumb="flag-china">
+<Node id="503" name="Chinese"  thumb="flag-china">
 	<NodeMap>
 		<Nodes>
-			<Node id="5030" name="Best Practices" type="section" thumb="box">
+			<Node id="5030" name="Best Practices" thumb="box">
 					<NodeMap>
-						<Document url="http://puremvc.org/component/option,com_wrapper/Itemid,183/"/>
+						<Document 
+						    name="PureMVC Best Practices and Implementation Idioms (Chinese Translation)"
+							url="http://puremvc.org/component/option,com_wrapper/Itemid,183/"/>
 					</NodeMap>
 			</Node>
 		</Nodes>

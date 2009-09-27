@@ -1,13 +1,11 @@
 package org.puremvc.manifoldroamer.view
 {
-
-	import flash.events.Event;
-
+	import flash.events.*;
 	import org.puremvc.as3.interfaces.IMediator;
 	import org.puremvc.as3.interfaces.INotification;
 	import org.puremvc.as3.patterns.mediator.Mediator;
-
 	import org.puremvc.manifoldroamer.ApplicationFacade;
+	import org.puremvc.manifoldroamer.model.vo.NodeDataVO;
 	import org.puremvc.manifoldroamer.view.components.ContentExplorer;
 
 	public class ContentExplorerMediator extends Mediator implements IMediator
@@ -22,7 +20,8 @@ package org.puremvc.manifoldroamer.view
 		
 		override public function onRegister():void
 		{
-			explorer.addEventListener(ApplicationFacade.RESET, handleReset);
+			explorer.addEventListener(ApplicationFacade.RESET, handleReset );
+			explorer.addEventListener(ApplicationFacade.RESET, handleHideContent );			
 		}
 
 		override public function listNotificationInterests():Array
@@ -37,7 +36,7 @@ package org.puremvc.manifoldroamer.view
 			{
 				case ApplicationFacade.SHOW_CONTENT:
 					explorer.showContent = true;
-					explorer.element = note.getBody() as XML;
+					explorer.nodeData = note.getBody() as NodeDataVO;
 					break;
 					
 				case ApplicationFacade.HIDE_CONTENT:
@@ -49,6 +48,11 @@ package org.puremvc.manifoldroamer.view
 		public function handleReset(event:Event):void
 		{
 			sendNotification( ApplicationFacade.RESET );
+			sendNotification( ApplicationFacade.HIDE_CONTENT );
+		}
+		
+		public function handleHideContent(event:Event):void
+		{
 			sendNotification( ApplicationFacade.HIDE_CONTENT );
 		}
 		

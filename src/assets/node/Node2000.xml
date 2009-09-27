@@ -1,19 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Node id="2000" name="Standard Version" type="section" thumb="flake">
+<Node id="2000" name="Standard Version" thumb="flake">
 	<NodeMap>
 		<Nodes>
-			<Node id="2001" name="Framework" type="section" thumb="box">	
+			<Node id="2001" name="Framework" thumb="box">	
 				<NodeMap>
-					<Project repo="PureMVC_AS2" archive="AS2/PureMVC_AS2.zip"/>
+					<Framework 
+						name="ActionScript 2 - Standard Version" 
+						status="Production"
+						repo="PureMVC_AS2" 
+						tag="1.0"
+						version="1.0"
+						archive="AS2/PureMVC_AS2.zip" 
+						docs="http://puremvc.org/pages/docs/AS2/apidocs/frameset.html"
+						forum="http://forums.puremvc.org/index.php?board=13.0"
+						owner="Pedr Brown"/>
 				</NodeMap>
 			</Node>
-			<Node id="2002" name="Unit Tests" type="section" thumb="box">
+			<Node id="2002" name="Unit Tests" thumb="box">
 				<NodeMap>
-					<Project repo="PureMVC_AS2_UnitTests" archive="AS2/PureMVC_AS2_UnitTests.zip"/>
+					<Utility 
+						name="ActionScript 2 - Standard Version - Unit Tests" 
+						status="Production"
+						repo="PureMVC_AS2_UnitTests" 
+						tag="UnitTests_0_7"
+						version="0.7"
+						archive="AS2/PureMVC_AS2_UnitTests.zip"
+						live="http://puremvc.org/pages/demos/AS2/PureMVC_AS2_UnitTests"
+						docs="http://puremvc.org/pages/docs/AS2/apidocs/frameset.html"
+						forum="http://forums.puremvc.org/index.php?topic=418.0"
+						owner="James Knight"/>
 				</NodeMap>
 			</Node>
-			<Node id="2003" name="Demos" type="section" thumb="box"><NodeMap/></Node>
-			<Node id="2004" name="Utilities" type="section" thumb="box"><NodeMap/></Node>
+			<Node id="2003" name="Demos" thumb="box"><NodeMap/></Node>
+			<Node id="2004" name="Utilities" thumb="box"><NodeMap/></Node>
 		</Nodes>
 	</NodeMap>
 </Node>

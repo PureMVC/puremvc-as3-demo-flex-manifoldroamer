@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Node id="5" name="Docs" type="section" thumb="flake">
+<Node id="5" name="Docs" thumb="flake">
 	<NodeMap>
 		<Nodes>
-			<Node id="500" name="English" type="section" thumb="flag-usa"/>
-			<Node id="501" name="French" type="section" thumb="flag-france"/>
-			<Node id="502" name="German" type="section" thumb="flag-germany"/>
-			<Node id="503" name="Chinese" type="section" thumb="flag-china"/>
-			<Node id="504" name="Russian" type="section" thumb="flag-russia"/>
+			<Node id="500" name="English" thumb="flag-usa"/>
+			<Node id="501" name="French" thumb="flag-france"/>
+			<Node id="502" name="German" thumb="flag-germany"/>
+			<Node id="503" name="Chinese" thumb="flag-china"/>
+			<Node id="504" name="Russian" thumb="flag-russia"/>
 		</Nodes>
 	</NodeMap>
 </Node>

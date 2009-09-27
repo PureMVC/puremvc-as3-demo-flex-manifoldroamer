@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node id="2055" name="MultiCore Version" thumb="flake">
+	<NodeMap>
+		<Nodes>
+			<Node id="2056" name="Framework" thumb="box">	
+				<NodeMap>
+					<Framework 
+						name="ActionScript 3 Framework - MultiCore Version" 
+						status="Production"
+						repo="PureMVC_AS3_MultiCore" 
+						tag="1.0.5"
+						version="1.0.5"
+						archive="AS3/PureMVC_AS3_MultiCore.zip" 
+						docs="http://puremvc.org/pages/docs/AS3/multicore/framework_asdoc"
+						forum="http://forums.puremvc.org/index.php?board=27.0"
+						owner="Cliff Hall"/>
+				</NodeMap>
+			</Node>
+			<Node id="2057" name="Unit Tests" thumb="box">
+				<NodeMap>
+					<Utility 
+						name="ActionScript 3 Framework - MultiCore Version - Unit Tests" 
+						status="Production"
+						repo="PureMVC_AS3_MultiCore_UnitTests" 
+						tag="1.0.5"
+						version="1.0.5"
+						archive="AS3/PureMVC_AS3_MultiCore_UnitTests.zip"
+						live="http://puremvc.org/pages/demos/AS3/PureMVC_AS3_MultiCore_UnitTests"
+						docs="http://puremvc.org/pages/docs/AS3/multicore/framework_unit_tests_asdoc"
+						forum="http://forums.puremvc.org/index.php?topic=458.0"
+						owner="Cliff Hall"/>
+				</NodeMap>
+			</Node>
+			<Node id="2058" name="Demos" thumb="box"><NodeMap/></Node>
+			<Node id="2059" name="Utilities" thumb="box"><NodeMap/></Node>
+		</Nodes>
+	</NodeMap>
+</Node>

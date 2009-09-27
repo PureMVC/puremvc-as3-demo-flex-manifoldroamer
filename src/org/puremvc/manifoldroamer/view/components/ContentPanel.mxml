@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Panel xmlns:mx="http://www.adobe.com/2006/mxml"
+		verticalScrollPolicy="off" 
+		horizontalScrollPolicy="off"
+		layout="vertical"
+		horizontalAlign="center" 
+		title="{nodeData.type}"
+		>
+	<mx:Script>
+		<![CDATA[
+			import org.puremvc.manifoldroamer.model.vo.NodeDataVO;
+			import mx.effects.Effect;
+			
+			[Bindable] public var nodeData:NodeDataVO;
+			
+			private function showWebPage( url:String ):void
+			{
+				var request:URLRequest = new URLRequest(url);
+				navigateToURL(request,"blank");
+			}
+
+			
+		]]>
+	</mx:Script>
+
+	<mx:TextArea width="75%" height="75%" text="{nodeData.nodeData.toXMLString()}"/>
+
+	<mx:ControlBar horizontalAlign="right" height="35" paddingTop="5" verticalGap="0">
+		<mx:Button label="Close" click="visible=false"/>
+	</mx:ControlBar>
+
+</mx:Panel>
+

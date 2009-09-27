@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node id="2050" name="Standard Version" thumb="flake">
+	<NodeMap>
+		<Nodes>
+			<Node id="2051" name="Framework" thumb="box">	
+				<NodeMap>
+					<Framework 
+						name="ActionScript 3 Framework - Standard Version" 
+						status="Production"
+						repo="PureMVC_AS2" 
+						tag="2.0.4"
+						version="2.0.4"
+						archive="AS2/PureMVC_AS2.zip" 
+						docs="http://puremvc.org/pages/docs/AS3/standard/framework_asdoc"
+						forum="http://forums.puremvc.org/index.php?board=26.0"
+						owner="Cliff Hall"/>
+				</NodeMap>
+			</Node>
+			<Node id="2052" name="Unit Tests" thumb="box">
+				<NodeMap>
+					<Utility 
+						name="ActionScript 3 Framework - Standard Version Unit Tests" 
+						status="Production"
+						repo="PureMVC_AS3_UnitTests" 
+						tag="UnitTests_2_0_4 "
+						version="2.0.4"
+						archive="AS3/PureMVC_AS3_UnitTests.zip"
+						live="http://puremvc.org/pages/demos/AS3/PureMVC_AS3_UnitTests"
+						docs="http://puremvc.org/pages/docs/AS3/standard/framework_unit_tests_asdoc"
+						forum="http://forums.puremvc.org/index.php?topic=293.0"
+						owner="Cliff Hall"/>
+				</NodeMap>
+			</Node>
+			<Node id="2053" name="Demos" thumb="box"><NodeMap/></Node>
+			<Node id="2054" name="Utilities" thumb="box"><NodeMap/></Node>
+		</Nodes>
+	</NodeMap>
+</Node>
