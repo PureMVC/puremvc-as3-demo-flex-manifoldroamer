@@ -36,18 +36,6 @@
 				sendEvent(ApplicationFacade.RESET);
 			}
 			
-			public function get currentHideEffect():Effect
-			{
-				if (slide) return slideOut;
-				return fadeOut;
-			}
-			
-			public function get currentShowEffect():Effect
-			{
-				if (slide) return slideIn;
-				return fadeIn;
-			}
-			
 			public function sendEvent(name:String):void
 			{
 				dispatchEvent(new Event(name,true));
@@ -57,8 +45,8 @@
 
 	<mx:Fade id="fadeIn" alphaFrom="0" alphaTo="1" duration="500"/>
 	<mx:Fade id="fadeOut" alphaFrom="1" alphaTo="0" duration="500"/>
-	<mx:Move id="slideIn" yFrom="3000" yTo="181" duration="750"/>
-	<mx:Move id="slideOut" yFrom="181" yTo="3000" duration="1000"/>
+
+	<mx:LinkButton right="10" top="10" label="Toggle Fullscreen" color="#FFFFFF" click="sendEvent(FULL_SCREEN)"/>
 
 	<!-- Logo / App Title -->
 	<mx:Image id="logo" left="10" bottom="10" 
@@ -67,14 +55,11 @@
 		mouseDownEffect="Glow"
 		click="reset()"/>
 
-	<mx:LinkButton right="10" bottom="10" label="Toggle Fullscreen" color="#FFFFFF" click="sendEvent(FULL_SCREEN)"/>
-
 	<view:DetailPanel backgroundColor="#FFFFFF"
-		showEffect="{currentShowEffect}" 
-		hideEffect="{currentHideEffect}"
+		showEffect="{fadeIn}" 
+		hideEffect="{fadeOut}"
 		left="100" right="100" top="100" bottom="100"
 		visible="{showContent}" 
-		dataProvider="{element}"
-		/>	
+		dataProvider="{element}"/>	
 	
 </mx:Canvas>
