@@ -11,8 +11,8 @@
 						tag="1.0.5"
 						version="1.0.5"
 						archive="AS3/PureMVC_AS3_MultiCore.zip" 
-						docs="http://puremvc.org/pages/docs/AS3/multicore/framework_asdoc"
-						forum="http://forums.puremvc.org/index.php?board=27.0"
+						docs="AS3/multicore/framework_asdoc"
+						forum="board=27.0"
 						owner="Cliff Hall"/>
 				</NodeMap>
 			</Node>
@@ -26,8 +26,8 @@
 						version="1.0.5"
 						archive="AS3/PureMVC_AS3_MultiCore_UnitTests.zip"
 						live="http://puremvc.org/pages/demos/AS3/PureMVC_AS3_MultiCore_UnitTests"
-						docs="http://puremvc.org/pages/docs/AS3/multicore/framework_unit_tests_asdoc"
-						forum="http://forums.puremvc.org/index.php?topic=458.0"
+						docs="AS3/multicore/framework_unit_tests_asdoc"
+						forum="topic=458.0"
 						owner="Cliff Hall"/>
 				</NodeMap>
 			</Node>

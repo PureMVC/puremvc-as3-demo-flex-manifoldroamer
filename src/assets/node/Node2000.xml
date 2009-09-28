@@ -11,8 +11,8 @@
 						tag="1.0"
 						version="1.0"
 						archive="AS2/PureMVC_AS2.zip" 
-						docs="http://puremvc.org/pages/docs/AS2/apidocs/frameset.html"
-						forum="http://forums.puremvc.org/index.php?board=13.0"
+						docs="AS2/apidocs/frameset.html"
+						forum="board=13.0"
 						owner="Pedr Brown"/>
 				</NodeMap>
 			</Node>
@@ -26,8 +26,8 @@
 						version="0.7"
 						archive="AS2/PureMVC_AS2_UnitTests.zip"
 						live="http://puremvc.org/pages/demos/AS2/PureMVC_AS2_UnitTests"
-						docs="http://puremvc.org/pages/docs/AS2/apidocs/frameset.html"
-						forum="http://forums.puremvc.org/index.php?topic=418.0"
+						docs="AS2/apidocs/frameset.html"
+						forum="topic=418.0"
 						owner="James Knight"/>
 				</NodeMap>
 			</Node>

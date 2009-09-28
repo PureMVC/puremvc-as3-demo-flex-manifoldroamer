@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node id="2400" name="Standard Version" thumb="flake">
+	<NodeMap>
+		<Nodes>
+			<Node id="2401" name="Framework" thumb="box">	
+				<NodeMap>
+					<Framework 
+						name="Objective C - Standard Version" 
+						status="Production"
+						repo="PureMVC_ObjectiveC" 
+						tag="1.1"
+						version="1.1"
+						archive="ObjectiveC/PureMVC_ObjectiveC.zip" 
+						docs="ObjectiveC/standard/"
+						forum="board=74.0"
+						owner="Brian Knorr"/>
+				</NodeMap>
+			</Node>
+			<Node id="2402" name="Unit Tests" thumb="box">
+				<NodeMap>
+					<Utility 
+						name="Objective C - Standard Version Unit Tests" 
+						status="Production"
+						repo="PureMVC_ObjectiveC_UnitTests" 
+						tag="UnitTests_1_1"
+						version="1.1"
+						archive="ObjectiveC/PureMVC_ObjectiveC_UnitTests.zip"
+						live=""
+						docs=""
+						forum="board=74.0"
+						owner="Brian Knorr"/>
+				</NodeMap>
+			</Node>
+			<Node id="2403" name="Demos" thumb="box"><NodeMap/></Node>
+			<Node id="2404" name="Utilities" thumb="box"><NodeMap/></Node>
+		</Nodes>
+	</NodeMap>
+</Node>

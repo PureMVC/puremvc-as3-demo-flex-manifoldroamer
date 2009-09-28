@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node id="2500" name="Standard Version" thumb="flake">
+	<NodeMap>
+		<Nodes>
+			<Node id="2501" name="Framework" thumb="box">	
+				<NodeMap>
+					<Framework 
+						name="Python - Standard Version Framework and Unit Tests" 
+						status="Production"
+						repo="PureMVC_Python" 
+						tag="1.1"
+						version="1.1"
+						archive="Python/PureMVC_Python.zip" 
+						docs="Python/docs"
+						forum="board=18.0"
+						owner="Toby de Havilland"/>
+				</NodeMap>
+			</Node>
+			<Node id="2503" name="Demos" thumb="box"><NodeMap/></Node>
+			<Node id="2504" name="Utilities" thumb="box"><NodeMap/></Node>
+		</Nodes>
+	</NodeMap>
+</Node>

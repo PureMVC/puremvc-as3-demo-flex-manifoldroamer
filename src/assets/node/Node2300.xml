@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node id="2300" name="Standard Version" thumb="flake">
+	<NodeMap>
+		<Nodes>
+			<Node id="2301" name="Framework" thumb="box">	
+				<NodeMap>
+					<Framework 
+						name="JavaScript - Standard Version" 
+						status="Production"
+						repo="PureMVC_JS" 
+						tag="1.0"
+						version="1.0"
+						archive="JS/PureMVC_JS.zip" 
+						docs=""
+						forum="board=64.0"
+						owner="Frederic Saunier"/>
+				</NodeMap>
+			</Node>
+			<Node id="2303" name="Demos" thumb="box"><NodeMap/></Node>
+			<Node id="2304" name="Utilities" thumb="box"><NodeMap/></Node>
+		</Nodes>
+	</NodeMap>
+</Node>

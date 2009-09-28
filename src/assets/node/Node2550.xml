@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node id="2550" name="Standard Version" thumb="flake">
+	<NodeMap>
+		<Nodes>
+			<Node id="2551" name="Framework" thumb="box">	
+				<NodeMap>
+					<Framework 
+						name="Ruby - Standard Version Framework" 
+						status="Production"
+						repo="PureMVC_Ruby" 
+						tag="1.0 "
+						version="1.0 "
+						archive="Ruby/PureMVC_Ruby.zip" 
+						docs="Ruby/standard/"
+						forum="board=78.0"
+						owner="Jake Dempsey"/>
+				</NodeMap>
+			</Node>
+			<Node id="2552" name="Unit Tests" thumb="box">
+				<NodeMap>
+					<Utility 
+						name="Ruby - Standard Version Unit Tests" 
+						status="Production"
+						repo="PureMVC_Ruby_UnitTests" 
+						tag="UnitTests_1_0"
+						version="1.0"
+						archive="Ruby/PureMVC_Ruby_UnitTests.zip"
+						live=""
+						docs=""
+						forum="board=78.0"
+						owner="Jake Dempsey"/>
+				</NodeMap>
+			</Node>
+			<Node id="2553" name="Demos" thumb="box"><NodeMap/></Node>
+			<Node id="2554" name="Utilities" thumb="box"><NodeMap/></Node>
+		</Nodes>
+	</NodeMap>
+</Node>

@@ -2,7 +2,10 @@
 <ServiceConfig>
 	<Service url_pre="assets/node/Node" url_post=".xml" version="local-1.0">
 		<Thumbs url_pre="assets/thumb/" url_post=".png"/>
-		<Projects repo_pre="http://svn.puremvc.org/" archive_pre="http://puremvc.org/pages/downloads/"/>
+		<Projects repo_pre="http://svn.puremvc.org/" 
+			      archive_pre="http://puremvc.org/pages/downloads/"
+			      forum_pre="http://forums.puremvc.org/index.php?"
+			      docs_pre="http://puremvc.org/pages/docs/"/>
 		<Node id="1"/>
 	</Service>
 </ServiceConfig>

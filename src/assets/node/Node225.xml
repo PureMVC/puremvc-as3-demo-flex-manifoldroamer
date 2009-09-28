@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node id="225" name="Haxe 2" thumb="flake">
+	<NodeMap>
+		<Nodes>
+			<Node id="2250" name="Standard Version" thumb="box"/>
+			<Node id="2255" name="MultiCore Version" thumb="box"/>
+		</Nodes>
+	</NodeMap>
+</Node>
+

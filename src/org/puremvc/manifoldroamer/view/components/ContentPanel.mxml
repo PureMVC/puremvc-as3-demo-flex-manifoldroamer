@@ -6,9 +6,14 @@
 		horizontalAlign="center" 
 		title="{nodeData.type}"
 		>
+	<mx:Metadata>
+		[Event(name="hideContent", type="flash.events.Event")]
+	</mx:Metadata>
+
 	<mx:Script>
 		<![CDATA[
 			import org.puremvc.manifoldroamer.model.vo.NodeDataVO;
+			import org.puremvc.manifoldroamer.ApplicationFacade;
 			import mx.effects.Effect;
 			
 			[Bindable] public var nodeData:NodeDataVO;
@@ -19,6 +24,10 @@
 				navigateToURL(request,"blank");
 			}
 
+			public function sendEvent(name:String):void
+			{
+				dispatchEvent(new Event(name,true));
+			}
 			
 		]]>
 	</mx:Script>
@@ -26,7 +35,7 @@
 	<mx:TextArea width="75%" height="75%" text="{nodeData.nodeData.toXMLString()}"/>
 
 	<mx:ControlBar horizontalAlign="right" height="35" paddingTop="5" verticalGap="0">
-		<mx:Button label="Close" click="visible=false"/>
+		<mx:Button label="Close" click="sendEvent(ApplicationFacade.HIDE_CONTENT)"/>
 	</mx:ControlBar>
 
 </mx:Panel>

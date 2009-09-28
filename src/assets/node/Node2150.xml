@@ -8,11 +8,11 @@
 						name="C# - Standard Version Framework and Unit Tests" 
 						status="Production"
 						repo="PureMVC_CSharp" 
-						tag="3.0" branch="branches/Prior_to_DotNET_3_5"
+						tag="3.0" branch="Prior_to_DotNET_3_5"
 						version="3.0"
 						archive="CSharp/PureMVC_CSharp.zip" 
-						docs="http://puremvc.org/pages/docs/CSharp/standard/"
-						forum="http://forums.puremvc.org/index.php?board=20.0"
+						docs="CSharp/standard/"
+						forum="board=20.0"
 						owner="Andy Adamczak"/>
 				</NodeMap>
 			</Node>
