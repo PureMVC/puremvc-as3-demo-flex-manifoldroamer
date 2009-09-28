@@ -6,6 +6,7 @@
 			      archive_pre="http://puremvc.org/pages/downloads/"
 			      forum_pre="http://forums.puremvc.org/index.php?"
 			      docs_pre="http://puremvc.org/pages/docs/"/>
+		<Showcase pic_pre="http://puremvc.org/images/stories/showcase/"/>
 		<Node id="1"/>
 	</Service>
 </ServiceConfig>

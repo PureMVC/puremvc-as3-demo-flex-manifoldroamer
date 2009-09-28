@@ -7,6 +7,7 @@
 			<Node id="4" name="Showcase" 		thumb="box"/>
 			<Node id="5" name="Docs" 			thumb="box"/>
 			<Node id="6" name="License"			thumb="box"><NodeMap/></Node>
+			<Node id="7" name="Presentations"	thumb="box"/>
 		</Nodes>
 	</NodeMap>
 </Node>
