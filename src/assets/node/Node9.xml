@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node id="9" name="Interact" thumb="flake">
+	<NodeMap>
+		<Nodes>
+		
+			<!-- TWITTER -->
+			<Node id="900" name="Twitter" thumb="box">
+				<NodeMap>
+					<Site 
+						name="PureMVC on Twitter" 
+						url="http://twitter.com/puremvc"
+						pic="http://puremvc.org/pages/images/PureMVC-on-Twitter.jpg"/>
+				</NodeMap>
+			</Node>
+
+			<!-- BLOG-O-SPHERE -->
+			<Node id="901" name="Blog-O-Sphere" thumb="box">
+				<NodeMap>
+					<Site 
+						name="Bloggers on PureMVC" 
+						url="http://blogsearch.google.com/blogsearch?q=puremvc"
+						pic="http://puremvc.org/pages/images/PureMVC-Blogosphere.png"/>
+				</NodeMap>
+			</Node>
+
+			<!-- LINKED-IN -->
+			<Node id="902" name="Linked-In" thumb="box">
+				<NodeMap>
+					<Site 
+						name="PureMVC Developers Group on Linked-In" 
+						url="http://www.linkedin.com/groupInvitation?gid=71061"
+						pic="http://puremvc.org/pages/images/puremvc-dev-group.jpg"/>
+				</NodeMap>
+			</Node>
+
+			<!-- FORUMS -->
+			<Node id="903" name="Forums" thumb="box">
+				<NodeMap>
+					<Site 
+						name="PureMVC Forums" 
+						url="http://forums.puremvc.com"
+						pic=""/>
+				</NodeMap>
+			</Node>
+
+			<!-- JOBS-->
+			<Node id="904" name="Jobs" thumb="box">
+				<NodeMap>
+					<Site 
+						name="PureMVC Job Postings Around the Web" 
+						url="http://jobs.puremvc.com"
+						pic=""/>
+				</NodeMap>
+			</Node>
+
+			
+			<!-- WIKIPEDIA -->
+			<Node id="905" name="Wikipedia" thumb="box">
+				<NodeMap>
+					<Site 
+						name="Wikipedia on PureMVC" 
+						url="http://en.wikipedia.org/wiki/PureMVC"
+						pic="http://upload.wikimedia.org/wikipedia/en/8/85/PureMVC-Icon.jpg"/>
+				</NodeMap>
+			</Node>
+
+		</Nodes>
+	</NodeMap>
+</Node>

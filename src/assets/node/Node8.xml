@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node id="8" name="Community" thumb="flake">
+	<NodeMap>
+		<Nodes>
+			<Node id="3" 	name="Contributors"		thumb="box"/>
+			<Node id="4" 	name="Showcase" 		thumb="box"/>
+			<Node id="7" 	name="Presentations"	thumb="box"/>
+			<Node id="9" 	name="Interact"			thumb="box"/>			
+			<Node id="10" 	name="Supporters"		thumb="box"/>			
+		</Nodes>
+	</NodeMap>
+</Node>
+

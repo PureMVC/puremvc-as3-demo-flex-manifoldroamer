@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node id="10" name="Supporters" thumb="flake">
+	<NodeMap>
+		<Nodes>
+		
+			<!-- CVSDude -->
+			<Node id="101" name="CVSDude" thumb="box">
+				<NodeMap>
+					<Site 
+						name="CVSDude: The Version Control Experts" 
+						url="http://cvsdude.com"
+						pic="http://cvsdude.com/static/images/WebsiteHomepage/CVS-Corporate_Logo_RGB-Larger.gif"/>
+				</NodeMap>
+			</Node>
+
+			<!-- Futurescale -->
+			<Node id="102" name="Futurescale" thumb="box">
+				<NodeMap>
+					<Site 
+						name="Futurescale, Inc: Makers and maintainers of PureMVC" 
+						url="http://futurescale.com"
+						pic="http://www.adobe.com/cfusion/partnerportal/index.cfm?event=downloadfile&fileoid=315304"/>
+				</NodeMap>
+			</Node>
+
+
+		</Nodes>
+	</NodeMap>
+</Node>

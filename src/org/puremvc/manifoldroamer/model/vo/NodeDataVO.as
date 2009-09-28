@@ -11,6 +11,7 @@ package org.puremvc.manifoldroamer.model.vo
 		public static const SHOWCASE:String 	= "Showcase";
 		public static const CONTRIBUTOR:String 	= "Contributor";
 		public static const PRESENTATION:String	= "Presentation";
+		public static const SITE:String			= "Site";
 
 		public function NodeDataVO( nodeData:XML=null )
 		{
@@ -44,6 +45,9 @@ package org.puremvc.manifoldroamer.model.vo
 
 				case NodeDataVO.SHOWCASE:
 					return new ShowcaseVO( nodeData );
+
+				case NodeDataVO.SITE:
+					return new SiteVO( nodeData );
 
 				case NodeDataVO.PRESENTATION:
 					return new PresentationVO( nodeData );
