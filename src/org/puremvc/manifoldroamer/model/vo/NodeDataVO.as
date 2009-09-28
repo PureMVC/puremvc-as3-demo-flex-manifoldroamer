@@ -23,43 +23,14 @@ package org.puremvc.manifoldroamer.model.vo
 			return nodeData.localName();
 		} 
 		
+		public function get name():String
+		{
+			return nodeData.@name;
+		} 
+		
+		
+		
 		public var nodeData:XML;
 
-		public static function getInstance( nodeData:XML ):NodeDataVO
-		{
-			var element:String = nodeData.localName();
-			var vo:NodeDataVO;
-
-			switch ( element ) {
-				case NodeDataVO.CONTRIBUTOR:
-					return new ContributorVO( nodeData );
-
-				case NodeDataVO.DEMO:
-					return new DemoVO( nodeData );
-
-				case NodeDataVO.DOCUMENT:
-					return new DocumentVO( nodeData );
-
-				case NodeDataVO.FRAMEWORK:
-					return new FrameworkVO( nodeData );
-
-				case NodeDataVO.SHOWCASE:
-					return new ShowcaseVO( nodeData );
-
-				case NodeDataVO.SITE:
-					return new SiteVO( nodeData );
-
-				case NodeDataVO.PRESENTATION:
-					return new PresentationVO( nodeData );
-
-				case NodeDataVO.UTILITY:
-					return new UtilityVO( nodeData );
-
-				default:
-					return new NodeDataVO( );
-			}
-
-			return vo;
-		}
 	}
 }

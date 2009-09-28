@@ -63,6 +63,16 @@
 						pic="http://upload.wikimedia.org/wikipedia/en/8/85/PureMVC-Icon.jpg"/>
 				</NodeMap>
 			</Node>
+			
+			<!-- FACEBOOK -->
+			<Node id="906" name="Facebook" thumb="box">
+				<NodeMap>
+					<Site 
+						name="PureMVC on Facebook" 
+						url="http://www.facebook.com/home.php#/pages/PureMVC/128081860951"
+						pic="http://upload.wikimedia.org/wikipedia/en/8/85/PureMVC-Icon.jpg"/>
+				</NodeMap>
+			</Node>
 
 		</Nodes>
 	</NodeMap>

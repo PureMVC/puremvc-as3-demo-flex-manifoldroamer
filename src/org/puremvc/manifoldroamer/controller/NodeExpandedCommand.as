@@ -1,11 +1,10 @@
 package org.puremvc.manifoldroamer.controller
 {
-	import com.adobe.flex.extras.controls.springgraph.Item;
-	
 	import org.puremvc.as3.interfaces.ICommand;
 	import org.puremvc.as3.interfaces.INotification;
 	import org.puremvc.as3.patterns.command.SimpleCommand;
 	import org.puremvc.manifoldroamer.ApplicationFacade;
+	import org.puremvc.manifoldroamer.model.NodeDataProxy;
 	import org.puremvc.manifoldroamer.model.vo.NodeDataVO;
 
 	public class NodeExpandedCommand extends SimpleCommand implements ICommand
@@ -19,7 +18,9 @@ package org.puremvc.manifoldroamer.controller
 			var node:XML = note.getBody() as XML;
 			var contents:XMLList = node.NodeMap.children();
 			var content:XML = contents[0];
-			var nodeData:NodeDataVO = NodeDataVO.getInstance( content );
+			var nodDataProxy:NodeDataProxy = facade.retrieveProxy( NodeDataProxy.NAME ) as NodeDataProxy;
+			var nodeData:NodeDataVO = nodDataProxy.getInstance( content );
+			
 			
 			// If valid content was found, send it
 			if (nodeData.type != NodeDataVO.BLANK) { 

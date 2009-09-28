@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:HBox xmlns:mx="http://www.adobe.com/2006/mxml" 
+	xmlns:view="org.puremvc.manifoldroamer.view.components.*"
+	width="100%" height="100%" horizontalAlign="center"
+	verticalAlign="middle" paddingTop="20" 
+	paddingLeft="20" paddingRight="20">
+	
+	<mx:Metadata>
+		[Event(name="readURL", type="flash.events.Event")]
+	</mx:Metadata>
+
+	<mx:Script>
+		<![CDATA[
+			import org.puremvc.manifoldroamer.model.vo.ShowcaseVO;
+			[Bindable] public var nodeData:ShowcaseVO;
+			[Bindable] public var targetURL:String;
+
+			public function readURL(url:String):void
+			{
+				targetURL=url;
+				dispatchEvent( new Event('readURL',true) );
+			}
+			
+		]]>
+	</mx:Script>
+	
+	<!-- SHOWCASE CONTENT -->
+	<mx:HBox width="80%">
+		
+		<mx:VBox horizontalAlign="right" width="50%" >
+			<!-- PROJECT -->
+			<mx:HBox verticalAlign="middle">
+				<mx:Label fontFamily="BlueHighway" color="#0000FF" fontSize="24" text="PROJECT"/>
+			</mx:HBox>
+			<mx:Label fontFamily="BlueHighway" fontSize="24" text="{nodeData.name}"/>
+	
+			<!-- AUTHOR -->
+			<mx:HBox verticalAlign="middle">
+				<mx:Label fontFamily="BlueHighway" color="#0000FF" fontSize="24" text="AUTHOR"/>
+			</mx:HBox>
+			<mx:Label fontFamily="BlueHighway" fontSize="24" text="{nodeData.author}"/> 
+	
+			<!-- BUTTONS -->
+			<mx:HBox verticalAlign="middle">
+				<mx:Button label="Visit Author"  click="readURL(nodeData.author_url)"/>
+				<mx:Button label="Visit Site" click="readURL(nodeData.site_url)"/>
+			</mx:HBox>
+	
+			<!-- ABOUT -->
+			<mx:Text width="100%" textAlign="right" fontFamily="BlueHighway" fontSize="16" htmlText="{nodeData.nodeData.toString()}"/>
+		</mx:VBox>
+	
+		<!-- PIC -->
+		<view:SmoothImage id="pic" source="{nodeData.pic}" width="50%" maintainAspectRatio="true" />
+	
+	</mx:HBox>	
+	
+	
+</mx:HBox>

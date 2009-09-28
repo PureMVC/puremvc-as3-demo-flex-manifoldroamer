@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <mx:Panel xmlns:mx="http://www.adobe.com/2006/mxml"
+		xmlns:view="org.puremvc.manifoldroamer.view.components.*"
 		verticalScrollPolicy="off" 
 		horizontalScrollPolicy="off"
 		layout="vertical"
@@ -12,13 +13,14 @@
 
 	<mx:Script>
 		<![CDATA[
+			import org.puremvc.manifoldroamer.model.vo.ShowcaseVO;
 			import org.puremvc.manifoldroamer.model.vo.NodeDataVO;
 			import org.puremvc.manifoldroamer.ApplicationFacade;
 			import mx.effects.Effect;
 			
 			[Bindable] public var nodeData:NodeDataVO;
 			
-			private function showWebPage( url:String ):void
+			private function readURL( url:String ):void
 			{
 				var request:URLRequest = new URLRequest(url);
 				navigateToURL(request,"blank");
@@ -32,7 +34,11 @@
 		]]>
 	</mx:Script>
 
-	<mx:TextArea width="75%" height="75%" text="{nodeData.nodeData.toXMLString()}"/>
+	<mx:ViewStack id="contentStack" height="100%" width="100%">
+		<view:ContentShowcase id="contentShowcase" nodeData="{nodeData as ShowcaseVO}" readURL="readURL(contentShowcase.targetURL)"/>
+	</mx:ViewStack>
+
+	<!--mx:TextArea width="75%" height="75%" text="{nodeData.nodeData.toXMLString()}"/-->
 
 	<mx:ControlBar horizontalAlign="right" height="35" paddingTop="5" verticalGap="0">
 		<mx:Button label="Close" click="sendEvent(ApplicationFacade.HIDE_CONTENT)"/>
