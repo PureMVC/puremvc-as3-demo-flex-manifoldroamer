@@ -20,10 +20,10 @@
 			</Node>
 
 			<!-- FOCUS ON FASHION -->
-			<Node id="401" name="Focus on Fahsion" thumb="box">
+			<Node id="401" name="Focus on Fashion" thumb="box">
 				<NodeMap>
 					<Showcase 
-						name="Mercedes Benz: Focus on Fahsion" 
+						name="Mercedes Benz: Focus on Fashion" 
 						site_url="http://www.mercedes-benz.de/focus-on-fashion"
 						author="elephantseven"
 						author_url="http://www.e-7.com/"

@@ -74,7 +74,7 @@
 		.mypanelTitle {
 		   letterSpacing: 2;
 		   color: #ffffff;
-		   textAlign: center;
+		   textAlign: left;
 		   fontFamily: BlueHighway;
 		   fontSize: 22;
 		}		
