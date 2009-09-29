@@ -50,7 +50,7 @@
 		</mx:VBox>
 	
 		<!-- PIC -->
-		<view:SmoothImage id="pic" source="{nodeData.pic}" width="50%" maintainAspectRatio="true" />
+		<view:SmoothImage id="pic" source="{nodeData.pic}"  width="50%" maintainAspectRatio="true" />
 	
 	</mx:HBox>	
 	

@@ -6,11 +6,11 @@
 					<NodeMap>
 						<Document 
 							name="Best Practices and Implementation Idioms (French Translation)"
+							author="Cliff Hall (Translated by Eric La Rocca)"
 							doc_url="PureMVC_Implementation_Idiomes_et_Meilleures_Pratiques.pdf"
 							pic="PureMVC-IIBP-French.png"><![CDATA[
 <P>I’d just like to send out a merci beaucoup to Eric La Rocca, who painstakingly translated the PureMVC Implementation Idioms and Best Practices document into French ( Implémentation Idiomes et Meilleures Pratiques ).</P>
 <P>This effort took nearly a month to complete, supported by a collaborative exchange between Eric and myself, with many clarifications and corrections made. Requests for this have come from many French developers, and we hope that this will serve their needs well for the time being, as the other various docs are translated.</P>
-<P>Currently underway are several other translations: German, Chinese and Spanish. There is a need for other languages including  Russian, Italian, Korean and Japanese as well. PureMVC developers out there who speak any of these languages and would like to help should contact me directly.</P>
 <P>Again, thanks Eric, your hard work is greatly appreciated!<BR/>
 -=Cliff&gt;</P>
 </P>
