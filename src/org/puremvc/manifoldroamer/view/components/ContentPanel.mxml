@@ -13,6 +13,7 @@
 
 	<mx:Script>
 		<![CDATA[
+			import mx.core.UIComponent;
 			import org.puremvc.manifoldroamer.model.vo.DocumentVO;
 			import org.puremvc.manifoldroamer.model.vo.ShowcaseVO;
 			import org.puremvc.manifoldroamer.model.vo.NodeDataVO;
@@ -32,10 +33,18 @@
 				dispatchEvent(new Event(name,true));
 			}
 			
+			private function getContentViewer(n:NodeDataVO):int
+			{
+				var index:int = 0;
+				if (n is DocumentVO) index = 0;
+				if (n is ShowcaseVO) index = 1;
+				return index;				
+			}
+			
 		]]>
 	</mx:Script>
 
-	<mx:ViewStack id="contentStack" height="100%" width="100%">
+	<mx:ViewStack id="contentStack" height="100%" width="100%" selectedIndex="{getContentViewer(nodeData)}">
 		<view:ContentDocument id="contentDocument" nodeData="{nodeData as DocumentVO}" readURL="readURL(contentDocument.targetURL)"/>
 		<view:ContentShowcase id="contentShowcase" nodeData="{nodeData as ShowcaseVO}" readURL="readURL(contentShowcase.targetURL)"/>
 	</mx:ViewStack>
