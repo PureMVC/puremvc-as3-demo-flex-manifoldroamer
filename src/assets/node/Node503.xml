@@ -5,8 +5,16 @@
 			<Node id="5030" name="Best Practices" thumb="box">
 					<NodeMap>
 						<Document 
-						    name="PureMVC Best Practices and Implementation Idioms (Chinese Translation)"
-							url="http://puremvc.org/component/option,com_wrapper/Itemid,183/"/>
+						    name="Best Practices and Implementation Idioms (Chinese Translation)"
+						    author="Cliff Hall (Translated by Zhang Ze Yuan and Zhong Xiao Chuan)"
+							doc_url="http://puremvc.org/component/option,com_wrapper/Itemid,183/"
+							pic="PureMVC-IIBP-Chinese.png"><![CDATA[
+<P>It is my pleasure to tender a big Toa chie / M goi to Zhang Ze Yuan and Zhong Xiao Chuan, who have worked together to complete the translation of the PureMVC Implementation Idioms and Best Practices document into Chinese. As with the original, examples are in ActionScript 3 for Adobe Flex, Flash and AIR.</P>
+<P>Zhong began work on the translation nearly 2 months ago, and had completed quite a bit when Zhang, unaware of Zhong's efforts produced a first draft of his own. This turned out to be a good thing, as the two collaborated to clear up their remaining areas of question, and deliver the nicely formatted and more closely proofread version you see today. I'm sure this will be a great tool for Chinese-speaking PureMVC developers.</P>
+Thanks again to Zhang and Zhong for your your efforts,<BR/>
+-=Cliff&gt;</P>
+]]>						
+							</Document>
 					</NodeMap>
 			</Node>
 		</Nodes>

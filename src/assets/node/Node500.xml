@@ -6,28 +6,46 @@
 					<NodeMap>
 						<Document 
 							name="PureMVC Goals and Benefits Overview"
-							url="http://puremvc.org/component/option,com_wrapper/Itemid,31/"/>
+							author="Cliff Hall"
+							doc_url="http://puremvc.org/component/option,com_wrapper/Itemid,31/"
+							pic="PureMVC-GnB-English.png"><![CDATA[
+<P>A short document by the PureMVC framework architect outlining the goals that drove the creation of the framework, and the primary benefits associated with its use.</P>
+]]>						
+							</Document>
 					</NodeMap>
 			</Node>
 			<Node id="5001" name="Conceptual Diagram" thumb="box">
 					<NodeMap>
 						<Document 
 							name="PureMVC Conceptual Diagram"
-							url="http://puremvc.org/component/option,com_wrapper/Itemid,34/"/>
+							author="Cliff Hall"
+							doc_url="http://puremvc.org/component/option,com_wrapper/Itemid,34/"
+							pic="PureMVC-CD-English.png"><![CDATA[
+<P>A conceptual diagram showing the general relationships between the actors in a PureMVC-based application. Created by the framework architect.</P>
+]]>						</Document>
 					</NodeMap>
 			</Node>
 			<Node id="5002" name="Framework Overview" thumb="box">
 					<NodeMap>
 						<Document 
 							name="PureMVC Framework Overview with UML"
-							url="http://puremvc.org/component/option,com_wrapper/Itemid,35/"/>
+							author="Cliff Hall"
+							doc_url="http://puremvc.org/component/option,com_wrapper/Itemid,35/"
+							pic="PureMVC-FO-English.png"><![CDATA[
+<P>The framework architect introduces the actors, their general roles, responsibilities and collaborations. Simple UML diagrams are used to show the relationships and interface usage.</P>
+]]>						</Document>
 					</NodeMap>
 			</Node>
 			<Node id="5003" name="Best Practices" thumb="box">
 					<NodeMap>
 						<Document 
 							name="PureMVC Best Practices and Implementation Idioms"
-							url="http://puremvc.org/component/option,com_wrapper/Itemid,174/"/>
+							author="Cliff Hall"
+							doc_url="http://puremvc.org/component/option,com_wrapper/Itemid,174/"
+							pic="PureMVC-IIBP-English.png"><![CDATA[
+<P>An in-depth 'must read' document written by the framwork architect, describing the best practices for use of the framework in your applications.</P>
+<P>While the examples are in ActionScript 3 and Flex, the narrative focuses on delivering a platform neutral view of the framework.</P>
+]]>						</Document>
 					</NodeMap>
 			</Node>
 		</Nodes>

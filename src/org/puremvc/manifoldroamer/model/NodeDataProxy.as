@@ -23,7 +23,7 @@ package org.puremvc.manifoldroamer.model
 		public function getInstance( nodeData:XML ):NodeDataVO
 		{
 			var element:String = nodeData.localName();
-			var vo:NodeDataVO;
+			var vo:NodeDataVO = new NodeDataVO( );
 
 			switch ( element ) {
 				case NodeDataVO.CONTRIBUTOR:
@@ -34,8 +34,10 @@ package org.puremvc.manifoldroamer.model
 					vo = new DemoVO( nodeData );
 					break;
 
-				case NodeDataVO.DOCUMENT:
-					vo = new DocumentVO( nodeData );
+				case NodeDataVO.DOCUMENT: // Populate DocumentVO
+					var dvo:DocumentVO = new DocumentVO( nodeData );
+					dvo.pic = prepend( configProxy.document.@pic_pre, dvo.pic );
+					vo = dvo;
 					break;
 
 				case NodeDataVO.FRAMEWORK:
@@ -44,7 +46,7 @@ package org.puremvc.manifoldroamer.model
 
 				case NodeDataVO.SHOWCASE: // Populate ShowcaseVO
 					var svo:ShowcaseVO = new ShowcaseVO( nodeData );
-					svo.pic = configProxy.showcase.@pic_pre + svo.pic;
+					svo.pic = prepend( configProxy.showcase.@pic_pre, svo.pic );
 					vo = svo;
 					break;
 				case NodeDataVO.SITE:
@@ -59,15 +61,19 @@ package org.puremvc.manifoldroamer.model
 					vo = new UtilityVO( nodeData );
 					break;
 
-				default:
-					vo = new NodeDataVO( );
-					break;
 			}
 
 			return vo;
 		}
 		
-		
+		private function prepend( pre:String, url:String ):String
+		{
+			return ( isAbsolute(url) )? url : pre + url;
+		}
+		private function isAbsolute(url:String):Boolean
+		{
+			return ( url.search("http") == 0);
+		}
 		
 		private function get configProxy():ConfigProxy
 		{

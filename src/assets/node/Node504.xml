@@ -5,8 +5,18 @@
 			<Node id="5040" name="Best Practices" thumb="box">
 					<NodeMap>
 						<Document 
-							name="PureMVC Best Practices and Implementation Idioms (Russian Translation)"
-							url="http://puremvc.org/component/option,com_wrapper/Itemid,193/"/>
+							name="Best Practices and Implementation Idioms (Russian Translation)"
+							author="Cliff Hall (Translated by Denis Sheremetov, et al."
+							doc_url="http://puremvc.org/component/option,com_wrapper/Itemid,193/"
+							pic="PureMVC-IIBP-Russian.png"><![CDATA[
+<P>I'm pleased to announce that Russia has become the fifth nation to join the PureMVC Union!</P>
+<P>Along with the Germany, China, France, and English-speaking countries, Russia now enjoys a native-language resource for learning the PureMVC Framework.</P>
+<P>It has taken several months of hard work, and the largest group of translators yet working to create the final product from the original document.</P>
+<P>But finally, the PureMVC Implementation Idioms and Best Practices document is available in Russian ( Идиомы реализации и лучшие практики ) thanks to this hard-working group of translators: Denis Sheremetov, Denis Volokh, Dmitry 'Reijii', Roman Pavlenk and Rostislav ‘RostislavR’ Siryk.</P>
+<P>A heartfelt spasiba goes out to Denis and crew - your efforts are much appreciated!<BR/>
+-=Cliff&gt;</P>
+]]>						
+							</Document>
 					</NodeMap>
 			</Node>
 		</Nodes>
