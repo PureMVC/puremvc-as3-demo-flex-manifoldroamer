@@ -37,6 +37,7 @@ package org.puremvc.manifoldroamer.model
 				case NodeDataVO.DOCUMENT: // Populate DocumentVO
 					var dvo:DocumentVO = new DocumentVO( nodeData );
 					dvo.pic = prepend( configProxy.document.@pic_pre, dvo.pic );
+					dvo.doc_url = prepend( configProxy.document.@doc_pre, dvo.doc_url );
 					vo = dvo;
 					break;
 

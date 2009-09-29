@@ -6,7 +6,7 @@
 					<NodeMap>
 						<Document 
 							name="Best Practices and Implementation Idioms (French Translation)"
-							doc_url="http://puremvc.org/component/option,com_wrapper/Itemid,175/"
+							doc_url="PureMVC_Implementation_Idiomes_et_Meilleures_Pratiques.pdf"
 							pic="PureMVC-IIBP-French.png"><![CDATA[
 <P>I’d just like to send out a merci beaucoup to Eric La Rocca, who painstakingly translated the PureMVC Implementation Idioms and Best Practices document into French ( Implémentation Idiomes et Meilleures Pratiques ).</P>
 <P>This effort took nearly a month to complete, supported by a collaborative exchange between Eric and myself, with many clarifications and corrections made. Requests for this have come from many French developers, and we hope that this will serve their needs well for the time being, as the other various docs are translated.</P>

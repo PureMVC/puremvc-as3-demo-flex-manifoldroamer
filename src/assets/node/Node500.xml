@@ -7,7 +7,7 @@
 						<Document 
 							name="PureMVC Goals and Benefits Overview"
 							author="Cliff Hall"
-							doc_url="http://puremvc.org/component/option,com_wrapper/Itemid,31/"
+							doc_url="PureMVC_Framework_Goals_and_Benefits.pdf"
 							pic="PureMVC-GnB-English.png"><![CDATA[
 <P>A short document by the PureMVC framework architect outlining the goals that drove the creation of the framework, and the primary benefits associated with its use.</P>
 ]]>						
@@ -19,7 +19,7 @@
 						<Document 
 							name="PureMVC Conceptual Diagram"
 							author="Cliff Hall"
-							doc_url="http://puremvc.org/component/option,com_wrapper/Itemid,34/"
+							doc_url="PureMVC_Conceptual_and_Intro.pdf"
 							pic="PureMVC-CD-English.png"><![CDATA[
 <P>A conceptual diagram showing the general relationships between the actors in a PureMVC-based application. Created by the framework architect.</P>
 ]]>						</Document>
@@ -30,7 +30,7 @@
 						<Document 
 							name="PureMVC Framework Overview with UML"
 							author="Cliff Hall"
-							doc_url="http://puremvc.org/component/option,com_wrapper/Itemid,35/"
+							doc_url="PureMVC_Framework_Overview_with_UML.pdf"
 							pic="PureMVC-FO-English.png"><![CDATA[
 <P>The framework architect introduces the actors, their general roles, responsibilities and collaborations. Simple UML diagrams are used to show the relationships and interface usage.</P>
 ]]>						</Document>
@@ -41,7 +41,7 @@
 						<Document 
 							name="PureMVC Best Practices and Implementation Idioms"
 							author="Cliff Hall"
-							doc_url="http://puremvc.org/component/option,com_wrapper/Itemid,174/"
+							doc_url="PureMVC_Implementation_Idioms_and_Best_Practices.pdf"
 							pic="PureMVC-IIBP-English.png"><![CDATA[
 <P>An in-depth 'must read' document written by the framwork architect, describing the best practices for use of the framework in your applications.</P>
 <P>While the examples are in ActionScript 3 and Flex, the narrative focuses on delivering a platform neutral view of the framework.</P>

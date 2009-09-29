@@ -7,7 +7,8 @@
 			      forum_pre="http://forums.puremvc.org/index.php?"
 			      docs_pre="http://puremvc.org/pages/docs/"/>
 		<Showcase pic_pre="http://puremvc.org/images/stories/showcase/"/>
-		<Document pic_pre="http://puremvc.org/pages/docs/current/doc_thumbs/"/>
+		<Document pic_pre="http://puremvc.org/pages/docs/current/doc_thumbs/"
+		          doc_pre="http://puremvc.org/pages/docs/current/"/>
 		<Node id="1"/>
 	</Service>
 </ServiceConfig>
