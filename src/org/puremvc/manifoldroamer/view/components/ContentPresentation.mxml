@@ -11,8 +11,8 @@
 
 	<mx:Script>
 		<![CDATA[
-			import org.puremvc.manifoldroamer.model.vo.DocumentVO;
-			[Bindable] public var nodeData:DocumentVO;
+			import org.puremvc.manifoldroamer.model.vo.PresentationVO;
+			[Bindable] public var nodeData:PresentationVO;
 			[Bindable] public var targetURL:String;
 
 			public function readURL(url:String):void
@@ -24,25 +24,26 @@
 		]]>
 	</mx:Script>
 	
-	<!-- DOCUMENT CONTENT -->
+	<!-- PRESENTATION CONTENT -->
 	<mx:HBox width="80%">
 		
 		<mx:VBox horizontalAlign="right" width="50%" >
-			<!-- PROJECT -->
+			<!-- PRESENTATION -->
 			<mx:HBox verticalAlign="middle">
-				<mx:Label fontFamily="BlueHighway" color="#0000FF" fontSize="24" text="DOCUMENT"/>
+				<mx:Label fontFamily="BlueHighway" color="#0000FF" fontSize="24" text="PRESENTATION"/>
 			</mx:HBox>
-			<mx:Label fontFamily="BlueHighway" fontSize="16" text="{nodeData.name}"/>
+			<mx:Label fontFamily="BlueHighway" fontSize="24" text="{nodeData.name}"/>
 	
 			<!-- AUTHOR -->
 			<mx:HBox verticalAlign="middle">
-				<mx:Label fontFamily="BlueHighway" color="#0000FF" fontSize="24" text="AUTHOR"/>
+				<mx:Label fontFamily="BlueHighway" color="#0000FF" fontSize="24" text="SPEAKER"/>
 			</mx:HBox>
-			<mx:Label fontFamily="BlueHighway" fontSize="16" text="{nodeData.author}"/> 
+			<mx:Label fontFamily="BlueHighway" fontSize="24" text="{nodeData.speaker}"/> 
 	
 			<!-- BUTTONS -->
 			<mx:HBox verticalAlign="middle">
-				<mx:Button label="Read Document" click="readURL(nodeData.doc_url)"/>
+				<mx:Button label="Visit Speaker"  click="readURL(nodeData.speaker_url)"/>
+				<mx:Button label="View Presentation" click="readURL(nodeData.site_url)"/>
 			</mx:HBox>
 	
 			<!-- ABOUT -->
@@ -50,7 +51,7 @@
 		</mx:VBox>
 	
 		<!-- PIC -->
-		<view:SmoothImage id="pic" source="{nodeData.pic}"  width="50%" maintainAspectRatio="true" />
+		<view:SmoothImage id="pic" source="{nodeData.pic}" width="50%" maintainAspectRatio="true" />
 	
 	</mx:HBox>	
 	

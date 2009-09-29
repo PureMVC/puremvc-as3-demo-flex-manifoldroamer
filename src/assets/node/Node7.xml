@@ -9,9 +9,9 @@
 					<Presentation 
 						name="PureMVC Standard Version Overview" 
 						site_url="http://puremvc.tv/#P100/"
-						author="Cliff Hall"
-						author_url="http://futurescale.com"
-						pic="http://puremvc.tv/assets/icon/standard/title.png">
+						speaker="Cliff Hall"
+						speaker_url="http://futurescale.com"
+						pic="http://puremvc.tv/assets/art/standard/Title.png">
 <![CDATA[
 <P>A platform and language neutral introduction to the PureMVC Standard Version Framework delivered as a slideshow narrated by Cliff Hall on PureMVC TV.</P>
 ]]>						
@@ -25,9 +25,9 @@
 					<Presentation 
 						name="PureMVC MultiCore Version Overview" 
 						site_url="http://puremvc.tv/#P002/"
-						author="Cliff Hall"
-						author_url="http://futurescale.com"
-						pic="http://puremvc.tv/assets/icon/multicore/title.png">
+						speaker="Cliff Hall"
+						speaker_url="http://futurescale.com"
+						pic="http://puremvc.tv/assets/art/multicore/Title.png">
 <![CDATA[
 <P>A platform and language neutral introduction to the PureMVC MultiCore Version Framework delivered as a slideshow narrated by Cliff Hall on PureMVC TV.</P>
 ]]>						
@@ -41,9 +41,9 @@
 					<Presentation 
 						name="PureMVC State Machine Utility Overview" 
 						site_url="http://puremvc.tv/#P003/"
-						author="Cliff Hall"
-						author_url="http://futurescale.com"
-						pic="http://puremvc.tv/assets/icon/statemachine/title.png">
+						speaker="Cliff Hall"
+						speaker_url="http://futurescale.com"
+						pic="http://puremvc.tv/assets/art/statemachine/Title.png">
 <![CDATA[
 <P>A platform and language neutral introduction to the PureMVC State Machine Utility delivered as a slideshow narrated by Cliff Hall on PureMVC TV.</P>
 ]]>						
@@ -55,11 +55,11 @@
 			<Node id="703" name="Getting in the Groove" thumb="box">
 				<NodeMap>
 					<Presentation 
-						name="Getting in the Groove: The Creation of Media Turbine." 
+						name="Getting in the Groove" 
 						site_url="http://puremvc.tv/#P004/"
-						author="Cliff Hall"
-						author_url="http://futurescale.com"
-						pic="http://puremvc.tv/assets/icon/groove/title.png">
+						speaker="Cliff Hall"
+						speaker_url="http://futurescale.com"
+						pic="http://puremvc.tv/assets/art/groove/Title.png">
 <![CDATA[
 <P>Just a short time ago, I upgraded my old <a href="http://seaofarrows.com" target="_blank"/>Sea of Arrows</A> music site to a Flex-based PureMVC MultiCore application.</P>
 <P>I had grown a bit tired of the old site which was a terrible HTML/Flash thing that had been thrown together in haste. Talk about the shoemaker's kids running around barefoot. So I reasoned that the overhaul could stand as a non-trivial PureMVC / Multicore / Pipes / StateMachine demo and went for it.</P>
@@ -79,26 +79,19 @@
 					<Presentation 
 						name="Framework Shootout at the SilvaFUG Corral" 
 						site_url="https://admin.adobe.acrobat.com/_a200985228/p12266504/"
-						author="Luke Bayes and Ali Mills"
-						author_url="http://www.asserttrue.com/articles/2007/10/17/silvafug-application-frameworks-presentation"
-						pic="http://puremvc.org/images/stories/SilvaFUGFrameworksPreso.jpg">
+						speaker="Luke Bayes and Ali Mills"
+						speaker_url="http://www.asserttrue.com/articles/2007/10/17/silvafug-application-frameworks-presentation"
+						pic="PureMVC-Preso-SilvaFUG.png">
 <![CDATA[
-<P>Image Luke Bayes and Ali Mills of PatternPark really did their homework as they prepared for their recent presentation for the Silicon Valley Flex Users Group (SilvaFUG), held at Adobe's offices in San Francisco.</P>
+<P>Luke Bayes and Ali Mills of PatternPark really did their homework as they prepared for their recent presentation for the Silicon Valley Flex Users Group (SilvaFUG), held at Adobe's offices in San Francisco.</P>
 <P>They gave their assessments of 9 different frameworks and toolkits for creating Flex applications. Reviewed and ranked were Cairngorm, PureMVC, ARP, MVCS, Flest, Model-Glue: Flex, ServerBox Foundry, Guasax, and Slide.  They shared their experiences with each, and ranked them based on Approachability, Flexibility and Scalability.</P>
 <P>In order to evaluate the frameworks on an equal basis, they designed a simple task list application, and attempted to build it using each of the frameworks.</P>
 <P>And the final verdict? Of all 9 frameworks considered, PureMVC was ranked most approachable, flexible and scalable.</P>
 <P>Luke Bayes writes in his follow up: </P>
 <P><I>
-    "If you don’t have the patience to watch the whole thing online our conclusion was that PureMVC by Cliff Hall beats out the alternatives.<BR/>
-    We prefer PureMVC because of:<BR/>
-    <UL>
-    <LI>Composition over inheritence</LI>
-    <LI>Liberal use of Interfaces</LI>
-    <LI>Indirection is used but not overwhelming</LI>
-    <LI>Instance members hide singleton references from application code</LI>
-    <LI>MXML views can be extremely thin</LI>
-    <LI>Benefits of Cairngorm, with few of the disadvantages.</LI>
-    </UL></I></P>
+    "If you don’t have the patience to watch the whole thing online our conclusion was that PureMVC by Cliff Hall beats out the alternatives. We prefer PureMVC because of:
+    composition over inheritence, liberal use of interfaces, indirection is used but not overwhelming, instance members hide singleton references from application code, and MXML views can be extremely thin, Benefits of Cairngorm, with few of the disadvantages.
+    </I></P>
     <P>After delivering the findings of their investigation, the audience became very involved. A lot of good and practical questions were raised and a healthy discussion ensued. Source code for their TooDoo application written in both Cairngorm and PureMVC are available on their blog, as well as the slideshow and a streaming video recording of the presentation.</P>
 ]]>						
 						</Presentation>
@@ -109,11 +102,11 @@
 			<Node id="705" name="Atlanta Meetup" thumb="box">
 				<NodeMap>
 					<Presentation 
-						name="Adobe Flex User Group Atlanta: PureMVC Framework 12/18/2008" 
+						name="PureMVC @ Atlanta Meetup 12/18/2008" 
 						site_url="http://adobechats.adobe.acrobat.com/p88582617/"
-						author="Cliff Hall"
-						author_url="http://futurescale.com"
-						pic="http://puremvc.tv/assets/icon/standard/title.png">
+						speaker="Cliff Hall"
+						speaker_url="http://futurescale.com"
+						pic="PureMVC-Preso-AAFUG.png">
 <![CDATA[
 <P>Cliff Hall recently delivered an introductory talk on the PureMVC framework to the Adobe Flex User Group in Atlanta. The recording is available online.</P>
 ]]>						
@@ -125,13 +118,13 @@
 			<Node id="706" name="San Diego Meetup" thumb="box">
 				<NodeMap>
 					<Presentation 
-						name="Adobe User Group San Diego: PureMVC Framework 1/21/2009" 
+						name="PureMVC @ San Diego Meetup 1/21/2009" 
 						site_url="http://experts.na3.acrobat.com/p41582221/"
-						author="Cliff Hall"
-						author_url="http://futurescale.com"
-						pic="http://puremvc.tv/assets/icon/standard/title.png">
+						speaker="Cliff Hall"
+						speaker_url="http://futurescale.com"
+						pic="PureMVC-Preso-SDAUG.png">
 <![CDATA[
-<P>Cliff Hall recently delivered an introductory talk on the PureMVC framework to the Adobe User Group in San Diego. The recording is available online.</P>
+<P>Cliff Hall delivered an introductory talk on the PureMVC framework to the Adobe User Group in San Diego via Acrobat Connect. The recording is available online.</P>
 ]]>						
 						</Presentation>
 				</NodeMap>
@@ -143,9 +136,9 @@
 					<Presentation 
 						name="Adobe TV: 'Hello World' Intro to PureMVC" 
 						site_url="http://tv.adobe.com/watch/adc-presents/intro-to-puremvc/"
-						author="Cornel Creanga"
-						author_url="http://cornelcreanga.com/"
-						pic="http://thumbnails.tv.adobe.com/adc-presents100.jpg">
+						speaker="Cornel Creanga"
+						speaker_url="http://cornelcreanga.com/"
+						pic="PureMVC-Preso-ADC-Intro.png">
 <![CDATA[
 <P>Cornel Creanga has posted a short video introduction to PureMVC with a Flex-based 'Hello World' application sample. It focuses on the key actors involved in sending a message to the server, and then displaying the response.</P>
 ]]>						
