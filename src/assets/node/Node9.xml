@@ -8,8 +8,10 @@
 				<NodeMap>
 					<Site 
 						name="PureMVC on Twitter" 
-						url="http://twitter.com/puremvc"
-						pic="http://puremvc.org/pages/images/PureMVC-on-Twitter.jpg"/>
+						site_url="http://twitter.com/puremvc"
+						pic="PureMVC-Site-Twitter.png"><![CDATA[<P>Yes, we tweet.</P><P>Occasionally.</P><P> When we here something interesting about PureMVC, you'll often here it here first.</P><P>So, like... Follow us. </P><P>On Twitter.</P> 
+]]>							
+					</Site>
 				</NodeMap>
 			</Node>
 
@@ -18,8 +20,11 @@
 				<NodeMap>
 					<Site 
 						name="Bloggers on PureMVC" 
-						url="http://blogsearch.google.com/blogsearch?q=puremvc"
-						pic="http://puremvc.org/pages/images/PureMVC-Blogosphere.png"/>
+						site_url="http://blogsearch.google.com/blogsearch?q=puremvc"
+						pic="PureMVC-Site-GoogleBlogSearch.png"><![CDATA[<P>What's going on in the PureMVC Blog-O-Sphere?</P>
+<P>Google Blog Search makes it easy to keep a pulse on the PureMVC community with the most relevant and recent PureMVC-related posts.</P> 
+]]>							
+					</Site>
 				</NodeMap>
 			</Node>
 
@@ -28,8 +33,11 @@
 				<NodeMap>
 					<Site 
 						name="PureMVC Developers Group on Linked-In" 
-						url="http://www.linkedin.com/groupInvitation?gid=71061"
-						pic="http://puremvc.org/pages/images/puremvc-dev-group.jpg"/>
+						site_url="http://www.linkedin.com/groupInvitation?gid=71061"
+						pic="PureMVC-Site-LinkedIn.png"><![CDATA[<P>LinkedIn is an interconnected network of experienced professionals from around the world.</P>
+<P>Join the PureMVC Developers Group on Linked In and connect with a community of talented professionals who use PureMVC.</P>
+]]>							
+					</Site>
 				</NodeMap>
 			</Node>
 
@@ -38,8 +46,12 @@
 				<NodeMap>
 					<Site 
 						name="PureMVC Forums" 
-						url="http://forums.puremvc.com"
-						pic=""/>
+						site_url="http://forums.puremvc.org"
+						pic="PureMVC-Site-Forums.png"><![CDATA[<P>The PureMVC Architect's Lounge is a the heart of the PureMVC community.</P>
+<P>The forums have nearly 2000 members, all helping to push forward the best practices with rich discussions about real-world issues in RIA development with PureMVC.</P>
+<P>Unfortunately, as PureMVC became more popular, the forums also became <U><A href="http://puremvc.org/content/view/131/1/" target="_blank">a magnet for spammers</A></U>. The forums are open to everyone, but in order to post, you must have an account on <U><A href="http://www.linkedin.com/groupInvitation?gid=71061" target="_blank">Linked In</A></P>
+]]>							
+					</Site>
 				</NodeMap>
 			</Node>
 
@@ -48,8 +60,12 @@
 				<NodeMap>
 					<Site 
 						name="PureMVC Job Postings Around the Web" 
-						url="http://jobs.puremvc.com"
-						pic=""/>
+						site_url="http://jobs.puremvc.org"
+						pic="PureMVC-Site-SimplyHired.png"><![CDATA[<P><P>Simply Hired provides PureMVC with a Jobs board with filters you control.<P> 
+<P>If you're in the market for a PureMVC job, this is the quickest way to find what you're looking for.</P>
+<P>Recruiters, post a PureMVC related job for just 5$ for 15 days. This is the most targeted way to reach talented PureMVC developers!</P>
+]]>							
+					</Site>
 				</NodeMap>
 			</Node>
 
@@ -59,8 +75,10 @@
 				<NodeMap>
 					<Site 
 						name="Wikipedia on PureMVC" 
-						url="http://en.wikipedia.org/wiki/PureMVC"
-						pic="http://upload.wikimedia.org/wikipedia/en/8/85/PureMVC-Icon.jpg"/>
+						site_url="http://en.wikipedia.org/wiki/PureMVC"
+						pic="PureMVC-Site-Wikipedia.png"><![CDATA[<P>Help educate the world about the PureMVC framework as part of the largest free, communal body of knowledge ever created!</P>
+					]]>							
+					</Site>
 				</NodeMap>
 			</Node>
 			
@@ -69,8 +87,11 @@
 				<NodeMap>
 					<Site 
 						name="PureMVC on Facebook" 
-						url="http://www.facebook.com/home.php#/pages/PureMVC/128081860951"
-						pic="http://upload.wikimedia.org/wikipedia/en/8/85/PureMVC-Icon.jpg"/>
+						site_url="http://www.facebook.com/home.php#/pages/PureMVC/128081860951"
+						pic="PureMVC-Site-Facebook.png"><![CDATA[<P>Yes, there is a PureMVC Facebook page!</P>
+<P>Join us on the largest social network ever created.</P>
+					]]>							
+					</Site>
 				</NodeMap>
 			</Node>
 

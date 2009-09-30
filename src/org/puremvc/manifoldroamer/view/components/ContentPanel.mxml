@@ -6,6 +6,7 @@
 		layout="vertical"
 		horizontalAlign="center" 
 		title="{nodeData.type}"
+		titleIcon="@Embed(source='assets/thumb/flake.png')"
 		>
 	<mx:Metadata>
 		[Event(name="hideContent", type="flash.events.Event")]
@@ -13,6 +14,7 @@
 
 	<mx:Script>
 		<![CDATA[
+			import org.puremvc.manifoldroamer.model.vo.SiteVO;
 			import org.puremvc.manifoldroamer.model.vo.PresentationVO;
 			import mx.core.UIComponent;
 			import org.puremvc.manifoldroamer.model.vo.DocumentVO;
@@ -40,6 +42,7 @@
 				if (n is DocumentVO) index = 0;
 				if (n is ShowcaseVO) index = 1;
 				if (n is PresentationVO) index = 2;
+				if (n is SiteVO) index = 3;
 				return index;				
 			}
 			
@@ -50,6 +53,7 @@
 		<view:ContentDocument id="contentDocument" nodeData="{nodeData as DocumentVO}" readURL="readURL(contentDocument.targetURL)"/>
 		<view:ContentShowcase id="contentShowcase" nodeData="{nodeData as ShowcaseVO}" readURL="readURL(contentShowcase.targetURL)"/>
 		<view:ContentPresentation id="contentPresentation" nodeData="{nodeData as PresentationVO}" readURL="readURL(contentPresentation.targetURL)"/>
+		<view:ContentSite id="contentSite" nodeData="{nodeData as SiteVO}" readURL="readURL(contentSite.targetURL)"/>
 	</mx:ViewStack>
 
 	<!--mx:TextArea width="75%" height="75%" text="{nodeData.nodeData.toXMLString()}"/-->

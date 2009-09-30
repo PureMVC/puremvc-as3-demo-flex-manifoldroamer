@@ -8,8 +8,13 @@
 				<NodeMap>
 					<Site 
 						name="CVSDude: The Version Control Experts" 
-						url="http://cvsdude.com"
-						pic="http://cvsdude.com/static/images/WebsiteHomepage/CVS-Corporate_Logo_RGB-Larger.gif"/>
+						site_url="http://cvsdude.com"
+						pic="PureMVC-Site-CVSDude.png"><![CDATA[
+<P>CVSDude is the leading provider of Subversion Hosting, making web-based collaborative development safe and affordable. </P>
+<P>Long-time supporters of Open Source projects, CVSDude has provided technical support and reliable hosting for the Trac-integrated Subversion repositories for our 90+ PureMVC ports, demos and utilities.</P>
+<P>Without CVSDude, the PureMVC project would not be possible. Thanks, 'Dudes.</P> 
+]]>							
+					</Site>
 				</NodeMap>
 			</Node>
 
@@ -17,9 +22,14 @@
 			<Node id="102" name="Futurescale" thumb="box">
 				<NodeMap>
 					<Site 
-						name="Futurescale, Inc: Makers and maintainers of PureMVC" 
-						url="http://futurescale.com"
-						pic="http://www.adobe.com/cfusion/partnerportal/index.cfm?event=downloadfile&fileoid=315304"/>
+						name="Futurescale, Inc" 
+						site_url="http://futurescale.com"
+						pic="PureMVC-Site-Futurescale.png"><![CDATA[
+<P>Futurescale offers architectural guidance and development expertise to aid in the implementation of Rich Internet Applications, specifically on the ActionScript-based Flex, Flash, AIR platforms.</P>
+<P>Since PureMVC's introduction in late 2006, Futurescale founder and framework architect Cliff Hall has worked tirelessly to support the project. Over that time, he has logged logged nearly 18 man-days answering questions in forums, given in-person PureMVC developer talks in 4 countries and online to global audiences.</P>
+<P>Futurescale supports the project financially by providing architecture, development, hosting, and administrative maintenance for the 90+ PureMVC ports, demos and utilities currently making up the project.</P>
+]]>							
+					</Site>
 				</NodeMap>
 			</Node>
 

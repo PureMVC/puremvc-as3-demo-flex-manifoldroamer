@@ -51,8 +51,10 @@ package org.puremvc.manifoldroamer.model
 					vo = svo;
 					break;
 
-				case NodeDataVO.SITE:
-					vo = new SiteVO( nodeData );
+				case NodeDataVO.SITE: // Populate SiteVO
+					var stvo:SiteVO = new SiteVO( nodeData );
+					stvo.pic = prepend( configProxy.site.@pic_pre, stvo.pic );
+					vo = stvo;
 					break;
 
 				case NodeDataVO.PRESENTATION: // Populate PresentationVO

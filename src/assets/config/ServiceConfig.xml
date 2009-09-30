@@ -8,6 +8,7 @@
 			      docs_pre="http://puremvc.org/pages/docs/"/>
 		<Showcase pic_pre="http://puremvc.org/images/stories/showcase/"/>
 		<Presentation pic_pre="http://puremvc.org/pages/images/preso_thumbs/"/>
+		<Site pic_pre="http://puremvc.org/pages/images/site_thumbs/"/>
 		<Document pic_pre="http://puremvc.org/pages/docs/current/doc_thumbs/"
 		          doc_pre="http://puremvc.org/pages/docs/current/"/>
 		<Node id="1"/>

@@ -83,16 +83,13 @@
 						speaker_url="http://www.asserttrue.com/articles/2007/10/17/silvafug-application-frameworks-presentation"
 						pic="PureMVC-Preso-SilvaFUG.png">
 <![CDATA[
-<P>Luke Bayes and Ali Mills of PatternPark really did their homework as they prepared for their recent presentation for the Silicon Valley Flex Users Group (SilvaFUG), held at Adobe's offices in San Francisco.</P>
+<P>Luke Bayes and Ali Mills of PatternPark really did their homework as they prepared their presentation for the Silicon Valley Flex Users Group (SilvaFUG), held at Adobe's offices in San Francisco.</P>
 <P>They gave their assessments of 9 different frameworks and toolkits for creating Flex applications. Reviewed and ranked were Cairngorm, PureMVC, ARP, MVCS, Flest, Model-Glue: Flex, ServerBox Foundry, Guasax, and Slide.  They shared their experiences with each, and ranked them based on Approachability, Flexibility and Scalability.</P>
 <P>In order to evaluate the frameworks on an equal basis, they designed a simple task list application, and attempted to build it using each of the frameworks.</P>
 <P>And the final verdict? Of all 9 frameworks considered, PureMVC was ranked most approachable, flexible and scalable.</P>
 <P>Luke Bayes writes in his follow up: </P>
-<P><I>
-    "If you don’t have the patience to watch the whole thing online our conclusion was that PureMVC by Cliff Hall beats out the alternatives. We prefer PureMVC because of:
-    composition over inheritence, liberal use of interfaces, indirection is used but not overwhelming, instance members hide singleton references from application code, and MXML views can be extremely thin, Benefits of Cairngorm, with few of the disadvantages.
-    </I></P>
-    <P>After delivering the findings of their investigation, the audience became very involved. A lot of good and practical questions were raised and a healthy discussion ensued. Source code for their TooDoo application written in both Cairngorm and PureMVC are available on their blog, as well as the slideshow and a streaming video recording of the presentation.</P>
+<P><U>"If you don’t have the patience to watch the whole thing online our conclusion was that PureMVC by Cliff Hall beats out the alternatives. We prefer PureMVC because of: Composition over inheritence, liberal use of interfaces, indirection is used but not overwhelming, instance members hide singleton references from application code, and MXML views can be extremely thin. All the benefits of Cairngorm, with few of the disadvantages.
+    </U></P><P>After delivering the findings of their investigation, the audience became very involved. A lot of good and practical questions were raised and a healthy discussion ensued. Source code for their TooDoo application written in both Cairngorm and PureMVC are available on their blog, as well as the slideshow and a streaming video recording of the presentation.</P>
 ]]>						
 						</Presentation>
 				</NodeMap>

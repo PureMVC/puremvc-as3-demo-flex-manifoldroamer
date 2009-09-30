@@ -136,6 +136,11 @@ package org.puremvc.manifoldroamer.model
 			return service..Document[0] as XML;
 		}
 
+		public function get site():XML
+		{
+			return service..Site[0] as XML;
+		}
+
 		public function get presentation():XML
 		{
 			return service..Presentation[0] as XML;
