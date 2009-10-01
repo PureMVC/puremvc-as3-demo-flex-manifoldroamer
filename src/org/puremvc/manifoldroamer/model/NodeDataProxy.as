@@ -50,6 +50,7 @@ package org.puremvc.manifoldroamer.model
 					prvo.forum 		= prepend( configProxy.project.@forum_pre, prvo.forum );
 					prvo.live 		= prepend( configProxy.project.@live_pre, prvo.live );
 					prvo.pic 		= prepend( configProxy.project.@pic_pre, prvo.pic );
+					prvo.shot		= prepend( configProxy.project.@shot_pre, prvo.shot );
 					prvo.repo 		= prepend( configProxy.project.@repo_pre, prvo.repo );
 					prvo.srcview 	= prepend( configProxy.project.@srcview_pre, prvo.srcview );
 					vo = prvo;

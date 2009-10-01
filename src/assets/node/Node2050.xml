@@ -60,8 +60,7 @@ After replacing your old PureMVC.swc (or source code tree) with the 2.0 version:
    3. Remove getMediatorName() methods from Mediator subclasses. This is implemented properly in the base class and does not have to be overridden.
    4. Refactor any calls to facade.notifyObservers to use facade.sendNotification instead. Remove any now-unneeded Notificaton creation; you only need to be passing the arguments to sendNotification, not a complete notification instance. Note that you should skip this step if you are creating and sending an instance of a custom Notification class. ]]></ReleaseNotes>						
 							
-							<Installation><![CDATA[
-Download the latest version of the Framework distribution and unzip to a directory on your system, such as:
+							<Installation><![CDATA[Download the latest version of the Framework distribution and unzip to a directory on your system, such as:
     C:/development
 
 This will create a folder like this:
@@ -121,7 +120,7 @@ In the Flash IDE, open the your FLA or Project, and go to:
 
     Edit -> Publish Settings -> ActionScript 3.0 Settings
     Add the PureMVC_AS3_X_Y/src folder to your classpath by clicking '+' icon to add a classpath, select it, then click the target icon to choose the folder.
-</P>]]></Installation>												
+    				]]></Installation>												
 						</Project>
 				</NodeMap>
 			</Node>
@@ -139,10 +138,34 @@ In the Flash IDE, open the your FLA or Project, and go to:
 						forum="topic=293.0"
 						owner="Cliff Hall"
 						owner_node="300"
+						shot="PureMVC-Shot-AS3-Std-UnitTests.png"
 						pic="PureMVC-Framework-AS3-Std.png">
-							<Description><![CDATA[<P>This is the description.</P>]]></Description>						
-							<ReleaseNotes><![CDATA[<P>These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. </P>]]></ReleaseNotes>						
-							<Installation><![CDATA[<P>These are the Installation Instructions. These are the Installation Instructions. These are the Installation Instructions. These are the Installation Instructions. These are the Installation Instructions. These are the Installation Instructions. These are the Installation Instructions. </P>]]></Installation>												
+							<Description><![CDATA[<P>These are the unit tests for the PureMVC AS3 Standard Version Framework</P>]]></Description>						
+							<ReleaseNotes><![CDATA[The Unit Tests for the PureMVC Framework for ActionScript 3 are written with FlexUnit. The distribution package is in ZIP format contains the AS3 source code for the Flex Unit tests, API documentation, and the FlexUnit SWC library. It does not contain the PureMVC framework that is in a separate download. 
+When you view the source code for the AS3 Framework, you initially see the results of these unit tests running in the right hand window. You should always see a green bar, indicating all tests have passed. 
+Every method of every framework class has at least one unit test associated with it, sometimes more. Each unit test, in turn generally makes several assertions. 
+If you modify the source code for the PureMVC framework for AS3, you should also create or modify the appropriate unit tests, and make sure that all tests still pass before building upon your modified version of the framework. 
+							]]></ReleaseNotes>						
+							<Installation><![CDATA[<B>Installing the Project Source Code</B>
+<U>From the archive</U>
+   * Download the latest source code archive.
+   * Unzip the source code zip to any folder on your disk. 
+        For instance: c:\development\
+   * You will see a PureMVC_AS3_UnitTests source folder. 
+      	For instance: c:\development\PureMVC_AS3_UnitTests
+
+<U>From the Repository</U>
+   * Use your  favorite SVN client to retrieve the latest source code release from the repository. 
+
+<U>Setup and Compile the Demo Using Flex Builder 3</U>
+   * Create a new Flex Project called 'PureMVC_AS3_UnitTests' in Flex Builder 3, pointing to the new source folder.
+   * Add the required libraries to the PureMVC_AS3_UnitTests project's build path.
+      * From the Flex Builder menu do: 
+      	Project -> Properties -> Flex Build Path -> Library Path -> Add SWC Folder
+      * Browse and select: 
+      	PureMVC_AS3_UnitTests/libs 
+      * Run PureMVC_AS3_UnitTests.mxml 
+							]]></Installation>												
 						</Project>
 				</NodeMap>
 			</Node>

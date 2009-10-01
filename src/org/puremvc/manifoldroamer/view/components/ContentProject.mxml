@@ -34,7 +34,7 @@
 	</mx:Script>
 	
 	<!-- PROJECT CONTENT -->
-	<mx:HBox width="80%">
+	<mx:HBox width="80%" horizontalAlign="center">
 
 		<mx:VBox horizontalAlign="right" width="50%" >
 			
@@ -62,7 +62,7 @@
 				<mx:Label fontFamily="BlueHighway" fontSize="24" text="{nodeData.owner}"/>
 			</mx:VBox>
 
-			<mx:HBox verticalAlign="middle">
+			<mx:HBox horizontalAlign="center">
 
 				<!-- VERSION-->
 				<mx:VBox horizontalAlign="right">
@@ -81,23 +81,39 @@
 		</mx:VBox>
 
 		<!-- PIC -->
-		<view:SmoothImage id="pic" source="{nodeData.pic}" width="50%" maintainAspectRatio="true" />
+		<view:SmoothImage id="pic" source="{nodeData.pic}" width="65%" maintainAspectRatio="true" />
 
 	</mx:HBox>	
+	
 	<mx:HRule width="50%"/>
+	
+	<!-- DESCRIPTION, RELEASE NOTES, INSTALLATION -->
 	<mx:ToggleButtonBar dataProvider="{detailStack}"/>
 	<mx:ViewStack id="detailStack" width="65%" creationPolicy="all" change="setStackHeight()">
+	
+		<!--DESCRIPTION -->
 		<mx:VBox label="Description">
-			<mx:Text id="txtDesc" width="100%" textAlign="left" fontFamily="BlueHighway" fontSize="20" htmlText="{nodeData.description}" resize="setStackHeight()"/>
+			<mx:Text id="txtDesc" width="100%" textAlign="center" fontFamily="BlueHighway" fontSize="20" htmlText="{nodeData.description}" resize="setStackHeight()"/>
 		</mx:VBox>
+		
+		<!-- RELEASE NOTES -->
 		<mx:VBox label="Release Notes">
 			<mx:Text id="txtRelease" width="100%" textAlign="left" fontFamily="Arial" fontSize="16" htmlText="{nodeData.release_notes}" resize="setStackHeight()"/>
 		</mx:VBox>
+		
+		<!-- INSTALLATION -->
 		<mx:VBox label="Installation">
 			<mx:Text id="txtInstall" width="100%" textAlign="left" fontFamily="Arial" fontSize="16" htmlText="{nodeData.installation}" resize="setStackHeight()"/>
 		</mx:VBox>
 	</mx:ViewStack>
+	
+	<mx:HRule width="50%"/>
+	
+	<mx:VBox horizontalAlign="center">
 
-
+		<!-- SCREENSHOT -->
+		<view:SmoothImage id="shot" source="{nodeData.shot}" width="100%" maintainAspectRatio="true" visible="{nodeData.shot!=''}" />
+		
+	</mx:VBox>
 	
 </mx:VBox>

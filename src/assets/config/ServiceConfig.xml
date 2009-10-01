@@ -9,6 +9,7 @@
 				 repo_pre="http://svn.puremvc.org/"
 				 srcview_pre="http://puremvc.org/docs/" 
 			     forum_pre="http://forums.puremvc.org/index.php?"
+			     shot_pre="http://puremvc.org/pages/images/screenshots/"
 			      />
 		<Showcase pic_pre="http://puremvc.org/images/stories/showcase/"/>
 		<Presentation pic_pre="http://puremvc.org/pages/images/preso_thumbs/"/>

@@ -11,6 +11,7 @@ package org.puremvc.manifoldroamer.model.vo
 	 *		docs="AS2/apidocs/frameset.html"
 	 *		srcview=""
 	 *		pic=""
+	 *		shot=""
 	 *		forum="board=13.0"
 	 * 		owner="Pedr Brown"
 	 * 		owner_node="304">
@@ -176,6 +177,16 @@ package org.puremvc.manifoldroamer.model.vo
 		public function set pic(url:String):void
 		{
 			nodeData.@pic = url;
+		} 
+
+		public function get shot():String
+		{
+			return nodeData.@shot;
+		} 
+		
+		public function set shot(url:String):void
+		{
+			nodeData.@shot = url;
 		} 
 
 	}
