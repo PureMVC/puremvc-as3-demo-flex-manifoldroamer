@@ -45,13 +45,13 @@ package org.puremvc.manifoldroamer.model
 
 				case NodeDataVO.PROJECT: // Populate ProjectVO
 					var prvo:ProjectVO = new ProjectVO( nodeData );
-					prvo.archive = prepend( configProxy.project.@archive_pre, prvo.archive );
-					prvo.docs = prepend( configProxy.project.@docs_pre, prvo.docs );
-					prvo.forum = prepend( configProxy.project.@forum_pre, prvo.forum );
-					prvo.live = prepend( configProxy.project.@live_pre, prvo.live );
-					prvo.pic = prepend( configProxy.project.@pic_pre, prvo.pic );
-					prvo.repo = prepend( configProxy.project.@repo_pre, prvo.repo );
-					prvo.srcview = prepend( configProxy.project.@srcview_pre, prvo.srcview );
+					prvo.archive	= prepend( configProxy.project.@archive_pre, prvo.archive );
+					prvo.docs 		= prepend( configProxy.project.@docs_pre, prvo.docs );
+					prvo.forum 		= prepend( configProxy.project.@forum_pre, prvo.forum );
+					prvo.live 		= prepend( configProxy.project.@live_pre, prvo.live );
+					prvo.pic 		= prepend( configProxy.project.@pic_pre, prvo.pic );
+					prvo.repo 		= prepend( configProxy.project.@repo_pre, prvo.repo );
+					prvo.srcview 	= prepend( configProxy.project.@srcview_pre, prvo.srcview );
 					vo = prvo;
 					break;
 

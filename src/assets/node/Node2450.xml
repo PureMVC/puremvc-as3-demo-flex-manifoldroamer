@@ -4,32 +4,44 @@
 		<Nodes>
 			<Node id="2451" name="Framework" thumb="box">	
 				<NodeMap>
-					<Framework 
-						name="PHP - Standard Version" 
+					<Project 
+						name="Pure MVC Standard Version for PHP" 
 						status="Production"
 						repo="PureMVC_PHP" 
 						tag="1.0.2"
 						version="1.0.2"
 						archive="PHP/PureMVC_PHP.zip" 
 						docs="PHP/docs"
-						live="http://puremvc.org/pages/demos/PHP/Demo_PHP_CSSZenGarden/?c=cssco"
-						forum="board=17.0"
-						owner="Hasan Otuome"/>
+						live="PHP/Demo_PHP_CSSZenGarden/?c=cssco"
+						forum="board=75.0"
+						owner="Hasan Otuome"
+						owner_node="323"
+						pic="PureMVC-Framework-PHP-Std.png">
+							<Description><![CDATA[<P>This is the description.</P>]]></Description>						
+							<ReleaseNotes><![CDATA[<P>These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. </P>]]></ReleaseNotes>						
+							<Installation><![CDATA[<P>These are the Installation Instructions. These are the Installation Instructions. These are the Installation Instructions. These are the Installation Instructions. These are the Installation Instructions. These are the Installation Instructions. These are the Installation Instructions. </P>]]></Installation>												
+						</Project>
 				</NodeMap>
 			</Node>
 			<Node id="2452" name="Unit Tests" thumb="box">
 				<NodeMap>
-					<Utility 
-						name="PHP - Standard Version Unit Tests" 
+					<Project 
+						name="PureMVC PHP Standard Version Unit Tests" 
 						status="Production"
 						repo="PureMVC_PHP_UnitTests" 
-						tag="UnitTests_1_0"
+						tag="1.0"
 						version="1.0"
-						archive="ObjectiveC/PureMVC_ObjectiveC_UnitTests.zip"
+						archive="PHP/PureMVC_PHP_UnitTests.zip"
 						live=""
 						docs=""
-						forum="board=837"
-						owner="Hasan Otuome"/>
+						forum="board=75"
+						owner="Hasan Otuome"
+						owner_node="323"
+						pic="PureMVC-Framework-PHP-Std.png">
+							<Description><![CDATA[<P>This is the description.</P>]]></Description>						
+							<ReleaseNotes><![CDATA[<P>These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. </P>]]></ReleaseNotes>						
+							<Installation><![CDATA[<P>These are the Installation Instructions. These are the Installation Instructions. These are the Installation Instructions. These are the Installation Instructions. These are the Installation Instructions. These are the Installation Instructions. These are the Installation Instructions. </P>]]></Installation>												
+						</Project>
 				</NodeMap>
 			</Node>
 			<Node id="2453" name="Demos" thumb="box"><NodeMap/></Node>

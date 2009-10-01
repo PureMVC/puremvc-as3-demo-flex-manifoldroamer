@@ -2,18 +2,24 @@
 <Node id="2500" name="Standard Version" thumb="flake">
 	<NodeMap>
 		<Nodes>
-			<Node id="2501" name="Framework" thumb="box">	
+			<Node id="2501" name="Framework and Unit Tests" thumb="box">	
 				<NodeMap>
-					<Framework 
-						name="Python - Standard Version Framework and Unit Tests" 
+					<Project 
+						name="PureMVC Standard Version and Unit Tests for Python" 
 						status="Production"
 						repo="PureMVC_Python" 
 						tag="1.1"
 						version="1.1"
 						archive="Python/PureMVC_Python.zip" 
 						docs="Python/docs"
-						forum="board=18.0"
-						owner="Toby de Havilland"/>
+						forum="board=76.0"
+						owner="Toby de Havilland"
+						owner_node="314"
+						pic="PureMVC-Framework-Python-Std.png">
+							<Description><![CDATA[<P>This is the description.</P>]]></Description>						
+							<ReleaseNotes><![CDATA[<P>These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. </P>]]></ReleaseNotes>						
+							<Installation><![CDATA[<P>These are the Installation Instructions. These are the Installation Instructions. These are the Installation Instructions. These are the Installation Instructions. These are the Installation Instructions. These are the Installation Instructions. These are the Installation Instructions. </P>]]></Installation>												
+						</Project>
 				</NodeMap>
 			</Node>
 			<Node id="2503" name="Demos" thumb="box"><NodeMap/></Node>

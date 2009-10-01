@@ -10,7 +10,7 @@
 						name="PureMVC Standard Version Overview" 
 						site_url="http://puremvc.tv/#P100/"
 						speaker="Cliff Hall"
-						speaker_url="http://futurescale.com"
+						speaker_url="http://content.futurescale.com/component/option,com_contact/task,view/contact_id,1/Itemid,54/"
 						pic="http://puremvc.tv/assets/art/standard/Title.png">
 <![CDATA[
 <P>A platform and language neutral introduction to the PureMVC Standard Version Framework delivered as a slideshow narrated by Cliff Hall on PureMVC TV.</P>
@@ -26,7 +26,7 @@
 						name="PureMVC MultiCore Version Overview" 
 						site_url="http://puremvc.tv/#P002/"
 						speaker="Cliff Hall"
-						speaker_url="http://futurescale.com"
+						speaker_url="http://content.futurescale.com/component/option,com_contact/task,view/contact_id,1/Itemid,54/"
 						pic="http://puremvc.tv/assets/art/multicore/Title.png">
 <![CDATA[
 <P>A platform and language neutral introduction to the PureMVC MultiCore Version Framework delivered as a slideshow narrated by Cliff Hall on PureMVC TV.</P>
@@ -42,7 +42,7 @@
 						name="PureMVC State Machine Utility Overview" 
 						site_url="http://puremvc.tv/#P003/"
 						speaker="Cliff Hall"
-						speaker_url="http://futurescale.com"
+						speaker_url="http://content.futurescale.com/component/option,com_contact/task,view/contact_id,1/Itemid,54/"
 						pic="http://puremvc.tv/assets/art/statemachine/Title.png">
 <![CDATA[
 <P>A platform and language neutral introduction to the PureMVC State Machine Utility delivered as a slideshow narrated by Cliff Hall on PureMVC TV.</P>
@@ -58,7 +58,7 @@
 						name="Getting in the Groove" 
 						site_url="http://puremvc.tv/#P004/"
 						speaker="Cliff Hall"
-						speaker_url="http://futurescale.com"
+						speaker_url="http://content.futurescale.com/component/option,com_contact/task,view/contact_id,1/Itemid,54/"
 						pic="http://puremvc.tv/assets/art/groove/Title.png">
 <![CDATA[
 <P>Just a short time ago, I upgraded my old <a href="http://seaofarrows.com" target="_blank"/>Sea of Arrows</A> music site to a Flex-based PureMVC MultiCore application.</P>
@@ -102,7 +102,7 @@
 						name="PureMVC @ Atlanta Meetup 12/18/2008" 
 						site_url="http://adobechats.adobe.acrobat.com/p88582617/"
 						speaker="Cliff Hall"
-						speaker_url="http://futurescale.com"
+						speaker_url="http://content.futurescale.com/component/option,com_contact/task,view/contact_id,1/Itemid,54/"
 						pic="PureMVC-Preso-AAFUG.png">
 <![CDATA[
 <P>Cliff Hall recently delivered an introductory talk on the PureMVC framework to the Adobe Flex User Group in Atlanta. The recording is available online.</P>
@@ -118,7 +118,7 @@
 						name="PureMVC @ San Diego Meetup 1/21/2009" 
 						site_url="http://experts.na3.acrobat.com/p41582221/"
 						speaker="Cliff Hall"
-						speaker_url="http://futurescale.com"
+						speaker_url="http://content.futurescale.com/component/option,com_contact/task,view/contact_id,1/Itemid,54/"
 						pic="PureMVC-Preso-SDAUG.png">
 <![CDATA[
 <P>Cliff Hall delivered an introductory talk on the PureMVC framework to the Adobe User Group in San Diego via Acrobat Connect. The recording is available online.</P>
@@ -138,6 +138,51 @@
 						pic="PureMVC-Preso-ADC-Intro.png">
 <![CDATA[
 <P>Cornel Creanga has posted a short video introduction to PureMVC with a Flex-based 'Hello World' application sample. It focuses on the key actors involved in sending a message to the server, and then displaying the response.</P>
+]]>						
+						</Presentation>
+				</NodeMap>
+			</Node>
+
+			<!-- PIRATE HQ -->
+			<Node id="707" name="Pirate HQ @ MAX '08" thumb="box">
+				<NodeMap>
+					<Presentation 
+						name="Pirate Internet Radio Conference Takeover @ MAX '08" 
+						site_url="http://connectpro78922856.acrobat.com/p13537877"
+						speaker="Cap'n Cliff Hall and his Scurvy Crew"
+						speaker_url="http://content.futurescale.com/component/option,com_contact/task,view/contact_id,1/Itemid,54/"
+						pic="PureMVC-Preso-PirateHQ.png"><![CDATA[Speakers as they appear in the recording:
+    <U>0:00:00 - Cliff Hall - Welcome</U>
+    <font color="#0000FF"><a href="http://puremvc.org" target="_blank">http://puremvc.org</A></font>
+    PureMVC Project Architect and Head Pirate Cliff Hall introduces the lineup and otherwise puts in a full pirate's day trying to keep the ship on an even keel. Just stayin' afloat with the extreme packet loss we suffered at the HQ was a chore. We had to fireman's carry the bit buckets back and forth constantly just to keep from going under! Despite it all, she was a yar rig and we managed to come out nearly unscathed! ARRH!
+
+    <U>0:00:50 - Brendan Lee - BT/Ribbit - Ribbit API </U>
+    <font color="#0000FF"><a href="http://ribbit.com" target="_blank">http://ribbit.com</A></font>
+    Ribbit has created a telephony platform based on PureMVC which allows you to easily add VOIP and SMS to your Flex, Flash and AIR pplications. Speaking about the Ribbit platform and some of the exciting things going on there is one of the key developers on the project, Brendan Lee.
+
+    <U>0:16:00 - Dominic Gelineau - Twist Image - Think in Colour and Redefining Floors </U> 
+	<font color="#0000FF"><a href="http://www.homedepot.ca/thinkincolour" target="_blank">http://www.homedepot.ca/thinkincolour</A> <a href="http://www.homedepot.ca/redefiningfloors" target="_blank">http://www.homedepot.ca/redefiningfloors</A></font>
+    HomeDepot has launched two similar Flash applications called "Think in colour" and "Redefining floors" which to help the customer choose Paint and Flooring. One of those applications was built on PureMVC and one wasn't. Dominic Gélineau is a Flash rogrammer at Twist Image who worked on both projects, and he describes the differences between the two apps from development perspective.
+
+    <U>0:30:00 - Daniel Swid - Latenite Labs - Reactor and Radience</U>
+    <font color="#0000FF"><a href="http://latenitelabs.com" target="_blank">http://latenitelabs.com</A></font>
+    Late Nite Labs provides a virtual lab solution for distance learning education. The problem with distance learning science courses, such as biology and chemistry is the lab requirement. Late Nite's Reactor and Radience apps, are able to fulfill the academic requirement and schools can save on lab expenses. Speaking about Reactor and Radience is Daniel Swid, a developer on the project at Late Nite Labs.
+
+    <U>0:43:00 - Javier Julio - Arc90 - Kindling</U>
+    <font color="#0000FF"><a href="http://kindlingapp.com/" target="_blank">http://kindlingapp.com/</A></font>
+    If you've ever tried to promote an idea within a large company and had difficulty getting any joy, you'll appreciate Kindling. Javier Julio works for Arc90, a midtown Manhattan web consulting and product firm. He introduces Kindling, Arc90's first product which is a web-based idea management application and be demoing a standalone AIR client he developed using
+    Kindling's REST API.
+     
+    <U>1:13:00 - Clause Wahlers - côdeazur brasil - Aupeo</U>
+    <font color="#0000FF"><a href="http://aupeo.com/" target="_blank">http://aupeo.com/</A></font>
+    Claus Wahlers, a became a personal icon of mine when he co-authored FC64 - a Flash based Commodore 64 emulator that actually runs all the ld games that many of us knew and loved. Sadly the FC64 wasn't built on PureMVC, but Claus's latest project is. AUPEO! is a new music driven social networking platform. And here today to talk with us about it is none other than Claus himself.
+
+    <U>1:34:00 - Bobby Parker - Blue Bear, LLC - Kodiak</U>
+    <font color="#0000FF"><a href="http://bluebearllc.net/kodiak/" target="_blank">http://bluebearllc.net/kodiak/</A></font>
+	Kodiak, from BlueBear, enables unprecedented visibility into and control over virtualized infrastructures, regardless of size or composition. As the industry's only application that's both hypervisor-agnostic and cross-platform, Kodiak sets a new standard in versatility, pushing virtualization out of the datacenter and catalyzing its widespread adoption throughout the information technology landscape. BlueBear believes useful software should be available to anybody who needs it, and at no cost; hence Kodiak's price, totally free! 
+
+    2:11:00 - Nick Collins - Sogeti, USA - PureMVC Studio
+    Code generation has been a subject of much discussion in the PureMVC community since its inception, and several products out there already support it to some extent. Nick Collins is the author of PureMVC Studio which allows you to quickly and visually lay out your application skeleton, complete with multiple cores, views, proxies, value objects, notifications, commands, and additionally custom singletons or generic classes. Each of these classes are then generated from user customizable templates and a fully importable Eclipse/FlexBuilder project is generated. The application allows you to target either the browser, or AIR platform, as well as choose whether you want your view code to be MXML based or pure AS3.
 ]]>						
 						</Presentation>
 				</NodeMap>

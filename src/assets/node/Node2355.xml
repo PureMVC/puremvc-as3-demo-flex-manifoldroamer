@@ -4,31 +4,43 @@
 		<Nodes>
 			<Node id="2356" name="Framework" thumb="box">	
 				<NodeMap>
-					<Framework 
-						name="Java Framework - MultiCore Version" 
+					<Project 
+						name="PureMVC MultiCore Version for Java" 
 						status="Production"
 						repo="PureMVC_Java_MultiCore" 
 						tag="1.0.6"
 						version="1.0.6"
 						archive="Java/PureMVC_Java_MultiCore.zip" 
-						docs="Java/multicore/framework_javadoc"
-						forum="board=60.00"
-						owner="Anthony Quinault"/>
+						docs="Java/multicore/doc"
+						forum="board=60.0"
+						owner="Anthony Quinault"
+						owner_node="329"
+						pic="PureMVC-Framework-Java-MC.png">
+							<Description><![CDATA[<P>This is the description.</P>]]></Description>						
+							<ReleaseNotes><![CDATA[<P>These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. </P>]]></ReleaseNotes>						
+							<Installation><![CDATA[<P>These are the Installation Instructions. These are the Installation Instructions. These are the Installation Instructions. These are the Installation Instructions. These are the Installation Instructions. These are the Installation Instructions. These are the Installation Instructions. </P>]]></Installation>												
+						</Project>
 				</NodeMap>
 			</Node>
 			<Node id="2357" name="Unit Tests" thumb="box">
 				<NodeMap>
-					<Utility 
-						name="Java Framework - MultiCore Version - Unit Tests" 
+					<Project 
+						name="PureMVC Java MultiCore Version Unit Tests" 
 						status="Production"
 						repo="PureMVC_Java_MultiCore_UnitTests" 
 						tag="1.0.6"
 						version="1.0.6"
 						archive="Java/PureMVC_Java_MultiCore_UnitTests.zip"
 						live=""
-						docs=""
-						forum="stopic=743.0"
-						owner="Anthony Quinault"/>
+						docs="Java/multicore/doc"
+						forum="topic=743.0"
+						owner="Anthony Quinault"
+						owner_node="329"
+						pic="PureMVC-Framework-Java-MC.png">
+							<Description><![CDATA[<P>This is the description.</P>]]></Description>						
+							<ReleaseNotes><![CDATA[<P>These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. </P>]]></ReleaseNotes>						
+							<Installation><![CDATA[<P>These are the Installation Instructions. These are the Installation Instructions. These are the Installation Instructions. These are the Installation Instructions. These are the Installation Instructions. These are the Installation Instructions. These are the Installation Instructions. </P>]]></Installation>												
+						</Project>
 				</NodeMap>
 			</Node>
 			<Node id="2358" name="Demos" thumb="box"><NodeMap/></Node>

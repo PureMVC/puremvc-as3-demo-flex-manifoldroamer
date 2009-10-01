@@ -4,31 +4,146 @@
 		<Nodes>
 			<Node id="2051" name="Framework" thumb="box">	
 				<NodeMap>
-					<Framework 
-						name="ActionScript 3 Framework - Standard Version" 
+					<Project 
+						name="PureMVC Standard Version for ActionScript 3" 
 						status="Production"
-						repo="PureMVC_AS2" 
+						repo="PureMVC_AS3" 
 						tag="2.0.4"
 						version="2.0.4"
-						archive="AS2/PureMVC_AS2.zip" 
+						archive="AS3/PureMVC_AS3.zip" 
 						docs="AS3/standard/framework_asdoc"
 						forum="board=26.0"
-						owner="Cliff Hall"/>
+						owner="Cliff Hall"
+						owner_node="300"
+						pic="PureMVC-Framework-AS3-Std.png">
+							<Description><![CDATA[<P>PureMVC is a lightweight framework for creating applications based upon the classic  Model-View-Controller design meta-pattern. This is the specific implementation for the AS3 language, and the reference implementation for all other PureMVC Ports. </P>]]></Description>						
+							<ReleaseNotes><![CDATA[Pre-2.0 installations should read on for migration information and changes on the 2.0 line.
+<B>Summary of Changes in 2.0.4</B>
+This release fixes the only two outstanding bugs.
+    * Dissallowed  re-registration of Mediators in View.registerMediator.
+    * Modified View.notifyObservers to notify from a copy of the observer list rather than the actual observer list, which may  change during the notification loop. 
+
+<B>Summary of Changes in 2.0.3</B>
+This release replaces an interface method was inadvertently removed in 2.0 of the AS3 Standard Version. This bug affected people who send custom Notifications via the Facade. You can read about on  this forum post. This is a transparent fix that requires no migration if you already have 2.0.1 installed.
+    * The notifyObservers method was added back to IFacade. 
+
+<B>Summary of Changes in 2.0.2</B>
+This relesae fixes an outstanding bug with removing and re-registering Commands on the AS3 Standard Version, which you can read about on  this forum post. This is a transparent fix that requires no migration if you already have 2.0.1 installed.
+    * Refactored View.removeMediator method, moving the logic for removing an Observer into a removeObserver method (also on IView), which is now called by the Controller.removeCommand method as well as the View.removeMediator method. 
+    * The Proxy.removeProxy method only attempts to remove the Proxy if it is registered. This could've caused a problem if you tried to remove a Proxy that was not registered. 
+
+<B>Summary of Changes in 2.0.1</B>
+This release adds complementary methods to the Proxy that were added to Mediator when the 2.0 release was made in limited form. This is a transparent upgrade that requires no migration if you already have 2.0.1 installed.
+    * Proxy gets onRegister and onRemove methods. These methods are called when an IProxy is registered. Proxies previously had no knowledge of when they were registered or removed. This functionality allows a Proxy to notify other parts of the system when it becomes available, or to remove listeners and null its view component or data object after being removed, so that it can be garbage collected. 
+
+<B>Summary of Changes in 2.0</B>
+This release breaks backward compatibility with any previous release. Migration is a very simple process, outlined clearly below. The package structure has changed to incorporate the language for this release. With all of the framework ports that are being done it is imperative that all code, in any context be clear in the package name alone which language it was written for.
+That much being a given, it seemed this was the best time to make any further changes that would entail a migration. The only change made here that is truly backward-incompatible is the Mediator naming strategy. It now works just like Proxy.
+There is a minor bugfix, and otherwise, most of these changes simply round out the API with what should've been there before. For instance, you can now check to see if a given Command, Mediator or Proxy is registered. And now a Mediator or Proxy is made aware when it is registered or removed.
+We now return you to a staunch policy of 'No New Features, Only Bug Fixes!!!'
+    * Package name includes now language. the org.puremvc.* namespace is now org.puremvc.as3.* 
+    * The Mediator naming scheme changed to match that of the Proxy. Now the constructor to the Mediator takes a mediatorName argument before the viewComponent argument. This means that you no longer need to override the getMediatorName method in your Mediators, you merely send the name to super to be set in the constructor. This should reduce confusion about the naming strategy of the two boundary counterparts Proxy and Mediator. They both work the same now. 
+    * The Mediator now has a setViewComponent method. This means that transient view components are now supported. Previously, a Mediator was forever bound to its viewComponent given at construction. There was no way to set the viewComponent thereafter. This was by design, but it turned out not to provide any real benefit, and in fact hampered some reasonable view management schemes. Now you may replace a Mediator's view component at any time, or create a Mediator and then 'lazily' create its view component at a later time. 
+    * The Model, View and Facade removeProxy and removeMediator methods now return a reference to the Proxy or Mediator that was removed from the Model or the View. This supports dynamic unregistration and reregistration of Proxies and Mediators. This means you can make Proxies and Mediators unavailable to the rest of the system by notification or retrieval for some amount of time, store them somewhere, and then make them available at some later time by registering them again. 
+    * Model and Facade get a hasProxy method; View and Facade get a hasMediator method. In an application that dynamically registers and unregisters resources, you may need to check and see if a given Mediator or Proxy is registered before attempting to create and register it or retrieve and use it. 
+    * Mediator and gets onRegister and onRemove methods. These methods are called when an IMediator is registered. Mediators previously had no knowledge of when they were registered or removed. This functionality allows a Mediator to notify other parts of the system when it becomes available, or to remove listeners and null its view component or data object after being removed, so that it can be garbage collected. 
+    * The Facade now implements INotifier, implementing a sendNotification method. This means that you never have to create a Notification inside a Facade method and then call notifyObservers, you may simply call sendNotification with the parameters in the same way that Commands, Mediators and Proxies do. The notifyObservers method is left public in the Facade only so that you may still create and send instances of custom Notification classes. It also facilitates an even cleaner implementation of the 'facade.startup(this)' startup idiom. 
+    * Notifier's sendNotification method now calls facade.sendNotification instead of notifyObservers. There is no longer any reason to call facade.notifyObserver from anywhere unless you are implementing custom Notification classes. Therefore, the Notifier class simply passes through the parameters to the Facade's sendNotification method where the actual notification is created and notifyObservers is called. Also, Notifier now implements the INotifier interface, which was present before but not referred to with 'implements'. 
+    * Model, View and Controller classes are moved into the same package. Previously these classes were in separate packages under core. They now reside in the same package and so may share internal properties. Use of the Facade class in PureMVC applications should render this change completely transparent to your application. Only if you manipulate these classes directly, will you need to your modify import statements. 
+    * All interfaces have been updated to reflect the above changes where necessary. Additionally, the IProxy interface has been updated to include the missing setData and getData methods which are present on Proxy. 
+    * A bug in the Notification.toString implementation was fixed. A corresponding unit test was added to NotificationTest. For discussion of the bug see  this forum topic. 
+
+<B>To migrate an application written for a version of PureMVC for AS3 prior to 2.0</B>
+After replacing your old PureMVC.swc (or source code tree) with the 2.0 version:
+   1. Globally Find and Replace 'org.puremvc' with 'org.puremvc.as3' in all your source code. This should only affect imports.
+   2. In the constructor of all Mediator subclasses, pass the mediator name to super as the first argument. Your mediator constructor signature doesn't have to change, you simply have to pass a name to Mediator superclass inside your constructor now. Usually this is a matter of changing 'super(viewComponent)' to 'super(NAME, viewComponent)'. However if your viewComponent provides a unique name which your Mediator subclass instance will use to register itself, you might change 'super(viewComponent)' to 'super(viewComponent.id, viewComponent)'.
+   3. Remove getMediatorName() methods from Mediator subclasses. This is implemented properly in the base class and does not have to be overridden.
+   4. Refactor any calls to facade.notifyObservers to use facade.sendNotification instead. Remove any now-unneeded Notificaton creation; you only need to be passing the arguments to sendNotification, not a complete notification instance. Note that you should skip this step if you are creating and sending an instance of a custom Notification class. ]]></ReleaseNotes>						
+							
+							<Installation><![CDATA[
+Download the latest version of the Framework distribution and unzip to a directory on your system, such as:
+    C:/development
+
+This will create a folder like this:
+    C:/development/PureMVC_AS3_X_Y
+
+Where X_Y is the framework version number.
+
+You will find:
+    * The API documentation: PureMVC_AS3_X_Y/asdoc/index.html
+    * The source code: PureMVC_AS3_X_Y/org/puremvc/as3/...
+    * The SWC library for use with Flex/AIR projects: PureMVC_AS3_X_Y/bin/PureMVC_AS3_X_Y.swc 
+
+<U>To add the PureMVC Library to your Flex or AIR project's build path</U>
+From the FlexBuilder/Eclipse menu do:
+    Project -> Properties -> Flex Build Path -> Library Path -> Add SWC
+
+Browse and select:
+    C:/development/PureMVC_AS3_X_Y/bin/PureMVC_AS3_X_Y.swc
+
+<U>PureMVC-enabling your Flash CS3/CS4 Installation</U>
+There are three ways you may go about adding PureMVC to your current Flash installation:
+    * <B>Method A</B> - Copy the PureMVC package to the Flash Installation's Classes folder
+    * <B>Method B</B> - Add the PureMVC source folder to your classpath in Preferences
+    * <B>Method C</B> - Add the PureMVC source folder to your classpath per project 
+
+Methods A & B ensure that the PureMVC source code will always be available, and are the recommended way. Which you choose is up to you.
+Method C will only make the code available to the projects you choose. It will be more work, while A or B add no overhead to your projects if you don't import and use any of the classes.
+Regardless of the method you choose, be sure you are only adding the source code folder to your class path. If the PureMVC_AS3_X_Y.swc file is in the classpath, Flash will complain of odd things and most likely not work, since the swc is in Flex format and not readable by Flash yet. Research has been done to try and compile a version that is compatible with both Flex and Flash, but it has not yet been succesful.
+
+<B>METHOD A: COPY PureMVC PACKAGE TO FLASH INSTALLATION'S CLASSES FOLDER</B>
+
+Copy the PureMVC_AS3_X_Y/org folder and everything in it to your Flash installation's Classes folder. This folder is located at ${AppConfig}/ActionScript 3.0/Classes
+
+${AppConfig} is the language specific Configuration directory for your Flash installation.
+
+For instance, if you installed Flash CS3 at its default location on a Windows machine, then your ${AppConfig} = C:\Program Files\Adobe\Adobe Flash CS3\en\Configuration\
+
+You would copy
+
+    from:
+    PureMVC_AS3_X_Y/src/*
+
+      to:
+    C:/Program Files/Adobe/Adobe Flash CS3/en/Configuration/ActionScript 3.0/Classes
+
+yielding:
+        ${AppConfig}/ActionScript 3.0/Classes/org/puremvc/as3/*
+
+<B>METHOD B: ADD THE PureMVC SOURCE CODE FOLDER TO YOUR CLASSPATH IN PREFERENCES</B>
+In the Flash IDE, go to:
+
+    Edit -> Preferences -> ActionScript 3.0 Settings
+    Add the PureMVC_AS3_X_Y/src folder to your classpath by clicking '+' icon to add a classpath, select it, then click the target icon to choose the folder.
+
+<B>METHOD C: ADD THE PureMVC SOURCE CODE FOLDER TO YOUR CLASSPATH ON A PER PROJECT BASIS</B>
+In the Flash IDE, open the your FLA or Project, and go to:
+
+    Edit -> Publish Settings -> ActionScript 3.0 Settings
+    Add the PureMVC_AS3_X_Y/src folder to your classpath by clicking '+' icon to add a classpath, select it, then click the target icon to choose the folder.
+</P>]]></Installation>												
+						</Project>
 				</NodeMap>
 			</Node>
 			<Node id="2052" name="Unit Tests" thumb="box">
 				<NodeMap>
-					<Utility 
-						name="ActionScript 3 Framework - Standard Version Unit Tests" 
+					<Project 
+						name="PureMVC AS3 Standard Version Unit Tests" 
 						status="Production"
 						repo="PureMVC_AS3_UnitTests" 
-						tag="UnitTests_2_0_4"
-						version="2.0.4"
+						tag="UnitTests_2_0_2"
+						version="2.0.2"
 						archive="AS3/PureMVC_AS3_UnitTests.zip"
-						live="http://puremvc.org/pages/demos/AS3/PureMVC_AS3_UnitTests"
+						live="AS3/PureMVC_AS3_UnitTests"
 						docs="AS3/standard/framework_unit_tests_asdoc"
 						forum="topic=293.0"
-						owner="Cliff Hall"/>
+						owner="Cliff Hall"
+						owner_node="300"
+						pic="PureMVC-Framework-AS3-Std.png">
+							<Description><![CDATA[<P>This is the description.</P>]]></Description>						
+							<ReleaseNotes><![CDATA[<P>These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. </P>]]></ReleaseNotes>						
+							<Installation><![CDATA[<P>These are the Installation Instructions. These are the Installation Instructions. These are the Installation Instructions. These are the Installation Instructions. These are the Installation Instructions. These are the Installation Instructions. These are the Installation Instructions. </P>]]></Installation>												
+						</Project>
 				</NodeMap>
 			</Node>
 			<Node id="2053" name="Demos" thumb="box"><NodeMap/></Node>

@@ -4,16 +4,22 @@
 		<Nodes>
 			<Node id="2301" name="Framework" thumb="box">	
 				<NodeMap>
-					<Framework 
-						name="JavaScript - Standard Version" 
+					<Project 
+						name="PureMVC Standard Version for JavaScript" 
 						status="Production"
 						repo="PureMVC_JS" 
 						tag="1.0"
 						version="1.0"
 						archive="JS/PureMVC_JS.zip" 
 						docs=""
-						forum="board=64.0"
-						owner="Frederic Saunier"/>
+						forum="board=73.0"
+						owner="Frederic Saunier"
+						owner_node="326"
+						pic="PureMVC-Framework-JS-Std.png">
+							<Description><![CDATA[<P>This is the description.</P>]]></Description>						
+							<ReleaseNotes><![CDATA[<P>These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. </P>]]></ReleaseNotes>						
+							<Installation><![CDATA[<P>These are the Installation Instructions. These are the Installation Instructions. These are the Installation Instructions. These are the Installation Instructions. These are the Installation Instructions. These are the Installation Instructions. These are the Installation Instructions. </P>]]></Installation>												
+						</Project>
 				</NodeMap>
 			</Node>
 			<Node id="2303" name="Demos" thumb="box"><NodeMap/></Node>

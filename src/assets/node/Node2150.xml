@@ -2,18 +2,24 @@
 <Node id="2150" name="Standard Version" thumb="flake">
 	<NodeMap>
 		<Nodes>
-			<Node id="2151" name="Framework" thumb="box">	
+			<Node id="2151" name="Framework and Unit Tests" thumb="box">	
 				<NodeMap>
-					<Framework 
-						name="C# - Standard Version Framework and Unit Tests" 
+					<Project 
+						name="PureMVC Standard Version and Unit Tests for C#" 
 						status="Production"
 						repo="PureMVC_CSharp" 
-						tag="3.0" branch="Prior_to_DotNET_3_5"
+						tag="3.0"
 						version="3.0"
 						archive="CSharp/PureMVC_CSharp.zip" 
 						docs="CSharp/standard/"
 						forum="board=20.0"
-						owner="Andy Adamczak"/>
+						owner="Andy Adamczak"
+						owner_node="301"
+						pic="PureMVC-Framework-CSharp-Std.png">
+							<Description><![CDATA[<P>This is the description.</P>]]></Description>						
+							<ReleaseNotes><![CDATA[<P>These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. </P>]]></ReleaseNotes>						
+							<Installation><![CDATA[<P>These are the Installation Instructions. These are the Installation Instructions. These are the Installation Instructions. These are the Installation Instructions. These are the Installation Instructions. These are the Installation Instructions. These are the Installation Instructions. </P>]]></Installation>												
+						</Project>
 				</NodeMap>
 			</Node>
 			<Node id="2153" name="Demos" thumb="box"><NodeMap/></Node>

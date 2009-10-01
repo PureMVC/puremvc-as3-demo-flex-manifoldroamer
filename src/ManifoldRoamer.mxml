@@ -60,6 +60,7 @@
 		   borderThicknessRight: 0;
 		   roundedBottomCorners: true;
 		   headerHeight: 40;
+		   corner-radius: 12;
 		   highlightAlphas: 1, 0.32;
 		   headerColors: #000000, #0000ff;
 		   footerColors: #0000ff, #000000;

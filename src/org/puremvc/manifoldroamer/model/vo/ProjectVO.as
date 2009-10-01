@@ -75,7 +75,7 @@ package org.puremvc.manifoldroamer.model.vo
 		
 		public function set live(url:String):void
 		{
-			nodeData.@live = live;
+			nodeData.@live = url;
 		} 
 		
 		public function get repo():String

@@ -5,7 +5,7 @@
 			<Node id="2001" name="Framework" thumb="box">	
 				<NodeMap>
 					<Project 
-						name="ActionScript 2 - Standard Version" 
+						name="PureMVC Standard Version for ActionScript 2" 
 						status="Production"
 						repo="PureMVC_AS2" 
 						tag="1.0"
@@ -18,24 +18,113 @@
 						owner_node="304"
 						pic="PureMVC-Framework-AS2-Std.png">
 							<Description><![CDATA[<P>PureMVC is a lightweight framework for creating applications based upon the classic Model-View-Controller design meta-pattern. This is the specific implementation for the ActionScript 2 language. See the Release Notes for this version for differences from the reference implementation.</P>]]></Description>						
-							<ReleaseNotes><![CDATA[<P>These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. </P>]]></ReleaseNotes>						
-							<Installation><![CDATA[<P>These are the Installation Instructions. These are the Installation Instructions. These are the Installation Instructions. These are the Installation Instructions. These are the Installation Instructions. These are the Installation Instructions. These are the Installation Instructions. </P>]]></Installation>												
+							<ReleaseNotes><![CDATA[<P>The current release is compatible with the AS3 Reference implementation version 2.0.3.
+
+<U><B>FlashLite Implementation Notes</B></U>
+
+    * Don't use fscommand2 in the constructor of a Mediator. will work in the phone but it will transform the object in a very strange and unregisterable way inside the Flash 9 player. <BR/>
+    * Events are not the same as in Flash 9. flash.events.Event does not exist. Events are far more rudimentary. Because the way they are handled is by setting a function onto a MovieClip, which will execute in the context of that MovieClip, it is difficult for a MovieClip to communicate out-bound to its Mediator.<BR/>
+    * A Delegate class similar to mx.controls.Delegate is used to add the Mediator's methods as the listener methods on a stewarded MovieClip, and have those methods called from the context of the Mediator and not the clip. Arguments can be passed. <BR/>
+
+<U><B>AS3 vs AS2 Implementation Notes</B></U><BR>
+<P><U>ARRAYS</U><BR/>
+It is worth noting that you cannot cast to Arrays in AS2. This can cause problems in Proxies when using a getter to cast 'data' to its correct datatype. <BR/>
+One solution is to use: <B>var myArray:Array = {a:data}.a</B> <BR/>
+This will allow you to return myArray out of your getter without throwing an error by adding then accessing data from a temporary object, negating type checking.</P>
+
+<P><U>INTERFACES</U> <BR/>
+  * In AS3 interfaces are inherited, but in AS2, they are not.<BR/>
+  * In AS3, an interface is inherited by subclasses. If a superclass implements an interface, classes that subclass it will also implement that interface without having to declare the fact explicitly and can be treated as such.<BR/>
+  * In AS2 however, subclasses need to explicitly implement an interface if they want to be treated as such, even if their superclass implements it already.<BR/>
+  * This effects any of your subclasses of Facade, Proxy, Command or Mediator, and you must ensure they explicitly implement their respective interfaces to ensure they can be used in the framework.</P>
+  ]]></ReleaseNotes>						
+							<Installation><![CDATA[Download the latest version of the Framework distribution and unzip to a directory on your system, such as:
+    C:/development
+This will create a folder like this:
+    C:/development/PureMVC_AS2_X_Y
+Where X_Y is the framework version number.
+You will find:
+    * The source code: PureMVC_AS2_X_Y/org/puremvc/as2/... 
+To add the PureMVC Library to your Flex project's build path
+From the FlexBuilder/Eclipse menu do:
+    Project -> Properties -> Flex Build Path -> Source Path -> Add Folder
+Browse and select:
+    C:/development/PureMVC_AS2_X_Y/
+
+<U><B>PureMVC-enabling your Flash CS3/CS4 Installation</B></U>
+
+There are three ways you may go about adding PureMVC to your current Flash installation:
+    * <B>Method A</B> - Copy the PureMVC package to the Flash Installation's Classes folder
+    * <B>Method B</B> - Add the PureMVC source folder to your classpath in Preferences
+    * <B>Method C</B> - Add the PureMVC source folder to your classpath per project 
+
+Methods A & B ensure that the PureMVC source code will always be available, and are the recommended way. Which you choose is up to you.
+Method C will only make the code available to the projects you choose. It will be more work, while A or B add no overhead to your projects if you don't import and use any of the classes.
+Regardless of the method you choose, be sure you are only adding the source code folder to your class path. If the PureMVC_AS2_X_Y.swc file is in the classpath, Flash will complain of odd things and most likely not work, since the swc is in Flex format and not readable by Flash yet. Research has been done to try and compile a version that is compatible with both Flex and Flash, but it has not yet been succesful.
+
+<U><B>METHOD A: COPY PureMVC PACKAGE TO FLASH INSTALLATION'S CLASSES FOLDER</B></U>
+Copy the PureMVC_AS2_X_Y/org folder and everything in it to your Flash installation's Classes folder. This folder is located at ${AppConfig}/ActionScript 2.0/Classes
+${AppConfig} is the language specific Configuration directory for your Flash installation.
+For instance, if you installed Flash CS3 at its default location on a Windows machine, then your ${AppConfig} = C:\Program Files\Adobe\Adobe Flash CS3\en\Configuration\
+You would copy
+    from:
+    PureMVC_AS2_X_Y/src/*
+      to:
+    C:/Program Files/Adobe/Adobe Flash CS3/en/Configuration/ActionScript 2.0/Classes
+yielding:
+    ${AppConfig}/ActionScript 2.0/Classes/org/puremvc/as2/*
+
+<U><B>METHOD B: ADD THE PureMVC SOURCE CODE FOLDER TO YOUR CLASSPATH IN PREFERENCES</B></U>
+In the Flash IDE, go to:
+    Edit -> Preferences -> ActionScript 2.0 Settings
+    Add the PureMVC_AS2_X_Y/src folder to your classpath by clicking '+' icon to add a classpath, select it, then click the target icon to choose the folder.
+
+<U><B>METHOD C: ADD THE PureMVC SOURCE CODE FOLDER TO YOUR CLASSPATH ON A PER PROJECT BASIS</B></U>
+In the Flash IDE, open the your FLA or Project, and go to:
+    Edit -> Publish Settings -> ActionScript 2.0 Settings
+    Add the PureMVC_AS2_X_Y/src folder to your classpath by clicking '+' icon to add a classpath, select it, then click the target icon to choose the folder.
+							]]></Installation>												
 						</Project>
 				</NodeMap>
 			</Node>
 			<Node id="2002" name="Unit Tests" thumb="box">
 				<NodeMap>
 					<Project 
-						name="ActionScript 2 - Standard Version - Unit Tests" 
+						name="PureMVC AS2 Standard Version Unit Tests" 
 						status="Production"
 						repo="PureMVC_AS2_UnitTests" 
 						tag="UnitTests_0_7"
 						version="0.7"
 						archive="AS2/PureMVC_AS2_UnitTests.zip"
-						live="http://puremvc.org/pages/demos/AS2/PureMVC_AS2_UnitTests"
+						live="AS2/PureMVC_AS2_UnitTests/"
 						docs="AS2/apidocs/frameset.html"
 						forum="topic=418.0"
-						owner="James Knight"/>
+						owner="James Knight"
+						owner_node="316"
+						pic="PureMVC-Framework-AS2-Std.png">
+							<Description><![CDATA[<P>These are the Unit Tests for the PureMVC AS2 Standard Version Framework.</P>]]></Description>						
+							<ReleaseNotes><![CDATA[The Unit Tests for the PureMVC Framework for ActionScript 2 use AsUnit2.5. The distribution package is in ZIP format contains the AS2 source code for the unit tests, API documentation, and the required AsUnit2.5 and PureMVC AS2 Framework libraries.
+Every method of every framework class has at least one unit test associated with it, sometimes more. Each unit test, in turn generally makes several assertions.
+If you modify the source code for the PureMVC framework for AS2, you should also create or modify the appropriate unit tests, and make sure that all tests still pass before building upon your modified version of the framework. 
+]]></ReleaseNotes>						
+							<Installation><![CDATA[<U><B>Installation</B></U>
+    * Checkout or export from the Subversion repository.
+    * The tests reference two library projects - PureMVC AS2 Framework and AsUnit - which are found in the libs directory.
+    * Open bin/index.html, and you should see the green bar as all tests pass. 
+
+<U><B>Running the tests yourself</B></U>
+    * Open bin/AsUnitUi.swf.
+    * Open testrunner/test_runner.fla in Flash.
+    * Test the movie, and AsUnitUi.swf will display a green bar. 
+
+<U><B>Making the AsUnit UI available within Flash</B></U>
+    * Copy bin/AsUnitUi.swf to
+          o "C:\Documents and Settings\*username*\Local Settings\Application Data\Adobe\Flash CS3\en\Configuration\WindowSWF" (Windows XP)
+          o "/Users/*username*/Library/Application Support/Adobe/Flash CS3/en/Configuration/WindowSWF/" (Mac). 
+    * Restart Flash, and select window>other panels>AsUnit Ui.
+    * Test testrunner/test_runner.fla, and the results will show up within Flash. 
+    ]]></Installation>												
+						</Project>
 				</NodeMap>
 			</Node>
 			<Node id="2003" name="Demos" thumb="box"><NodeMap/></Node>

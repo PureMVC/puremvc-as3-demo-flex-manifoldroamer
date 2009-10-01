@@ -21,6 +21,15 @@
 				dispatchEvent( new Event('readURL',true) );
 			}
 			
+			private function setStackHeight():void
+			{
+				var h:int = parent.height;
+				if (detailStack.selectedIndex == 0) h = txtDesc.height;
+				if (detailStack.selectedIndex == 1) h = txtRelease.height;
+				if (detailStack.selectedIndex == 2) h = txtInstall.height;
+				detailStack.height = h;	
+			}
+						
 		]]>
 	</mx:Script>
 	
@@ -42,8 +51,8 @@
 				<mx:Button label="Download" click="readURL(nodeData.archive)"/>
 			</mx:HBox>
 			<mx:HBox verticalAlign="middle">
-				<mx:Button label="Source" click="readURL(nodeData.srcview)" visible="{nodeData.srcview==''}"/>
-				<mx:Button label="Demo" click="readURL(nodeData.live)" visible="{nodeData.live==''}"/>
+				<mx:Button label="Source" click="readURL(nodeData.srcview)" visible="{nodeData.srcview!=''}"/>
+				<mx:Button label="Demo" click="readURL(nodeData.live)" visible="{nodeData.live!=''}"/>
 				<mx:Button label="Docs" click="readURL(nodeData.docs)" visible="{nodeData.docs!=''}"/>
 			</mx:HBox>
 	
@@ -77,15 +86,15 @@
 	</mx:HBox>	
 	<mx:HRule width="50%"/>
 	<mx:ToggleButtonBar dataProvider="{detailStack}"/>
-	<mx:ViewStack id="detailStack" width="65%" height="500">
+	<mx:ViewStack id="detailStack" width="65%" creationPolicy="all" change="setStackHeight()">
 		<mx:VBox label="Description">
-			<mx:Text width="100%" textAlign="left" fontFamily="BlueHighway" fontSize="16" htmlText="{nodeData.description}"/>
+			<mx:Text id="txtDesc" width="100%" textAlign="left" fontFamily="BlueHighway" fontSize="20" htmlText="{nodeData.description}" resize="setStackHeight()"/>
 		</mx:VBox>
 		<mx:VBox label="Release Notes">
-			<mx:Text width="100%" textAlign="left" fontFamily="BlueHighway" fontSize="16" htmlText="{nodeData.release_notes}"/>
+			<mx:Text id="txtRelease" width="100%" textAlign="left" fontFamily="Arial" fontSize="16" htmlText="{nodeData.release_notes}" resize="setStackHeight()"/>
 		</mx:VBox>
 		<mx:VBox label="Installation">
-			<mx:Text width="100%" textAlign="left" fontFamily="BlueHighway" fontSize="16" htmlText="{nodeData.installation}"/>
+			<mx:Text id="txtInstall" width="100%" textAlign="left" fontFamily="Arial" fontSize="16" htmlText="{nodeData.installation}" resize="setStackHeight()"/>
 		</mx:VBox>
 	</mx:ViewStack>
 

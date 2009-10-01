@@ -4,31 +4,43 @@
 		<Nodes>
 			<Node id="2251" name="Framework" thumb="box">	
 				<NodeMap>
-					<Framework 
-						name="Haxe 2 Framework - Standard Version" 
+					<Project 
+						name="PureMVC Standard Version for Haxe 2" 
 						status="Production"
 						repo="PureMVC_Haxe" 
 						tag="1.2"
 						version="1.2"
-						archive="AS2/PureMVC_Haxe.zip" 
+						archive="Haxe/PureMVC_Haxe.zip" 
 						docs="Haxe/standard/docs"
-						forum="board=42.0"
-						owner="Marco Secchi"/>
+						forum="board=56.0"
+						owner="Marco Secchi"
+						owner_node="321"
+						pic="PureMVC-Framework-Haxe-Std.png">
+							<Description><![CDATA[<P>This is the description.</P>]]></Description>						
+							<ReleaseNotes><![CDATA[<P>These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. </P>]]></ReleaseNotes>						
+							<Installation><![CDATA[<P>These are the Installation Instructions. These are the Installation Instructions. These are the Installation Instructions. These are the Installation Instructions. These are the Installation Instructions. These are the Installation Instructions. These are the Installation Instructions. </P>]]></Installation>												
+						</Project>
 				</NodeMap>
 			</Node>
 			<Node id="2252" name="Unit Tests" thumb="box">
 				<NodeMap>
-					<Utility 
-						name="Haxe 2 Framework - Standard Version Unit Tests" 
+					<Project 
+						name="PureMVC Haxe 2 Standard Version Unit Tests" 
 						status="Production"
 						repo="PureMVC_Haxe_UnitTests" 
 						tag="UnitTests_1_0_4"
 						version="1.0.4"
-						archive="AS3/PureMVC_AS3_UnitTests.zip"
-						live="http://puremvc.org/pages/demos/AS3/PureMVC_AS3_UnitTests"
-						docs="AS3/standard/framework_unit_tests_asdoc"
-						forum="topic=293.0"
-						owner="Marco Secchi"/>
+						archive="Haxe/PureMVC_Haxe_UnitTests.zip"
+						live="Haxe/UnitTests/indexFl.html"
+						docs="Haxe/standard/docs"
+						forum="board=56.0"
+						owner="Marco Secchi"
+						owner_node="321"
+						pic="PureMVC-Framework-Haxe-Std.png">
+							<Description><![CDATA[<P>This is the description.</P>]]></Description>						
+							<ReleaseNotes><![CDATA[<P>These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. </P>]]></ReleaseNotes>						
+							<Installation><![CDATA[<P>These are the Installation Instructions. These are the Installation Instructions. These are the Installation Instructions. These are the Installation Instructions. These are the Installation Instructions. These are the Installation Instructions. These are the Installation Instructions. </P>]]></Installation>												
+						</Project>
 				</NodeMap>
 			</Node>
 			<Node id="2253" name="Demos" thumb="box"><NodeMap/></Node>

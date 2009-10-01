@@ -2,10 +2,10 @@
 <Node id="2200" name="Standard Version" thumb="flake">
 	<NodeMap>
 		<Nodes>
-			<Node id="2201" name="Framework" thumb="box">	
+			<Node id="2201" name="Framework and Unit Tests" thumb="box">	
 				<NodeMap>
-					<Framework 
-						name="ColdFusion - Standard Version Framework and Unit Tests" 
+					<Project 
+						name="PureMVC Standard Version and Unit Tests for ColdFusion" 
 						status="Production"
 						repo="PureMVC_CF"
 						tag="1.0" 						
@@ -13,7 +13,13 @@
 						archive="CF/PureMVC_CF.zip" 
 						docs=""
 						forum="board=20.0"
-						owner="Andy Adamczak"/>
+						owner="Michael Oddis"
+						owner_node="322"
+						pic="PureMVC-Framework-CF-Std.png">
+							<Description><![CDATA[<P>This is the description.</P>]]></Description>						
+							<ReleaseNotes><![CDATA[<P>These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. </P>]]></ReleaseNotes>						
+							<Installation><![CDATA[<P>These are the Installation Instructions. These are the Installation Instructions. These are the Installation Instructions. These are the Installation Instructions. These are the Installation Instructions. These are the Installation Instructions. These are the Installation Instructions. </P>]]></Installation>												
+						</Project>
 				</NodeMap>
 			</Node>
 			<Node id="2203" name="Demos" thumb="box"><NodeMap/></Node>
