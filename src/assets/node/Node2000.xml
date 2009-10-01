@@ -4,7 +4,7 @@
 		<Nodes>
 			<Node id="2001" name="Framework" thumb="box">	
 				<NodeMap>
-					<Framework 
+					<Project 
 						name="ActionScript 2 - Standard Version" 
 						status="Production"
 						repo="PureMVC_AS2" 
@@ -12,13 +12,20 @@
 						version="1.0"
 						archive="AS2/PureMVC_AS2.zip" 
 						docs="AS2/apidocs/frameset.html"
+						sourceview=""
 						forum="board=13.0"
-						owner="Pedr Brown"/>
+						owner="Pedr Brown"
+						owner_node="304"
+						pic="PureMVC-Framework-AS2-Std.png">
+							<Description><![CDATA[<P>PureMVC is a lightweight framework for creating applications based upon the classic Model-View-Controller design meta-pattern. This is the specific implementation for the ActionScript 2 language. See the Release Notes for this version for differences from the reference implementation.</P>]]></Description>						
+							<ReleaseNotes><![CDATA[<P>These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. </P>]]></ReleaseNotes>						
+							<Installation><![CDATA[<P>These are the Installation Instructions. These are the Installation Instructions. These are the Installation Instructions. These are the Installation Instructions. These are the Installation Instructions. These are the Installation Instructions. These are the Installation Instructions. </P>]]></Installation>												
+						</Project>
 				</NodeMap>
 			</Node>
 			<Node id="2002" name="Unit Tests" thumb="box">
 				<NodeMap>
-					<Utility 
+					<Project 
 						name="ActionScript 2 - Standard Version - Unit Tests" 
 						status="Production"
 						repo="PureMVC_AS2_UnitTests" 

@@ -10,9 +10,7 @@
 						site_url="http://exploringetfs.com/"
 						author="IQ Interactive"
 						author_url="http://www.iqinteractive.com/blog/?p=47"
-						pic="exploringetfs.png">
-<![CDATA[
-<P>This e-learning B2B financial microsite was created by IQ Interactive for Barclays Global. It was built using PureMVC, FlexBuilder 3 (AS3 + Flash) and PaperVision 2.0 Alpha.</P>
+						pic="exploringetfs.png"><![CDATA[<P>This e-learning B2B financial microsite was created by IQ Interactive for Barclays Global. It was built using PureMVC, FlexBuilder 3 (AS3 + Flash) and PaperVision 2.0 Alpha.</P>
 <P>As the art director on the project put it, it’s really the total package. Within a PaperVision3D environment, it incorporates photo-realistic 3D models with studio-shot video, custom-manufactured props, an elegantly intuitive design, and a custom-composed soundtrack.</P>
 ]]>						
 						</Showcase>
@@ -27,9 +25,9 @@
 						site_url="http://www.mercedes-benz.de/focus-on-fashion"
 						author="elephantseven"
 						author_url="http://www.e-7.com/"
-						pic="mercedes-benz-fashion.png">
-<![CDATA[
-<P>Mercedes Benz launched a new mini-site called Focus on Fashion which is an elegant site for browsing video of the company's sponsored Fashion Week in various exotic locations around the world. Written in PureMVC, Flex and RubyAMF it offers a very smooth and engaging online experience bringing together that classic combo of hot cars and even hotter models. Unfortunately the site is only available in German at the moment, but personally, I didn't feel that impacted my experience negatively at all.</P>
+						pic="mercedes-benz-fashion.png"><![CDATA[<P>Mercedes Benz launched a new mini-site called Focus on Fashion which is an elegant site for browsing video of the company's sponsored Fashion Week in various exotic locations around the world.</P>
+<P>Written in PureMVC, Flex and RubyAMF it offers a very smooth and engaging online experience bringing together that classic combo of hot cars and even hotter models.</P>
+<P>The site is only available in German at the moment, but personally, I didn't feel that impacted my experience negatively at all.</P>
 ]]>						
 						</Showcase>
 				</NodeMap>
@@ -43,9 +41,7 @@
 						site_url="http://www.moonlighting.co.za/"
 						author="HelloComputer"
 						author_url="http://www.hellocomputer.net/"
-						pic="moonlighting.jpg">
-<![CDATA[
-<P>This site is a truely unique and engaging creation. Developed with FlashDevelop3, AS3 (no Flex), using PureMVC 1.7.1, Tweener, Papervision 1.5, SWFAddress 2.0, and completely content managed by the client.</P>
+						pic="moonlighting.jpg"><![CDATA[<P>This site is a truely unique and engaging creation. Developed with FlashDevelop3, AS3 (no Flex), using PureMVC 1.7.1, Tweener, Papervision 1.5, SWFAddress 2.0, and completely content managed by the client.</P>
 <P>If you're first checking out the site, you might not notice the menu it at first. When the loader is complete and the company logo and 'about us' and other text comes up, don't get sucked into clicking 'about us' or any of the tidily arranged words underneath it right away.</P>
 <P>There is a yellow ribbon bisecting the view and along you can see some other things like 'show reel' and 'contact us' sort of turned at odd angles. Click on show reel first. then it's like an outer-space roller-coaster going from menu to menu.  </P>
 ]]>						
@@ -61,9 +57,8 @@
 						site_url="http://radus.com/"
 						author="RADUS, Inc"
 						author_url="http://www.radus.com/content/about/index.aspx"
-						pic="radus.jpg">
-<![CDATA[
-<P>RADUS (pronounced 'Ray-dee-us') is a new media hub platform that allows users to simultaneously discover, search, share, and view digital-rich media across leading computer, mobile, and social networking services, including Facebook and MySpace. RADUS is built in PureMVC for AS3.</P>
+						pic="radus.jpg"><![CDATA[<P>RADUS (pronounced 'Ray-dee-us') is a new media hub platform that allows users to simultaneously discover, search, share, and view digital-rich media across leading computer, mobile, and social networking services, including Facebook and MySpace.</P>
+<P>RADUS is built on PureMVC for AS3.</P>
 ]]>						
 						</Showcase>
 				</NodeMap>
@@ -77,9 +72,7 @@
 						site_url="http://minitask.org/"
 						author="betriebsraum"
 						author_url="http://www.betriebsraum.de/"
-						pic="minitask.png">
-<![CDATA[
-<P>Written in PureMVC and AIR, MiniTask is a free, fast and easy-to-use task management application that helps you with organising your daily todos more efficiently. It supports features like drag 'n' drop reorder, alarm timers, printing of pretty task sheets, copying tasks from and to other applications etc. Because it is an AIR application, it installs easily over the web.</P>
+						pic="minitask.png"><![CDATA[<P>Written in PureMVC and AIR, MiniTask is a free, fast and easy-to-use task management application that helps you with organizing your daily tasks more efficiently. It supports features like drag 'n' drop reorder, alarm timers, printing of pretty task sheets, copying tasks from and to other applications etc. Because it is an AIR application, it installs easily over the web.</P>
 ]]>						
 						</Showcase>
 				</NodeMap>
@@ -93,9 +86,7 @@
 						site_url="http://ws-slideshow.com/"
 						author="Jens Krause // WEBSECTOR.DE"
 						author_url="http://www.websector.de/"
-						pic="ws-slideshow.jpg">
-<![CDATA[
-<P>WS Slideshow is a slick, customizable PureMVC-based Flash application for easily creating slideshows and embedding them into any website. The feature set is very rich, the interaction smooth and the size of the compiled application is unbelievably small.</P>
+						pic="ws-slideshow.jpg"><![CDATA[<P>WS Slideshow is a slick, customizable PureMVC-based Flash application for easily creating slideshows and embedding them into any website. The feature set is very rich, the interaction smooth and the size of the compiled application is unbelievably small.</P>
 <P>You can download WS-Slideshow and use it free for private and non-commercial purposes, and commercial licenses are available.</P>
 ]]>						
 						</Showcase>
@@ -110,9 +101,7 @@
 						site_url="http://muchosmedia.com/demos/brainwave/index.cfm"
 						author="Muchos Media"
 						author_url="http://muchosmedia.com/"
-						pic="brainwave.jpg">
-<![CDATA[
-<P>Brainwave is an online collaboration application. It provides tools like shared multi-page whiteboard, audio, chat and an asset library with file uploading capability. You can drag assets onto the whiteboard and perform standard transformations like scale, rotate, flip, etc. It sports an extensive set of drawing tools and full undo/redo capability for all actions.</P>
+						pic="brainwave.jpg"><![CDATA[<P>Brainwave is an online collaboration application. It provides tools like shared multi-page whiteboard, audio, chat and an asset library with file uploading capability. You can drag assets onto the whiteboard and perform standard transformations like scale, rotate, flip, etc. It sports an extensive set of drawing tools and full undo/redo capability for all actions.</P>
 <P>One really nice feature is the snapshot button which creates an image of the current whiteboard area and opens up a new browser tab with the image which you can then save to your local machine. It also has a slick administration interface, also built on PureMVC.</P>
 ]]>						
 						</Showcase>
@@ -127,9 +116,7 @@
 						site_url="http://www.generationgreen.co.uk/Games/eco-rangers/"
 						author="LBi"
 						author_url="http://www.lbi.com/"
-						pic="eco-rangers.png">
-<![CDATA[
-<P>Help defeat the energy wasting Baron Fossilosis. He has cast a spell on the world turning it into a dark and dirty place. Only the Eco-Rangers can save the day. Together with the brave Professor Green and faithful J0b0t you must stop his army of wasters and save the planet.</P>
+						pic="eco-rangers.png"><![CDATA[<P>Help defeat the energy wasting Baron Fossilosis. He has cast a spell on the world turning it into a dark and dirty place. Only the Eco-Rangers can save the day. Together with the brave Professor Green and faithful J0b0t you must stop his army of wasters and save the planet.</P>
 <P>This engaging Mario Brothers-style game was created using PureMVC by LBi for the British Gas 'Generation Green' website, which supports schools, pupils, their parents and the wider community in becoming more environmentally aware.</P>
 ]]>						
 						</Showcase>
@@ -144,9 +131,7 @@
 						site_url="http://actionscriptnotes.com/showcase/renju/Main.html"
 						author="Ivan Vieru"
 						author_url="http://actionscriptnotes.com/"
-						pic="renju.png">
-<![CDATA[
-<P>Renju is a variant of Gomoku, the ancient Japanese board game. Played with black and white stones on a 15×15 intersection board, two players, alternately place stones of their own colour on the empty intersections of the board. The player who gets five or more stones in a row (horizontally, vertically or diagonally) first wins. The algorithm for the computer's moves is particularly effective, making gameplay extremely addictive!</P>
+						pic="renju.png"><![CDATA[<P>Renju is a variant of Gomoku, the ancient Japanese board game. Played with black and white stones on a 15×15 intersection board, two players, alternately place stones of their own colour on the empty intersections of the board. The player who gets five or more stones in a row (horizontally, vertically or diagonally) first wins. The algorithm for the computer's moves is particularly effective, making gameplay extremely addictive!</P>
 ]]>						
 						</Showcase>
 				</NodeMap>
@@ -160,9 +145,7 @@
 						site_url="http://actionscriptnotes.com/showcase/slidingpuzzle/Main.html"
 						author="Ivan Vieru"
 						author_url="http://actionscriptnotes.com/"
-						pic="sliding-puzzle.png">
-<![CDATA[
-<P>This is the classic '15-puzzle' that every kid has enjoyed at some point. I know I played with it endlessly as a child.</P>
+						pic="sliding-puzzle.png"><![CDATA[<P>This is the classic '15-puzzle' that every kid has enjoyed at some point. I know I played with it endlessly as a child.</P>
 <P>There are 16 squares, and 15 numbered tiles. The one empty tile allows you to slide in another tile from the sides orthagonally, rearranging the tiles from their initial randomized state until they count from 1 in the upper left to 15 at the end of the bottom row.</P>
 ]]>						
 						</Showcase>
@@ -177,9 +160,7 @@
 						site_url="http://www.panfu.de/"
 						author="Jens Krause // WEBSECTOR.DE"
 						author_url="http://www.websector.de/"
-						pic="panfu.png">
-<![CDATA[
-<P>Panfu is a German multiuser learning and gaming community for children. For the communication between the server- and client-side it uses Flash-Remoting based on OpenAMF and a XMLSocket solution based on a custom-built SocketServer for the multiuser management. It is a multilingual site offering German, French, Spanish,  Dutch and English.</P>
+						pic="panfu.png"><![CDATA[<P>Panfu is a German multiuser learning and gaming community for children. For the communication between the server- and client-side it uses Flash-Remoting based on OpenAMF and a XMLSocket solution based on a custom-built SocketServer for the multiuser management. It is a multilingual site offering German, French, Spanish,  Dutch and English.</P>
 ]]>						
 						</Showcase>
 				</NodeMap>
@@ -193,9 +174,7 @@
 						site_url="http://www.theworldsbiggestad.com/"
 						author="TBWA Tequila - Singapore"
 						author_url="http://www.tbwa.com/"
-						pic="wba.jpg">
-<![CDATA[
-<P>TBWA \ TEQUILA \ Singapore has created an interesting combination of RIA and interactive / group-created advertisement for The Photolibrary Group, a major stock photo an footage agency.</P>
+						pic="wba.jpg"><![CDATA[<P>TBWA \ TEQUILA \ Singapore has created an interesting combination of RIA and interactive / group-created advertisement for The Photolibrary Group, a major stock photo an footage agency.</P>
 <P>It's called 'The World's Biggest Ad', and the idea is simple: provide designers with the chance to show off their creativity by using Photolibrary's stock photos and an easy to use, Photoshop-like interface for creating your own ad. When you are done, your composition becomes part of the larger, growing image. You can also explore the big ad, clicking on individual ones that  hop out at you, and see who created them. Who knew ads could actually be fun? </P>
 ]]>						
 						</Showcase>
@@ -210,14 +189,11 @@
 						site_url="http://seaofarrows.com/"
 						author="Futurescale, Inc."
 						author_url="http://futurescale.com/"
-						pic="soa.png">
-<![CDATA[
-<P>Did you know that Cliff Hall, author of the PureMVC Framework is also a musician and recording engineer, and that his company Futurescale, Inc. has a fully equipped recording studio? His band is called Sea of Arrows, and you can hear all his tracks online for free while watching some cool visualizations at his PureMVC / Flex-based website.</P>
+						pic="soa.png"><![CDATA[<P>Did you know that Cliff Hall, author of the PureMVC Framework is also a musician and recording engineer, and that his company Futurescale, Inc. has a fully equipped recording studio? His band is called Sea of Arrows, and you can hear all his tracks online for free while watching some cool visualizations at his PureMVC / Flex-based website.</P>
 ]]>						
 						</Showcase>
 				</NodeMap>
 			</Node>
-
 		</Nodes>
 	</NodeMap>
 </Node>

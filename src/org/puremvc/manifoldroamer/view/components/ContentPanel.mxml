@@ -14,14 +14,15 @@
 
 	<mx:Script>
 		<![CDATA[
-			import org.puremvc.manifoldroamer.model.vo.SiteVO;
-			import org.puremvc.manifoldroamer.model.vo.PresentationVO;
+			import mx.effects.Effect;
 			import mx.core.UIComponent;
+			import org.puremvc.manifoldroamer.ApplicationFacade;
+			import org.puremvc.manifoldroamer.model.vo.PresentationVO;
 			import org.puremvc.manifoldroamer.model.vo.DocumentVO;
 			import org.puremvc.manifoldroamer.model.vo.ShowcaseVO;
 			import org.puremvc.manifoldroamer.model.vo.NodeDataVO;
-			import org.puremvc.manifoldroamer.ApplicationFacade;
-			import mx.effects.Effect;
+			import org.puremvc.manifoldroamer.model.vo.ProjectVO;
+			import org.puremvc.manifoldroamer.model.vo.SiteVO;
 			
 			[Bindable] public var nodeData:NodeDataVO;
 			
@@ -43,6 +44,7 @@
 				if (n is ShowcaseVO) index = 1;
 				if (n is PresentationVO) index = 2;
 				if (n is SiteVO) index = 3;
+				if (n is ProjectVO) index = 4;
 				return index;				
 			}
 			
@@ -54,6 +56,7 @@
 		<view:ContentShowcase id="contentShowcase" nodeData="{nodeData as ShowcaseVO}" readURL="readURL(contentShowcase.targetURL)"/>
 		<view:ContentPresentation id="contentPresentation" nodeData="{nodeData as PresentationVO}" readURL="readURL(contentPresentation.targetURL)"/>
 		<view:ContentSite id="contentSite" nodeData="{nodeData as SiteVO}" readURL="readURL(contentSite.targetURL)"/>
+		<view:ContentProject id="contentProject" nodeData="{nodeData as ProjectVO}" readURL="readURL(contentProject.targetURL)"/>
 	</mx:ViewStack>
 
 	<!--mx:TextArea width="75%" height="75%" text="{nodeData.nodeData.toXMLString()}"/-->

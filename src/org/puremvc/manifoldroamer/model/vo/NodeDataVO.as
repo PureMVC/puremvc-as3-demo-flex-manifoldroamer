@@ -5,9 +5,7 @@ package org.puremvc.manifoldroamer.model.vo
 	{
 		public static const BLANK:String 		= "Blank";
 		public static const DOCUMENT:String 	= "Document";
-		public static const FRAMEWORK:String 	= "Framework";
-		public static const DEMO:String 		= "Demo";
-		public static const UTILITY:String 		= "Utility";
+		public static const PROJECT:String 		= "Project";
 		public static const SHOWCASE:String 	= "Showcase";
 		public static const CONTRIBUTOR:String 	= "Contributor";
 		public static const PRESENTATION:String	= "Presentation";

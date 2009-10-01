@@ -2,10 +2,14 @@
 <ServiceConfig>
 	<Service url_pre="assets/node/Node" url_post=".xml" version="local-1.0">
 		<Thumbs url_pre="assets/thumb/" url_post=".png"/>
-		<Projects repo_pre="http://svn.puremvc.org/" 
-			      archive_pre="http://puremvc.org/pages/downloads/"
-			      forum_pre="http://forums.puremvc.org/index.php?"
-			      docs_pre="http://puremvc.org/pages/docs/"/>
+		<Project archive_pre="http://puremvc.org/pages/downloads/"
+			     docs_pre="http://puremvc.org/pages/docs/"
+			     forum_pre="http://forums.puremvc.org/index.php?"
+			     live_pre="http:/puremvc.org/pages/demos/"
+			     pic_pre="http:/puremvc.org/pages/images/framework_thumbs/"
+				 repo_pre="http://svn.puremvc.org/"
+				 srcview_pre="http://puremvc.org/docs/" 
+			      />
 		<Showcase pic_pre="http://puremvc.org/images/stories/showcase/"/>
 		<Presentation pic_pre="http://puremvc.org/pages/images/preso_thumbs/"/>
 		<Site pic_pre="http://puremvc.org/pages/images/site_thumbs/"/>

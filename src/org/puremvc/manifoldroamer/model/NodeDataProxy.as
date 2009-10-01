@@ -4,7 +4,7 @@ package org.puremvc.manifoldroamer.model
 	import org.puremvc.manifoldroamer.model.vo.ContributorVO;
 	import org.puremvc.manifoldroamer.model.vo.DemoVO;
 	import org.puremvc.manifoldroamer.model.vo.DocumentVO;
-	import org.puremvc.manifoldroamer.model.vo.FrameworkVO;
+	import org.puremvc.manifoldroamer.model.vo.ProjectVO;
 	import org.puremvc.manifoldroamer.model.vo.NodeDataVO;
 	import org.puremvc.manifoldroamer.model.vo.PresentationVO;
 	import org.puremvc.manifoldroamer.model.vo.ShowcaseVO;
@@ -30,10 +30,6 @@ package org.puremvc.manifoldroamer.model
 					vo = ContributorVO( nodeData );
 					break;
 					
-				case NodeDataVO.DEMO:
-					vo = new DemoVO( nodeData );
-					break;
-
 				case NodeDataVO.DOCUMENT: // Populate DocumentVO
 					var dvo:DocumentVO = new DocumentVO( nodeData );
 					dvo.pic = prepend( configProxy.document.@pic_pre, dvo.pic );
@@ -41,8 +37,22 @@ package org.puremvc.manifoldroamer.model
 					vo = dvo;
 					break;
 
-				case NodeDataVO.FRAMEWORK:
-					vo = new FrameworkVO( nodeData );
+				case NodeDataVO.PRESENTATION: // Populate PresentationVO
+					var pvo:PresentationVO = new PresentationVO( nodeData );
+					pvo.pic = prepend( configProxy.presentation.@pic_pre, pvo.pic );
+					vo = pvo;
+					break;
+
+				case NodeDataVO.PROJECT: // Populate ProjectVO
+					var prvo:ProjectVO = new ProjectVO( nodeData );
+					prvo.archive = prepend( configProxy.project.@archive_pre, prvo.archive );
+					prvo.docs = prepend( configProxy.project.@docs_pre, prvo.docs );
+					prvo.forum = prepend( configProxy.project.@forum_pre, prvo.forum );
+					prvo.live = prepend( configProxy.project.@live_pre, prvo.live );
+					prvo.pic = prepend( configProxy.project.@pic_pre, prvo.pic );
+					prvo.repo = prepend( configProxy.project.@repo_pre, prvo.repo );
+					prvo.srcview = prepend( configProxy.project.@srcview_pre, prvo.srcview );
+					vo = prvo;
 					break;
 
 				case NodeDataVO.SHOWCASE: // Populate ShowcaseVO
@@ -57,20 +67,6 @@ package org.puremvc.manifoldroamer.model
 					vo = stvo;
 					break;
 
-				case NodeDataVO.PRESENTATION: // Populate PresentationVO
-					var pvo:PresentationVO = new PresentationVO( nodeData );
-					pvo.pic = prepend( configProxy.presentation.@pic_pre, pvo.pic );
-					vo = pvo;
-					break;
-
-				case NodeDataVO.PRESENTATION:
-					vo = new PresentationVO( nodeData );
-					break;
-
-				case NodeDataVO.UTILITY:
-					vo = new UtilityVO( nodeData );
-					break;
-
 			}
 
 			return vo;
@@ -78,7 +74,7 @@ package org.puremvc.manifoldroamer.model
 		
 		private function prepend( pre:String, url:String ):String
 		{
-			return ( isAbsolute(url) )? url : pre + url;
+			return ( isAbsolute(url) || url == '' )? url : pre + url;
 		}
 		private function isAbsolute(url:String):Boolean
 		{

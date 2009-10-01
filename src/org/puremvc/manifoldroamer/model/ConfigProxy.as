@@ -121,9 +121,9 @@ package org.puremvc.manifoldroamer.model
 			return service..Thumbs[0] as XML;
 		}
 
-		public function get projects():XML
+		public function get project():XML
 		{
-			return service..Projects[0] as XML;
+			return service..Project[0] as XML;
 		}
 
 		public function get showcase():XML
