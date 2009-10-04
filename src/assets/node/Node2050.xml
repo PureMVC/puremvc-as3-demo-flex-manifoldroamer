@@ -5,7 +5,7 @@
 			<Node id="2051" name="Framework" thumb="box">	
 				<NodeMap>
 					<Project 
-						name="PureMVC Standard Version for ActionScript 3" 
+						name="PureMVC Standard for ActionScript 3" 
 						status="Production"
 						repo="PureMVC_AS3" 
 						tag="2.0.4"
@@ -127,7 +127,7 @@ In the Flash IDE, open the your FLA or Project, and go to:
 			<Node id="2052" name="Unit Tests" thumb="box">
 				<NodeMap>
 					<Project 
-						name="PureMVC AS3 Standard Version Unit Tests" 
+						name="PureMVC AS3 Standard Unit Tests" 
 						status="Production"
 						repo="PureMVC_AS3_UnitTests" 
 						tag="UnitTests_2_0_2"
@@ -140,7 +140,7 @@ In the Flash IDE, open the your FLA or Project, and go to:
 						owner_node="300"
 						shot="PureMVC-Shot-AS3-Std-UnitTests.png"
 						pic="PureMVC-Framework-AS3-Std.png">
-							<Description><![CDATA[<P>These are the unit tests for the PureMVC AS3 Standard Version Framework</P>]]></Description>						
+							<Description><![CDATA[These are the unit tests for the PureMVC AS3 Standard Version Framework]]></Description>						
 							<ReleaseNotes><![CDATA[The Unit Tests for the PureMVC Framework for ActionScript 3 are written with FlexUnit. The distribution package is in ZIP format contains the AS3 source code for the Flex Unit tests, API documentation, and the FlexUnit SWC library. It does not contain the PureMVC framework that is in a separate download. 
 When you view the source code for the AS3 Framework, you initially see the results of these unit tests running in the right hand window. You should always see a green bar, indicating all tests have passed. 
 Every method of every framework class has at least one unit test associated with it, sometimes more. Each unit test, in turn generally makes several assertions. 

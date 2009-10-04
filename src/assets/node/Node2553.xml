@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node id="2553" name="Demos (1)" thumb="flake">
+	<NodeMap>
+		<Nodes>
+			<Node id="25531" name="Employee Admin" thumb="box">	
+				<NodeMap>
+					<Project 
+						name="Employee Admin Demo for Ruby" 
+						status="Production"
+						repo="Demo_Ruby_wxRuby_EmployeeAdmin" 
+						tag="EmployeeAdmin_1_0"
+						version="1.0"
+						archive="Ruby/Demo_Ruby_wxRuby_EmployeeAdmin.zip" 
+						docs=""
+						forum="topic=953.0"
+						owner="Jake Dempsey"
+						owner_node="308"
+						pic="PureMVC-Framework-Ruby-Std.png"
+						shot="PureMVC-Shot-Ruby-Std-EmployeeAdmin.png">
+<Description><![CDATA[
+This demo illustrates techniques for performing routine maintenance operations in a PureMVC-based application using wxRuby view components.
+]]></Description>						
+
+<ReleaseNotes><![CDATA[<B>Features in Version 1.0</B>
+  * A port of the classic  EmployeeAdmin Demo for AS3
+  * Uses the  wxruby toolkit for UI components.
+  * The only functional corner cut is there is no confirmation step on delete user. 
+]]></ReleaseNotes>						
+
+
+<Installation><![CDATA[<B>Prerequisites</B>
+<U>You will need ruby installed.</U>
+  * You can download ruby here: <font color="#0000FF"><A href="http://www.ruby-lang.org/" target="_blank">http://www.ruby-lang.org/</A></font>
+  * For Windows, the one-click installer is HIGHLY recommended, and includes rubygems. 
+
+<U>You will need rubygems installed.</U>
+  * You can see if you have rubygems by typing "gem --version" on the command line.
+  * You can download rubygems here: <font color="#0000FF"><A href="http://rubyforge.org/frs/?group_id=126" target="_blank">http://rubyforge.org/frs/?group_id=126</A></font>
+  * Expand the downloaded rubygems archive onto your system
+  * Open a terminal window in the directory you expanded it to (i.e. "c:\development\rubygems-x-y")
+  * type "ruby setup.rb" to install rubygems 
+
+<U>You will need wxruby installed.</U>
+  * Open a terminal window and type "gem install wxruby" 
+
+<U>You will need PureMVC_Ruby installed.</U>
+  * Open a terminal window and type "gem install PureMVC_Ruby" 
+
+<B>Installing the Project Source Code</B>
+<U>From the Archive</U>
+  * Download the latest source code archive.
+  * Unzip the source code zip to any folder on your disk. 
+  	For instance: c:\development\
+  * You will see a EmployeeAdmin_X_Y (where X_Y is version) source folder. 
+  	For instance: c:\development\EmployeeAdmin_X_Y  
+
+<U>From the Repository</U>
+  * Use your favorite SVN client to retrieve the latest source code release from the repository. 
+]]></Installation>												
+					</Project>
+				</NodeMap>
+			</Node>
+		</Nodes>			
+	</NodeMap>
+</Node>

@@ -2,10 +2,10 @@
 <Node id="2500" name="Standard Version" thumb="flake">
 	<NodeMap>
 		<Nodes>
-			<Node id="2501" name="Framework and Unit Tests" thumb="box">	
+			<Node id="2501" name="Framework and Tests" thumb="box">	
 				<NodeMap>
 					<Project 
-						name="PureMVC Standard Version and Unit Tests for Python" 
+						name="PureMVC Standard and Tests for Python" 
 						status="Production"
 						repo="PureMVC_Python" 
 						tag="1.1"
@@ -16,14 +16,50 @@
 						owner="Toby de Havilland"
 						owner_node="314"
 						pic="PureMVC-Framework-Python-Std.png">
-							<Description><![CDATA[<P>This is the description.</P>]]></Description>						
-							<ReleaseNotes><![CDATA[<P>These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. </P>]]></ReleaseNotes>						
-							<Installation><![CDATA[<P>These are the Installation Instructions. These are the Installation Instructions. These are the Installation Instructions. These are the Installation Instructions. These are the Installation Instructions. These are the Installation Instructions. These are the Installation Instructions. </P>]]></Installation>												
+							<Description><![CDATA[PureMVC is a lightweight framework for creating applications based upon the classic Model-View-Controller design meta-pattern. This is the specific implementation for the Python language based on the Standard Version AS3 reference. See the Release Notes for this version for differences from the reference implementation. ]]></Description>						
+<ReleaseNotes><![CDATA[<B>Summary of Changes in 1.1</B>
+    * Updated Fabfile.
+    * Fixed FIFO bug in MacroCommand.execute()
+    * Fixed typo in Proxy docstring 
+
+<B>Summary of Changes in 1.0</B>
+    * Update in sync with release 2.0.4 of the  AS3 Standard Version.
+    * Added a fabfile to build documentation and unit tests ( http://www.nongnu.org/fab/) 
+
+<B>Summary of Changes in 0.6</B>
+    * Update in sync with releases 2.0.2 and 2.0.3 of the  AS3 Standard Version. 
+
+<B>Summary of Changes in 0.5</B>
+    * Removed .pyc files and completed docs. 
+
+<B>Summary of Changes in 0.4</B>
+    * New package structure and installer script. 
+
+<B>Summary of Changes in 0.3</B>
+    * Complete rewrite with unit tests and documentation by Toby. 
+
+<B>Summary of Changes in 0.2</B>
+    * Current state of port by Nathan. 
+
+<B>Features in 0.1</B>
+    * Initial project structure created in repository - CLH 
+]]></ReleaseNotes>						
+<Installation><![CDATA[<B>Installing the Project Source Code</B>
+<U>From the archive</U>
+   * Download the latest source code archive.
+   * Unzip the source code zip to any folder on your disk. 
+	For instance: c:\development\
+   * You will see a PureMVC_Python_X_Y (where X_Y is version) source folder. 
+	For instance: c:\development\PureMVC_Python_X_Y 
+
+<U>From the Repository</U>
+   * Use your  favorite SVN client to retrieve the latest source code release from the repository. 
+]]></Installation>	
 						</Project>
 				</NodeMap>
 			</Node>
-			<Node id="2503" name="Demos" thumb="box"><NodeMap/></Node>
-			<Node id="2504" name="Utilities" thumb="box"><NodeMap/></Node>
+			<Node id="2503" name="Demos (1)" thumb="box"/>
+			<Node id="2504" name="Utilities (0)" thumb="box"><NodeMap/></Node>
 		</Nodes>
 	</NodeMap>
 </Node>

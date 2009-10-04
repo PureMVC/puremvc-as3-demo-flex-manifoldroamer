@@ -5,7 +5,7 @@
 			<Node id="2451" name="Framework" thumb="box">	
 				<NodeMap>
 					<Project 
-						name="Pure MVC Standard Version for PHP" 
+						name="PureMVC Standard for PHP" 
 						status="Production"
 						repo="PureMVC_PHP" 
 						tag="1.0.2"
@@ -16,10 +16,56 @@
 						forum="board=75.0"
 						owner="Hasan Otuome"
 						owner_node="323"
-						pic="PureMVC-Framework-PHP-Std.png">
-							<Description><![CDATA[<P>This is the description.</P>]]></Description>						
-							<ReleaseNotes><![CDATA[<P>These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. </P>]]></ReleaseNotes>						
-							<Installation><![CDATA[<P>These are the Installation Instructions. These are the Installation Instructions. These are the Installation Instructions. These are the Installation Instructions. These are the Installation Instructions. These are the Installation Instructions. These are the Installation Instructions. </P>]]></Installation>												
+						pic="PureMVC-Framework-PHP-Std.png"
+						shot="PureMVC-Shot-PHP-Std-CSSZenGarden.png">
+							<Description><![CDATA[PureMVC is a lightweight framework for creating applications based upon the classic Model-View-Controller design meta-pattern. This is the specific implementation for the PHP language based on the Standard Version AS3 reference. The archive and repository come with a built-in demo based on the CSS Zen Garden.]]></Description>						
+							<ReleaseNotes><![CDATA[<B>Summary of Changes in 1.0.2</B>
+    * Added workaround for PHP warning notice bug reported 12/3/2008... (View.php)
+    * Fixed constructors per bug reported 1/1/2009... (MacroCommand.php, Notifier.php) 
+
+<B>Summary of Changes in 1.0.1</B>
+    * Added index.php that was previously ommitted from the root of download package which invokes the BasicDemo. 
+
+<B>Summary of Changes in 1.0</B>
+    * Numerous corrections to framework, bring it into full functionality. Also provided are Unit Tests, a working Basic Demo (based on CSS Zen Garden) and full API docs. Production! 
+
+<B>Summary of Changes in 0.4</B>
+    * Fixes singleton creation problem. 
+
+<B>Summary of Changes in 0.3</B>
+    * Update to AS3 version 2.0.1 functionality. 
+
+<B>Summary of Changes in 0.2</B>
+    * Current state of port by Asbjorn. 
+
+<B>Features in Changes in 0.1</B>
+    * Initial project structure created in repository - CLH 
+    ]]></ReleaseNotes>						
+							<Installation><![CDATA[<B>Installing the Project Source Code</B>
+<U>From the archive</U>
+  * Download the latest source code archive.
+  * Unzip the source code zip to any folder on your disk. 
+  	For instance: c:\development\
+  * You will see a PureMVC_PHP_X_Y (where X_Y is version) source folder. 
+  	For instance: c:\development\PureMVC_PHP_X_Y 
+
+<U>From the Repository</U>
+  * Use your  favorite SVN client to retrieve the latest source code release from the repository. 
+
+<B>Installation on Mac with MAMP</B>
+1.) Download MAMP from  <font color="#0000FF"><a href="http://www.mamp.info/en/index.php" target="_blank">http://www.mamp.info/en/index.php</A></font>
+2.) Install MAMP, by default it goes in the Applications folder.
+3.) Click on the MAMP icon to start the MAMP Control Panel. MAMP will prompt for your user password. After entering your password the control panel will start the Apache server and MySQL server and the MAMP start page will appear with links to PHPMyAdmin and other tools.
+4.) Open the MAMP installation folder. In the MAMP folder open the 'htdocs' folder. By default this is where MAMP will look for index when browsing to  http://localhost:80. Place the index.php, org and images folders in the htdocs folder.
+5.) Browse to  http://localhost in your web browser to run the demo.
+
+<B>Installation on Windows with XAMPP</B>
+1.) Download XAMPP from  <font color="#0000FF"><a href="http://www.apachefriends.org/en/xampp.html" target="_blank">http://www.apachefriends.org/en/xampp.html</A></font>
+2.) Double click the xampp-win32-1.6.8.exe or current version. It will prompt you for a location to extract the files.
+3.) In the xampp folder, double click the setup_xampp.bat file to set up xampp.
+4.) Double click the xampp-control.exe when the setup is complete. The XAMPP Control Panel allows you to start and stop the Apache and MySQL server as well as a couple of others. For the demo only Apache and MySQL server should be running. The Control Panel starts and stops the servers, but does not stop then when you exit the Control Panel like MAMP does, so make sure to turn off your server if you do not want it on before exiting the Control Panel.
+5.) Open the xampp folder. In there locate and open the htdocs folder. By default this is where XAMPP will look for index when browsing to  http://localhost. Place the index.php, org and images folders in the htdocs folder.
+6.) Browse to  http://localhost in your web browser to run the demo. ]]></Installation>												
 						</Project>
 				</NodeMap>
 			</Node>
@@ -38,9 +84,38 @@
 						owner="Hasan Otuome"
 						owner_node="323"
 						pic="PureMVC-Framework-PHP-Std.png">
-							<Description><![CDATA[<P>This is the description.</P>]]></Description>						
-							<ReleaseNotes><![CDATA[<P>These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. These are the Release Notes. </P>]]></ReleaseNotes>						
-							<Installation><![CDATA[<P>These are the Installation Instructions. These are the Installation Instructions. These are the Installation Instructions. These are the Installation Instructions. These are the Installation Instructions. These are the Installation Instructions. These are the Installation Instructions. </P>]]></Installation>												
+							<Description><![CDATA[These are the unit tests for the PureMVC Standard Version Framework for PHP. ]]></Description>						
+<ReleaseNotes><![CDATA[<B>Summary of Changes in 1.0.1</B> 
+  * Added missing value to constructor of FacadeTestVO which prevented FacadeTest.testRegisterCommandAndSendNotification() from passing...
+
+<B>Summary of Changes in 1.0</B> 
+  * Prepared unit tests for port source code version 1.0 - OG/HO
+
+<B>Summary of Changes in 0.4</B> 
+  * Corrected Singleton creation functionality - CLH
+
+<B>Summary of Changes in 0.3</B> 
+  * Updated to AS3 2.0.1 functionality. - CLH
+
+<B>Summary of Changes in 0.2</B> 
+  * Initial upload of ported code, doc is coming shortly - AST
+
+<B>Features in 0.1</B> 
+  * Initial project structure created in repository - CLH
+
+]]></ReleaseNotes>						
+<Installation><![CDATA[<B>Installing the Project Source Code</B>
+<U>From the archive</U>
+   * Download the latest source code archive.
+   * Unzip the source code zip to any folder on your disk. 
+     * For instance: c:\development\
+   * You will see a PureMVC_PHP_UnitTests_X_Y (where X_Y is version) source folder. 
+     * For instance: c:\development\PureMVC_PHP_UnitTests_X_Y 
+
+<U>From the Repository</U>
+   * Use your  favorite SVN client to retrieve the latest source code release from the repository. 
+]]></Installation>	
+          												
 						</Project>
 				</NodeMap>
 			</Node>

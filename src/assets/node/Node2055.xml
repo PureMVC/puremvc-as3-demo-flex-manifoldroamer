@@ -5,7 +5,7 @@
 			<Node id="2056" name="Framework" thumb="box">	
 				<NodeMap>
 					<Project 
-						name="PureMVC MultiCore Version for ActionScript 3" 
+						name="PureMVC MultiCore for ActionScript 3" 
 						status="Production"
 						repo="PureMVC_AS3_MultiCore" 
 						tag="1.0.5"
@@ -127,7 +127,7 @@ In the Flash IDE, open the your FLA or Project, and go to:
 			<Node id="2057" name="Unit Tests" thumb="box">
 				<NodeMap>
 					<Project 
-						name="PureMVC AS3 MultiCore Version Unit Tests" 
+						name="PureMVC AS3 MultiCore Unit Tests" 
 						status="Production"
 						repo="PureMVC_AS3_MultiCore_UnitTests" 
 						tag="1.0.5"

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node id="25031" name="Employee Admin" thumb="box">	
+	<NodeMap>
+		<Project 
+			name="Employee Admin Demo for Python" 
+			status="Production"
+			repo="Demo_Python_wxPython_EmployeeAdmin" 
+			tag="EmployeeAdmin_1_0"
+			version="1.0"
+			archive="Python/Demo_Python_wxPython_EmployeeAdmin.zip" 
+			docs=""
+			forum="topic=341.0"
+			owner="Toby de Havilland"
+			owner_node="314"
+			pic="PureMVC-Framework-Python-Std.png"
+			shot="PureMVC-Shot-Python-Std-EmployeeAdmin.png">
+<Description><![CDATA[
+This demo illustrates techniques for performing routine maintenance operations in a PureMVC-based application using wxPython view components.
+]]></Description>						
+
+<ReleaseNotes><![CDATA[<B>Features in Version 1.0</B>
+  * A port of the classic EmployeeAdmin Demo for ActionScript3
+  * Uses the  wxPython toolkit for UI components.
+]]></ReleaseNotes>						
+
+<Installation><![CDATA[<B>Prerequisites</B>
+<U>You will need Python 2.5 installed.</U>
+  * You can download Python here: <font color="#0000FF"><A href="http://www.python.org/" target="_blank">http://www.python.org/</A></font>
+
+<U>You will need wxPython installed.</U>
+  * You can download wxPython here: <font color="#0000FF"><A href="http://www.wxpython.org/" target="_blank">http://www.wxpython.org/</A></font>
+
+<B>Installing the Project Source Code</B>
+<U>From the Archive</U>
+  * Download the latest source code archive.
+  * Unzip the source code zip to any folder on your disk. 
+  	For instance: c:\development\
+  * You will see a EmployeeAdmin_X_Y (where X_Y is version) source folder. 
+  	For instance: c:\development\EmployeeAdmin_X_Y  
+
+<U>From the Repository</U>
+  * Use your favorite SVN client to retrieve the latest source code release from the repository. 
+]]></Installation>												
+		</Project>
+	</NodeMap>
+</Node>

@@ -5,7 +5,7 @@
 			<Node id="2001" name="Framework" thumb="box">	
 				<NodeMap>
 					<Project 
-						name="PureMVC Standard Version for ActionScript 2" 
+						name="PureMVC Standard for ActionScript 2" 
 						status="Production"
 						repo="PureMVC_AS2" 
 						tag="1.0"
@@ -17,8 +17,8 @@
 						owner="Pedr Brown"
 						owner_node="304"
 						pic="PureMVC-Framework-AS2-Std.png">
-							<Description><![CDATA[<P>PureMVC is a lightweight framework for creating applications based upon the classic Model-View-Controller design meta-pattern. This is the specific implementation for the ActionScript 2 language. See the Release Notes for this version for differences from the reference implementation.</P>]]></Description>						
-							<ReleaseNotes><![CDATA[<P>The current release is compatible with the AS3 Reference implementation version 2.0.3.
+							<Description><![CDATA[PureMVC is a lightweight framework for creating applications based upon the classic Model-View-Controller design meta-pattern. This is the specific implementation for the ActionScript 2 language. See the Release Notes for this version for differences from the reference implementation.]]></Description>						
+							<ReleaseNotes><![CDATA[The current release is compatible with the AS3 Reference implementation version 2.0.3.
 
 <U><B>FlashLite Implementation Notes</B></U>
 
@@ -90,7 +90,7 @@ In the Flash IDE, open the your FLA or Project, and go to:
 			<Node id="2002" name="Unit Tests" thumb="box">
 				<NodeMap>
 					<Project 
-						name="PureMVC AS2 Standard Version Unit Tests" 
+						name="PureMVC AS2 Standard Unit Tests" 
 						status="Production"
 						repo="PureMVC_AS2_UnitTests" 
 						tag="UnitTests_0_7"
@@ -108,21 +108,21 @@ Every method of every framework class has at least one unit test associated with
 If you modify the source code for the PureMVC framework for AS2, you should also create or modify the appropriate unit tests, and make sure that all tests still pass before building upon your modified version of the framework. 
 ]]></ReleaseNotes>						
 							<Installation><![CDATA[<U><B>Installation</B></U>
-    * Checkout or export from the Subversion repository.
-    * The tests reference two library projects - PureMVC AS2 Framework and AsUnit - which are found in the libs directory.
-    * Open bin/index.html, and you should see the green bar as all tests pass. 
+  * Checkout or export from the Subversion repository.
+  * The tests reference two library projects - PureMVC AS2 Framework and AsUnit - which are found in the libs directory.
+  * Open bin/index.html, and you should see the green bar as all tests pass. 
 
 <U><B>Running the tests yourself</B></U>
-    * Open bin/AsUnitUi.swf.
-    * Open testrunner/test_runner.fla in Flash.
-    * Test the movie, and AsUnitUi.swf will display a green bar. 
+  * Open bin/AsUnitUi.swf.
+  * Open testrunner/test_runner.fla in Flash.
+  * Test the movie, and AsUnitUi.swf will display a green bar. 
 
 <U><B>Making the AsUnit UI available within Flash</B></U>
-    * Copy bin/AsUnitUi.swf to
-          o "C:\Documents and Settings\*username*\Local Settings\Application Data\Adobe\Flash CS3\en\Configuration\WindowSWF" (Windows XP)
-          o "/Users/*username*/Library/Application Support/Adobe/Flash CS3/en/Configuration/WindowSWF/" (Mac). 
-    * Restart Flash, and select window>other panels>AsUnit Ui.
-    * Test testrunner/test_runner.fla, and the results will show up within Flash. 
+  * Copy bin/AsUnitUi.swf to:
+  * C:\Documents and Settings\*username*\Local Settings\Application Data\Adobe\Flash CS3\en\Configuration\WindowSWF (Windows XP)
+  * "/Users/*username*/Library/Application Support/Adobe/Flash CS3/en/Configuration/WindowSWF/" (Mac). 
+  * Restart Flash, and select window>other panels>AsUnit Ui.
+  * Test testrunner/test_runner.fla, and the results will show up within Flash. 
     ]]></Installation>												
 						</Project>
 				</NodeMap>
