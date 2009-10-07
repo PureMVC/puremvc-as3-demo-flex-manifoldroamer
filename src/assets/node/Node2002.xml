@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node id="2002" name="Unit Tests" thumb="box">
+	<NodeMap>
+		<Project 
+			name="PureMVC AS2 Standard Unit Tests" 
+			status="Production"
+			repo="PureMVC_AS2_UnitTests" 
+			tag="UnitTests_0_7"
+			version="0.7"
+			archive="AS2/PureMVC_AS2_UnitTests.zip"
+			live="AS2/PureMVC_AS2_UnitTests/"
+			docs="AS2/apidocs/frameset.html"
+			forum="topic=418.0"
+			owner="James Knight"
+			owner_node="316"
+			pic="PureMVC-Framework-AS2-Std.png">
+
+<Description><![CDATA[<P>These are the Unit Tests for the PureMVC AS2 Standard Version Framework.</P>]]></Description>						
+
+<ReleaseNotes><![CDATA[The Unit Tests for the PureMVC Framework for ActionScript 2 use AsUnit2.5. The distribution package is in ZIP format contains the AS2 source code for the unit tests, API documentation, and the required AsUnit2.5 and PureMVC AS2 Framework libraries.
+Every method of every framework class has at least one unit test associated with it, sometimes more. Each unit test, in turn generally makes several assertions.
+If you modify the source code for the PureMVC framework for AS2, you should also create or modify the appropriate unit tests, and make sure that all tests still pass before building upon your modified version of the framework. 
+]]></ReleaseNotes>						
+
+<Installation><![CDATA[<U><B>Installation</B></U>
+  * Checkout or export from the Subversion repository.
+  * The tests reference two library projects - PureMVC AS2 Framework and AsUnit - which are found in the libs directory.
+  * Open bin/index.html, and you should see the green bar as all tests pass. 
+
+<U><B>Running the tests yourself</B></U>
+  * Open bin/AsUnitUi.swf.
+  * Open testrunner/test_runner.fla in Flash.
+  * Test the movie, and AsUnitUi.swf will display a green bar. 
+
+<U><B>Making the AsUnit UI available within Flash</B></U>
+  * Copy bin/AsUnitUi.swf to:
+  * C:\Documents and Settings\*username*\Local Settings\Application Data\Adobe\Flash CS3\en\Configuration\WindowSWF (Windows XP)
+  * "/Users/*username*/Library/Application Support/Adobe/Flash CS3/en/Configuration/WindowSWF/" (Mac). 
+  * Restart Flash, and select window>other panels>AsUnit Ui.
+  * Test testrunner/test_runner.fla, and the results will show up within Flash. 
+]]></Installation>												
+		</Project>
+	</NodeMap>
+</Node>

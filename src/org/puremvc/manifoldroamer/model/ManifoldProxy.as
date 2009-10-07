@@ -1,18 +1,18 @@
 package org.puremvc.manifoldroamer.model
 {
-	import mx.rpc.http.HTTPService;
-	import mx.rpc.events.ResultEvent;
-	import mx.rpc.events.FaultEvent;
-	import mx.rpc.IResponder;
-
-	import org.puremvc.as3.patterns.proxy.*;
 	import mx.rpc.AsyncToken;
+	import mx.rpc.events.FaultEvent;
+	import mx.rpc.events.ResultEvent;
+	import mx.rpc.http.HTTPService;
+	
+	import org.puremvc.as3.patterns.proxy.*;
 
 	public class ManifoldProxy extends Proxy
 	{
 		public static const NAME:String = "ManifoldProxy";
 		
 		public static const NODE_RECEIVED:String = "nodeReceived";
+		public static const STUB_NODE_FILLED:String = "stubNodeFilled";
 		
 		public function ManifoldProxy( data:Object=null )
 		{
@@ -54,11 +54,13 @@ package org.puremvc.manifoldroamer.model
 		 * stub node with the populated node.</P>
 		 * 
 		 * @param the stub node from the local data structure
+		 * @param the type of fetch "auto" if auto fetching
 		 */
 		public function fetchNode( node:XML ):void
 		{
 			service.url = configProxy.getRESTServiceURL( node.@id );
-			service.send();
+			var token:AsyncToken = service.send();
+			token.type = node.@type;
 		}
 
 		/**
@@ -115,17 +117,38 @@ package org.puremvc.manifoldroamer.model
 			
 			// add the nodes under this one to the graph
 			graphProxy.traverseNode( node );
-
+			
 			// notify that graph was changed
 			sendNotification( GraphProxy.GRAPH_CHANGED, String( node.@id ) );
+
+			// If the node was type stub, send the notification that has been filled
+			if ( event.token.type == "stub") sendNotification( STUB_NODE_FILLED, node);
+
 		}
-		
+			
 		/**
 		 * Does this node have a NodeMap?
 		 */
 		public function isPopulated( node:XML ):Boolean
 		{
 			return ( XMLList(node..NodeMap).length() > 0 );
+		}
+				
+		/**
+		 * How many children does this node have?
+		 */
+		public function childNodeCount( node:XML ):Number
+		{
+			return ( isPopulated(node) )?XMLList(node..NodeMap).length():0;
+		}
+				
+		/**
+		 * How many siblings does this node have?
+		 */
+		public function siblingNodeCount( node:XML ):Number
+		{
+			var sibs:XMLList = XML(node.parent()).children();
+			return sibs.length();
 		}
 				
 		public function fault( event:FaultEvent ):void

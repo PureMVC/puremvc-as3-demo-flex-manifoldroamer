@@ -3,6 +3,7 @@ package org.puremvc.manifoldroamer
 	import org.puremvc.as3.patterns.facade.Facade;
 	import org.puremvc.manifoldroamer.controller.*;
 	import org.puremvc.manifoldroamer.model.ConfigProxy;
+	import org.puremvc.manifoldroamer.model.ManifoldProxy;
 
 	public class ApplicationFacade extends Facade
 	{
@@ -33,10 +34,15 @@ package org.puremvc.manifoldroamer
         {
             super.initializeController();            
             registerCommand( STARTUP, StartupCommand );
+            registerCommand( ConfigProxy.CONFIG_READY, ConfigReadyCommand );
+
             registerCommand( NODE_CLICK, NodeClickCommand );
             registerCommand( NODE_SELECTED, NodeSelectedCommand );
-            registerCommand( NODE_EXPANDED, NodeExpandedCommand );
-            registerCommand( ConfigProxy.CONFIG_READY, ConfigReadyCommand );
+            
+            // User clicked to expand node
+            registerCommand( NODE_EXPANDED, NodeExpandedCommand ); 
+            // User clicked Stub, which was filled and now should expand
+            registerCommand( ManifoldProxy.STUB_NODE_FILLED, NodeExpandedCommand ); 
         }
         
         /**

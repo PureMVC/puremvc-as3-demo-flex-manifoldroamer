@@ -5,13 +5,15 @@
 	borderColor="#FFFFFF"
 	filters="{calcFilters(data as Item)}"
 	backgroundColor="0x000000" 
-	xmlns:view="org.puremvc.manifoldroamer.view.components.*">
+	xmlns:view="org.puremvc.manifoldroamer.view.components.*"
+	rollOverEffect="{fxNodeOver}"
+	>
 
 	<mx:Image source="{data.data.@thumb}"/>
 	<mx:Text fontSize="13" text="{data.data.@name}" color="#FFFFFF" selectable="false"/>	
 	<view:MoreButton 
 		id="btnMore" showMore="sendEvent(EXPAND)" 
-		visible="{(hasContent(data.data))}" 
+		visible="{(isStub(data.data) || hasContent(data.data))}" 
 		width="{btnMore.visible?25:0}"/>
 		
 	<mx:Script>
@@ -43,7 +45,14 @@
 				return ( node.NodeMap.children().length() > 0 );
 			}
 		
-	
+			/**
+			 * Is this node a stub?
+			 */
+			public function isStub( node:XML ):Boolean
+			{
+				return ( node.@type == 'stub' );
+			}
+
 			/**
 			 * Called when this node is clicked
 			 */
@@ -60,7 +69,8 @@
 				if (hasContent(data.data)) 
 				{
 					btnMore.click();
-				} else {
+				} else 
+				{
 					roamer.setCurrentItem( data as Item );
 					sendEvent(SELECT);
 				}
@@ -110,5 +120,7 @@
 			
 			
 		]]>
-	</mx:Script>				
+	</mx:Script>
+	
+	<mx:Glow id="fxNodeOver" blurXTo="30" blurYTo="30" color="#0000FF" duration="750"/>
 </mx:HBox>

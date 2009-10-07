@@ -51,10 +51,11 @@
 
 	<!-- Logo / App Title -->
 	<mx:Image id="logo" left="10" bottom="10" 
-		rollOverEffect="Glow"
+		rollOverEffect="{fxDarkStarOver}"
 		source="@Embed('/assets/ui/logo.png')" 
-		mouseDownEffect="Glow"
-		click="reset()"/>
+		mouseDownEffect="{fxDarkStarClick}"
+		click="reset()"
+		toolTip="Reset to top and clear navigation history."/>
 
 	<view:ContentPanel 
 		backgroundColor="#FFFFFF"
@@ -65,5 +66,8 @@
 		nodeData="{nodeData}"
 		hideContent="showContent=false;"
 		/>	
+		
+		<mx:Glow id="fxDarkStarOver" blurXTo="30" blurYTo="30" color="#0000FF" duration="750"/>
+		<mx:Glow id="fxDarkStarClick" blurXTo="30" blurYTo="30" color="#FFFFFF" duration="750"/>
 	
 </mx:Canvas>
