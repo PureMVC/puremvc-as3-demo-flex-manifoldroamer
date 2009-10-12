@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node id="2252" name="Unit Tests" thumb="box">
+	<NodeMap>
+		<Project 
+			name="PureMVC Haxe 2 Standard Unit Tests" 
+			status="Production"
+			repo="PureMVC_Haxe_UnitTests" 
+			tag="UnitTests_1_0_4"
+			version="1.0.4"
+			archive="Haxe/PureMVC_Haxe_UnitTests.zip"
+			live="Haxe/UnitTests/indexFl.html"
+			docs="Haxe/standard/docs"
+			forum="board=56.0"
+			owner="Marco Secchi"
+			owner_node="321"
+			pic="PureMVC-Framework-Haxe-Std.png">
+<Description><![CDATA[These are the unit tests for the current release of the PureMVC Standard Framework for Haxe.]]></Description>						
+
+<ReleaseNotes><![CDATA[<B>Features in Version 1.2</B>
+    * Unit tests for 1.2 version of Standard framework. This release include tests for all supported platforms. 
+]]></ReleaseNotes>						
+
+<Installation><![CDATA[<B>Prerequisites</B>
+    * You must have you must have  Haxe installed.
+    * You must have the latest release of PureMVC Framework for haXe installed.
+    * You may optionally have  NekoVM installed. 
+
+<B>Compiling the Unit Tests</B>
+    * Edit the build_tests.hxml file:
+          * Find the lines with '# -cp path to PureMVC'
+          * Replace 'path to PureMVC' with the absolute location of the PureMVC source folder on your system
+          * Uncomment the line (remove the leading #)
+          * Save the file. 
+    * Open terminal and change the directory path to the PureMVC folder.
+    * Next type 'haxe build_test.hxml'
+    * On Windows systems you can simply double-click on the 'build_test.hxml' file. 
+
+<B>Running Unit Tests</B>
+You can run unit tests for all supported platforms:
+    * Flash 6, 7, 8, 9:
+          * Open the 'indexFl.html' file located in 'test_deploy' 
+    * JavaScript:
+          * Open the 'indexJs.html' file located in 'test_deploy' (there seems to be a bug on Safari and test messages are not traced) 
+    * Neko:
+          * Open terminal and change the direcotry path to the 'test_deploy' folder.
+          * Next type 'neko testRunner.n' ]]></Installation>												
+			</Project>
+	</NodeMap>
+</Node>

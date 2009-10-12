@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node id="2256" name="Framework" thumb="box">	
+	<NodeMap>
+		<Project 
+			name="PureMVC MultiCore for Haxe 2" 
+			status="Production"
+			repo="PureMVC_Haxe_MultiCore" 
+			tag="1.2"
+			version="1.2"
+			archive="Haxe/PureMVC_Haxe_MultiCore.zip" 
+			docs="Haxe/multicore/docs"
+			forum="board=57.0"
+			owner="Marco Secchi"
+			owner_node="321"
+			pic="PureMVC-Framework-Haxe-MC.png">
+
+<Description><![CDATA[PureMVC is a lightweight framework for creating applications based upon the classic  Model-View-Controller design meta-pattern. This is the specific implementation of the MultiCore version for the Haxe platform.]]></Description>						
+
+<ReleaseNotes><![CDATA[<B>Summary of Changes in 1.2</B>
+    * Libraries now include version number. - CLH 
+
+<B>Summary of Changes in 1.1</B>
+    * Haxe 2.0 compatibility. This version is no longer compatible with older versions of Haxe. 
+
+<B>Summary of Features in Version 1.0</B>
+    * First official release on PureMVC.org for haXe. .
+    * Compatible with AS3 MultiCore reference version 1.0.5 
+]]></ReleaseNotes>						
+
+<Installation><![CDATA[<B>Prerequisites</B>
+    * You must have Haxe 2 installed. -  <A href="http://haxe.org">http://haxe.org</A> 
+
+<B>Installing the Project Source Code</B>
+    * <U>From the archive</U>
+          * Download the latest source code archive.
+          * Unzip the source code zip to any folder on your disk. 
+            For instance: c:\development\
+          * You will see a PureMVC_Haxe_MultiCore_X_Y (where X_Y is version) source folder.
+            For instance: c:\development\PureMVC_Haxe_MultiCore_X_Y 
+
+    * <U>From the Repository</U>
+          * Use your  favorite SVN client to retrieve the latest source code release from the repository.
+]]></Installation>												
+			</Project>
+	</NodeMap>
+</Node>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node id="2251" name="Framework" thumb="box">	
+	<NodeMap>
+		<Project 
+			name="PureMVC Standard for Haxe 2" 
+			status="Production"
+			repo="PureMVC_Haxe" 
+			tag="1.2"
+			version="1.2"
+			archive="Haxe/PureMVC_Haxe.zip" 
+			docs="Haxe/standard/docs"
+			forum="board=56.0"
+			owner="Marco Secchi"
+			owner_node="321"
+			pic="PureMVC-Framework-Haxe-Std.png">
+
+<Description><![CDATA[<P>PureMVC is a lightweight framework for creating applications based upon the classic  Model-View-Controller design meta-pattern. This is the specific implementation of the Standard Version for the Haxe platform.</P>]]></Description>						
+
+<ReleaseNotes><![CDATA[<B>Summary of Changes in 1.2</B>
+    * Libraries now include version number. - CLH 
+
+<B>Summary of Changes in 1.1.1</B>
+    * Alignment to pureMVC (AS3) 2.0.4.
+    * Disallowed re-registration of Mediators in View.registerMediator.
+    * Modified View.notifyObservers to notify from a copy of the observer list rather than the actual observer list, which may change during the notification loop. 
+
+<B>Summary of Changes in 1.1</B>
+    * Haxe 2.0 compatibility. This version is no longer compatible with older versions of Haxe. 
+
+<B>Summary of Changes in 1.0.4</B>
+    * Unit Tests removed from project and moved to their own repository. 
+
+<B>Summary of Changes in 1.0.3</B>
+    * Removed bug with removing and re-registering Commands originated from the AS3 porting.
+    * Added missing testReregisterAndExecuteCommand test.
+    * Refactoring of core elements moved at 'core' package level. Unit tests updated accordingly.
+    * Added binaries for flas6-9 and compiled code for javascript. This is particularly useful if you want to use pureMVC with javascript without haXe.
+    * Unit tests now run on all supported platforms.
+    * Change skin for API docs. 
+
+<B>Summary of Changes in 1.0.2</B>
+    * Alignment to pureMVC 2.0.3 (AS3) 
+    * Added notifyObservers to IFacade, where it is required if you are sending custom Notifications. No unit tests required. 
+    * Refactored View.removeMediator method, moving the logic for removing an observer into a removeObserver method (also on IView), which is now called by the Controller.removeCommand method as well as the view.removeMediator method.
+    * The Model.removeProxy method only attempts to remove the Proxy if it is registered. 
+
+<B>Summary of Changes in 1.0.1</B>
+    * Removed demos. Their are moved to their own repositories.
+    * Added compiled unit tests bin for all supported platform and instructions on how to run them.
+    * A couple of bugfixes on tests (not in the framework) to make them cross-platform. 
+
+<B>Version 1.0</B>
+    * First official release on PureMVC.org for haXe.
+    * Framework source, Demos and Docs are all in the same project with build files for each. These need to be refactored into separate projects and with directions for building when the framework source referenced from an installed location rather than being included along with each project's source. 
+]]></ReleaseNotes>						
+    
+<Installation><![CDATA[<B>Prerequisites</B>
+    * You must have Haxe 2 installed. -  <A href="http://haxe.org">http://haxe.org</A> 
+
+<B>Installing the Project Source Code</B>
+    * <U>From the archive</U>
+          * Download the latest source code archive.
+          * Unzip the source code zip to any folder on your disk. 
+            For instance: c:\development\
+          * You will see a PureMVC_Haxe_X_Y (where X_Y is version) source folder.
+            For instance: c:\development\PureMVC_Haxe_X_Y 
+
+    * <U>From the Repository</U>
+          * Use your  favorite SVN client to retrieve the latest source code release from the repository.
+]]></Installation>
+												
+			</Project>
+	</NodeMap>
+</Node>

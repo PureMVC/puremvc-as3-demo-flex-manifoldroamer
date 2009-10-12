@@ -2,93 +2,10 @@
 <Node id="2255" name="MultiCore Version" thumb="flake">
 	<NodeMap>
 		<Nodes>
-			<Node id="2256" name="Framework" thumb="box">	
-				<NodeMap>
-					<Project 
-						name="PureMVC MultiCore for Haxe 2" 
-						status="Production"
-						repo="PureMVC_Haxe_MultiCore" 
-						tag="1.2"
-						version="1.2"
-						archive="Haxe/PureMVC_Haxe_MultiCore.zip" 
-						docs="Haxe/multicore/docs"
-						forum="board=57.0"
-						owner="Marco Secchi"
-						owner_node="321"
-						pic="PureMVC-Framework-Haxe-MC.png">
-							<Description><![CDATA[PureMVC is a lightweight framework for creating applications based upon the classic  Model-View-Controller design meta-pattern. This is the specific implementation of the MultiCore version for the Haxe platform.]]></Description>						
-							<ReleaseNotes><![CDATA[<B>Summary of Changes in 1.2</B>
-    * Libraries now include version number. - CLH 
-
-<B>Summary of Changes in 1.1</B>
-    * Haxe 2.0 compatibility. This version is no longer compatible with older versions of Haxe. 
-
-<B>Summary of Features in Version 1.0</B>
-    * First official release on PureMVC.org for haXe. .
-    * Compatible with AS3 MultiCore reference version 1.0.5 ]]></ReleaseNotes>						
-							<Installation><![CDATA[<B>Prerequisites</B>
-    * You must have Haxe 2 installed. -  <A href="http://haxe.org">http://haxe.org</A> 
-
-<B>Installing the Project Source Code</B>
-    * <U>From the archive</U>
-          * Download the latest source code archive.
-          * Unzip the source code zip to any folder on your disk. 
-            For instance: c:\development\
-          * You will see a PureMVC_Haxe_MultiCore_X_Y (where X_Y is version) source folder.
-            For instance: c:\development\PureMVC_Haxe_MultiCore_X_Y 
-
-    * <U>From the Repository</U>
-          * Use your  favorite SVN client to retrieve the latest source code release from the repository.]]></Installation>												
-						</Project>
-				</NodeMap>
-			</Node>
-			<Node id="2257" name="Unit Tests" thumb="box">
-				<NodeMap>
-					<Project 
-						name="PureMVC Haxe 2 MultiCore Unit Tests" 
-						status="Production"
-						repo="PureMVC_Haxe_MultiCore_UnitTests" 
-						tag="UnitTests_1_0"
-						version="1.0"
-						archive="Haxe/PureMVC_Haxe_MultiCore_UnitTests.zip"
-						live="Haxe/UnitTests/indexFl.html"
-						docs="Haxe/multicore/docs"
-						forum="board=57.0"
-						owner="Marco Secchi"
-						owner_node="321"
-						pic="PureMVC-Framework-Haxe-MC.png">
-							<Description><![CDATA[]]></Description>						
-							<ReleaseNotes><![CDATA[<B>Features in Version 1.0</B>
-    * Unit tests for 1.2 version of MultiCore framework. This release include tests for all supported platforms. ]]></ReleaseNotes>						
-							<Installation><![CDATA[<B>Prerequisites</B>
-    * You must have you must have  Haxe installed.
-    * You must have the latest release of PureMVC Framework for haXe installed.
-    * You may optionally have NekoVM installed. 
-
-<B>Compiling the Unit Tests</B>
-    * Edit the build_tests.hxml file:
-          * Find the lines with '# -cp path to PureMVC'
-          * Replace 'path to PureMVC' with the absolute location of the PureMVC source folder on your system
-          * Uncomment the line (remove the leading #)
-          * Save the file. 
-    * Open terminal and change the directory path to the PureMVC folder.
-    * Next type 'haxe build_test.hxml'
-    * On Windows systems you can simply double-click on the 'build_test.hxml' file. 
-
-<B>Running Unit Tests</B>
-You can run unit tests for all supported platforms:
-    * Flash 6, 7, 8, 9:
-          * Open the 'indexFl.html' file located in 'test_deploy' 
-    * JavaScript:
-          * Open the 'indexJs.html' file located in 'test_deploy' (there seems to be a bug on Safari and test messages are not traced) 
-    * Neko:
-          * Open terminal and change the direcotry path to the 'test_deploy' folder.
-          * Next type 'neko testRunner.n' ]]></Installation>												
-						</Project>
-				</NodeMap>
-			</Node>
-			<Node id="2258" name="Demos" thumb="box"><NodeMap/></Node>
-			<Node id="2259" name="Utilities" thumb="box"><NodeMap/></Node>
+			<Node id="2256" name="Framework" type="stub" thumb="box"/>	
+			<Node id="2257" name="Unit Tests" Node2255.xmlthumb="box"/>
+			<Node id="2258" name="Demos (0)" thumb="box"><NodeMap/></Node>
+			<Node id="2259" name="Utilities (0)" thumb="box"><NodeMap/></Node>
 		</Nodes>
 	</NodeMap>
 </Node>
