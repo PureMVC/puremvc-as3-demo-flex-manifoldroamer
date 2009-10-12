@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node id="2201" name="Framework and Tests" thumb="box">	
+	<NodeMap>
+		<Project 
+			name="PureMVC Standard and Tests for ColdFusion" 
+			status="Production"
+			repo="PureMVC_CF"
+			tag="1.0" 						
+			version="1.0"
+			archive="CF/PureMVC_CF.zip" 
+			docs=""
+			forum="board=20.0"
+			owner="Michael Oddis"
+			owner_node="322"
+			pic="PureMVC-Framework-CF-Std.png">
+
+<Description><![CDATA[PureMVC is a lightweight framework for creating applications based upon the classic  Model-View-Controller design meta-pattern. This is the specific implementation of the Standard Version and its Unit Tests for ColdFusion. See the Release Notes for this version for differences from the reference implementation.</P>]]></Description>						
+
+<ReleaseNotes><![CDATA[<B>Running Unit Tests</B>
+    * If you are using the built in ColdFusion server then go to:
+     http://[yourdomainhere]:[yourport]/test/PureMVC_CFTestRunner.cfm
+     to execute the test cases.
+    * If you are using IIS then go to:
+      http://[yourdomainhere]/test/PureMVC_CFTestRunner.cfm
+      to execute the test cases. 
+]]></ReleaseNotes>						
+
+<Installation><![CDATA[<B>Prerequisites</B>
+    * Adobe ColdFusion 8
+    * CFUnit v2.0 Beta 4 (only required if running unit tests) 
+
+<B>STEP 1 Install the Source Code</B>
+    * Download the latest source code archive. 
+
+<U>SCENARIO 1</U>
+The quickest and easiest way to install the framework is to extract the contents of the PureMVC_CF.zip into the root of your website. 
+    * So, if your site root is located at 'C:\ColdFusion8\wwwroot\' then extract the contents of the zip under wwwroot. 
+    * You should see the folder "PureMVC_CF_X_Y" listed under site root. 
+    * Move the contents of the "PureMVC_CF_X_Y" into your site root. 
+    * You should now see the folders listed below under your site root. 
+    * Delete the "PureMVC_CF_X_Y" folder since it is no longer required.
+You will find:
+    * cfcdoc - API Documentation
+    * org - Framework classes.
+    * test - Framework Unit Test classes. 
+
+<U>SCENARIO 2</U>
+You can configure ColdFusion mappings to access the framework using the ColdFusion Administrator.
+    * Extract the contents of the PureMVC_CF.zip into any preferred location outside your site root.
+    * Login to the ColdFusion Admin and create a mapping named "org", which points to the location of the "org" folder you extracted from the PureMVC_CF.zip archive. Do the same for "test" if you plan on running the unit tests. 
+
+To run the unit tests or if you will be contributing to the code base you must configure your development environment to use CFUnit for unit testing. Proceed to STEP 2. if not, then you can simple delete the "test" folder.
+
+<B>STEP 2 - Install CFUnit</B>
+    * Download CFUnit v2.0 Beta 4 <A href="http://cfunit.sourceforge.net/">http://cfunit.sourceforge.net/</A> 
+
+<U>SCENARIO 1</U>
+The quickest and easiest way to install CFUnit is to extract the contents of the CFUnit archive into the root of your website. 
+    * So, if your site root is located at (C:\ColdFusion8\wwwroot\) then extract the contents of the CFUnit archive under wwwroot. 
+    * As long as it is accessible when accessing your website all things should work as expected. 
+    * You should have a folder named "net" under your site root (C:\ColdFusion8\wwwroot\net).
+
+<U>SCENARIO 2</U>
+You can configure ColdFusion mappings to access CFUnit using the ColdFusion Administrator.
+    * Extract the contents of the CFUnit archive into any preferred location outside your site root.
+    * Login to the ColdFusion Admin and create a mapping named "net", which points to the location of the "net" folder you extracted from the CFUnit archive you downloaded above. 
+]]></Installation>												
+			</Project>
+	</NodeMap>
+</Node>
