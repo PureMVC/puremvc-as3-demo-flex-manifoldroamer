@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node id="2551" name="Framework" thumb="box">	
+	<NodeMap>
+		<Project 
+			name="PureMVC Standard for Ruby" 
+			status="Production"
+			repo="PureMVC_Ruby" 
+			tag="1.0 "
+			version="1.0 "
+			archive="Ruby/PureMVC_Ruby.zip" 
+			docs="Ruby/standard/"
+			forum="board=78.0"
+			owner="Jake Dempsey"
+			owner_node="308"
+			pic="PureMVC-Framework-Ruby-Std.png">
+
+<Description><![CDATA[PureMVC is a lightweight framework for creating applications based upon the classic  Model-View-Controller design meta-pattern. This is the specific implementation for the Ruby language based on the Standard Version AS3 reference. ]]></Description>						
+
+<ReleaseNotes><![CDATA[<B>Features in Version 1.0</B>
+  * First production release, based on AS3 Standard version 2.0.4. 
+  * Released with complete with Unit Tests and Employee Admin demo running on Mac, Windows and Linux desktops (thanks to wxRuby!). 
+]]></ReleaseNotes>						
+
+<Installation><![CDATA[<B>Installing the Project Source Code</B>
+<U>Using RubyGems</U>
+  * From the command line, type: gem install PureMVC_Ruby
+  * In your application initialization, add: require 'PureMVC_Ruby' 
+
+<U>From the Downloadable Archive</U>
+  * Download the latest source code archive.
+  * Unzip the source code zip to any folder on your disk. 
+  	For instance: c:\development\
+  * You will see a PureMVC_Ruby_X_Y (where X_Y is version) source folder. 
+  	For instance: c:\development\PureMVC_Ruby_X_Y  
+
+<U>From the Repository</U>
+  * Use your favorite SVN client to retrieve the latest source code release from the repository. ]]>
+</Installation>												
+			</Project>
+	</NodeMap>
+</Node>
