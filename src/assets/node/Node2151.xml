@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node id="2151" name="Framework and Tests" thumb="box">	
+	<NodeMap>
+		<Project 
+			name="PureMVC Standard and Tests for C#" 
+			status="Production"
+			repo="PureMVC_CSharp" 
+			tag="3.0"
+			version="3.0"
+			archive="CSharp/PureMVC_CSharp.zip" 
+			docs="CSharp/standard/"
+			forum="board=20.0"
+			owner="Andy Adamczak"
+			owner_node="301"
+			pic="PureMVC-Framework-CSharp-Std.png">
+
+<Description><![CDATA[PureMVC is a lightweight framework for creating applications based upon the classic  Model-View-Controller design meta-pattern. This is the specific implementation of the Standard Version and its Unit Tests for the C# language. See the Release Notes for this version for differences from the reference implementation.]]></Description>						
+
+<ReleaseNotes><![CDATA[<B>Summary of Changes in Version 3.0</B>
+   * Converted the framework to use C# conventions (accessors and package names). - AA
+   * Updated the framework to be thread safe. - AA
+   * Added a Silverlight 2.0 library and tests. - AA
+   * Added multi-threaded testing of the framework. - AA
+   * Converted 2008 and Silverlight 2.0 tests to use the Microsoft unit testing framework. - AA
+							
+<B>Summary of Changes in Version 2.0</B>
+    * Converted the framework to use only generics. - AA
+    * Added separate Visual Studio 2008 projects that compile the framework against .NET Framework 3.5. - AA 
+
+<B>Branched for Generics/Non-Generics</B>
+    * Created a separate branch with the contents of Version 1.0 called Prior_to_DotNET_3_5. It uses generics and will be maintained for backward compatibility. The trunk will be converted to use generics as .NET 3.5 now requires.- CH 
+
+<B>Summary of Changes in Version 1.0</B>
+    * Updated inline with version 2.0.4 release of the AS3 implementation
+    * See  http://forums.puremvc.org/index.php?topic=625.0 for details
+    * Signed the built assemblies. - AA 
+
+<B>Summary of Changes in Version 0.9</B>
+    * Updated inline with version 2.0 release of the AS3 implementation
+    * See  http://forums.puremvc.org/index.php?topic=212.0 for details - MB 
+
+<B>Summary of Changes in Version 0.8</B>
+    * Updated comments to XML format, updated the singletong pattern
+    * See  http://forums.puremvc.org/index.php?topic=197.0 for details
+    * Initial commit of the DotNETCF solution files - MB 
+
+<B>Summary of Changes in Version 0.7</B>
+    * Created IDE specific solution files - MB 
+
+<B>Summary of Changes in Version 0.6</B>
+    * Updated inline with version 1.7.1 of the AS3 implementation - MB 
+
+<B>Summary of Changes in Version 0.5</B>
+    * Updated inline with version 1.7 of the AS3 implementation - MB 
+
+<B>Summary of Changes in Version 0.4</B>
+    * Updated code error, Mediator now extends Notifier as per AS3 source - MB 
+
+<B>Summary of Changes in Version 0.3</B>
+    * Updated code error, Proxy now extends Notifier as per AS3 source - MB 
+
+<B>Summary of Changes in Version 0.2</B>
+    * Initial conversion from AS3 to C# - MB 
+
+<B>Summary of Changes in Version 0.1</B>
+    * Initial project structure created in repository - CH 
+    ]]></ReleaseNotes>						
+							<Installation><![CDATA[<B>Installing the Project Source Code</B>
+<U>From the archive</U>
+  * Download the latest source code archive.
+  * Unzip the source code zip to any folder on your disk. 
+	For instance: c:\development\
+  * You will see a PureMVC_CSharp_X_Y (where X_Y is version) source folder. 
+	For instance: c:\development\PureMVC_CSharp_X_Y 
+
+<U>From the Repository</U>
+  * Use your  favorite SVN client to retrieve the latest source code release from the repository. ]]></Installation>												
+			</Project>
+	</NodeMap>
+</Node>
