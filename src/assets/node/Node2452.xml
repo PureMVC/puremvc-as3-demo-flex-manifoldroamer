@@ -1,0 +1,52 @@
+<Node id="2452" name="Unit Tests" thumb="box">
+	<NodeMap>
+		<Project 
+			name="PureMVC PHP Standard Version Unit Tests" 
+			status="Production"
+			repo="PureMVC_PHP_UnitTests" 
+			tag="1.0"
+			version="1.0"
+			archive="PHP/PureMVC_PHP_UnitTests.zip"
+			live=""
+			docs=""
+			forum="board=75"
+			owner="Hasan Otuome"
+			owner_node="323"
+			pic="PureMVC-Framework-PHP-Std.png">
+
+<Description><![CDATA[These are the unit tests for the PureMVC Standard Version Framework for PHP. ]]></Description>						
+
+<ReleaseNotes><![CDATA[<B>Summary of Changes in 1.0.1</B> 
+  * Added missing value to constructor of FacadeTestVO which prevented FacadeTest.testRegisterCommandAndSendNotification() from passing...
+
+<B>Summary of Changes in 1.0</B> 
+  * Prepared unit tests for port source code version 1.0 - OG/HO
+
+<B>Summary of Changes in 0.4</B> 
+  * Corrected Singleton creation functionality - CLH
+
+<B>Summary of Changes in 0.3</B> 
+  * Updated to AS3 2.0.1 functionality. - CLH
+
+<B>Summary of Changes in 0.2</B> 
+  * Initial upload of ported code, doc is coming shortly - AST
+
+<B>Features in 0.1</B> 
+  * Initial project structure created in repository - CLH
+
+]]></ReleaseNotes>						
+<Installation><![CDATA[<B>Installing the Project Source Code</B>
+<U>From the archive</U>
+   * Download the latest source code archive.
+   * Unzip the source code zip to any folder on your disk. 
+     * For instance: c:\development\
+   * You will see a PureMVC_PHP_UnitTests_X_Y (where X_Y is version) source folder. 
+     * For instance: c:\development\PureMVC_PHP_UnitTests_X_Y 
+
+<U>From the Repository</U>
+   * Use your  favorite SVN client to retrieve the latest source code release from the repository. 
+]]></Installation>	
+          												
+			</Project>
+	</NodeMap>
+</Node>
