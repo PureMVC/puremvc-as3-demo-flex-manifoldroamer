@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node id="2357" name="Unit Tests" thumb="box">
+	<NodeMap>
+		<Project 
+			name="PureMVC Java MultiCore Unit Tests" 
+			status="Production"
+			repo="PureMVC_Java_MultiCore_UnitTests" 
+			tag="1.0.6"
+			version="1.0.6"
+			archive="Java/PureMVC_Java_MultiCore_UnitTests.zip"
+			live=""
+			docs="Java/multicore/doc"
+			forum="topic=743.0"
+			owner="Anthony Quinault"
+			owner_node="329"
+			pic="PureMVC-Framework-Java-MC.png">
+
+<Description><![CDATA[ These are the unit tests for the PureMVC MultiCore Version for Java. 
+]]></Description>			
+			
+<ReleaseNotes><![CDATA[These are the standard JUnit Tests.
+]]></ReleaseNotes>			
+			
+<Installation><![CDATA[<B>Installing the Project Source Code</B>
+<U>From the archive</U>
+   * Download the latest source code archive.
+   * Unzip the source code zip to any folder on your disk. 
+     * For instance: c:\development\
+   * You will see a PureMVC_Java_MultiCore_UnitTests_X_Y (where X_Y is version) source folder. 
+     * For instance: c:\development\PureMVC_Java_MultiCore_UnitTests_X_Y 
+
+<U>From the Repository</U>
+   * Use your  favorite SVN client to retrieve the latest source code release from the repository. 
+]]></Installation>	
+
+			</Project>
+	</NodeMap>
+</Node>

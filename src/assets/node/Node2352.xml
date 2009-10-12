@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node id="2352" name="Unit Tests" thumb="box">
+	<NodeMap>
+		<Project 
+			name="PureMVC Java Version Unit Tests" 
+			status="Production"
+			repo="PureMVC_Java_UnitTests" 
+			tag="UnitTests_0_2"
+			version="0.2"
+			archive="Java/PureMVC_Java_UnitTests.zip"
+			live=""
+			docs="Java/javadoc"
+			forum="board=59.0"
+			owner="Donald Stinchfield"
+			owner_node="328"
+			pic="PureMVC-Framework-Java-Std.png">
+
+<Description><![CDATA[These are the unit tests for the PureMVC Standard Version for Java. 
+]]></Description>						
+
+<ReleaseNotes><![CDATA[These are standard JUnit Tests.
+]]></ReleaseNotes>						
+
+<Installation><![CDATA[<B>Installing the Project Source Code</B>
+<U>From the archive</U>
+   * Download the latest source code archive.
+   * Unzip the source code zip to any folder on your disk. 
+     * For instance: c:\development\
+   * You will see a PureMVC_Java_UnitTests_X_Y (where X_Y is version) source folder. 
+     * For instance: c:\development\PureMVC_Java_UnitTests_X_Y 
+
+<U>From the Repository</U>
+   * Use your  favorite SVN client to retrieve the latest source code release from the repository. 
+]]></Installation>		
+										
+			</Project>
+	</NodeMap>
+</Node>

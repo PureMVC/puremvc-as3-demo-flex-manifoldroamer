@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node id="2356" name="Framework" thumb="box">	
+	<NodeMap>
+		<Project 
+			name="PureMVC MultiCore for Java" 
+			status="Production"
+			repo="PureMVC_Java_MultiCore" 
+			tag="1.0.6"
+			version="1.0.6"
+			archive="Java/PureMVC_Java_MultiCore.zip" 
+			docs="Java/multicore/doc"
+			forum="board=60.0"
+			owner="Anthony Quinault"
+			owner_node="329"
+			pic="PureMVC-Framework-Java-MC.png">
+			
+<Description><![CDATA[PureMVC is a lightweight framework for creating applications based upon the classic  Model-View-Controller design meta-pattern. This is a Java port of the AS3 reference implementation of the MultiCore Version. It supports modular programming through the use of Multiton Core actors (instead of the Singletons used in the Standard Version). 
+]]></Description>			
+			
+<ReleaseNotes><![CDATA[<B>Summary of Changes thru 1.0.6</B>
+  * Collection are more generic
+  * Java 1.5
+  * Emulation of as3 capability to have more or less parameters.
+
+<B>Features in 1.0</B>
+   * Implements the features of the PureMVC AS3 MultiCore Reference Implementation 1.0.5
+
+]]></ReleaseNotes>			
+			
+<Installation><![CDATA[<B>Installing the Project Source Code</B>
+<U>From the archive</U>
+   * Download the latest source code archive.
+   * Unzip the source code zip to any folder on your disk. 
+     * For instance: c:\development\
+   * You will see a PureMVC_Java_MultiCore_X_Y (where X_Y is version) source folder. 
+     * For instance: c:\development\PureMVC_Java_UnitTests_X_Y 
+
+<U>From the Repository</U>
+   * Use your  favorite SVN client to retrieve the latest source code release from the repository. 
+]]></Installation>	
+			</Project>
+	</NodeMap>
+</Node>
