@@ -3,7 +3,7 @@
 	<NodeMap>
 		<Nodes>
 			<Node id="2301" name="Framework" type="stub" thumb="box"/>	
-			<Node id="2303" name="Demos (0)" thumb="box"><NodeMap/></Node>
+			<Node id="2303" name="Demos (1)" thumb="box"/>
 			<Node id="2304" name="Utilities (0)" thumb="box"><NodeMap/></Node>
 		</Nodes>
 	</NodeMap>

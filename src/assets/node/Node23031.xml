@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node id="23031" name="Employee Admin" thumb="box">	
+	<NodeMap>
+		<Project 
+			name="Employee Admin Demo for JavaScript" 
+			status="Production"
+			repo="Demo_JS_EmployeeAdmin" 
+			tag="EmployeeAdmin_1_0"
+			version="1.1"
+			archive="JS/Demo_JS_EmployeeAdmin.zip" 
+			docs=""
+			forum="topic=851.0"
+			owner="Frederic Saunier"
+			owner_node="326"
+			pic="PureMVC-Framework-JS-Std.png"
+			shot="PureMVC-Shot-JS-Std-EmployeeAdmin.png">
+			
+<Description><![CDATA[
+This demo illustrates techniques for performing routine maintenance operations in a PureMVC-based JavaScript application.  
+]]></Description>						
+
+<ReleaseNotes><![CDATA[<B>Features in Version 1.0</B>
+  * A port of the classic EmployeeAdmin Demo for ActionScript 3
+]]></ReleaseNotes>						
+
+<Installation><![CDATA[<B>Installing the Project Source Code</B>
+<U>From the archive</U>
+  * Download the latest source code archive.
+  * Unzip the source code zip to any folder on your disk. 
+	For instance: c:\development\
+  * You will see a Demo_JS_EmployeeAdmin_X_Y (where X_Y is version) source folder. 
+	For instance: c:\development\Demo_JS_EmployeeAdmin_X_Y 
+
+<U>From the Repository</U>
+  * Use your  favorite SVN client to retrieve the latest source code release from the repository. 
+]]></Installation>												
+
+		</Project>
+	</NodeMap>
+</Node>
