@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node id="24031" name="Employee Admin" thumb="box">	
+	<NodeMap>
+		<Project 
+			name="Employee Admin Demo for Objective C" 
+			status="Production"
+			repo="Demo_ObjectiveC_UIKit_EmployeeAdmin" 
+			tag="EmployeeAdmin_1_1"
+			version="1.1"
+			archive="ObjectiveC/Demo_ObjectiveC_UIKit_EmployeeAdmin.zip" 
+			docs=""
+			forum="topic=946.0"
+			owner="Brian Knorr"
+			owner_node="317"
+			pic="PureMVC-Framework-ObjectiveC-Std.png"
+			shot="PureMVC-Shot-ObjectiveC-Std-EmployeeAdmin.png">
+			
+<Description><![CDATA[
+This demo illustrates techniques for performing routine maintenance operations in a PureMVC-based ObjectiveC application. 
+]]></Description>						
+
+<ReleaseNotes><![CDATA[<B>Changes in Version 1.1</B>
+  * Release for PureMVC / ObjectiveC 1.1 / iPhone SDK 3.0 
+  * <font color="#0000FF"><a href="http://forums.puremvc.org/index.php?topic=946.msg5838#msg5838" target="_blank">Dot notation no longer works</A></font> 
+  
+<B>Features in Version 1.0</B>
+  * A port of the classic EmployeeAdmin Demo for ActionScript3
+  * Originally implemented in Flex for a desktop-sized web browser, this port has been artfully reconceived by Brian to fit the iPhone mobile form factor, where transition into sub-screens is necessary. 
+]]></ReleaseNotes>						
+
+<Installation><![CDATA[<B>Installation</B>
+<I>From the archive</I>
+  * Download the latest source code archive.
+  * Unzip the source code zip to any folder on your disk. (for instance: ~/Dev)
+  * You will see a Demo_ObjectiveC_UIKit_EmployeeAdmin_X_Y (where X_Y is version) source folder. (for instance: ~/Dev/Demo_ObjectiveC_UIKit_EmployeeAdmin_X_Y ) 
+
+<I>From the Repository</I>
+  * Use your  favorite SVN client to retrieve the latest source code release from the repository. 
+
+<B>Examine the Contents</B>
+  * The source code: src/org/puremvc/objectivec/...
+  * The PureMVC static library used with the project: lib/PureMVC/PureMVC_ObjectiveC_X_Y.a
+  * The header files for use with the static library: lib/PureMVC/headers 
+
+<I>Setup, Build, and Run the Demo using XCode</I>
+<B>Create the Project</B>
+  * Create a new XCode Project called EmployeeAdmin.
+  * Make sure to choose the template: iPhone OS : Application : Window-Based Application 
+
+<I>Add the PureMVC Static Library</I>
+  * From the Groups & Files pane,
+  * Under the target EmployeeAdmin,
+  * Right click on the Link Binary With Libraries folder
+  * Select Add -> Existing Files...
+  * Browse and Add the PureMVC static library ( i.e. ~/Dev/Demo_ObjectiveC_UIKit_EmployeeAdmin_X_Y/lib/PureMVC/PureMVC_ObjectiveC_X_Y.a ) 
+
+<B>Add the PureMVC Headers</B>
+  * From the Groups & Files pane,
+  * Double click the EmployeeAdmin target...
+  * ...or right click and select Get Info
+  * Click on the Build tab.
+  * Under the setting, Header Search Paths,
+  * Add the path to the PureMVC headers ( i.e. ~/Dev/Demo_ObjectiveC_UIKit_EmployeeAdmin_X_Y/lib/PureMVC/headers ) 
+
+<I>Add the Source Folder</I>
+  * From the Groups & Files pane,
+  * Right click on top level EmployeeAdmin project folder
+  * Select Add -> Existing Files...
+  * Browse and Add the project source folder ( i.e. ~/Dev/Demo_ObjectiveC_UIKit_EmployeeAdmin_X_Y/src ) 
+
+<I>Add the EmployeeAdminAppDelegate.m</I>
+Open the automatically generated EmployeeAdminAppDelegate.m in XCode editing window and update the code as follows:
+
+<font size="10" face="courier">
+#import "EmployeeAdminAppDelegate.h"
+#import "ApplicationFacade.h"
+#import "EmployeeAdmin.h"
+
+@implementation EmployeeAdminAppDelegate
+
+@synthesize window;
+
+- (void)applicationDidFinishLaunching:(UIApplication *)application {    
+  EmployeeAdmin *employeeAdmin = [[[EmployeeAdmin alloc] initWithFrame:[window frame]] autorelease];
+	[[ApplicationFacade getInstance] startup:employeeAdmin];
+	[window addSubview:employeeAdmin];
+  [window makeKeyAndVisible];
+}
+// end
+</font>
+
+<B>Build the Project</B>
+  * From the Build File menu,
+  * Choose Build and Go 
+]]></Installation>												
+		</Project>
+	</NodeMap>
+</Node>
