@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node id="23581" name="Employee Admin" thumb="box">	
+	<NodeMap>
+		<Project 
+			name="Employee Admin Demo for Java MultiCore" 
+			status="Production"
+			repo="Demo_Java_MultiCore_GWT_EmployeeAdmin" 
+			tag="EmployeeAdmin_1_0"
+			version="1.0"
+			archive="Java/Demo_Java_MultiCore_GWT_EmployeeAdmin.zip" 
+			docs=""
+			live="http://employeeadm.appspot.com/"
+			forum="topic=1269.0"
+			owner="Anthony Quinault"
+			owner_node="329"
+			pic="PureMVC-Framework-Java-MC.png"
+			shot="PureMVC-Shot-Java-MC-EmployeeAdmin.png">
+<Description><![CDATA[
+This demo illustrates techniques for performing routine maintenance operations in a PureMVC-based Java/GWT application. 
+]]></Description>						
+
+<ReleaseNotes><![CDATA[<B>Features in Version 1.0</B>
+  * A port of the classic EmployeeAdmin Demo for ActionScript3
+  * Uses the  Google Web Toolkit (GWT) for UI components.
+]]></ReleaseNotes>						
+
+<Installation><![CDATA[<B>Installing the Project Source Code</B>
+<U>From the Archive</U>
+  * Download the latest source code archive.
+  * Unzip the source code zip to any folder on your disk. 
+  	For instance: c:\development\
+  * You will see a EmployeeAdmin_X_Y (where X_Y is version) source folder. 
+  	For instance: c:\development\EmployeeAdmin_X_Y  
+
+<U>From the Repository</U>
+  * Use your favorite SVN client to retrieve the latest source code release from the repository. 
+]]></Installation>												
+		</Project>
+	</NodeMap>
+</Node>

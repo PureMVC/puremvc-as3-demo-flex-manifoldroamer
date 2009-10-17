@@ -4,7 +4,7 @@
 		<Nodes>
 			<Node id="2356" name="Framework" type="stub" thumb="box"/>	
 			<Node id="2357" name="Unit Tests" type="stub" thumb="box"/>
-			<Node id="2358" name="Demos (0)" thumb="box"><NodeMap/></Node>
+			<Node id="2358" name="Demos (1)" thumb="box"/>
 			<Node id="2359" name="Utilities (0)" thumb="box"><NodeMap/></Node>
 		</Nodes>
 	</NodeMap>
