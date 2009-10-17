@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node id="23531" name="J2ME Login" thumb="box">	
+	<NodeMap>
+		<Project 
+			name="Login Demo for Java J2ME" 
+			status="Production"
+			repo="Demo_Java_J2ME_Login" 
+			tag="Login_0_1"
+			version="0.1"
+			archive="Java/Demo_Java_J2ME_Login.zip" 
+			docs="http://wiki.forum.nokia.com/index.php/Model-View-Controller_Architecture"
+			forum="topic=605.0"
+			owner="Jari Kemppinen"
+			owner_node="315"
+			pic="PureMVC-Framework-Java-Std.png"
+			shot="">
+			
+<Description><![CDATA[
+This demo illustrates the use of the PureMVC framework within Java ME. It is a simple application that displays a splash screen, login screen and main screen. 
+]]></Description>						
+
+<ReleaseNotes><![CDATA[<B>Features in Version 1.0</B>
+  * This example can be used as the basis to any mobile Java project. 
+  * Currently the application uses version 0.2 of the PureMVC Standard Version for Java.
+]]></ReleaseNotes>						
+
+<Installation><![CDATA[<B>Prerequisites</B>
+<U>You must have a wireless toolkit</U>
+  * <font color="#0000FF"><A href="http://java.sun.com/javame/downloads/index.jsp" target="_blank">Sun Java Wireless Toolkit 2.5.2 for CLDC</A></font> 
+  * <font color="#0000FF"><A href="http://developer.sprint.com/site/global/develop/mobile_platforms/java_me/javame.jsp" target="_blank">Sprint Wireless Toolkit</A></font> 
+
+<B>Installing the Project Source Code</B>
+<U>From the archive</U>
+  * Download the latest source code archive.
+  * Unzip the source code zip to any folder on your disk. 
+	For instance: c:\development\
+  * You will see a Login_X_Y (where X_Y is version) source folder. 
+	For instance: c:\development\Login_X_Y 
+
+<U>From the Repository</U>
+  * Use your  favorite SVN client to retrieve the latest source code release from the repository. 
+]]></Installation>												
+
+		</Project>
+	</NodeMap>
+</Node>
