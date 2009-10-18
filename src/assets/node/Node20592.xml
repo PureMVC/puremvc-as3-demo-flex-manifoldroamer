@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node id="20592" name="AsyncStub" thumb="box">	
+	<NodeMap>
+		<Project 
+			name="AsyncStub Utility for AS3" 
+			status="Production"
+			repo="Utility_AS3_AsyncStub" 
+			tag="AsyncStub_1_2_5"
+			version="1.2.5"
+			archive="AS3/Utility_AS3_AsyncStub.zip" 
+			docs="AS3/Utility_AS3_AsyncStub/asdoc/"
+			live=""
+			forum="topic=260.0"
+			owner="Philip Sexton"
+			owner_node="327"
+			pic="PureMVC-Framework-AS3-Std-MC.png"
+			shot="">
+			
+<Description><![CDATA[
+The Asynchronous Stub utility consists of a Proxy which can be extended for the purpose of simulating asynchronous activity, by way of a random timer.
+]]></Description>						
+
+<ReleaseNotes><![CDATA[<B>Changes in Version 1.2.5</B>
+  * No new features, but now includes multicore folder for multicore src 
+  * The bin folder now includes the multicore swc.
+  
+<B>Changes in Version 1.2</B>
+  * Refactored source into src folder.
+
+<B>Changes in Version 1.1</B>
+  * Enhanced to cater for fault outcome, with probability of fault.
+  * Provide a token tracking feature.
+  
+<B>Features in Version 1.0</B>
+  * Uses a timer to simulate asyncronous interaction with server
+  * Simulates failure 
+
+Occasionally, for testing a service before it is online, you may need a Proxy that acts as though it has asynchronously contacted a server and retrieved data. You may also need for it to simulate random load times, timeouts, and failures. This can be for testing purposes or as a stand-in until the actual service is in place so that client development can proceed.
+
+The Flex-based demo called Loadup as Ordered provides an example use of this utility. 
+]]></ReleaseNotes>						
+
+<Installation><![CDATA[<B>Installing the Project Source Code</B>
+<U>From the archive</U>
+  * Download the latest source code archive.
+  * Unzip the source code zip to any folder on your disk. 
+	For instance: c:\development\
+  * You will see a AsyncStub_X_Y (where X_Y is version) source folder. 
+	For instance: c:\development\AsyncStub_X_Y 
+
+<U>From the Repository</U>
+  * Use your  favorite SVN client to retrieve the latest source code release from the repository.   
+
+<B>Using the Utility in Your Project</B>
+<I>Add the Utility Library to your Project Using Flex Builder 3</I>
+  * Open or create a Flex or AIR Project in Flex Builder 3
+  * From the Flex Builder menu, do: Project -> Properties -> Flex Build Path -> Library Path -> Add SWC
+  * Browse and select the SWC (for instance: c:\development\AsyncStub\Utility_AS3_AsyncStub_X_Y.swc)
+  * Click Finish. 
+
+<I>Add the Utility Library to your Flash/CS3/CS4 Project</I>
+  * The distributed SWC file will not work.
+  * You must place the source code in your classpath.
+  * Consult the CS3/CS4 documentation for the various ways to accomplish this.
+]]></Installation>												
+
+		</Project>
+	</NodeMap>
+</Node>

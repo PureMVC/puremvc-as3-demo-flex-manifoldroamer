@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Node id="22541" name="AsyncCommand" thumb="box">	
+<Node id="20541" name="AsyncCommand" thumb="box">	
 	<NodeMap>
 		<Project 
-			name="AsyncCommand Utility for Haxe" 
+			name="AsyncCommand Utility for AS3" 
 			status="Production"
-			repo="Utility_Haxe_AsyncCommand" 
-			tag="AsyncCommand_1_1"
-			version="1.1"
-			archive="Haxe/Utility_Haxe_AsyncCommand.zip" 
-			docs="Haxe/Utility_Haxe_AsyncCommand/doc-standard"
+			repo="Utility_AS3_AsyncCommand" 
+			tag="AsyncCommand_1_0"
+			version="1.0"
+			archive="AS3/Utility_AS3_AsyncCommand.zip" 
+			docs="AS3/Utility_AS3_AsyncCommand/asdoc-standard/"
 			live=""
-			forum="topic=886.0"
-			owner="Zjnue Brzavi"
-			owner_node="305"
-			pic="PureMVC-Framework-Haxe-Std-MC.png"
+			forum="topic=831.0"
+			owner="Duncan Hall"
+			owner_node="312"
+			pic="PureMVC-Framework-AS3-Std-MC.png"
 			shot="">
 			
 <Description><![CDATA[
@@ -21,19 +21,13 @@ The AsyncCommand utility offers a solution to the problem of executing a series 
 ]]></Description>						
 
 <ReleaseNotes><![CDATA[<B>Features in Version 1.0</B>
-  * A port of the AsyncCommand Utility for ActionScript 3
   * IAsyncCommand interface defines the methods required for an asynchronous command, which at the moment is only setOnComplete, which sets a callback method for the IAsyncCommand implementer to call when it has completed its task.
   * AsyncCommand class extends the framework SimpleCommand class and implements IAsyncCommand.
   * AsyncMacroCommand class extends Notifier and implements IAsyncCommand. Accepts IAsyncCommands or ICommands for subcommands. This means any combination of SimpleCommand, MacroCommand, AsyncCommand or AsyncMacroCommand.
   * Standard and MultiCore versions included. 
-  * Standard and MultiCore versions are included.
 ]]></ReleaseNotes>						
 
-<Installation><![CDATA[<B>Prerequisites</B>
-    * You must have <font color="#0000FF"><a href="http://haxe.org/" target="_blank">Haxe</A></font> installed.
-    * You must have PureMVC Haxe Standard or MultiCore installed. 
-    
-<B>Installing the Project Source Code</B>
+<Installation><![CDATA[<B>Installing the Project Source Code</B>
 <U>From the archive</U>
   * Download the latest source code archive.
   * Unzip the source code zip to any folder on your disk. 
@@ -42,7 +36,19 @@ The AsyncCommand utility offers a solution to the problem of executing a series 
 	For instance: c:\development\AsyncCommand_X_Y 
 
 <U>From the Repository</U>
-  * Use your  favorite SVN client to retrieve the latest source code release from the repository. 
+  * Use your  favorite SVN client to retrieve the latest source code release from the repository.   
+
+<B>Using the Utility in Your Project</B>
+<I>Add the Utility Library to your Project Using Flex Builder 3</I>
+  * Open or create a Flex or AIR Project in Flex Builder 3
+  * From the Flex Builder menu, do: Project -> Properties -> Flex Build Path -> Library Path -> Add SWC
+  * Browse and select the SWC (for instance: c:\development\AsyncCommand\Utility_AS3_AsyncCommand_X_Y.swc)
+  * Click Finish. 
+
+<I>Add the Utility Library to your Flash/CS3/CS4 Project</I>
+  * The distributed SWC file will not work.
+  * You must place the source code in your classpath.
+  * Consult the CS3/CS4 documentation for the various ways to accomplish this.
 ]]></Installation>												
 
 		</Project>

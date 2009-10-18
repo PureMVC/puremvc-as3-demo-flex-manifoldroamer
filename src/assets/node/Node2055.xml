@@ -4,8 +4,8 @@
 		<Nodes>
 			<Node id="2056" name="Framework" type="stub" thumb="box"/>	
 			<Node id="2057" name="Unit Tests" type="stub" thumb="box"/>
-			<Node id="2058" name="Demos" thumb="box"><NodeMap/></Node>
-			<Node id="2059" name="Utilities" thumb="box"><NodeMap/></Node>
+			<Node id="2058" name="Demos (4)" thumb="box"/>
+			<Node id="2059" name="Utilities (7)" thumb="box"/>
 		</Nodes>
 	</NodeMap>
 </Node>
