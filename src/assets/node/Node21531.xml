@@ -1,27 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Node id="22032" name="Login" thumb="box">	
+<Node id="21531" name="Login" thumb="box">	
 	<NodeMap>
 		<Project 
-			name="Login Demo for CF" 
+			name="Login Demo for C#" 
 			status="Production"
-			repo="Demo_CF_Login" 
+			repo="Demo_CSharp_Silverlight_WebService_Login" 
 			tag="Login_1_0"
 			version="1.0"
-			archive="CF/Demo_CF_Login.zip" 
+			archive="CSharp/Demo_CSharp_Silverlight_WebService_Login.zip" 
 			docs=""
-			live=""
-			forum="topic=1499.0"
-			owner="Michael Oddis"
+			live="http://puremvc.mattbrailsford.com/logindemo/"
+			forum="topic=256.0"
+			owner="Matt Brailsford"
 			owner_node="322"
-			pic="PureMVC-Framework-CF-Std.png"
-			shot="">
+			pic="PureMVC-Framework-CSharp-Std.png"
+			shot="PureMVC-Shot-CSharp-Login.png">
 			
 <Description><![CDATA[
-This simple demo illustrates a simple login process using the PureMVC framework for ColdFusion. 
+This Silverlight demo illustrates the use of PureMVC communicating with a generic .NET WebService to perform a simple login operation. 
 ]]></Description>						
 
 <ReleaseNotes><![CDATA[<B>Features in Version 1.0</B>
-  * Implements a simple login process.
+  * Communicates with a remote .NET WebService from Silverlight 
+  * This demo was ported from the original PureMVC AS3 Flex/WebOrb Login Demo 
+  * To login, use Username: admin / Password: admin.
 ]]></ReleaseNotes>						
 
 <Installation><![CDATA[<B>Installing the Project Source Code</B>
