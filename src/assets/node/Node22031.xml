@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node id="22031" name="Hello World" thumb="box">	
+	<NodeMap>
+		<Project 
+			name="Hello World Demo for CF" 
+			status="Production"
+			repo="Demo_CF_HelloWorld" 
+			tag="HelloWorld_1_0"
+			version="1.0"
+			archive="CF/Demo_CF_HelloWorld.zip" 
+			docs=""
+			live=""
+			forum="topic=331.0"
+			owner="Michael Oddis"
+			owner_node="322"
+			pic="PureMVC-Framework-CF-Std.png"
+			shot="">
+			
+<Description><![CDATA[
+This simple demo illustrates basic use of the PureMVC framework for ColdFusion. 
+]]></Description>						
+
+<ReleaseNotes><![CDATA[<B>Features in Version 1.0</B>
+  * Simple test of the framework.
+]]></ReleaseNotes>						
+
+<Installation><![CDATA[<B>Installing the Project Source Code</B>
+<U>From the archive</U>
+  * Download the latest source code archive.
+  * Unzip the source code zip to any folder on your disk. 
+	For instance: c:\development\
+  * You will see a HelloWorld_X_Y (where X_Y is version) source folder. 
+	For instance: c:\development\HelloWorld_X_Y 
+
+<U>From the Repository</U>
+  * Use your  favorite SVN client to retrieve the latest source code release from the repository. 
+]]></Installation>												
+
+		</Project>
+	</NodeMap>
+</Node>
