@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node id="2259" name="Utilities (5)" thumb="flake">
+	<NodeMap>
+		<Nodes>
+			<Node id="22591" name="AsyncCommand" type="stub" thumb="box"/>	
+			<Node id="22592" name="AsyncStub" type="stub" thumb="box"/>	
+			<Node id="22593" name="Pipes" type="stub" thumb="box"/>	
+			<Node id="22594" name="StateMachine" type="stub" thumb="box"/>	
+			<Node id="22595" name="Undo" type="stub" thumb="box"/>	
+		</Nodes>
+	</NodeMap>
+</Node>

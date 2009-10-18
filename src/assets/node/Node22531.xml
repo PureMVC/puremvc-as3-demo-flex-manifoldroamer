@@ -1,43 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Node id="22531" name="Multiplatform Comm" thumb="box">	
+<Node id="22531" name="StopWatch" thumb="box">	
 	<NodeMap>
 		<Project 
-			name="Multiplatform Comm Demo for Haxe" 
+			name="StopWatch Demo for Haxe" 
 			status="Production"
-			repo="Demo_Haxe_JS_Flash_MultiplatformComm" 
-			tag="MultiplatformComm_1_1"
-			version="1.1"
-			archive="Haxe/Demo_Haxe_JS_Flash_MultiplatformComm.zip" 
+			repo="Demo_Haxe_Xinf_StopWatch" 
+			tag="StopWatch_1_0"
+			version="1.0"
+			archive="Haxe/Demo_Haxe_Xinf_StopWatch.zip" 
 			docs=""
-			live="Haxe/MultiplatformComm/"
-			forum="topic=403"
-			owner="Marco Secchi"
-			owner_node="321"
-			pic="PureMVC-Framework-Haxe-Std.png"
-			shot="PureMVC-Shot-Haxe-Std-MultiplatformComm.png">
+			live="Haxe/Demo_Haxe_Xinf_StopWatch/bin-standard"
+			forum="topic=885.0"
+			owner="Zjnue Brzavi"
+			owner_node="305"
+			pic="PureMVC-Framework-Haxe-Std-MC.png"
+			shot="PureMVC-Shot-Haxe-MC-StopWatch.png">
 			
 <Description><![CDATA[
-This demo illustrates the use of Haxe to cross-compile an application for Flash 8, Flash 9 and JavaScript from the same source code, and then to communicate with each from external JavaScript code.   
+This demo illustrates the use of the StateMachine Utility to define and navigate the states of a Finite State Machine or FSM of a working StopWatch. Xinf is used for the user interface.  
 ]]></Description>						
 
 <ReleaseNotes><![CDATA[<B>Features in Version 1.0</B>
-I've left the demo to his bare minimum, so this demo is about js/flash communication (and not about js/swf file loading/sync). If you experience some problem (i.e.: some boxes nor moving), try just refreshing the page.
-
-Writing a multiplatform application is very easy. Just follow the best pratices for any PureMVC application and go on writing the core. You can choose any platform as the basis (as for flash, versions 8/9 are are available as haxe remoting supports them only).
-
-The only difference from a 'traditional' application is that you have to consider the various views/uis in an abstract way.
-
-Enter PureMVC Mediators... As you'll see from the code the BoxMediator controls a BoxContainer type. The BoxContainer can be a real view component (in this example a js DOM element) or an "abstract" view component. In this example an abstract view is simply an external flash application with a box drawn on it. Communication is then obtained using haxe remoting.
-
- ]]></ReleaseNotes>	
+  * A port of the StopWatch Demo for ActionScript 3
+  * Standard and MultiCore versions are included.
+  * Uses the PureMVC / Haxe StateMachine Utility
+  * <font color="#0000FF"><a href="http://xinf.org/" target="_blank">Xinf</a></font> is used for the user interface. 
+]]></ReleaseNotes>						
 
 <Installation><![CDATA[<B>Installing the Project Source Code</B>
 <U>From the archive</U>
   * Download the latest source code archive.
   * Unzip the source code zip to any folder on your disk. 
 	For instance: c:\development\
-  * You will see a MultiplatformComm_X_Y (where X_Y is version) source folder. 
-	For instance: c:\development\MultiplatformComm_X_Y 
+  * You will see a StopWatch_X_Y (where X_Y is version) source folder. 
+	For instance: c:\development\StopWatch_X_Y 
 
 <U>From the Repository</U>
   * Use your  favorite SVN client to retrieve the latest source code release from the repository. 

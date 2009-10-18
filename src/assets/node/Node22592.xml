@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node id="22592" name="AsyncStub" thumb="box">	
+	<NodeMap>
+		<Project 
+			name="AsyncStub Utility for Haxe" 
+			status="Production"
+			repo="Utility_Haxe_AsyncStub" 
+			tag="AsyncStub_1_1"
+			version="1.1"
+			archive="Haxe/Utility_Haxe_AsyncStub.zip" 
+			docs="Haxe/Utility_Haxe_AsyncStub/doc-multicore"
+			live=""
+			forum="topic=887.0"	
+			owner="Zjnue Brzavi"
+			owner_node="305"
+			pic="PureMVC-Framework-Haxe-Std-MC.png"
+			shot="">
+			
+<Description><![CDATA[
+The Asynchronous Stub utility consists of a Proxy which can be extended for the purpose of simulating asynchronous activity, by way of a random timer.
+]]></Description>						
+
+<ReleaseNotes><![CDATA[<B>Features in Version 1.0</B>
+  * A port of the AsyncStub Utility for ActionScript 3
+  * Standard and MultiCore versions are included.
+]]></ReleaseNotes>						
+
+<Installation><![CDATA[<B>Prerequisites</B>
+    * You must have <font color="#0000FF"><a href="http://haxe.org/" target="_blank">Haxe</A></font> installed.
+    * You must have PureMVC Haxe Standard or MultiCore installed. 
+    
+<B>Installing the Project Source Code</B>
+<U>From the archive</U>
+  * Download the latest source code archive.
+  * Unzip the source code zip to any folder on your disk. 
+	For instance: c:\development\
+  * You will see a AsyncStub_X_Y (where X_Y is version) source folder. 
+	For instance: c:\development\AsyncStub_X_Y 
+
+<U>From the Repository</U>
+  * Use your  favorite SVN client to retrieve the latest source code release from the repository. 
+]]></Installation>												
+
+		</Project>
+	</NodeMap>
+</Node>

@@ -2,9 +2,9 @@
 <Node id="2253" name="Demos (3)" thumb="flake">
 	<NodeMap>
 		<Nodes>
-			<Node id="22531" name="Multiplatform Comm" type="stub" thumb="box"/>	
-			<Node id="22532" name="Simple Admin" type="stub" thumb="box"/>	
-			<Node id="22581" name="StopWatch" type="stub" thumb="box"/>	
+			<Node id="22532" name="Multiplatform Comm" type="stub" thumb="box"/>	
+			<Node id="22533" name="Simple Admin" type="stub" thumb="box"/>	
+			<Node id="22531" name="StopWatch" type="stub" thumb="box"/>	
 		</Nodes>
 	</NodeMap>
 </Node>

@@ -9,7 +9,7 @@
 			version="1.0"
 			archive="Haxe/Demo_Haxe_Xinf_StopWatch.zip" 
 			docs=""
-			live="Haxe/Demo_Haxe_Xinf_StopWatch/bin-standard"
+			live="Haxe/Demo_Haxe_Xinf_StopWatch/bin-multicore"
 			forum="topic=885.0"
 			owner="Zjnue Brzavi"
 			owner_node="305"

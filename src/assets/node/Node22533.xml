@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node id="22533" name="Simple Admin" thumb="box">	
+	<NodeMap>
+		<Project 
+			name="Simple Admin Demo for Haxe" 
+			status="Production"
+			repo="Demo_Haxe_JS_Flash_SimpleAdmin" 
+			tag="SimpleAdmin_1_0_1 "
+			version="1.0.1"
+			archive="Haxe/Demo_Haxe_JS_Flash_SimpleAdmin.zip" 
+			docs=""
+			live="Haxe/SimpleAdmin/"
+			forum="topic=402"
+			owner="Marco Secchi"
+			owner_node="321"
+			pic="PureMVC-Framework-Haxe-Std.png"
+			shot="PureMVC-Shot-Haxe-Std-SimpleAdmin.png">
+			
+<Description><![CDATA[
+This demo illustrates the use of Haxe to create a simple list administration application that cross-compiles to both Flash and JavaScript from the same source code.   
+]]></Description>						
+
+<ReleaseNotes><![CDATA[<B>Features in Version 1.0</B>
+This example demonstrates how to write the same PureMVC application for multiple platforms. Being so "abstract" in its form, PureMVC lets you to write code which is reusable for js/flash/neko easily.
+
+What's different is the way you create and control view components. This is easily obtained through haxe conditional compilation. You can see how this in the StartupCommand class where the various uis are created or in the mediators & uis where they are managed.
+
+With haXe you can also create your own flags (yes, that's right, multiplatform also means "for mobile") 
+ ]]></ReleaseNotes>	
+
+<Installation><![CDATA[<B>Installing the Project Source Code</B>
+<U>From the archive</U>
+  * Download the latest source code archive.
+  * Unzip the source code zip to any folder on your disk. 
+	For instance: c:\development\
+  * You will see a SimpleAdmin_X_Y (where X_Y is version) source folder. 
+	For instance: c:\development\SimpleAdmin_X_Y 
+
+<U>From the Repository</U>
+  * Use your  favorite SVN client to retrieve the latest source code release from the repository. 
+]]></Installation>												
+
+		</Project>
+	</NodeMap>
+</Node>

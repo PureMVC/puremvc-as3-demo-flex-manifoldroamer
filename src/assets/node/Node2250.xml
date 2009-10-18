@@ -5,7 +5,7 @@
 			<Node id="2251" name="Framework" type="stub" thumb="box"/>	
 			<Node id="2252" name="Unit Tests" type="stub" thumb="box"/>
 			<Node id="2253" name="Demos (3)" thumb="box"/>
-			<Node id="2254" name="Utilities (0)" thumb="box"><NodeMap/></Node>
+			<Node id="2254" name="Utilities (4)" thumb="box"/>
 		</Nodes>
 	</NodeMap>
 </Node>

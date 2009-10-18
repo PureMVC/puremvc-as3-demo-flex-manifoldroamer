@@ -1,31 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Node id="22532" name="Simple Admin" thumb="box">	
+<Node id="22532" name="Multiplatform Comm" thumb="box">	
 	<NodeMap>
 		<Project 
-			name="Simple Admin Demo for Haxe" 
+			name="Multiplatform Comm Demo for Haxe" 
 			status="Production"
-			repo="Demo_Haxe_JS_Flash_SimpleAdmin" 
-			tag="SimpleAdmin_1_0_1 "
-			version="1.0.1"
-			archive="Haxe/Demo_Haxe_JS_Flash_SimpleAdmin.zip" 
+			repo="Demo_Haxe_JS_Flash_MultiplatformComm" 
+			tag="MultiplatformComm_1_1"
+			version="1.1"
+			archive="Haxe/Demo_Haxe_JS_Flash_MultiplatformComm.zip" 
 			docs=""
-			live="Haxe/SimpleAdmin/"
-			forum="topic=402"
+			live="Haxe/MultiplatformComm/"
+			forum="topic=403"
 			owner="Marco Secchi"
 			owner_node="321"
 			pic="PureMVC-Framework-Haxe-Std.png"
-			shot="PureMVC-Shot-Haxe-Std-SimpleAdmin.png">
+			shot="PureMVC-Shot-Haxe-Std-MultiplatformComm.png">
 			
 <Description><![CDATA[
-This demo illustrates the use of Haxe to create a simple list administration application that cross-compiles to both Flash and JavaScript from the same source code.   
+This demo illustrates the use of Haxe to cross-compile an application for Flash 8, Flash 9 and JavaScript from the same source code, and then to communicate with each from external JavaScript code.   
 ]]></Description>						
 
 <ReleaseNotes><![CDATA[<B>Features in Version 1.0</B>
-This example demonstrates how to write the same PureMVC application for multiple platforms. Being so "abstract" in its form, PureMVC lets you to write code which is reusable for js/flash/neko easily.
+I've left the demo to his bare minimum, so this demo is about js/flash communication (and not about js/swf file loading/sync). If you experience some problem (i.e.: some boxes nor moving), try just refreshing the page.
 
-What's different is the way you create and control view components. This is easily obtained through haxe conditional compilation. You can see how this in the StartupCommand class where the various uis are created or in the mediators & uis where they are managed.
+Writing a multiplatform application is very easy. Just follow the best pratices for any PureMVC application and go on writing the core. You can choose any platform as the basis (as for flash, versions 8/9 are are available as haxe remoting supports them only).
 
-With haXe you can also create your own flags (yes, that's right, multiplatform also means "for mobile") 
+The only difference from a 'traditional' application is that you have to consider the various views/uis in an abstract way.
+
+Enter PureMVC Mediators... As you'll see from the code the BoxMediator controls a BoxContainer type. The BoxContainer can be a real view component (in this example a js DOM element) or an "abstract" view component. In this example an abstract view is simply an external flash application with a box drawn on it. Communication is then obtained using haxe remoting.
+
  ]]></ReleaseNotes>	
 
 <Installation><![CDATA[<B>Installing the Project Source Code</B>
@@ -33,8 +36,8 @@ With haXe you can also create your own flags (yes, that's right, multiplatform a
   * Download the latest source code archive.
   * Unzip the source code zip to any folder on your disk. 
 	For instance: c:\development\
-  * You will see a SimpleAdmin_X_Y (where X_Y is version) source folder. 
-	For instance: c:\development\SimpleAdmin_X_Y 
+  * You will see a MultiplatformComm_X_Y (where X_Y is version) source folder. 
+	For instance: c:\development\MultiplatformComm_X_Y 
 
 <U>From the Repository</U>
   * Use your  favorite SVN client to retrieve the latest source code release from the repository. 
