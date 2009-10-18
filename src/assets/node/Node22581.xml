@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node id="22581" name="StopWatch" thumb="box">	
+	<NodeMap>
+		<Project 
+			name="StopWatch Demo for Haxe" 
+			status="Production"
+			repo="Demo_Haxe_Xinf_StopWatch" 
+			tag="StopWatch_1_0"
+			version="1.0"
+			archive="Haxe/Demo_Haxe_Xinf_StopWatch.zip" 
+			docs=""
+			live="Haxe/Demo_Haxe_Xinf_StopWatch/bin-standard"
+			forum="topic=885.0"
+			owner="Zjnue Brzavi"
+			owner_node="305"
+			pic="PureMVC-Framework-Haxe-Std-MC.png"
+			shot="PureMVC-Shot-Haxe-MC-StopWatch.png">
+			
+<Description><![CDATA[
+This demo illustrates the use of the StateMachine Utility to define and navigate the states of a Finite State Machine or FSM of a working StopWatch. Xinf is used for the user interface.  
+]]></Description>						
+
+<ReleaseNotes><![CDATA[<B>Features in Version 1.0</B>
+  * A port of the StopWatch Demo for ActionScript 3
+  * Standard and MultiCore versions are included.
+  * Uses the PureMVC / Haxe StateMachine Utility
+  * <font color="#0000FF"><a href="http://xinf.org/" target="_blank">Xinf</a></font> is used for the user interface. 
+]]></ReleaseNotes>						
+
+<Installation><![CDATA[<B>Installing the Project Source Code</B>
+<U>From the archive</U>
+  * Download the latest source code archive.
+  * Unzip the source code zip to any folder on your disk. 
+	For instance: c:\development\
+  * You will see a StopWatch_X_Y (where X_Y is version) source folder. 
+	For instance: c:\development\StopWatch_X_Y 
+
+<U>From the Repository</U>
+  * Use your  favorite SVN client to retrieve the latest source code release from the repository. 
+]]></Installation>												
+
+		</Project>
+	</NodeMap>
+</Node>
