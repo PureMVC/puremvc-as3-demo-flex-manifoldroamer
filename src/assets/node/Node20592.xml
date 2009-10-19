@@ -55,7 +55,7 @@ The Flex-based demo called Loadup as Ordered provides an example use of this uti
 <I>Add the Utility Library to your Project Using Flex Builder 3</I>
   * Open or create a Flex or AIR Project in Flex Builder 3
   * From the Flex Builder menu, do: Project -> Properties -> Flex Build Path -> Library Path -> Add SWC
-  * Browse and select the SWC (for instance: c:\development\AsyncStub\Utility_AS3_AsyncStub_X_Y.swc)
+  * Browse and select the SWC (for instance: c:\development\AsyncStub_X_Y\bin\Utility_AS3_AsyncStub_X_Y.swc)
   * Click Finish. 
 
 <I>Add the Utility Library to your Flash/CS3/CS4 Project</I>

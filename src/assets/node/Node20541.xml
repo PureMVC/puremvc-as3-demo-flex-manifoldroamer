@@ -42,7 +42,7 @@ The AsyncCommand utility offers a solution to the problem of executing a series 
 <I>Add the Utility Library to your Project Using Flex Builder 3</I>
   * Open or create a Flex or AIR Project in Flex Builder 3
   * From the Flex Builder menu, do: Project -> Properties -> Flex Build Path -> Library Path -> Add SWC
-  * Browse and select the SWC (for instance: c:\development\AsyncCommand\Utility_AS3_AsyncCommand_X_Y.swc)
+  * Browse and select the SWC (for instance: c:\development\AsyncCommand_X_Y\bin\Utility_AS3_AsyncCommand_X_Y.swc)
   * Click Finish. 
 
 <I>Add the Utility Library to your Flash/CS3/CS4 Project</I>
