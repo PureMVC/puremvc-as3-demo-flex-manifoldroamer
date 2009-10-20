@@ -5,7 +5,7 @@
 			name="Pipes Utility for AS3" 
 			status="Production"
 			repo="Utility_AS3_MultiCore_Pipes" 
-			tag="Pipes_1_1 "
+			tag="Pipes_1_1"
 			version="1.1"
 			archive="AS3/Utility_AS3_MultiCore_Pipes.zip" 
 			docs="AS3/multicore/pipes_asdoc/"

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node id="20545" name="Undo" thumb="box">	
+	<NodeMap>
+		<Project 
+			name="Undo Utility for AS3" 
+			status="Production"
+			repo="Utility_AS3_Undo" 
+			tag="Undo_1_3"
+			version="1.3"
+			archive="AS3/Utility_AS3_Undo.zip" 
+			docs=""
+			srcview=""
+			live=""
+			forum="topic=265.0"
+			owner="Dragos Dascalita"
+			owner_node="310"
+			pic="PureMVC-Framework-AS3-Std.png"
+			shot="">
+			
+<Description><![CDATA[
+This utility adds undo / redo capability to your PureMVC application. 
+]]></Description>						
+
+<ReleaseNotes><![CDATA[<B>Changes in Version 1.3</B>
+  * Renamed swc to standard scheme,
+  * Updated to PureMVC 2.0.4 - CLH 
+
+<B>Changes in Version 1.2</B>
+  * Updated the package structure
+  * Added UndoableMacroCommand that works with a set of subCommands - DD 
+ 
+<B>Changes in Version 1.1</B>
+  * Updated to PureMVC 2.0.3 - DD 
+ 
+<B>Features in Version 1.0</B>
+  * Created the main classes for the undoable system. - DD  
+]]></ReleaseNotes>						
+
+<Installation><![CDATA[<B>Installing the Project Source Code</B>
+<U>From the archive</U>
+  * Download the latest source code archive.
+  * Unzip the source code zip to any folder on your disk. 
+	For instance: c:\development\
+  * You will see a Undo_X_Y (where X_Y is version) source folder. 
+	For instance: c:\development\Undo_X_Y 
+
+<U>From the Repository</U>
+  * Use your  favorite SVN client to retrieve the latest source code release from the repository.   
+
+<B>Using the Utility in Your Project</B>
+<I>Add the Utility Library to your Project Using Flex Builder 3</I>
+  * Open or create a Flex or AIR Project in Flex Builder 3
+  * From the Flex Builder menu, do: Project -> Properties -> Flex Build Path -> Library Path -> Add SWC
+  * Browse and select the SWC (for instance: c:\development\Undo_X_Y\bin\Utility_AS3_Undo_X_Y.swc)
+  * Click Finish. 
+
+<I>Add the Utility Library to your Flash/CS3/CS4 Project</I>
+  * The distributed SWC file will not work.
+  * You must place the source code in your classpath.
+  * Consult the CS3/CS4 documentation for the various ways to accomplish this.
+]]></Installation>												
+
+		</Project>
+	</NodeMap>
+</Node>
