@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node id="20595" name="StateMachine" thumb="box">	
+	<NodeMap>
+		<Project 
+			name="Pipes Utility for AS3" 
+			status="Production"
+			repo="Utility_AS3_MultiCore_Pipes" 
+			tag="Pipes_1_1 "
+			version="1.1"
+			archive="AS3/Utility_AS3_MultiCore_Pipes.zip" 
+			docs="AS3/multicore/pipes_asdoc/"
+			srcview="AS3/multicore/pipes_source/"
+			live=""
+			forum="topic=457.0"
+			owner="Cliff Hall"
+			owner_node="300"
+			pic="PureMVC-Framework-AS3-MC.png"
+			shot="">
+			
+<Description><![CDATA[
+This utility provides the capability for creating pipelines that pass messages between Cores in a PureMVC AS3 MultiCore-based application. Pipelines can contain filters, queues, splitting and merging tees, and more.
+]]></Description>						
+
+<ReleaseNotes><![CDATA[<B>Changes in Version 1.1</B>
+  * Added disconnectFitting method to TeeSplit. This allows you to pass in a reference to the specific output fitting to be removed from the TeeSplit's outputs array. 
+  * Cosmetic change to constant values in FilterControlMessage. 
+
+<B>Features in Version 1.0</B>
+Modular programming is a wonderful way to separate your code, even beyond the separation of concerns the MVC pattern lends. It allows extreme separation of code into discrete applications all running blissfully unaware of each others' presence in the same VM.
+But in order for these discrete Modules to collaborate and act like a single application, they need to talk to each other somehow. The  Modularity demo shows two Flex Modules, instantiated by an application. The Modules are given a reference to a 'Shell' object in the application and are allowed to talk to the app through the interface it exposes. The Modules also implement an interface that the application Shell talks to. In the demo, the Modules and Shell communicate, but the Modules don't talk to each other at all. They could be given references to each other, and talk over an interface as well, but that is still more tightly coupled than many would like.
+Sending Notifications between modules would require that they share a Facade, and or a methodology for keeping their Notification namespaces from colliding, which could be difficult if third-party vendors may be writing some of the modules.
+No sub-classing is necessary at all to use the utility! All of the classes work completely out of box, just like the pipe fittings you'd buy at a hardware store :)
+Essentially you connect fittings together into a pipeline and send messages down it. One nifty bit is that messages can be normal data messages or control messages. Control messages allow you to send control information to the more intelligent pipe fittings, Filter and Queue.
+
+<I>The Interfaces</I>
+    * <U>IPipeFitting</U> - An IPipeFitting can be connected to other IPipeFittings, forming a Pipeline. IPipeMessages are written to one end of a Pipeline by some client code. The messages are then transfered in synchronous fashion from one fitting to the next. 
+    * <U>IPipeMessage</U> - IPipeMessages are objects written into a Pipeline, composed of IPipeFittings. The message is passed from one fitting to the next in synchronous fashion. Depending on type, messages may be handled differently by the fittings. 
+
+<I>The Plumbing</I>
+    * <U>Pipe</U> - This is the most basic IPipeFitting, simply allowing the connection of an output fitting and writing of a message to that output.
+    * <U>TeeSplit</U> - Writes input messages to multiple output pipe fittings.
+    * <U>TeeMerge</U> - Writes the messages from multiple input pipelines into a single output pipe fitting.
+    * <U>Filter</U> - Filters may modify the contents of messages before writing them to their output pipe fitting. They may also have their parameters and filter function passed to them by control message, as well as having their Bypass/Filter operation mode toggled via control message.
+    * <U>Queue</U> - The Queue always stores inbound messages until you send it a FLUSH control message, at which point it writes its buffer to the output pipe fitting. The Queue can be sent a SORT control message to go into sort-by-priority mode or a FIFO control message to cancel sort mode and return the default mode of operation, FIFO. NOTE: There can effectively be only one Queue on a given pipeline, since the first Queue acts on any queue control message. Multiple queues in one pipeline are of dubious use, and so having to name them would make their operation more complex than need be.
+    * <U>PipeListener</U> - Allows a class that does not implement IPipeFitting to be the final recipient of the messages in a pipeline.
+    * <U>Junction</U> - Manages Pipes for a Module. When you register a Pipe with a Junction, it is declared as being an INPUT pipe or an OUTPUT pipe. You can retrieve or remove a registered Pipe by name, check to see if a Pipe with a given name exists,or if it exists AND is an INPUT or an OUTPUT Pipe. You can send an IPipeMessage on a named INPUT Pipe or add a PipeListener to registered INPUT Pipe. 
+ 
+]]></ReleaseNotes>						
+
+<Installation><![CDATA[<B>Installing the Project Source Code</B>
+<U>From the archive</U>
+  * Download the latest source code archive.
+  * Unzip the source code zip to any folder on your disk. 
+	For instance: c:\development\
+  * You will see a Pipes_X_Y (where X_Y is version) source folder. 
+	For instance: c:\development\Pipes_X_Y 
+
+<U>From the Repository</U>
+  * Use your  favorite SVN client to retrieve the latest source code release from the repository.   
+
+<B>Using the Utility in Your Project</B>
+<I>Add the Utility Library to your Project Using Flex Builder 3</I>
+  * Open or create a Flex or AIR Project in Flex Builder 3
+  * From the Flex Builder menu, do: Project -> Properties -> Flex Build Path -> Library Path -> Add SWC
+  * Browse and select the SWC (for instance: c:\development\Pipes_X_Y\bin\Utility_AS3_MultiCore_Pipes_X_Y.swc)
+  * Click Finish. 
+
+<I>Add the Utility Library to your Flash/CS3/CS4 Project</I>
+  * The distributed SWC file will not work.
+  * You must place the source code in your classpath.
+  * Consult the CS3/CS4 documentation for the various ways to accomplish this.
+]]></Installation>												
+
+		</Project>
+	</NodeMap>
+</Node>

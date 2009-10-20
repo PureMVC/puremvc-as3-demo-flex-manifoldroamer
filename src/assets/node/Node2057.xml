@@ -10,6 +10,7 @@
 			archive="AS3/PureMVC_AS3_MultiCore_UnitTests.zip"
 			live="AS3/PureMVC_AS3_MultiCore_UnitTests"
 			docs="AS3/multicore/framework_unit_tests_asdoc"
+			srcview="AS3/multicore/framework_unit_tests_source/srcview/"
 			forum="topic=458.0"
 			owner="Cliff Hall"
 			owner_node="300"

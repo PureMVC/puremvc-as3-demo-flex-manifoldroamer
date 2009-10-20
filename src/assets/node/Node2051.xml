@@ -9,6 +9,7 @@
 			version="2.0.4"
 			archive="AS3/PureMVC_AS3.zip" 
 			docs="AS3/standard/framework_asdoc"
+			srcview="AS3/standard/framework_source"
 			forum="board=26.0"
 			owner="Cliff Hall"
 			owner_node="300"

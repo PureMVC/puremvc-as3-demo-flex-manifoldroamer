@@ -10,6 +10,7 @@
 			archive="AS3/PureMVC_AS3_UnitTests.zip"
 			live="AS3/PureMVC_AS3_UnitTests"
 			docs="AS3/standard/framework_unit_tests_asdoc"
+			srcview="AS3/standard/framework_unit_tests_source/"
 			forum="topic=293.0"
 			owner="Cliff Hall"
 			owner_node="300"

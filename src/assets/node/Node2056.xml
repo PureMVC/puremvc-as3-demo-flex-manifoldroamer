@@ -9,6 +9,7 @@
 			version="1.0.5"
 			archive="AS3/PureMVC_AS3_MultiCore.zip" 
 			docs="AS3/multicore/framework_asdoc"
+			srcview="AS3/multicore/framework_source"
 			forum="board=27.0"
 			owner="Cliff Hall"
 			owner_node="300"

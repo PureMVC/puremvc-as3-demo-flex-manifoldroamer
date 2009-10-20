@@ -51,8 +51,8 @@
 				<mx:Button label="Download" click="readURL(nodeData.archive)"/>
 			</mx:HBox>
 			<mx:HBox verticalAlign="middle">
-				<mx:Button label="Source" click="readURL(nodeData.srcview)" visible="{nodeData.srcview!=''}"/>
-				<mx:Button label="Demo" click="readURL(nodeData.live)" visible="{nodeData.live!=''}"/>
+				<mx:Button label="View Source" click="readURL(nodeData.srcview)" visible="{nodeData.srcview!=''}"/>
+				<mx:Button label="Live" click="readURL(nodeData.live)" visible="{nodeData.live!=''}"/>
 				<mx:Button label="Docs" click="readURL(nodeData.docs)" visible="{nodeData.docs!=''}"/>
 			</mx:HBox>
 	
