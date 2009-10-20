@@ -8,7 +8,7 @@
 			tag="StateMachine_1_2"
 			version="1.2"
 			archive="AS3/Utility_AS3_StateMachine.zip" 
-			docs="AS3/Utility_AS3_StateMachine/asdoc-standard/"
+			docs="AS3/Utility_AS3_StateMachine/asdoc-multicore/"
 			live=""
 			forum="topic=859.0"
 			owner="Neil Manuell"
@@ -17,7 +17,7 @@
 			shot="">
 			
 <Description><![CDATA[
-This utility provides a simple yet effective  Finite State Machine implementation, which allows the definition of discrete states, and the valid transitions to other states available from any given state, and the actions which trigger the transitions. A mechanism is provided for defining the entire state machine in XML and having a fully populated StateMachine injected into the PureMVC app. Standard and MultiCore versions are included.
+This utility provides a simple yet effective Finite State Machine implementation, which allows the definition of discrete states, and the valid transitions to other states available from any given state, and the actions which trigger the transitions. A mechanism is provided for defining the entire state machine in XML and having a fully populated StateMachine injected into the PureMVC app. Standard and MultiCore versions are included.
 ]]></Description>						
 
 <ReleaseNotes><![CDATA[<B>Changes in Version 1.2</B>
@@ -87,7 +87,7 @@ This utility provides a simple yet effective  Finite State Machine implementatio
 <I>Add the Utility Library to your Project Using Flex Builder 3</I>
   * Open or create a Flex or AIR Project in Flex Builder 3
   * From the Flex Builder menu, do: Project -> Properties -> Flex Build Path -> Library Path -> Add SWC
-  * Browse and select the SWC (for instance: c:\development\StateMachine_X_Y\bin\Utility_AS3_AsyncStub_X_Y.swc)
+  * Browse and select the SWC (for instance: c:\development\StateMachine_X_Y\bin\Utility_AS3_StateMachine_X_Y.swc)
   * Click Finish. 
 
 <I>Add the Utility Library to your Flash/CS3/CS4 Project</I>
