@@ -4,6 +4,7 @@
 	 layout="absolute" paddingTop="0" paddingBottom="0" paddingRight="0" paddingLeft="0"
 	 minWidth="920" minHeight="540"
 	 creationComplete="initApp()"
+	 pageTitle="Darkstar: PureMVC Manifold Roamer V1"
 	 >
 
 	<mx:Script>

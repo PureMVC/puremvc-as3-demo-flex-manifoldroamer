@@ -55,7 +55,7 @@
 		source="@Embed('/assets/ui/logo.png')" 
 		mouseDownEffect="{fxDarkStarClick}"
 		click="reset()"
-		toolTip="Reset to top and clear navigation history."/>
+		toolTip="Reset to top and clear navigation trails."/>
 
 	<view:ContentPanel 
 		backgroundColor="#FFFFFF"
