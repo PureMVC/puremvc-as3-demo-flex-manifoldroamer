@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node id="20598" name="Desktop Citizen" thumb="box">	
+	<NodeMap>
+		<Project 
+			name="Desktop Citizen Utility for AS3" 
+			status="Production"
+			repo="Utility_AS3_AIR_DesktopCitizen" 
+			tag="DesktopCitizen_1_2_1"
+			version="1.2.1"
+			archive="AS3/Utility_AS3_AIR_DesktopCitizen.zip" 
+			docs="AS3/Utility_AS3_AIR_DesktopCitizen/asdoc/"
+			srcview="AS3/Utility_AS3_AIR_DesktopCitizen/srcview/"
+			live=""
+			forum="topic=262"
+			owner="Cliff Hall"
+			owner_node="300"
+			pic="PureMVC-Framework-AS3-Std-MC.png"
+			shot="">
+			
+<Description><![CDATA[
+This utility provides the ability for PureMVC-based AIR applications remember their window size, position and maximized state each time it is launched.
+]]></Description>						
+
+<ReleaseNotes><![CDATA[<B>Changes in 1.2.1</B>
+  * Moved constructor actions to onRegister. 
+
+<B>Changes in 1.2</B>
+  * Added MultiCore support.
+  * No Standard version functionality changes except renaming source tree, therefore, there is no need to migrate Standard version apps to 1.2 unless you're also migrating to MultiCore. 
+
+<B>Changes in 1.1</B>
+  * Moved source code into src folder. No functionality changed. 
+
+<B>Features in 1.0</B>
+  * Manages an XML Database with the information about the main application window's position, size and state (WindowMetrics)
+  * Reads the Window Metrics at startup, applies to the main window then sends a notification that the window is ready to be shown.
+  * Allows the window to be sized and positioned BEFORE being shown so that it doesn't flash up at a default size, then resize, causing visual repaint. 
+
+See the demos CodePeek and RSSHeadlines for example use of this utility. 
+]]></ReleaseNotes>						
+
+<Installation><![CDATA[<B>Installing the Project Source Code</B>
+<U>From the archive</U>
+  * Download the latest source code archive.
+  * Unzip the source code zip to any folder on your disk. 
+	For instance: c:\development\
+  * You will see a DesktopCitizen_X_Y (where X_Y is version) source folder. 
+	For instance: c:\development\DesktopCitizen_X_Y 
+
+<U>From the Repository</U>
+  * Use your  favorite SVN client to retrieve the latest source code release from the repository.   
+
+<B>Using the Utility in Your Project</B>
+<I>Add the Utility Library to your Project Using Flex Builder 3</I>
+  * Open or create a Flex or AIR Project in Flex Builder 3
+  * From the Flex Builder menu, do: Project -> Properties -> Flex Build Path -> Library Path -> Add SWC
+  * Browse and select the SWC (for instance: c:\development\DesktopCitizen_X_Y\bin\Utility_AS3_AIR_DesktopCitizen_X_Y.swc)
+  * Click Finish. 
+
+]]></Installation>												
+
+		</Project>
+	</NodeMap>
+</Node>
