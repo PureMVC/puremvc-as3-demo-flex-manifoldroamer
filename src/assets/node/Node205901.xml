@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Node id="20541" name="AsyncCommand" thumb="box">	
+<Node id="205901" name="AsyncCommand" thumb="box">	
 	<NodeMap>
 		<Project 
 			name="AsyncCommand Utility for AS3" 
@@ -8,7 +8,7 @@
 			tag="AsyncCommand_1_0"
 			version="1.0"
 			archive="AS3/Utility_AS3_AsyncCommand.zip" 
-			docs="AS3/Utility_AS3_AsyncCommand/asdoc-standard/"
+			docs="AS3/Utility_AS3_AsyncCommand/asdoc-multicore/"
 			live=""
 			forum="topic=831.0"
 			owner="Duncan Hall"

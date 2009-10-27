@@ -2,14 +2,12 @@ package org.puremvc.manifoldroamer.model
 {
 	import org.puremvc.as3.patterns.proxy.Proxy;
 	import org.puremvc.manifoldroamer.model.vo.ContributorVO;
-	import org.puremvc.manifoldroamer.model.vo.DemoVO;
 	import org.puremvc.manifoldroamer.model.vo.DocumentVO;
-	import org.puremvc.manifoldroamer.model.vo.ProjectVO;
 	import org.puremvc.manifoldroamer.model.vo.NodeDataVO;
 	import org.puremvc.manifoldroamer.model.vo.PresentationVO;
+	import org.puremvc.manifoldroamer.model.vo.ProjectVO;
 	import org.puremvc.manifoldroamer.model.vo.ShowcaseVO;
 	import org.puremvc.manifoldroamer.model.vo.SiteVO;
-	import org.puremvc.manifoldroamer.model.vo.UtilityVO;
 
 	public class NodeDataProxy extends Proxy
 	{
@@ -51,7 +49,8 @@ package org.puremvc.manifoldroamer.model
 					prvo.live 		= prepend( configProxy.project.@live_pre, prvo.live );
 					prvo.pic 		= prepend( configProxy.project.@pic_pre, prvo.pic );
 					prvo.shot		= prepend( configProxy.project.@shot_pre, prvo.shot );
-					prvo.repo 		= prepend( configProxy.project.@repo_pre, prvo.repo );
+					prvo.html		= prepend( configProxy.project.@html_pre, prvo.repo ); // http://trac.puremvc.org/... repo is set in the XML node,
+					prvo.repo 		= prepend( configProxy.project.@repo_pre, prvo.repo ); // http://svn.puremvc.org/...  but we also derive html url (and must to so first)
 					prvo.srcview 	= prepend( configProxy.project.@srcview_pre, prvo.srcview );
 					vo = prvo;
 					break;

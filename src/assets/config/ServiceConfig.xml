@@ -7,6 +7,7 @@
 			     live_pre="http://puremvc.org/pages/demos/"
 			     pic_pre="http://puremvc.org/pages/images/framework_thumbs/"
 				 repo_pre="http://svn.puremvc.org/"
+				 html_pre="http://trac.puremvc.org/"
 				 srcview_pre="http://puremvc.org/pages/docs/" 
 			     forum_pre="http://forums.puremvc.org/index.php?"
 			     shot_pre="http://puremvc.org/pages/images/screenshots/"

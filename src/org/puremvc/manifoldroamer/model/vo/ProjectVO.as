@@ -89,6 +89,16 @@ package org.puremvc.manifoldroamer.model.vo
 			nodeData.@repo = url;
 		} 
 		
+		public function get html():String
+		{
+			return nodeData.@html;
+		} 
+		
+		public function set html(url:String):void
+		{
+			nodeData.@html = url;
+		} 
+		
 		public function get tag():String
 		{
 			return this.repo + "/tags/" + nodeData.@tag; 
