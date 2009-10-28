@@ -15,44 +15,46 @@
 			pic="PureMVC-Framework-Python-Std.png">
 <Description><![CDATA[PureMVC is a lightweight framework for creating applications based upon the classic Model-View-Controller design meta-pattern. This is the specific implementation for the Python language based on the Standard Version AS3 reference. See the Release Notes for this version for differences from the reference implementation. ]]></Description>						
 
-<ReleaseNotes><![CDATA[<B>Summary of Changes in 1.1</B>
-    * Updated Fabfile.
-    * Fixed FIFO bug in MacroCommand.execute()
-    * Fixed typo in Proxy docstring 
+<ReleaseNotes><![CDATA[
+<B>Summary of Changes in 1.1</B>
+<UL><LI>Updated Fabfile.</LI>
+<LI>Fixed FIFO bug in MacroCommand.execute()</LI>
+<LI>Fixed typo in Proxy docstring </LI></UL>
 
 <B>Summary of Changes in 1.0</B>
-    * Update in sync with release 2.0.4 of the  AS3 Standard Version.
-    * Added a fabfile to build documentation and unit tests ( http://www.nongnu.org/fab/) 
+<UL><LI>Update in sync with release 2.0.4 of the  AS3 Standard Version.</LI>
+<LI>Added a <font color="#0000FF"><A href="http://www.nongnu.org/fab/" target="_blank">fabfile</A></font> to build documentation and unit tests </LI></UL>
 
 <B>Summary of Changes in 0.6</B>
-    * Update in sync with releases 2.0.2 and 2.0.3 of the  AS3 Standard Version. 
+<UL><LI>Update in sync with releases 2.0.2 and 2.0.3 of the  AS3 Standard Version. </LI></UL>
 
 <B>Summary of Changes in 0.5</B>
-    * Removed .pyc files and completed docs. 
+<UL><LI>Removed .pyc files and completed docs. </LI></UL>
 
 <B>Summary of Changes in 0.4</B>
-    * New package structure and installer script. 
+<UL><LI>New package structure and installer script. </LI></UL>
 
 <B>Summary of Changes in 0.3</B>
-    * Complete rewrite with unit tests and documentation by Toby. 
+<UL><LI>Complete rewrite with unit tests and documentation by Toby. </LI></UL>
 
 <B>Summary of Changes in 0.2</B>
-    * Current state of port by Nathan. 
+<UL><LI>Current state of port by Nathan. </LI></UL>
 
 <B>Features in 0.1</B>
-    * Initial project structure created in repository - CLH 
+<UL><LI>Initial project structure created in repository - CLH </LI></UL>
 ]]></ReleaseNotes>						
 
-<Installation><![CDATA[<B>Installing the Project Source Code</B>
-<U>From the archive</U>
-   * Download the latest source code archive.
-   * Unzip the source code zip to any folder on your disk. 
-	For instance: c:\development\
-   * You will see a PureMVC_Python_X_Y (where X_Y is version) source folder. 
-	For instance: c:\development\PureMVC_Python_X_Y 
+<Installation><![CDATA[
+<B>Installing the Project Source Code</B>
+<U>From the Archive</U>
+<UL><LI>Download the latest source code archive.</LI>
+<LI>Unzip the source code zip to any folder on your disk. For instance:</LI>
+c:\development\
+<LI>You will see a PureMVC_Python_X_Y (where X_Y is version) source folder. For instance:</LI></UL>
+c:\development\PureMVC_Python_X_Y  
 
 <U>From the Repository</U>
-   * Use your  favorite SVN client to retrieve the latest source code release from the repository. 
+<UL><LI>Use your favorite SVN client to retrieve the latest source code release from the repository.</LI></UL> 
 ]]></Installation>	
 
 			</Project>
