@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node id="205801" name="Sequential" thumb="box">	
+	<NodeMap>
+		<Project 
+			name="Sequential Demo for AS3" 
+			status="Production"
+			repo="Demo_AS3_Sequential" 
+			tag="Sequential_1_0"
+			version="1.0"
+			archive="AS3/Demo_AS3_Sequential.zip" 
+			srcview="http://puremvc.org/pages/demos/AS3/Demo_AS3_Sequential/srcview"
+			live="AS3/Demo_AS3_Sequential/"
+			forum="topic=833.0"
+			owner="Duncan Hall"
+			owner_node="312"
+			pic="PureMVC-Framework-AS3-Std-MC.png"
+			shot="">
+			
+<Description><![CDATA[
+This demo illustrates the use of the AsyncCommand utility to execute a series of commands, some of which must complete asynchronous operations before the next command can be executed. 
+]]></Description>						
+
+<ReleaseNotes><![CDATA[
+<B>Features in Version 1.0</B>
+<UL><LI>Executes an AsyncMacroCommand which in turn executes a series of AsyncCommands and SimpleCommands.</LI>
+<LI>The AsyncCommands use simple Timers to represent asynchronous tasks.</LI>
+<LI>Standard and MultiCore versions included.</LI></UL>
+]]></ReleaseNotes>						
+
+<Installation><![CDATA[
+<B>Installing the Project Source Code</B>
+<U>From the archive</U>
+<UL><LI>Download the latest source code archive.</LI>
+<LI>Unzip the source code zip to any folder on your disk.</LI> 
+<LI>For instance: c:\development\</LI>
+<LI>You will see a Sequential_X_Y (where X_Y is version) source folder.</LI> 
+<LI>For instance: c:\development\Sequential_X_Y</LI></UL>
+
+<U>From the Repository</U>
+<UL><LI>Use your  favorite SVN client to retrieve the latest source code release from the repository.</LI></UL>   
+
+
+<U>Setup and Compile the Demo Using Flex Builder 3</U>
+<UL><LI>Create a new ActionScript Project called 'Sequential' in Flex Builder 3, pointing to the new Sequential source folder.</LI>
+<LI>Add the required libraries to the Sequential project's build path.</LI>
+<LI>From the Flex Builder menu do: Project -> Properties -> Flex Build Path -> Library Path -> Add SWC Folder</LI>
+<LI>Browse and select: Sequential/lib-standard or Sequential/lib-multicore depending on the version of PureMVC you will be using.</LI>
+<LI>Set the Main Source Folder to src-standard or src-multicore depending on the version of PureMVC you will be using.</LI> 
+<LI>Run Sequential.as</LI></UL>  
+]]></Installation>												
+
+		</Project>
+	</NodeMap>
+</Node>

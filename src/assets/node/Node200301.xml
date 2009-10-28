@@ -21,65 +21,62 @@
 
 <ReleaseNotes><![CDATA[
 <B>Changes in 0.5</B>
-  * Game agent behavior is implemented using Finite State Machines (FSM).
-  * The functionality is the same as version 0.4 with the addition of the level 13 boss and defender balloons. FSM implementation is based on  Chapter 2 of the excellent book by Mat Buckland called 
-	<font color="#0000FF"/><a href="http://www.ai-junkie.com/books/toc_pgaibe.html" target="_blank">"Programming Game AI by Example"</A></font>.  
-  * The game, boss, volley and defender behavior logic is encapsulated within state objects. 
-  * Shield behavior is not implemented yet. 
-  * Several states for the primary game agents are still not implemented.  
-  * The dynamic heap memory footprint is over the 2MB max on the target phone (Nokia N95) and is currently at  about 2.6MB. This is entirely due to the image sizes being used and not the code. We could posterize the images to reduce their size in a real-world game. 
-  * You must increase the heap memory to at least this value in Adobe Device Central when testing the game on the N95 device profile. 
-  * Code is extensively documented - CC.
+<UL><LI>Game agent behavior is implemented using Finite State Machines (FSM).</LI>
+<LI>The functionality is the same as version 0.4 with the addition of the level 13 boss and defender balloons. FSM implementation is based on  Chapter 2 of the excellent book by Mat Buckland called <font color="#0000FF"/><a href="http://www.ai-junkie.com/books/toc_pgaibe.html" target="_blank">"Programming Game AI by Example"</A></font>.</LI>  
+<LI>The game, boss, volley and defender behavior logic is encapsulated within state objects.</LI> 
+<LI>Shield behavior is not implemented yet.</LI> 
+<LI>Several states for the primary game agents are still not implemented.</LI>  
+<LI>The dynamic heap memory footprint is over the 2MB max on the target phone (Nokia N95) and is currently at  about 2.6MB. This is entirely due to the image sizes being used and not the code. We could posterize the images to reduce their size in a real-world game.</LI> 
+<LI>You must increase the heap memory to at least this value in Adobe Device Central when testing the game on the N95 device profile. </LI>
+<LI>Code is extensively documented - CC.</LI>
+</UL>
 
 <B>Features in 0.4</B>
-  * MVC framework lightweight enough for mobile platform.
-  * Implementing agent behavior with finite state machines.
-  * Data object and view binding in Flash using bound classes.
-  * Collision detection using the mx.util.Collections class.
-  * Inertia applied to sprites with independent motion 
+<UL><LI>MVC framework lightweight enough for mobile platform.</LI>
+<LI>Implementing agent behavior with finite state machines.</LI>
+<LI>Data object and view binding in Flash using bound classes.</LI>
+<LI>Collision detection using the mx.util.Collections class.</LI>
+<LI>Inertia applied to sprites with independent motion. </LI></UL>
 
 <B>Package Space</B>
-  * Note that the ordinary package scheme that should be applied to this demo is:
-	org.puremvc.as2.demos.flashlite.balloonatroid.*
+<UL><LI>Note that the ordinary package scheme that should be applied to this demo is:</LI>
+org.puremvc.as2.demos.flashlite.balloonatroid.*
 
-  * However the long pathname can cause some Flash CS3 installations to have difficulty building the ASO files. The file name must be less than 255 characters. For instance on my machine, I had the following filename which is 262 characters:
+<LI>However the long pathname can cause some Flash CS3 installations to have difficulty building the ASO files. The file name must be less than 255 characters. For instance on my machine, I had the following filename which is 262 characters:</LI>
 
-	C:\Documents and Settings\Owner.CapricornOne\Local Settings\
-	Application Data\Adobe\Flash CS3\en\Configuration\Classes\aso\
-	org\puremvc\as2\demos\flashlite\balloonatroid\controller\
-	org.puremvc.as2.demos.flashlite.balloonatroid.controller.RegisterSpriteCommand.aso
+C:\Documents and Settings\Owner.CapricornOne\Local Settings\
+Application Data\Adobe\Flash CS3\en\Configuration\Classes\aso\
+org\puremvc\as2\demos\flashlite\balloonatroid\controller\
+org.puremvc.as2.demos.flashlite.balloonatroid.controller.RegisterSpriteCommand.aso
 
-	* And this caused the Flash compiler to crash, prompting me to shorten the filename. I tried to find a way to make Flash store its ASO files somewhere else, but was unable to. So, the package space for the demo is now shortened:
+<LI>And this caused the Flash compiler to crash, prompting me to shorten the filename. I tried to find a way to make Flash store its ASO files somewhere else, but was unable to. So, the package space for the demo is now shortened:</LI>
 
-	balloonatroid.*
-
+balloonatroid.*
+</UL>
 <B>Workaround for Poor Clip to Mediator Communications</B>
 Sadly with FlashLite 2.0, Events are poorly supported. Only the built in events as far as I can tell. So I have the temporary expedient of having various clips getting the GameFacade and calling a method on it.
 This not the right way to do it, and when I converted the package space over some things began acting weirdly. That's because some movie clips were importing and using the GameFacade. I had to go refactor them by going to the frame actions in Flash. Ick.
 No, there should be a way to communicate out of these clips in an event driven manner that doesn't require PureMVC's notification scheme. Maybe some compositionally added decorator that could be used as a standalone utility outside Flash that adds simple Events back to it.
 
 <I>Notably to be corrected:</I>
-    * The ShieldTrack MC on the Shield layer of Balloonatroid.fla has code on frame 60 that gets the GameFacade, entering gameplay when it reaches the end of its track. (when the shield transitions to the top of the screen and before it pops out on the bottom.) 
-    * The VolleyTrack MC on the Volley Balloon layer has code at the end that does the same thing. 
-    * The button labels (Quit, &lt;&lt;, Volley, &rt;&rt;, Play) have on(keyPress) code that gets the Facade and calls a method to send notification. 
+<UL><LI>The ShieldTrack MC on the Shield layer of Balloonatroid.fla has code on frame 60 that gets the GameFacade, entering gameplay when it reaches the end of its track. (when the shield transitions to the top of the screen and before it pops out on the bottom.)</LI> 
+<LI>The VolleyTrack MC on the Volley Balloon layer has code at the end that does the same thing.</LI> 
+<LI>The button labels (Quit, &lt;&lt;, Volley, &rt;&rt;, Play) have on(keyPress) code that gets the Facade and calls a method to send notification.</LI></UL>
 
 I hated having to do it that way, but just hadn't found a better answer to refactor to. Short of having custom named events that we can listen for, I think the clips need to extend something that can send notifications perhaps. Or have a Notifier instance attached that it uses. 
 ]]></ReleaseNotes>						
 
-<Installation><![CDATA[<B>Installing the Project Source and Assets</B>
-	* Download the PureMVC Framework for AS2, or check it out from the repository:
-      http://svn.puremvc.org/PureMVC_AS2/trunk
-
-    * Place the classes in your Flash installation's classpath. I put mine at:
-      C:\Program Files\Adobe\Adobe Flash CS3\en\Configuration\ActionScript 2.0\Classes\PureMVC_AS2
+<Installation><![CDATA[
+<B>Installing the Project Source and Assets</B>
+<UL><LI>Download the PureMVC Framework for AS2, or check it out from the repository.</LI> 
+<LI>Place the classes in your Flash installation's classpath. I put mine at:</LI>
+C:\Program Files\Adobe\Adobe Flash CS3\en\Configuration\ActionScript 2.0\Classes\PureMVC_AS2
     
-    * Set the AS2 classpath as documented in  livedocs. 
-    * Check out the Balloonatroid project from the repository:
-      http://svn.puremvc.org/Demo_AS2_FlashLite_Balloonatroid/trunk
+<LI>Set the AS2 classpath as documented in livedocs. </LI>
+<LI>Check out the Balloonatroid project from the repository:</LI>
+http://svn.puremvc.org/Demo_AS2_FlashLite_Balloonatroid/trunk
 
-    * Open the Balloonatroid.flp project file in Flash CS3.
-      You must increase the dynamic heap in the memory panel  in Adobe Device Central 
-      to at least 2600KB  when testing the game on the Nokia N95 device profile.
+<LI>Open the Balloonatroid.flp project file in Flash CS3. You must increase the dynamic heap in the memory panel  in Adobe Device Central to at least 2600KB when testing the game on the Nokia N95 device profile.</LI></UL>
 
 ]]></Installation>												
 		</Project>
