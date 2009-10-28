@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Node id="22595" name="Undo" thumb="box">	
+<Node id="225405" name="Undo" thumb="box">	
 	<NodeMap>
 		<Project 
 			name="Undo Utility for Haxe" 
@@ -8,7 +8,7 @@
 			tag="Undo_1_1"
 			version="1.1"
 			archive="Haxe/Utility_Haxe_Undo.zip" 
-			docs="Haxe/Utility_Haxe_Undo/doc-multicore"
+			docs="Haxe/Utility_Haxe_Undo/doc-standard"
 			live=""
 			forum="topic=888.0"	
 			owner="Zjnue Brzavi"

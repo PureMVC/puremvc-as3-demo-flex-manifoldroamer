@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Node id="22591" name="AsyncCommand" thumb="box">	
+<Node id="225404" name="StateMachine" thumb="box">	
 	<NodeMap>
 		<Project 
-			name="AsyncCommand Utility for Haxe" 
+			name="StateMachine Utility for Haxe" 
 			status="Production"
-			repo="Utility_Haxe_AsyncCommand" 
-			tag="AsyncCommand_1_1"
-			version="1.1"
-			archive="Haxe/Utility_Haxe_AsyncCommand.zip" 
-			docs="Haxe/Utility_Haxe_AsyncCommand/doc-multicore"
+			repo="Utility_Haxe_StateMachine" 
+			tag="StateMachine_1_2"
+			version="1.2"
+			archive="Haxe/Utility_Haxe_StateMachine.zip" 
+			docs="Haxe/Utility_Haxe_StateMachine/doc-standard"
 			live=""
-			forum="topic=886.0"
+			forum="topic=889.0"	
 			owner="Zjnue Brzavi"
 			owner_node="305"
 			pic="PureMVC-Framework-Haxe-Std-MC.png"
 			shot="">
 			
 <Description><![CDATA[
-The AsyncCommand utility offers a solution to the problem of executing a series of commands each of which may need to complete one or more asynchronous operations before the next command is executed. 
+This utility provides a simple yet effective Finite State Machine implementation, which allows the definition of discrete states, and the valid transitions to other states available from any given state, and the actions which trigger the transitions. A mechanism is provided for defining the entire state machine in XML and having a fully populated StateMachine injected into the PureMVC app. 
 ]]></Description>						
 
 <ReleaseNotes><![CDATA[<B>Features in Version 1.0</B>
-  * A port of the AsyncCommand Utility for ActionScript 3
+  * A port of the StateMachine Utility for ActionScript 3
   * Standard and MultiCore versions are included.
 ]]></ReleaseNotes>						
 
@@ -34,8 +34,8 @@ The AsyncCommand utility offers a solution to the problem of executing a series 
   * Download the latest source code archive.
   * Unzip the source code zip to any folder on your disk. 
 	For instance: c:\development\
-  * You will see a AsyncCommand_X_Y (where X_Y is version) source folder. 
-	For instance: c:\development\AsyncCommand_X_Y 
+  * You will see a StateMachine_X_Y (where X_Y is version) source folder. 
+	For instance: c:\development\StateMachine_X_Y 
 
 <U>From the Repository</U>
   * Use your  favorite SVN client to retrieve the latest source code release from the repository. 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Node id="22581" name="StopWatch" thumb="box">	
+<Node id="225301" name="StopWatch" thumb="box">	
 	<NodeMap>
 		<Project 
 			name="StopWatch Demo for Haxe" 
@@ -9,7 +9,7 @@
 			version="1.0"
 			archive="Haxe/Demo_Haxe_Xinf_StopWatch.zip" 
 			docs=""
-			live="Haxe/Demo_Haxe_Xinf_StopWatch/bin-multicore"
+			live="Haxe/Demo_Haxe_Xinf_StopWatch/bin-standard"
 			forum="topic=885.0"
 			owner="Zjnue Brzavi"
 			owner_node="305"

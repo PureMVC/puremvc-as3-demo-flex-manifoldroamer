@@ -2,8 +2,8 @@
 <Node id="2258" name="Demos (2)" thumb="flake">
 	<NodeMap>
 		<Nodes>
-			<Node id="22581" name="Stopwatch" type="stub" thumb="box"/>	
-			<Node id="22582" name="Pipes Unit Tests" type="stub" thumb="box"/>	
+			<Node id="225801" name="Stopwatch" type="stub" thumb="box"/>	
+			<Node id="225802" name="Pipes Unit Tests" type="stub" thumb="box"/>	
 		</Nodes>
 	</NodeMap>
 </Node>
