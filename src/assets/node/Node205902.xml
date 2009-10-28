@@ -20,48 +20,52 @@
 The Asynchronous Stub utility consists of a Proxy which can be extended for the purpose of simulating asynchronous activity, by way of a random timer.
 ]]></Description>						
 
-<ReleaseNotes><![CDATA[<B>Changes in Version 1.2.5</B>
-  * No new features, but now includes multicore folder for multicore src 
-  * The bin folder now includes the multicore swc.
+<ReleaseNotes><![CDATA[
+<B>Changes in Version 1.2.5</B>
+<UL><LI>No new features, but now includes multicore folder for multicore src</LI> 
+<LI>The bin folder now includes the multicore swc.</LI></UL>
   
 <B>Changes in Version 1.2</B>
-  * Refactored source into src folder.
+<UL><LI>Refactored source into src folder.</LI></UL>
 
 <B>Changes in Version 1.1</B>
-  * Enhanced to cater for fault outcome, with probability of fault.
-  * Provide a token tracking feature.
+<UL><LI>Enhanced to cater for fault outcome, with probability of fault.</LI>
+<LI>Provide a token tracking feature.</LI></UL>
   
 <B>Features in Version 1.0</B>
-  * Uses a timer to simulate asyncronous interaction with server
-  * Simulates failure 
+<UL><LI>Uses a timer to simulate asyncronous interaction with server</LI>
+<LI>Simulates failure </LI></UL>
 
 Occasionally, for testing a service before it is online, you may need a Proxy that acts as though it has asynchronously contacted a server and retrieved data. You may also need for it to simulate random load times, timeouts, and failures. This can be for testing purposes or as a stand-in until the actual service is in place so that client development can proceed.
 
 The Flex-based demo called Loadup as Ordered provides an example use of this utility. 
 ]]></ReleaseNotes>						
 
-<Installation><![CDATA[<B>Installing the Project Source Code</B>
+<Installation><![CDATA[
+<B>Installing the Project Source Code</B>
 <U>From the archive</U>
-  * Download the latest source code archive.
-  * Unzip the source code zip to any folder on your disk. 
-	For instance: c:\development\
-  * You will see a AsyncStub_X_Y (where X_Y is version) source folder. 
-	For instance: c:\development\AsyncStub_X_Y 
+<UL><LI>Download the latest source code archive</LI>
+<LI>Unzip the source code zip to any folder on your disk. For instance: </LI> 
+c:\development\
+<LI>You will see a AsyncStub_X_Y (where X_Y is version) source folder. For instance: </LI></UL>  
+c:\development\AsyncStub_X_Y 
 
 <U>From the Repository</U>
-  * Use your  favorite SVN client to retrieve the latest source code release from the repository.   
+<UL><LI>Use your  favorite SVN client to retrieve the latest source code release from the repository.</LI></UL>     
 
 <B>Using the Utility in Your Project</B>
-<I>Add the Utility Library to your Project Using Flex Builder 3</I>
-  * Open or create a Flex or AIR Project in Flex Builder 3
-  * From the Flex Builder menu, do: Project -> Properties -> Flex Build Path -> Library Path -> Add SWC
-  * Browse and select the SWC (for instance: c:\development\AsyncStub_X_Y\bin\Utility_AS3_AsyncStub_X_Y.swc)
-  * Click Finish. 
+<U>Add the Utility Library to your Project Using Flex Builder 3</U>
+<UL><LI>Open or create a Flex or AIR Project in Flex Builder 3</LI>
+<LI>From the Flex Builder menu, do:</LI>
+Project -> Properties -> Flex Build Path -> Library Path -> Add SWC
+<LI>Browse and select the SWC, for instance:</LI> 
+c:\development\AsyncStub_X_Y\bin\Utility_AS3_AsyncStub_X_Y.swc
+<LI>Click Finish.</LI></UL>  
 
-<I>Add the Utility Library to your Flash/CS3/CS4 Project</I>
-  * The distributed SWC file will not work.
-  * You must place the source code in your classpath.
-  * Consult the CS3/CS4 documentation for the various ways to accomplish this.
+<U>Add the Utility Library to your Flash/CS3/CS4 Project</U>
+<UL><LI>The distributed SWC file will not work.</LI>
+<LI>You must place the source code in your classpath.</LI>
+<LI>Consult the CS3/CS4 documentation for the various ways to accomplish this.</LI></UL>  
 ]]></Installation>												
 
 		</Project>

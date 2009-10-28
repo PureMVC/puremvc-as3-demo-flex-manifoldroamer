@@ -15,115 +15,104 @@
 			owner_node="300"
 			pic="PureMVC-Framework-AS3-MC.png">
 
-<Description><![CDATA[PureMVC is a lightweight framework for creating applications based upon the classic  Model-View-Controller design meta-pattern. This is an implementation for the AS3 language, which supports multiple PureMVC Cores through the use of Multitons instead of Singletons.]]></Description>						
+<Description><![CDATA[
+PureMVC is a lightweight framework for creating applications based upon the classic  Model-View-Controller design meta-pattern. This is an implementation for the AS3 language, which supports multiple PureMVC Cores through the use of Multitons instead of Singletons.
+]]></Description>						
 
 <ReleaseNotes><![CDATA[<B>Summary of Changes in 1.0.5</B>
 The following MultiCore specific changes add the ability to check for the existence of a Core, as well as making the existing removeCore method static. This may break a few apps, but is extremely easy to fix. Checking for a Core or Removing a core should not require a reference to a specific core to execute. Also, these methods are now unit tested. Facade.removeCore was logically untestable without a corresponding hasCore method.
-    * Added a public static hasCore method to Facade.
-    * Made Facade.removeCore public static.
-    * Made Model.removeModel public static;
-    * Made View.removeView public static.
-    * Made Controller.removeController public static.
-    * Removed IFacade.removeCore. (interfaces are for instance methods)
-    * Removed IModel.removeModel. (...)
-    * Removed IView.removeView. (...)
-    * Removed IController.removeController. (...) 
-
+<UL><LI>Added a public static hasCore method to Facade.</LI>
+<LI>Made Facade.removeCore public static.</LI>
+<LI>Made Model.removeModel public static;</LI>
+<LI>Made View.removeView public static.</LI>
+<LI>Made Controller.removeController public static.</LI>
+<LI>Removed IFacade.removeCore. (interfaces are for instance methods)</LI>
+<LI>Removed IModel.removeModel. (...)</LI>
+<LI>Removed IView.removeView. (...)</LI>
+<LI>Removed IController.removeController. (...) </LI></UL>
 And following the changes in Standard Version 2.0.4:
-    * Dissallowed  re-registration of Mediators in View.registerMediator.
-    * Modified View.notifyObservers to notify from a copy of the observer list rather than the actual observer list, which  may change during the notification loop. 
+<UL><LI>Dissallowed  re-registration of Mediators in View.registerMediator.</LI>
+<LI>Modified View.notifyObservers to notify from a copy of the observer list rather than the actual observer list, which  may change during the notification loop. </LI></UL>
 
 <B>Summary of Changes in 1.0.4</B>
 Following the changes in Standard Version 2.0.3
-
-    * Added notifyObservers method back to IFacade, so you can send custom Notification class instances. 
+<UL><LI>Added notifyObservers method back to IFacade, so you can send custom Notification class instances. </LI></UL>
 
 <B>Summary of Changes in 1.0.3</B>
 Following the changes in Standard Version 2.0.2
-    * Refactored View.removeMediator method, moving the logic for removing an observer into a removeObserver method (also on IView), which is now called by the Controller.removeCommand method as well as the View.removeMediator method.
-    * Proxy.removeProxy method only attempts to remove the Proxy if it is registered. 
+<UL><LI>Refactored View.removeMediator method, moving the logic for removing an observer into a removeObserver method (also on IView), which is now called by the Controller.removeCommand method as well as the View.removeMediator method.</LI>
+<LI>Proxy.removeProxy method only attempts to remove the Proxy if it is registered. </LI></UL>
 
 <B>Summary of Changes in 1.0.2</B>
 Ability to remove a complete Core with one call is now in place. Facade.removeCore removes the Model, View, Controller and Facade for a given Multiton key.
-    * Facade and IFacade get removeCore method.
-    * Model and IModel get removeModel method.
-    * View and IView get removeView method.
-    * Controller and IController get removeController method.
-    * Corrected documentation references to core actors, which were moved together into the core package. 
+<UL><LI>Facade and IFacade get removeCore method.</LI>
+<LI>Model and IModel get removeModel method.</LI>
+<LI>View and IView get removeView method.</LI>
+<LI>Controller and IController get removeController method.</LI>
+<LI>Corrected documentation references to core actors, which were moved together into the core package. </LI></UL>
 
 <B>Summary of Changes in 1.0.1</B>
-    * Corrected issue with SimpleCommands not getting their initializeNotifier method called. 
+<UL><LI>Corrected issue with SimpleCommands not getting their initializeNotifier method called. </LI></UL>
 
 <B>Summary of Features in 1.0</B>
-    * Initial AS3 MultiCore Version release. Based on PureMVC 2.0.1 Standard Version feature set. 
-    * The MVCF Singleton actors of the MultiCore Version store maps of named instances rather than single instances in the Standard Version. 
-    * For any given key value a single MVCF 'Core' can be created, but only once. This means multiple, uniquely named 'Cores' can coexist and interact with each other, without namespace collissions (notification name constants in each app can be the same without causing any problems). 
-    * Demonstrated and simple support for Flex Modules is finally here! In order to see how MultiCore differs, examine the  Modularity demo. 
-    * Read the  MultiCore API Docs for more info. The changes and their implications have been noted there first. 
+<UL><LI>Initial AS3 MultiCore Version release. Based on PureMVC 2.0.1 Standard Version feature set.  </LI>
+<LI>The MVCF Singleton actors of the MultiCore Version store maps of named instances rather than single instances in the Standard Version.  </LI>
+<LI>For any given key value a single MVCF 'Core' can be created, but only once. This means multiple, uniquely named 'Cores' can coexist and interact with each other, without namespace collissions (notification name constants in each app can be the same without causing any problems). </LI> 
+<LI>Demonstrated and simple support for Flex Modules is finally here! In order to see how MultiCore differs, examine the  Modularity demo.  </LI>
+<LI>Read the  MultiCore API Docs for more info. The changes and their implications have been noted there first. </LI></UL>
 ]]></ReleaseNotes>						
 							
-<Installation><![CDATA[Download the latest version of the Framework distribution and unzip to a directory on your system, such as:
-    C:/development
-
-This will create a folder like this:
-    C:/development/PureMVC_AS3_MultiCore_X_Y
-
-Where X_Y is the framework version number.
+<Installation><![CDATA[
+<B>Installing the Framework Code</B>
+<UL><LI>Download the latest version of the Framework distribution and unzip to a directory on your system, such as:</LI>
+C:/development
+<LI>This will create a folder like this (where X and Y are version major and minor numbers)</LI>
+C:/development/PureMVC_AS3_MultiCore_X_Y
 
 You will find:
-    * The API documentation: PureMVC_AS3_MultiCore_X_Y/asdoc/index.html
-    * The source code: PureMVC_AS3_MultiCore_X_Y/org/puremvc/as3/...
-    * The SWC library for use with Flex/AIR projects: PureMVC_AS3_MultiCore_X_Y/bin/PureMVC_AS3_MultiCore_X_Y.swc 
+<LI>The API documentation: PureMVC_AS3_MultiCore_X_Y/asdoc/index.html</LI>
+<LI>The source code: PureMVC_AS3_MultiCore_X_Y/org/puremvc/as3/multicore...</LI>
+<LI>The SWC library for use with Flex/AIR projects: PureMVC_AS3_MultiCore_X_Y/bin/PureMVC_AS3_MultiCore_X_Y.swc </LI></UL>
 
 <U>To add the PureMVC Library to your Flex or AIR project's build path</U>
-From the FlexBuilder/Eclipse menu do:
-    Project -> Properties -> Flex Build Path -> Library Path -> Add SWC
+<UL><LI>From the FlexBuilder/Eclipse menu do:</LI>
+Project -> Properties -> Flex Build Path -> Library Path -> Add SWC
 
-Browse and select:
-    C:/development/PureMVC_AS3_MultiCore_X_Y/bin/PureMVC_AS3_MultiCore_X_Y.swc
+<LI>Browse and select:</LI></UL>
+C:/development/PureMVC_AS3_MultiCore_X_Y/bin/PureMVC_AS3_MultiCore_X_Y.swc
 
 <U>PureMVC-enabling your Flash CS3/CS4 Installation</U>
 There are three ways you may go about adding PureMVC to your current Flash installation:
-    * <B>Method A</B> - Copy the PureMVC package to the Flash Installation's Classes folder
-    * <B>Method B</B> - Add the PureMVC source folder to your classpath in Preferences
-    * <B>Method C</B> - Add the PureMVC source folder to your classpath per project 
-
+<UL><LI><B>Method A</B> - Copy the PureMVC package to the Flash Installation's Classes folder</LI>
+<LI><B>Method B</B> - Add the PureMVC source folder to your classpath in Preferences</LI>
+<LI><B>Method C</B> - Add the PureMVC source folder to your classpath per project</LI></UL> 
 Methods A & B ensure that the PureMVC source code will always be available, and are the recommended way. Which you choose is up to you.
 Method C will only make the code available to the projects you choose. It will be more work, while A or B add no overhead to your projects if you don't import and use any of the classes.
-Regardless of the method you choose, be sure you are only adding the source code folder to your class path. If the PureMVC_AS3_MultiCore_X_Y.swc file is in the classpath, Flash will complain of odd things and most likely not work, since the swc is in Flex format and not readable by Flash yet. Research has been done to try and compile a version that is compatible with both Flex and Flash, but it has not yet been successful.
+Regardless of the method you choose, be sure you are only adding the source code folder to your class path. If the PureMVC_AS3_X_Y.swc file is in the classpath, Flash will complain of odd things and most likely not work, since the swc is in Flex format and not readable by Flash yet. Research has been done to try and compile a version that is compatible with both Flex and Flash, but it has not yet been succesful.
 
-<B>METHOD A: COPY PureMVC PACKAGE TO FLASH INSTALLATION'S CLASSES FOLDER</B>
-
-Copy the PureMVC_AS3_MultiCore_X_Y/org folder and everything in it to your Flash installation's Classes folder. This folder is located at ${AppConfig}/ActionScript 3.0/Classes
-
+<UL><LI><B><U>METHOD A: COPY PureMVC PACKAGE TO FLASH INSTALLATION'S CLASSES FOLDER</U></B></LI></UL>
+Copy the PureMVC_AS3_X_Y/org folder and everything in it to your Flash installation's Classes folder. This folder is located at ${AppConfig}/ActionScript 3.0/Classes
 ${AppConfig} is the language specific Configuration directory for your Flash installation.
-
 For instance, if you installed Flash CS3 at its default location on a Windows machine, then your ${AppConfig} = C:\Program Files\Adobe\Adobe Flash CS3\en\Configuration\
 
 You would copy
-
     from:
     PureMVC_AS3_MultiCore_X_Y/src/*
-
       to:
     C:/Program Files/Adobe/Adobe Flash CS3/en/Configuration/ActionScript 3.0/Classes
-
 yielding:
-        ${AppConfig}/ActionScript 3.0/Classes/org/puremvc/as3/*
+        ${AppConfig}/ActionScript 3.0/Classes/org/puremvc/as3/multicore/*
 
-<B>METHOD B: ADD THE PureMVC SOURCE CODE FOLDER TO YOUR CLASSPATH IN PREFERENCES</B>
+<UL><LI><B><U>METHOD B: ADD THE PureMVC SOURCE CODE FOLDER TO YOUR CLASSPATH IN PREFERENCES</U></B></LI></UL>
 In the Flash IDE, go to:
-
     Edit -> Preferences -> ActionScript 3.0 Settings
     Add the PureMVC_AS3_MultiCore_X_Y/src folder to your classpath by clicking '+' icon to add a classpath, select it, then click the target icon to choose the folder.
 
-<B>METHOD C: ADD THE PureMVC SOURCE CODE FOLDER TO YOUR CLASSPATH ON A PER PROJECT BASIS</B>
+<UL><LI><B><U>METHOD C: ADD THE PureMVC SOURCE CODE FOLDER TO YOUR CLASSPATH ON A PER PROJECT BASIS</U></B></LI></UL>
 In the Flash IDE, open the your FLA or Project, and go to:
-
     Edit -> Publish Settings -> ActionScript 3.0 Settings
     Add the PureMVC_AS3_MultiCore_X_Y/src folder to your classpath by clicking '+' icon to add a classpath, select it, then click the target icon to choose the folder.
-]]></Installation>
-												
+]]></Installation>													
 			</Project>
 	</NodeMap>
 </Node>

@@ -20,111 +20,114 @@
 The Loadup utility offers a solution to the problem of how to manage the asynchronous loading of Model resources at anytime during application runtime. It supports loading order dependencies, and is progress-aware. 
 ]]></Description>						
 
-<ReleaseNotes><![CDATA[<B>Key Functionality</B>
+<ReleaseNotes><![CDATA[
+<B>Key Functionality</B>
 In the context of the PureMVC framework, the application typically has a StartupCommand that manages the instantiation of essential actors like Proxies and Mediators. At this time, you may also want to prime the application with some resources, for example data, before allowing user interaction. This utility offers a way of doing that. It enables the application to do the following:
-  * State how the resource loading should be sequenced so that dependent resources are loaded in correct order.
-  * Be aware of the progress of the resource loading.
-  * Know when the resource loading is complete.
-  * Asset loading. 
+<UL><LI>State how the resource loading should be sequenced so that dependent resources are loaded in correct order.</LI>
+<LI>Be aware of the progress of the resource loading.</LI>
+<LI>Know when the resource loading is complete.</LI>
+<LI>Asset loading.</LI></UL> 
 
 <B>Changes in Version 2.0</B>
-  * This version of the utility is called Loadup instead of StartupManager, to remove the inference that the utility is only relevant at application startup. Class names and some other names have changed accordingly, see the separate migration instructions, migrationToV2.txt. Apart from the name change, features that are new are set out below.
-  * The last backward compatible version of the 1.x line is 1.6.1, and it will remain in the StartupManager_1_x branch of the repository in case bug fixes to the 1.x line are required.
-  * LoadupMonitorProxy (monitor) constructor now takes proxyName as an arg (optional), thus enabling concurrent instances; for an example of this, see the LoadupForAssets demo.
-  * Property jobId has been dropped - see migration instructions.
-  * On notifications sent by Loadup, the type is the monitor proxyName.
-  * On loaded and failed notifications sent by the client app, if the monitor proxyName is not the default name, the notification type MUST BE the monitor proxyName.
-  * IResourceList methods addResource and addResources have a changed signature, to include an arg that references the monitor instance. Existing usage that passes an IResourceList as the data arg to the monitor constructor must change to (null,data) since data is now the second optional arg, proxyName being the first.
-  * IResourceList has new method isToBeKeptOpen.
-  * IRetryParameters has a new parameter, to switch on exponential backoff logic when RetryPolicy applies the retry interval.
-  * See the LoadupAsOrdered demo, version 2, this is the replacement for the StartupAsOrdered demo.
-  * Existing users of the assetLoader facility, note the following:
-          o Classes LoadAssetGroupCommand and LoadingInstructions have been dropped, it is recommended that users develop their own solution;
-          o See the LoadupForAssets demo, version 2, for a sample solution;
-          o This is he replacement for the StartupForAssets demo; this demo also has new functionality. 
+<UL><LI>This version of the utility is called Loadup instead of StartupManager, to remove the inference that the utility is only relevant at application startup. Class names and some other names have changed accordingly, see the separate migration instructions, migrationToV2.txt. Apart from the name change, features that are new are set out below.</LI>
+<LI>The last backward compatible version of the 1.x line is 1.6.1, and it will remain in the StartupManager_1_x branch of the repository in case bug fixes to the 1.x line are required.</LI>
+<LI>LoadupMonitorProxy (monitor) constructor now takes proxyName as an arg (optional), thus enabling concurrent instances; for an example of this, see the LoadupForAssets demo.</LI>
+<LI>Property jobId has been dropped - see migration instructions.</LI>
+<LI>On notifications sent by Loadup, the type is the monitor proxyName.</LI>
+<LI>On loaded and failed notifications sent by the client app, if the monitor proxyName is not the default name, the notification type MUST BE the monitor proxyName.</LI>
+<LI>IResourceList methods addResource and addResources have a changed signature, to include an arg that references the monitor instance. Existing usage that passes an IResourceList as the data arg to the monitor constructor must change to (null,data) since data is now the second optional arg, proxyName being the first.</LI>
+<LI>IResourceList has new method isToBeKeptOpen.</LI>
+<LI>IRetryParameters has a new parameter, to switch on exponential backoff logic when RetryPolicy applies the retry interval.</LI>
+<LI>See the LoadupAsOrdered demo, version 2, this is the replacement for the StartupAsOrdered demo.</LI></UL>
+Existing users of the assetLoader facility, note the following:
+<UL><LI>Classes LoadAssetGroupCommand and LoadingInstructions have been dropped, it is recommended that users develop their own solution;</LI>
+<LI>See the LoadupForAssets demo, version 2, for a sample solution;</LI>
+<LI>This is he replacement for the StartupForAssets demo; this demo also has new functionality.</LI></UL>  
 
 <B>Changes in Version 1.6.1</B>
-  * This release is backward compatible.
-  * Method addResourceViaStartupProxy() of StartupMonitorProxy now registers the new StartupResourceProxy objects. For background, see  this post 
+<UL><LI>This release is backward compatible.</LI>
+<LI>Method addResourceViaStartupProxy() of StartupMonitorProxy now registers the new StartupResourceProxy objects.</LI></UL>  
 
 <B>Changes in Version 1.6</B>
-  * This release is backward compatible.
-  * Within asset loader feature, in AssetFactory clase, support for .css urls as asset type Text, plus defaulting to type Text, hence reduced likelihood of 'unexpected url type' as an Error condition.
-  * Within StartupMonitorProxy class: new cleanup method, to remove StartupResourceProxy objects from proxy map; also, the reset method now includes this cleanup of SRP objects. 
+<UL><LI>This release is backward compatible.</LI>
+<LI>Within asset loader feature, in AssetFactory clase, support for .css urls as asset type Text, plus defaulting to type Text, hence reduced likelihood of 'unexpected url type' as an Error condition.</LI>
+<LI>Within StartupMonitorProxy class: new cleanup method, to remove StartupResourceProxy objects from proxy map; also, the reset method now includes this cleanup of SRP objects. </LI></UL>
 
 <B>Changes in Version 1.5</B>
-  * This release is backward compatible.
-  * New class StartupManager has public consts, as an alternative to StartupMonitorProxy.
-  * Asset Loader feature; see API docs and  Startup for Assets demo. 
+<UL><LI>This release is backward compatible.</LI>
+<LI>New class StartupManager has public consts, as an alternative to StartupMonitorProxy.</LI>
+<LI>Asset Loader feature; see API docs and  Startup for Assets demo. </LI></UL>
 
 <B>Changes in Version 1.4</B>
-  * This release is backward compatible.
-  * A MultiCore version has been added, in the multicore source folder. 
-  * Both swc's are included in the bin folder, be sure to use the one appropriate to your PureMVC version.
-
+<UL><LI>This release is backward compatible.</LI>
+<LI>A MultiCore version has been added, in the multicore source folder.</LI> 
+<LI>Both swc's are included in the bin folder, be sure to use the one appropriate to your PureMVC version.</LI></UL>
 Otherwise in general, increased exposure of state and behaviour, to facilitate easier public access and easier adaptation by inheritance.
-  * In StartupMonitorProxy: public access to sendProgressNotification() and allResourcesLoaded();
-  * New addResourceViaStartupProxy() method;
-  * New getResourceViaStartupProxyName() method;
-  * Allow override of notification name for 'waiting for more resources';
-  * New jobId property, included as type on all sent notifications.
-  * In ResourceList: some vars changed from private to protected access;
-  * Now responsible for progress percentage calculation;
-  * New getResourceViaStartupProxyName() method.
-  * In RetryPolicy: increased exposure of state vars;
-  * Interface IRetryPolicy has additional behaviour, to match that of RetryPolicy.
-  * In RetryParameters: some vars changed from private to protected access. 
+<UL><LI>In StartupMonitorProxy: public access to sendProgressNotification() and allResourcesLoaded();</LI>
+<LI>New addResourceViaStartupProxy() method;</LI>
+<LI>New getResourceViaStartupProxyName() method;</LI>
+<LI>Allow override of notification name for 'waiting for more resources';</LI>
+<LI>New jobId property, included as type on all sent notifications.</LI>
+<LI>In ResourceList: some vars changed from private to protected access;</LI>
+<LI>Now responsible for progress percentage calculation;</LI>
+<LI>New getResourceViaStartupProxyName() method.</LI>
+<LI>In RetryPolicy: increased exposure of state vars;</LI>
+<LI>Interface IRetryPolicy has additional behaviour, to match that of RetryPolicy.</LI>
+<LI>In RetryParameters: some vars changed from private to protected access.</LI></UL> 
 
 <B>Changes in Version 1.3</B>
-  * Added reset() method on StartupMonitorProxy;
-  * Added support for retry policy with automatic retries etc.;
-  * Added support for open-ended resource list. There are interfaces for retry policy and for resource list. 
+<UL><LI>Added reset() method on StartupMonitorProxy;</LI>
+<LI>Added support for retry policy with automatic retries etc.;</LI>
+<LI>Added support for open-ended resource list. There are interfaces for retry policy and for resource list.</LI></UL> 
 
 <I>Migration to 1.3 from prior Versions</I>
-Version 1.3 breaks backward compatibility with the previous release. Migration is as follows, using the word 'monitor' for the instance of StartupMonitorProxy.
-  * Replace monitor.defaultTimeout = nn, by monitor.defaultRetryPolicy = new RetryPolicy(new RetryParameters(0,0,nn))
-  * RetryPolicy and RetryParameters are in the model package
-  * Review the API documentation to decide what to pass to RetryParameters
-  * Replace monitor.retryLoadResources() by monitor.tryToCompleteLoadResources()
-  * Remove LOAD_RESOURCES_REJECTED from notification interests and handling
-  * Additional notifications are: RETRYING_LOAD_RESOURCE and WAITING_FOR_MORE_RESOURCES. 
-  * See the latest version of StartupAsOrdered demo for example of use.
+Version 1.3 breaks backward compatibility with the previous release. Migration is as follows, using the word 'monitor' for the instance of StartupMonitorProxy.</LI>
+<UL><LI>Replace monitor.defaultTimeout = nn, by monitor.defaultRetryPolicy = new RetryPolicy(new RetryParameters(0,0,nn))</LI>
+<LI>RetryPolicy and RetryParameters are in the model package</LI>
+<LI>Review the API documentation to decide what to pass to RetryParameters</LI>
+<LI>Replace monitor.retryLoadResources() by monitor.tryToCompleteLoadResources()</LI>
+<LI>Remove LOAD_RESOURCES_REJECTED from notification interests and handling</LI>
+<LI>Additional notifications are: RETRYING_LOAD_RESOURCE and WAITING_FOR_MORE_RESOURCES. </LI>
+<LI>See the latest version of StartupAsOrdered demo for example of use.</LI></UL>
 
 <B>Changes in Version 1.2</B>
-  * Refactored source into src folder 
+<UL><LI>Refactored source into src folder </LI></UL>
 
 <B>Changes in Version 1.1</B>
-  * Cater for timeout.
-  * Provides better overall functionality. 
+<UL><LI>Cater for timeout.</LI>
+<LI>Provides better overall functionality.</LI></UL> 
 
 <B>Features in Version 1.0</B>
-  * Initial release. Works with PureMVC 2.0
-  * Extracted from the StartupAsOrdered demo. 
+<UL><LI>Initial release. Works with PureMVC 2.0 </LI>
+<LI>Extracted from the StartupAsOrdered demo. </LI></UL>
   
 ]]></ReleaseNotes>						
 
-<Installation><![CDATA[<B>Installing the Project Source Code</B>
+<Installation><![CDATA[
+<B>Installing the Project Source Code</B>
 <U>From the archive</U>
-  * Download the latest source code archive.
-  * Unzip the source code zip to any folder on your disk. 
-	For instance: c:\development\
-  * You will see a Loadup_X_Y (where X_Y is version) source folder. 
-	For instance: c:\development\Loadup_X_Y 
+<UL><LI>Download the latest source code archive</LI>
+<LI>Unzip the source code zip to any folder on your disk. For instance: </LI> 
+c:\development\
+<LI>You will see a Loadup_X_Y (where X_Y is version) source folder. For instance: </LI></UL>  
+c:\development\Loadup_X_Y 
 
 <U>From the Repository</U>
-  * Use your  favorite SVN client to retrieve the latest source code release from the repository.   
+<UL><LI>Use your  favorite SVN client to retrieve the latest source code release from the repository.</LI></UL>     
 
 <B>Using the Utility in Your Project</B>
-<I>Add the Utility Library to your Project Using Flex Builder 3</I>
-  * Open or create a Flex or AIR Project in Flex Builder 3
-  * From the Flex Builder menu, do: Project -> Properties -> Flex Build Path -> Library Path -> Add SWC
-  * Browse and select the SWC (for instance: c:\development\Loadup_X_Y\bin\Utility_AS3_Loadup_X_Y.swc)
-  * Click Finish. 
+<U>Add the Utility Library to your Project Using Flex Builder 3</U>
+<UL><LI>Open or create a Flex or AIR Project in Flex Builder 3</LI>
+<LI>From the Flex Builder menu, do:</LI>
+Project -> Properties -> Flex Build Path -> Library Path -> Add SWC
+<LI>Browse and select the SWC, for instance:</LI> 
+c:\development\Loadup_X_Y\bin\Utility_AS3_Loadup_X_Y.swc
+<LI>Click Finish.</LI></UL>  
 
-<I>Add the Utility Library to your Flash/CS3/CS4 Project</I>
-  * The distributed SWC file will not work.
-  * You must place the source code in your classpath.
-  * Consult the CS3/CS4 documentation for the various ways to accomplish this.
+<U>Add the Utility Library to your Flash/CS3/CS4 Project</U>
+<UL><LI>The distributed SWC file will not work.</LI>
+<LI>You must place the source code in your classpath.</LI>
+<LI>Consult the CS3/CS4 documentation for the various ways to accomplish this.</LI></UL>  
 ]]></Installation>												
 
 		</Project>

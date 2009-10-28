@@ -21,44 +21,45 @@
 This utility provides the ability for PureMVC-based AIR applications remember their window size, position and maximized state each time it is launched.
 ]]></Description>						
 
-<ReleaseNotes><![CDATA[<B>Changes in 1.2.1</B>
-  * Moved constructor actions to onRegister. 
+<ReleaseNotes><![CDATA[
+<B>Changes in 1.2.1</B>
+<UL><LI>Moved constructor actions to onRegister.</LI></UL> 
 
 <B>Changes in 1.2</B>
-  * Added MultiCore support.
-  * No Standard version functionality changes except renaming source tree, therefore, there is no need to migrate Standard version apps to 1.2 unless you're also migrating to MultiCore. 
+<UL><LI>Added MultiCore support.</LI>
+<LI>No Standard version functionality changes except renaming source tree, therefore, there is no need to migrate Standard version apps to 1.2 unless you're also migrating to MultiCore. </LI></UL> 
 
 <B>Changes in 1.1</B>
-  * Moved source code into src folder. No functionality changed. 
+<UL><LI>Moved source code into src folder. No functionality changed. </LI></UL>
 
 <B>Features in 1.0</B>
-  * Manages an XML Database with the information about the main application window's position, size and state (WindowMetrics)
-  * Reads the Window Metrics at startup, applies to the main window then sends a notification that the window is ready to be shown.
-  * Allows the window to be sized and positioned BEFORE being shown so that it doesn't flash up at a default size, then resize, causing visual repaint. 
-
-See the demos CodePeek and RSSHeadlines for example use of this utility. 
+<UL><LI>Manages an XML Database with the information about the main application window's position, size and state (WindowMetrics)</LI>
+<LI>Reads the Window Metrics at startup, applies to the main window then sends a notification that the window is ready to be shown.</LI>
+<LI>Allows the window to be sized and positioned BEFORE being shown so that it doesn't flash up at a default size, then resize, causing visual repaint.  </LI>
+<LI>See the demos CodePeek and RSSHeadlines for example use of this utility. </LI></UL>
 ]]></ReleaseNotes>						
 
-<Installation><![CDATA[<B>Installing the Project Source Code</B>
+<Installation><![CDATA[
+<B>Installing the Project Source Code</B>
 <U>From the archive</U>
-  * Download the latest source code archive.
-  * Unzip the source code zip to any folder on your disk. 
-	For instance: c:\development\
-  * You will see a DesktopCitizen_X_Y (where X_Y is version) source folder. 
-	For instance: c:\development\DesktopCitizen_X_Y 
+<UL><LI>Download the latest source code archive</LI>
+<LI>Unzip the source code zip to any folder on your disk. For instance: </LI> 
+c:\development\
+<LI>You will see a DesktopCitizen_X_Y (where X_Y is version) source folder. For instance: </LI></UL>  
+c:\development\DesktopCitizen_X_Y 
 
 <U>From the Repository</U>
-  * Use your  favorite SVN client to retrieve the latest source code release from the repository.   
+<UL><LI>Use your favorite SVN client to retrieve the latest source code release from the repository.</LI></UL>     
 
 <B>Using the Utility in Your Project</B>
-<I>Add the Utility Library to your Project Using Flex Builder 3</I>
-  * Open or create a Flex or AIR Project in Flex Builder 3
-  * From the Flex Builder menu, do: Project -> Properties -> Flex Build Path -> Library Path -> Add SWC
-  * Browse and select the SWC (for instance: c:\development\DesktopCitizen_X_Y\bin\Utility_AS3_AIR_DesktopCitizen_X_Y.swc)
-  * Click Finish. 
-
-]]></Installation>												
-
+<U>Add the Utility Library to your AIR Project Using Flex Builder 3</U>
+<UL><LI>Open or create a AIR Project in Flex Builder 3</LI>
+<LI>From the Flex Builder menu, do:</LI>
+Project -> Properties -> Flex Build Path -> Library Path -> Add SWC
+<LI>Browse and select the SWC, for instance:</LI> 
+c:\development\DesktopCitizen_X_Y\bin\Utility_AS3_AIR_DesktopCitizen_X_Y.swc
+<LI>Click Finish.</LI></UL>  
+ 
 		</Project>
 	</NodeMap>
 </Node>

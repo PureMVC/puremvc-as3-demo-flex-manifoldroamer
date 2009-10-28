@@ -20,35 +20,39 @@
 The AsyncCommand utility offers a solution to the problem of executing a series of commands each of which may need to complete one or more asynchronous operations before the next command is executed. 
 ]]></Description>						
 
-<ReleaseNotes><![CDATA[<B>Features in Version 1.0</B>
-  * IAsyncCommand interface defines the methods required for an asynchronous command, which at the moment is only setOnComplete, which sets a callback method for the IAsyncCommand implementer to call when it has completed its task.
-  * AsyncCommand class extends the framework SimpleCommand class and implements IAsyncCommand.
-  * AsyncMacroCommand class extends Notifier and implements IAsyncCommand. Accepts IAsyncCommands or ICommands for subcommands. This means any combination of SimpleCommand, MacroCommand, AsyncCommand or AsyncMacroCommand.
-  * Standard and MultiCore versions included. 
+<ReleaseNotes><![CDATA[
+<B>Features in Version 1.0</B>
+<UL><LI>IAsyncCommand interface defines the methods required for an asynchronous command, which at the moment is only setOnComplete, which sets a callback method for the IAsyncCommand implementer to call when it has completed its task.</LI>
+<LI>AsyncCommand class extends the framework SimpleCommand class and implements IAsyncCommand.</LI>
+<LI>AsyncMacroCommand class extends Notifier and implements IAsyncCommand. Accepts IAsyncCommands or ICommands for subcommands. This means any combination of SimpleCommand, MacroCommand, AsyncCommand or AsyncMacroCommand.</LI>
+<LI>Standard and MultiCore versions included.</LI></UL> 
 ]]></ReleaseNotes>						
 
-<Installation><![CDATA[<B>Installing the Project Source Code</B>
+<Installation><![CDATA[
+<B>Installing the Project Source Code</B>
 <U>From the archive</U>
-  * Download the latest source code archive.
-  * Unzip the source code zip to any folder on your disk. 
-	For instance: c:\development\
-  * You will see a AsyncCommand_X_Y (where X_Y is version) source folder. 
-	For instance: c:\development\AsyncCommand_X_Y 
+<UL><LI>Download the latest source code archive</LI>
+<LI>Unzip the source code zip to any folder on your disk. For instance: </LI> 
+c:\development\
+<LI>You will see a AsyncCommand_X_Y (where X_Y is version) source folder. For instance: </LI></UL>  
+c:\development\AsyncCommand_X_Y 
 
 <U>From the Repository</U>
-  * Use your  favorite SVN client to retrieve the latest source code release from the repository.   
+<UL><LI>Use your  favorite SVN client to retrieve the latest source code release from the repository.</LI></UL>     
 
 <B>Using the Utility in Your Project</B>
-<I>Add the Utility Library to your Project Using Flex Builder 3</I>
-  * Open or create a Flex or AIR Project in Flex Builder 3
-  * From the Flex Builder menu, do: Project -> Properties -> Flex Build Path -> Library Path -> Add SWC
-  * Browse and select the SWC (for instance: c:\development\AsyncCommand_X_Y\bin\Utility_AS3_AsyncCommand_X_Y.swc)
-  * Click Finish. 
+<U>Add the Utility Library to your Project Using Flex Builder 3</U>
+<UL><LI>Open or create a Flex or AIR Project in Flex Builder 3</LI>
+<LI>From the Flex Builder menu, do:</LI>
+Project -> Properties -> Flex Build Path -> Library Path -> Add SWC
+<LI>Browse and select the SWC, for instance:</LI> 
+c:\development\AsyncCommand_X_Y\bin\Utility_AS3_AsyncCommand_X_Y.swc
+<LI>Click Finish.</LI></UL>  
 
-<I>Add the Utility Library to your Flash/CS3/CS4 Project</I>
-  * The distributed SWC file will not work.
-  * You must place the source code in your classpath.
-  * Consult the CS3/CS4 documentation for the various ways to accomplish this.
+<U>Add the Utility Library to your Flash/CS3/CS4 Project</U>
+<UL><LI>The distributed SWC file will not work.</LI>
+<LI>You must place the source code in your classpath.</LI>
+<LI>Consult the CS3/CS4 documentation for the various ways to accomplish this.</LI></UL>  
 ]]></Installation>												
 
 		</Project>

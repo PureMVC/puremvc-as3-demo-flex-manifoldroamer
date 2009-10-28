@@ -17,33 +17,37 @@
 			shot="PureMVC-Shot-AS3-Std-UnitTests.png"
 			pic="PureMVC-Framework-AS3-Std.png">
 
-<Description><![CDATA[These are the unit tests for the PureMVC AS3 Standard Version Framework]]></Description>						
+<Description><![CDATA[
+These are the unit tests for the PureMVC AS3 Standard Version Framework
+]]></Description>						
 
-<ReleaseNotes><![CDATA[The Unit Tests for the PureMVC Framework for ActionScript 3 are written with FlexUnit. The distribution package is in ZIP format contains the AS3 source code for the Flex Unit tests, API documentation, and the FlexUnit SWC library. It does not contain the PureMVC framework that is in a separate download. 
-When you view the source code for the AS3 Framework, you initially see the results of these unit tests running in the right hand window. You should always see a green bar, indicating all tests have passed. 
-Every method of every framework class has at least one unit test associated with it, sometimes more. Each unit test, in turn generally makes several assertions. 
-If you modify the source code for the PureMVC framework for AS3, you should also create or modify the appropriate unit tests, and make sure that all tests still pass before building upon your modified version of the framework. 
+<ReleaseNotes><![CDATA[
+<UL><LI>The Unit Tests for the PureMVC Framework for ActionScript 3 are written with FlexUnit.</LI>
+<LI>The distribution package is in ZIP format contains the AS3 source code for the Flex Unit tests, API documentation, and the FlexUnit SWC library. It does not contain the PureMVC framework that is in a separate download.</LI> 
+<LI>When you view the source code for the AS3 Framework, you initially see the results of these unit tests running in the right hand window. You should always see a green bar, indicating all tests have passed.</LI> 
+<LI>Every method of every framework class has at least one unit test associated with it, sometimes more. Each unit test, in turn generally makes several assertions.</LI> 
+<LI>If you modify the source code for the PureMVC framework for AS3, you should also create or modify the appropriate unit tests, and make sure that all tests still pass before building upon your modified version of the framework.</LI></UL> 
 ]]></ReleaseNotes>						
 
-<Installation><![CDATA[<B>Installing the Project Source Code</B>
+<Installation><![CDATA[
+<B>Installing the Project Source Code</B>
 <U>From the archive</U>
-   * Download the latest source code archive.
-   * Unzip the source code zip to any folder on your disk. 
-        For instance: c:\development\
-   * You will see a PureMVC_AS3_UnitTests source folder. 
-      	For instance: c:\development\PureMVC_AS3_UnitTests
+<UL><LI>Download the latest source code archive.</LI>
+<LI>Unzip the source code zip to any folder on your disk.</LI>
+For instance: c:\development\
+<LI>You will see a PureMVC_AS3_UnitTests source folder.</LI></UL>
+For instance: c:\development\PureMVC_AS3_UnitTests
 
 <U>From the Repository</U>
-   * Use your  favorite SVN client to retrieve the latest source code release from the repository. 
+<UL><LI>Use your  favorite SVN client to retrieve the latest source code release from the repository.</LI></UL> 
 
 <U>Setup and Compile the Demo Using Flex Builder 3</U>
-   * Create a new Flex Project called 'PureMVC_AS3_UnitTests' in Flex Builder 3, pointing to the new source folder.
-   * Add the required libraries to the PureMVC_AS3_UnitTests project's build path.
-      * From the Flex Builder menu do: 
-      	Project -> Properties -> Flex Build Path -> Library Path -> Add SWC Folder
-      * Browse and select: 
-      	PureMVC_AS3_UnitTests/libs 
-      * Run PureMVC_AS3_UnitTests.mxml 
+<UL><LI>Create a new Flex Project called 'PureMVC_AS3_UnitTests' in Flex Builder 3, pointing to the new source folder.</LI>
+<LI>Add the required libraries to the PureMVC_AS3_UnitTests project's build path. From the Flex Builder menu do:</LI>
+Project -> Properties -> Flex Build Path -> Library Path -> Add SWC Folder
+<LI>Browse and select:</LI>
+PureMVC_AS3_UnitTests/libs 
+<LI>Run PureMVC_AS3_UnitTests.mxml</LI></UL> 
 ]]></Installation>		
 										
 			</Project>

@@ -17,42 +17,42 @@
 			shot="">
 			
 <Description><![CDATA[
-The Deployment Config utility offers a simple solution to the problem of retrieving configuration and distributing it throughout a PureMVC application.
+The Deployment Config utility offers a simple solution to the problem of retrieving configuration and distributing it throughout a Flex-based PureMVC application.
 ]]></Description>						
 
-<ReleaseNotes><![CDATA[<B>Features in 1.0</B>
-  * XML Namespaces are used to represent the same values for multiple deployment environments.
-  * Developer creates an XML configuration file based on the  example, and a corresponding IConfigVO (usually by subclassing ConfigVO).
-  * You add members to your concrete IConfigVO that expose the values from the selected deployment namespace in your XML configuration file.
-  * The ConfigVO class offers a setConfig method that stores the XML configuration and extracts the deployment Namespace.
-  * ConfigVO also has a validate method that checks that the deployment namespace was defined config file. You can override this and do your own validation to make sure that additionally, all the configuration values are defined for your deployment namespace.
-  * The built-in ConfigProxy and ConfigDelegate classes are used to fetch the XML configuration.
-  * The ConfigProxy only need be extended in order to construct an instance of your concrete IConfigVO.
-  * Standard and MultiCore versions are included.        
+<ReleaseNotes><![CDATA[
+<B>Features in 1.0</B>
+<UL><LI>XML Namespaces are used to represent the same values for multiple deployment environments.</LI>
+<LI>Developer creates an XML configuration file based on the  example, and a corresponding IConfigVO (usually by subclassing ConfigVO).</LI>
+<LI>You add members to your concrete IConfigVO that expose the values from the selected deployment namespace in your XML configuration file.</LI>
+<LI>The ConfigVO class offers a setConfig method that stores the XML configuration and extracts the deployment Namespace.</LI>
+<LI>ConfigVO also has a validate method that checks that the deployment namespace was defined config file. You can override this and do your own validation to make sure that additionally, all the configuration values are defined for your deployment namespace.</LI>
+<LI>The built-in ConfigProxy and ConfigDelegate classes are used to fetch the XML configuration.</LI>
+<LI>The ConfigProxy only need be extended in order to construct an instance of your concrete IConfigVO.</LI>
+<LI>Standard and MultiCore versions are included.</LI></UL>        
 ]]></ReleaseNotes>						
 
-<Installation><![CDATA[<B>Installing the Project Source Code</B>
+<Installation><![CDATA[
+<B>Installing the Project Source Code</B>
 <U>From the archive</U>
-  * Download the latest source code archive.
-  * Unzip the source code zip to any folder on your disk. 
-	For instance: c:\development\
-  * You will see a DeploymentConfig_X_Y (where X_Y is version) source folder. 
-	For instance: c:\development\DeploymentConfig_X_Y 
+<UL><LI>Download the latest source code archive</LI>
+<LI>Unzip the source code zip to any folder on your disk. For instance: </LI> 
+c:\development\
+<LI>You will see a DeploymentConfig_X_Y (where X_Y is version) source folder. For instance: </LI></UL>  
+c:\development\DeploymentConfig_X_Y 
 
 <U>From the Repository</U>
-  * Use your  favorite SVN client to retrieve the latest source code release from the repository.   
+<UL><LI>Use your favorite SVN client to retrieve the latest source code release from the repository.</LI></UL>     
 
 <B>Using the Utility in Your Project</B>
-<I>Add the Utility Library to your Project Using Flex Builder 3</I>
-  * Open or create a Flex or AIR Project in Flex Builder 3
-  * From the Flex Builder menu, do: Project -> Properties -> Flex Build Path -> Library Path -> Add SWC
-  * Browse and select the SWC (for instance: c:\development\DeploymentConfig_X_Y\bin\Utility_AS3_Flex_DeploymentConfig_X_Y.swc)
-  * Click Finish. 
+<U>Add the Utility Library to your Project Using Flex Builder 3</U>
+<UL><LI>Open or create a Flex or AIR Project in Flex Builder 3</LI>
+<LI>From the Flex Builder menu, do:</LI>
+Project -> Properties -> Flex Build Path -> Library Path -> Add SWC
+<LI>Browse and select the SWC, for instance:</LI> 
+c:\development\DeploymentConfig_X_Y\bin\Utility_AS3_DeploymentConfig_X_Y.swc
+<LI>Click Finish.</LI></UL>  
 
-<I>Add the Utility Library to your Flash/CS3/CS4 Project</I>
-  * The distributed SWC file will not work.
-  * You must place the source code in your classpath.
-  * Consult the CS3/CS4 documentation for the various ways to accomplish this.
 ]]></Installation>												
 
 		</Project>
