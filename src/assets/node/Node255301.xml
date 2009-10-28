@@ -19,42 +19,45 @@
 This demo illustrates techniques for performing routine maintenance operations in a PureMVC-based application using wxRuby view components.
 ]]></Description>						
 
-<ReleaseNotes><![CDATA[<B>Features in Version 1.0</B>
-  * A port of the classic  EmployeeAdmin Demo for AS3
-  * Uses the  wxruby toolkit for UI components.
-  * The only functional corner cut is there is no confirmation step on delete user. 
+<ReleaseNotes><![CDATA[
+<B>Features in Version 1.0</B>
+<UL><LI>A port of the classic  EmployeeAdmin Demo for AS3</LI>
+<LI>Uses the  wxruby toolkit for UI components.</LI>
+<LI>The only functional corner cut is there is no confirmation step on delete user. </LI></UL>
 ]]></ReleaseNotes>						
 
 
-<Installation><![CDATA[<B>Prerequisites</B>
+<Installation><![CDATA[
+<B>Prerequisites</B>
 <U>You will need ruby installed.</U>
-  * You can download ruby here: <font color="#0000FF"><A href="http://www.ruby-lang.org/" target="_blank">http://www.ruby-lang.org/</A></font>
-  * For Windows, the one-click installer is HIGHLY recommended, and includes rubygems. 
+<UL><LI>You can download ruby here: <font color="#0000FF"><A href="http://www.ruby-lang.org/" target="_blank">http://www.ruby-lang.org/</A></font></LI>
+<LI>For Windows, the one-click installer is HIGHLY recommended, and includes rubygems. </LI></UL>
 
 <U>You will need rubygems installed.</U>
-  * You can see if you have rubygems by typing "gem --version" on the command line.
-  * You can download rubygems here: <font color="#0000FF"><A href="http://rubyforge.org/frs/?group_id=126" target="_blank">http://rubyforge.org/frs/?group_id=126</A></font>
-  * Expand the downloaded rubygems archive onto your system
-  * Open a terminal window in the directory you expanded it to (i.e. "c:\development\rubygems-x-y")
-  * type "ruby setup.rb" to install rubygems 
+<UL><LI>You can see if you have rubygems by typing "gem --version" on the command line.</LI>
+<LI>You can download rubygems here: <font color="#0000FF"><A href="http://rubyforge.org/frs/?group_id=126" target="_blank">http://rubyforge.org/frs/?group_id=126</A></font></LI>
+<LI>Expand the downloaded rubygems archive onto your system</LI>
+<LI>Open a terminal window in the directory you expanded it to (i.e. "c:\development\rubygems-x-y")</LI>
+<LI>Type "ruby setup.rb" to install rubygems </LI></UL>
 
 <U>You will need wxruby installed.</U>
-  * Open a terminal window and type "gem install wxruby" 
+<UL><LI>Open a terminal window and type "gem install wxruby" </LI></UL>
 
 <U>You will need PureMVC_Ruby installed.</U>
-  * Open a terminal window and type "gem install PureMVC_Ruby" 
+<UL><LI>Open a terminal window and type "gem install PureMVC_Ruby" </LI></UL>
 
 <B>Installing the Project Source Code</B>
 <U>From the Archive</U>
-  * Download the latest source code archive.
-  * Unzip the source code zip to any folder on your disk. 
-  	For instance: c:\development\
-  * You will see a EmployeeAdmin_X_Y (where X_Y is version) source folder. 
-  	For instance: c:\development\EmployeeAdmin_X_Y  
+<UL><LI>Download the latest source code archive.</LI>
+<LI>Unzip the source code zip to any folder on your disk. For instance: </LI>
+c:\development\
+<LI>You will see a EmployeeAdmin_X_Y (where X_Y is version) source folder. For instance: </LI></UL> 
+c:\development\EmployeeAdmin_X_Y  
 
 <U>From the Repository</U>
-  * Use your favorite SVN client to retrieve the latest source code release from the repository. 
-]]></Installation>												
+<UL><LI>Use your favorite SVN client to retrieve the latest source code release from the repository. </LI></UL> 
+]]></Installation>		
+										
 		</Project>
 	</NodeMap>
 </Node>

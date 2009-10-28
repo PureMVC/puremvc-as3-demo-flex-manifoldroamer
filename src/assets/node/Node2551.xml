@@ -16,26 +16,27 @@
 
 <Description><![CDATA[PureMVC is a lightweight framework for creating applications based upon the classic  Model-View-Controller design meta-pattern. This is the specific implementation for the Ruby language based on the Standard Version AS3 reference. ]]></Description>						
 
-<ReleaseNotes><![CDATA[<B>Features in Version 1.0</B>
-  * First production release, based on AS3 Standard version 2.0.4. 
-  * Released with complete with Unit Tests and Employee Admin demo running on Mac, Windows and Linux desktops (thanks to wxRuby!). 
+<ReleaseNotes><![CDATA[
+<B>Features in Version 1.0</B>
+<UL><LI>First production release, based on AS3 Standard version 2.0.4.</LI> 
+<LI>Released with complete with Unit Tests and Employee Admin demo running on Mac, Windows and Linux desktops (thanks to wxRuby!). </LI></UL>
 ]]></ReleaseNotes>						
 
 <Installation><![CDATA[<B>Installing the Project Source Code</B>
 <U>Using RubyGems</U>
-  * From the command line, type: gem install PureMVC_Ruby
-  * In your application initialization, add: require 'PureMVC_Ruby' 
+<UL><LI>From the command line, type: gem install PureMVC_Ruby</LI> 
+<LI>In your application initialization, add: require 'PureMVC_Ruby'  </LI></UL>
 
-<U>From the Downloadable Archive</U>
-  * Download the latest source code archive.
-  * Unzip the source code zip to any folder on your disk. 
-  	For instance: c:\development\
-  * You will see a PureMVC_Ruby_X_Y (where X_Y is version) source folder. 
-  	For instance: c:\development\PureMVC_Ruby_X_Y  
+<U>From the Archive</U>
+<UL><LI>Download the latest source code archive.</LI>
+<LI>Unzip the source code zip to any folder on your disk. For instance: </LI>
+c:\development\
+<LI>You will see a PureMVC_Ruby_X_Y (where X_Y is version) source folder. For instance: </LI></UL> 
+c:\development\PureMVC_Ruby_X_Y  
 
 <U>From the Repository</U>
-  * Use your favorite SVN client to retrieve the latest source code release from the repository. ]]>
-</Installation>												
+<UL><LI>Use your favorite SVN client to retrieve the latest source code release from the repository. </LI></UL> 
+]]></Installation>												
 			</Project>
 	</NodeMap>
 </Node>

@@ -18,37 +18,39 @@
 This demo illustrates techniques for creating a simple blog in a PureMVC-based Python application using the Google App Engine. 
 ]]></Description>						
 
-<ReleaseNotes><![CDATA[<B>Features in Version 1.0</B>
-  * Server-side use of PureMVC framework in a classic web application setting
-  * Create, update and delete of records using Google App Engine's persistence mechanism 
-  * Google App Engine is providing a database which is easy to use. In model.py and vo.py see how the PostProxy has very simple implementations for adding and retrieving posts. A post is represented by the PostVO which defines its types in terms of database field types defined by the App Engine.
-  * The HomeMediator and WriteMediator in view.py are managing templates for the Home and Write a Post pages (index.html and write.html). That's nice because it illustrates how the Mediator pattern remains appropriate for the server side, its just that the view component is a template and that the Mediator isn't really listening to that view component but will write the data into it in response to Notifications. This means the we're not stretching the mediator's responsibilities.
-  * When the facade (defined in main.py) is instantiated, it initializes the controller, and all the command mappings, then triggers StartupCommand with the STARTUP notification which creates and registers PostProxy with the model.
-  * Its a simple REST implementation.
-  * '/' or index.html shows all posts and is handled by homeHandler.
-  * It will only ever be requested by the HTTP GET method, so homeHandler triggers the HomeStartupCommand at its initialization, which creates and registers the HomeMediator. Then it triggers the GetPostsCommand which retrieves the PostProxy and tells it to retrieve all posts. Then it sends the POSTS_RETRIEVED notification which the HomeMediator hears, retrieves the posts and writes them into the template pushing out the homepage.
-  * '/write' or write.html is handled by writeHandler. '/'. On its initialization, it will trigger the WriteStartupCommand, which will create and register the WriteMediator.
-  * If it was requested by HTTP GET, it will send the VIEW_WRITE_POSTS notification which the WriteMediator will respond to by rendering the write.html template page with the form for making a post.
-  * If it was requested by HTTP POST then you filled the form and submitted, so it will send an ADD_POST notification, passing an object with the title and content key value pairs from the form post as members. This will trigger the AddPostsCommand, which will retrieve the PostProxy, tell it to add the post and then send the POST_ADDED notification. That will be heard by the WriteMediator, who will redirect us to '/' where the posts are displayed, including the new one. 
+<ReleaseNotes><![CDATA[
+<B>Features in Version 1.0</B>
+<UL><LI>Server-side use of PureMVC framework in a classic web application setting</LI>
+<LI>Create, update and delete of records using Google App Engine's persistence mechanism </LI>
+<LI>Google App Engine is providing a database which is easy to use. In model.py and vo.py see how the PostProxy has very simple implementations for adding and retrieving posts. A post is represented by the PostVO which defines its types in terms of database field types defined by the App Engine.</LI>
+<LI>The HomeMediator and WriteMediator in view.py are managing templates for the Home and Write a Post pages (index.html and write.html). That's nice because it illustrates how the Mediator pattern remains appropriate for the server side, its just that the view component is a template and that the Mediator isn't really listening to that view component but will write the data into it in response to Notifications. This means the we're not stretching the mediator's responsibilities.</LI>
+<LI>When the facade (defined in main.py) is instantiated, it initializes the controller, and all the command mappings, then triggers StartupCommand with the STARTUP notification which creates and registers PostProxy with the model.</LI>
+<LI>Its a simple REST implementation.</LI>
+<LI>'/' or index.html shows all posts and is handled by homeHandler.</LI>
+<LI>It will only ever be requested by the HTTP GET method, so homeHandler triggers the HomeStartupCommand at its initialization, which creates and registers the HomeMediator. Then it triggers the GetPostsCommand which retrieves the PostProxy and tells it to retrieve all posts. Then it sends the POSTS_RETRIEVED notification which the HomeMediator hears, retrieves the posts and writes them into the template pushing out the homepage.</LI>
+<LI>'/write' or write.html is handled by writeHandler. '/'. On its initialization, it will trigger the WriteStartupCommand, which will create and register the WriteMediator.</LI>
+<LI>If it was requested by HTTP GET, it will send the VIEW_WRITE_POSTS notification which the WriteMediator will respond to by rendering the write.html template page with the form for making a post.</LI>
+<LI>If it was requested by HTTP POST then you filled the form and submitted, so it will send an ADD_POST notification, passing an object with the title and content key value pairs from the form post as members. This will trigger the AddPostsCommand, which will retrieve the PostProxy, tell it to add the post and then send the POST_ADDED notification. That will be heard by the WriteMediator, who will redirect us to '/' where the posts are displayed, including the new one.</LI></UL> 
 ]]></ReleaseNotes>						
 
-<Installation><![CDATA[<B>Prerequisites</B>
+<Installation><![CDATA[
+<B>Prerequisites</B>
 <U>You will need Python 2.5 installed.</U>
-  * You can download Python here: <font color="#0000FF"><A href="http://www.python.org/" target="_blank">http://www.python.org/</A></font>
+<UL><LI>You can download Python here: <font color="#0000FF"><A href="http://www.python.org/" target="_blank">http://www.python.org/</A></font></LI></UL>
 
 <U>You will need Google App Engine installed.</U>
-  * You can download GAE here: <font color="#0000FF"><A href="http://code.google.com/appengine/downloads.html" target="_blank">http://code.google.com/appengine/downloads.html</A></font>
+<UL><LI>You can download GAE here: <font color="#0000FF"><A href="http://code.google.com/appengine/downloads.html" target="_blank">http://code.google.com/appengine/downloads.html</A></font></LI></UL>
 
 <B>Installing the Project Source Code</B>
 <U>From the Archive</U>
-  * Download the latest source code archive.
-  * Unzip the source code zip to the Google Apps installation directory 
-	For instance: C:\Program Files\Google\google_appengine
-  * You will see a 'Blog' folder. 
-  	For instance: C:\Program Files\Google\google_appengine\Blog
+<UL><LI>Download the latest source code archive.</LI>
+<LI>Unzip the source code zip to the Google Apps installation directory. For instance:</LI>
+C:\Program Files\Google\google_appengine
+<LI>You will see a 'Blog' folder. For instance:</LI></UL>
+C:\Program Files\Google\google_appengine\Blog
 
 <U>From the Repository</U>
-  * Use your favorite SVN client to retrieve the latest source code release from the repository. 
+<UL><LI>Use your favorite SVN client to retrieve the latest source code release from the repository.</LI></UL> 
 ]]></Installation>												
 		</Project>
 	</NodeMap>
