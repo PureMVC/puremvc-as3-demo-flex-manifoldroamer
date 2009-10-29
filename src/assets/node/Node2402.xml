@@ -15,69 +15,79 @@
 			owner_node="317"
 			pic="PureMVC-Framework-ObjectiveC-Std.png">
 
-<Description><![CDATA[These are the unit tests for the PureMVC Objective C Standard Version. 
+<Description><![CDATA[
+These are the unit tests for the PureMVC Objective C Standard Version. 
 ]]></Description>						
 
-<ReleaseNotes><![CDATA[<B>Summary of Changes in 1.1</B>
-Release for PureMVC / ObjectiveC 1.1 / iPhone SDK 3.0 (dot notation no longer works:  http://forums.puremvc.org/index.php?topic=946.msg5838#msg5838)
+<ReleaseNotes><![CDATA[
+<B>Summary of Changes in 1.1</B>
+<UL><LI>Release for PureMVC / ObjectiveC 1.1 / iPhone SDK 3.0</LI>
+<LI><font color="#0000FF"><a href="http://forums.puremvc.org/index.php?topic=946.msg5838#msg5838" target="_blank">Dot notation no longer works</A></font></LI></UL> 
 
 <B>Features in 1.0</B>
-Compatible with the unit tests for the AS3 Standard 2.0.4 Reference implementation. 
+<UL><LI>Compatible with the unit tests for the AS3 Standard 2.0.4 Reference implementation. </LI></UL>
 ]]></ReleaseNotes>						
 
-<Installation><![CDATA[<B>Installation</B>
+<Installation><![CDATA[
+<B>Installing the Project Source Code</B>
 <U>From the archive</U>
-      * Download the latest source code archive.
-      * Unzip the source code zip to any folder on your disk. (for instance: ~/Dev)
-      * You will see a PureMVC_ObjectiveC_UnitTests_X_Y (where X_Y is version) source folder. (for instance: ~/Dev/PureMVC_ObjectiveC_UnitTests_X_Y ) 
+<UL><LI>Download the latest source code archive.</LI>
+<LI>Unzip the source code zip to any folder on your disk. For instance:</LI> 
+~/Dev
+<LI>You will see a PureMVC_ObjectiveC_UnitTests_X_Y (where X_Y is version) source folder. For instance:</LI></UL> 
+ ~/Dev/PureMVC_ObjectiveC_UnitTests_X_Y 
 
 <U>From the Repository</U>
-      * Use your  favorite SVN client to retrieve the latest source code release from the repository. 
+<UL><LI>Use your  favorite SVN client to retrieve the latest source code release from the repository. </LI></UL> 
 
 <B>Examine the Contents</B>
-<U>Inside you will find</U>
-  * The source code: src/org/puremvc/objectivec/...
-  * The PureMVC static library used with the project: lib/PureMVC/PureMVC_ObjectiveC_X_Y.a
-  * The header files for use with the static library: lib/PureMVC/headers 
+<UL><LI>The source code: src/org/puremvc/objectivec/...</LI>
+<LI>The PureMVC static library used with the project: lib/PureMVC/PureMVC_ObjectiveC_X_Y.a</LI>
+<LI>The header files for use with the static library: lib/PureMVC/headers </LI></UL> 
 
 <B>Setup, Build, and Run the Unit Tests using XCode</B>
 <U>Create the Project</U>
-  * Create a new XCode Project called PureMVCUnitTests.
-  * Make sure to choose the template: Mac OS X : Other : Empty Project 
+<UL><LI>Create a new XCode Project called PureMVCUnitTests.</LI>
+<LI>Make sure to choose the template: </LI></UL> 
+Mac OS X : Other : Empty Project 
 
 <U>Create the Target</U>
-  * From the Groups & Files pane,
-  * Right click on Targets
-  * Select Add -> New Target
-  * Name it PureMVCUnitTests
-  * Make sure to choose the template: Mac OS X : Cocoa : Unit Test Bundle 
+<UL><LI>From the Groups & Files pane,</LI>
+<LI>Right click on Targets</LI>
+<LI>Select Add -> New Target</LI>
+<LI>Name it PureMVCUnitTests</LI>
+<LI>Make sure to choose the template:</LI></UL> 
+Mac OS X : Cocoa : Unit Test Bundle 
 
 <U>Add the Source Folder</U>
-  * From the Groups & Files pane,
-  * Right click on top level PureMVCUnitTests project folder
-  * Select Add -> Existing Files...
-  * Browse and Add the project source folder ( i.e. ~/Dev/PureMVC_ObjectiveC_UnitTests_X_Y/src ) 
+<UL><LI>From the Groups & Files pane,</LI>
+<LI>Right click on top level PureMVCUnitTests project folder</LI>
+<LI>Select Add -> Existing Files...</LI>
+<LI>Browse and Add the project source folder. For instance:</LI></UL>
+~/Dev/PureMVC_ObjectiveC_UnitTests_X_Y/src
 
 <U>Add the PureMVC Static Library</U>
-  * From the Groups & Files pane,
-  * Under the target PureMVCUnitTests,
-  * Right click on the Link Binary With Libraries folder
-  * Select Add -> Existing Files...
-  * Browse and Add the PureMVC static library ( i.e. ~/Dev/PureMVC_ObjectiveC_UnitTests_X_Y/lib/PureMVC/PureMVC_ObjectiveC_X_Y.a ) 
+<UL><LI>From the Groups & Files pane,</LI>
+<LI>Under the target PureMVCUnitTests,</LI>
+<LI>Right click on the Link Binary With Libraries folder</LI>
+<LI>Select Add -> Existing Files...</LI>
+<LI>Browse and Add the PureMVC static library. For instance:</LI></UL>
+~/Dev/PureMVC_ObjectiveC_UnitTests_X_Y/lib/PureMVC/PureMVC_ObjectiveC_X_Y.a
 
 <U>Add the PureMVC Headers</U>
-  * From the Groups & Files pane,
-  * Double click the PureMVCUnitTests target...
-  * ...or right click and select Get Info
-  * Click on the Build tab. 
-  * Under the setting, Header Search Paths,
-  * Add the path to the PureMVC headers ( i.e. ~/Dev/PureMVC_ObjectiveC_UnitTests_X_Y/lib/PureMVC/headers ) 
+<UL><LI>From the Groups & Files pane,</LI>
+<LI>Double click the PureMVCUnitTests target...</LI>
+<LI>...or right click and select Get Info</LI>
+<LI>Click on the Build tab. </LI>
+<LI>Under the setting, Header Search Paths,</LI>
+<LI>Add the path to the PureMVC headers. For instance:</LI></UL> 
+~/Dev/PureMVC_ObjectiveC_UnitTests_X_Y/lib/PureMVC/headers
 
 <U>Build the Project</U>
-  * From the Build File menu,
-  * Choose Build Results and then click the small icon at the bottom of the top pane that looks like a written paragraph (hover reads: Select this to show or hide the build transcript).
-  * Increase the height of the build transcript pane.
-  * Click the Build button (hammer) at the top of the Build Results window, you should see the tests running and results. 
+<UL><LI>From the Build File menu,</LI>
+<LI>Choose Build Results and then click the small icon at the bottom of the top pane that looks like a written paragraph (hover reads: Select this to show or hide the build transcript).</LI>
+<LI>Increase the height of the build transcript pane.</LI>
+<LI>Click the Build button (hammer) at the top of the Build Results window, you should see the tests running and results.</LI></UL>
 ]]></Installation>		
 										
 			</Project>

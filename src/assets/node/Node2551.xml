@@ -14,7 +14,10 @@
 			owner_node="308"
 			pic="PureMVC-Framework-Ruby-Std.png">
 
-<Description><![CDATA[PureMVC is a lightweight framework for creating applications based upon the classic  Model-View-Controller design meta-pattern. This is the specific implementation for the Ruby language based on the Standard Version AS3 reference. ]]></Description>						
+<Description><![CDATA[
+PureMVC is a lightweight framework for creating applications based upon the classic  Model-View-Controller design meta-pattern. 
+This is the specific implementation for the Ruby language based on the Standard Version AS3 reference. 
+]]></Description>						
 
 <ReleaseNotes><![CDATA[
 <B>Features in Version 1.0</B>
@@ -22,7 +25,8 @@
 <LI>Released with complete with Unit Tests and Employee Admin demo running on Mac, Windows and Linux desktops (thanks to wxRuby!). </LI></UL>
 ]]></ReleaseNotes>						
 
-<Installation><![CDATA[<B>Installing the Project Source Code</B>
+<Installation><![CDATA[
+<B>Installing the Project Source Code</B>
 <U>Using RubyGems</U>
 <UL><LI>From the command line, type: gem install PureMVC_Ruby</LI> 
 <LI>In your application initialization, add: require 'PureMVC_Ruby'  </LI></UL>

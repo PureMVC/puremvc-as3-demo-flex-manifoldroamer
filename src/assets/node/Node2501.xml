@@ -13,7 +13,10 @@
 			owner="Toby de Havilland"
 			owner_node="314"
 			pic="PureMVC-Framework-Python-Std.png">
-<Description><![CDATA[PureMVC is a lightweight framework for creating applications based upon the classic Model-View-Controller design meta-pattern. This is the specific implementation for the Python language based on the Standard Version AS3 reference. See the Release Notes for this version for differences from the reference implementation. ]]></Description>						
+<Description><![CDATA[
+PureMVC is a lightweight framework for creating applications based upon the classic Model-View-Controller design meta-pattern. 
+This is the specific implementation for the Python language based on the Standard Version AS3 reference. 
+]]></Description>						
 
 <ReleaseNotes><![CDATA[
 <B>Summary of Changes in 1.1</B>

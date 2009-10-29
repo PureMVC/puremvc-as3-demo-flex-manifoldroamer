@@ -24,7 +24,8 @@ This demo illustrates techniques for performing routine maintenance operations i
 <LI>Uses the  wxPython toolkit for UI components.</LI></UL>
 ]]></ReleaseNotes>						
 
-<Installation><![CDATA[<B>Prerequisites</B>
+<Installation><![CDATA[
+<B>Prerequisites</B>
 <U>You will need Python 2.5 installed.</U>
 <UL><LI>You can download Python here: <font color="#0000FF"><A href="http://www.python.org/" target="_blank">http://www.python.org/</A></font></LI></UL>
 

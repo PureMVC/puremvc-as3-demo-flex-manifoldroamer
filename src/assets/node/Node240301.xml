@@ -19,58 +19,65 @@
 This demo illustrates techniques for performing routine maintenance operations in a PureMVC-based ObjectiveC application. 
 ]]></Description>						
 
-<ReleaseNotes><![CDATA[<B>Changes in Version 1.1</B>
-  * Release for PureMVC / ObjectiveC 1.1 / iPhone SDK 3.0 
-  * <font color="#0000FF"><a href="http://forums.puremvc.org/index.php?topic=946.msg5838#msg5838" target="_blank">Dot notation no longer works</A></font> 
+<ReleaseNotes><![CDATA[
+<B>Changes in Version 1.1</B>
+<UL><LI>Release for PureMVC / ObjectiveC 1.1 / iPhone SDK 3.0 </LI>
+<LI><font color="#0000FF"><a href="http://forums.puremvc.org/index.php?topic=946.msg5838#msg5838" target="_blank">Dot notation no longer works</A></font></LI></UL> 
   
 <B>Features in Version 1.0</B>
-  * A port of the classic EmployeeAdmin Demo for ActionScript3
-  * Originally implemented in Flex for a desktop-sized web browser, this port has been artfully reconceived by Brian to fit the iPhone mobile form factor, where transition into sub-screens is necessary. 
+<UL><LI>A port of the classic EmployeeAdmin Demo for ActionScript3</LI>
+<LI>Originally implemented in Flex for a desktop-sized web browser, this port has been artfully reconceived by Brian to fit the iPhone mobile form factor, where transition into sub-screens is necessary.</LI></UL>  
 ]]></ReleaseNotes>						
 
-<Installation><![CDATA[<B>Installation</B>
-<I>From the archive</I>
-  * Download the latest source code archive.
-  * Unzip the source code zip to any folder on your disk. (for instance: ~/Dev)
-  * You will see a Demo_ObjectiveC_UIKit_EmployeeAdmin_X_Y (where X_Y is version) source folder. (for instance: ~/Dev/Demo_ObjectiveC_UIKit_EmployeeAdmin_X_Y ) 
+<Installation><![CDATA[
+<B>Installing the Project Source Code</B>
+<U>From the archive</U>
+<UL><LI>Download the latest source code archive.</LI>
+<LI>Unzip the source code zip to any folder on your disk. For instance:</LI> 
+~/Dev
+<LI>You will see a Demo_ObjectiveC_UIKit_EmployeeAdmin_X_Y (where X_Y is version) source folder. For instance:</LI></UL> 
+ ~/Dev/Demo_ObjectiveC_UIKit_EmployeeAdmin_X_Y 
 
-<I>From the Repository</I>
-  * Use your  favorite SVN client to retrieve the latest source code release from the repository. 
+<U>From the Repository</U>
+<UL><LI>Use your  favorite SVN client to retrieve the latest source code release from the repository. </LI></UL> 
 
 <B>Examine the Contents</B>
-  * The source code: src/org/puremvc/objectivec/...
-  * The PureMVC static library used with the project: lib/PureMVC/PureMVC_ObjectiveC_X_Y.a
-  * The header files for use with the static library: lib/PureMVC/headers 
+<UL><LI>The source code: src/org/puremvc/objectivec/...</LI>
+<LI>The PureMVC static library used with the project: lib/PureMVC/PureMVC_ObjectiveC_X_Y.a</LI>
+<LI>The header files for use with the static library: lib/PureMVC/headers </LI></UL> 
 
-<I>Setup, Build, and Run the Demo using XCode</I>
-<B>Create the Project</B>
-  * Create a new XCode Project called EmployeeAdmin.
-  * Make sure to choose the template: iPhone OS : Application : Window-Based Application 
+<B>Setup, Build, and Run the Demo using XCode</B>
+<U>Create the Project</U>
+<UL><LI>Create a new XCode Project called EmployeeAdmin.</LI>
+<LI>Make sure to choose the template: </LI></UL> 
+iPhone OS : Application : Window-Based Application 
 
-<I>Add the PureMVC Static Library</I>
-  * From the Groups & Files pane,
-  * Under the target EmployeeAdmin,
-  * Right click on the Link Binary With Libraries folder
-  * Select Add -> Existing Files...
-  * Browse and Add the PureMVC static library ( i.e. ~/Dev/Demo_ObjectiveC_UIKit_EmployeeAdmin_X_Y/lib/PureMVC/PureMVC_ObjectiveC_X_Y.a ) 
+<U>Add the PureMVC Static Library</U>
+<UL><LI>Select the Groups & Files pane,</LI>
+<LI>Select target EmployeeAdmin,</LI>
+<LI>Right click on the Link Binary With Libraries folder</LI>
+<LI>Select Add -> Existing Files...</LI>
+<LI>Browse and Add the PureMVC static library. For instance:</LI></UL> 
+~/Dev/Demo_ObjectiveC_UIKit_EmployeeAdmin_X_Y/lib/PureMVC/PureMVC_ObjectiveC_X_Y.a
 
-<B>Add the PureMVC Headers</B>
-  * From the Groups & Files pane,
-  * Double click the EmployeeAdmin target...
-  * ...or right click and select Get Info
-  * Click on the Build tab.
-  * Under the setting, Header Search Paths,
-  * Add the path to the PureMVC headers ( i.e. ~/Dev/Demo_ObjectiveC_UIKit_EmployeeAdmin_X_Y/lib/PureMVC/headers ) 
+<U>Add the PureMVC Headers</U>
+<UL><LI>From the Groups & Files pane,</LI>
+<LI>Double click the EmployeeAdmin target...</LI>
+<LI>...or right click and select Get Info</LI>
+<LI>Click on the Build tab.</LI>
+<LI>Under the setting, Header Search Paths,</LI>
+<LI>Add the path to the PureMVC headers. For instance:</LI></UL> 
+~/Dev/Demo_ObjectiveC_UIKit_EmployeeAdmin_X_Y/lib/PureMVC/headers 
 
-<I>Add the Source Folder</I>
-  * From the Groups & Files pane,
-  * Right click on top level EmployeeAdmin project folder
-  * Select Add -> Existing Files...
-  * Browse and Add the project source folder ( i.e. ~/Dev/Demo_ObjectiveC_UIKit_EmployeeAdmin_X_Y/src ) 
+<U>Add the Source Folder</U>
+<UL><LI>From the Groups & Files pane,</LI>
+<LI>Right click on top level EmployeeAdmin project folder</LI>
+<LI>Select Add -> Existing Files...</LI>
+<LI>Browse and Add the project source folder. For instance:</LI></UL>  
+~/Dev/Demo_ObjectiveC_UIKit_EmployeeAdmin_X_Y/src 
 
-<I>Add the EmployeeAdminAppDelegate.m</I>
-Open the automatically generated EmployeeAdminAppDelegate.m in XCode editing window and update the code as follows:
-
+<U>Add the EmployeeAdminAppDelegate.m</U>
+<UL><LI>Open the automatically generated EmployeeAdminAppDelegate.m in XCode editing window and update the code as follows:</LI></UL>
 <font size="10" face="courier">
 #import "EmployeeAdminAppDelegate.h"
 #import "ApplicationFacade.h"
@@ -89,9 +96,10 @@ Open the automatically generated EmployeeAdminAppDelegate.m in XCode editing win
 // end
 </font>
 
-<B>Build the Project</B>
-  * From the Build File menu,
-  * Choose Build and Go 
+<U>Build the Project</U>
+<UL><LI>From the Build File menu,</LI>
+<LI>Choose Build and Go </LI></UL>  
+
 ]]></Installation>												
 		</Project>
 	</NodeMap>

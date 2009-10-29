@@ -15,7 +15,9 @@
 			owner_node="304"
 			pic="PureMVC-Framework-AS2-Std.png">
 <Description><![CDATA[
-PureMVC is a lightweight framework for creating applications based upon the classic Model-View-Controller design meta-pattern. This is the specific implementation for the ActionScript 2 language. See the Release Notes for this version for differences from the reference implementation.]]></Description>						
+PureMVC is a lightweight framework for creating applications based upon the classic Model-View-Controller design meta-pattern. 
+This is the specific implementation for the ActionScript 2 language. 
+]]></Description>						
 
 <ReleaseNotes><![CDATA[
 The current release is compatible with the AS3 Reference implementation version 2.0.3.

@@ -16,9 +16,12 @@
 			pic="PureMVC-Framework-Ruby-Std.png"
 			shot="PureMVC-Shot-Ruby-Std_UnitTests.png">
 						
-<Description><![CDATA[These are the unit tests for the PureMVC Standard Version Framework for Ruby.]]></Description>						
+<Description><![CDATA[
+These are the unit tests for the PureMVC Standard Version Framework for Ruby.
+]]></Description>						
 
-<ReleaseNotes><![CDATA[<B>Features in 1.0</B>
+<ReleaseNotes><![CDATA[
+<B>Features in 1.0</B>
   * Compatible with the unit tests for the AS3 Standard 2.0.4 Reference implementation. 
 ]]></ReleaseNotes>						
 

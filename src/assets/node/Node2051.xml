@@ -16,7 +16,8 @@
 			pic="PureMVC-Framework-AS3-Std.png">
 
 <Description><![CDATA[
-PureMVC is a lightweight framework for creating applications based upon the classic  Model-View-Controller design meta-pattern. This is the specific implementation for the AS3 language, and the reference implementation for all other PureMVC Ports.
+PureMVC is a lightweight framework for creating applications based upon the classic  Model-View-Controller design meta-pattern. 
+This is the specific implementation for the AS3 language, and the reference implementation for all other PureMVC Ports.
 ]]></Description>						
 
 <ReleaseNotes><![CDATA[

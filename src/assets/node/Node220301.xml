@@ -20,20 +20,19 @@
 This simple demo illustrates basic use of the PureMVC framework for ColdFusion. 
 ]]></Description>						
 
-<ReleaseNotes><![CDATA[<B>Features in Version 1.0</B>
-  * Simple test of the framework.
+<ReleaseNotes><![CDATA[
+<B>Features in Version 1.0</B>
+<UL><LI>Simple test of the framework in a ColdFusion application.</LI></UL> 
 ]]></ReleaseNotes>						
-
-<Installation><![CDATA[<B>Installing the Project Source Code</B>
+										
+<Installation><![CDATA[
+<B>Installing the Project Source Code</B>
 <U>From the archive</U>
-  * Download the latest source code archive.
-  * Unzip the source code zip to any folder on your disk. 
-	For instance: c:\development\
-  * You will see a HelloWorld_X_Y (where X_Y is version) source folder. 
-	For instance: c:\development\HelloWorld_X_Y 
-
-<U>From the Repository</U>
-  * Use your  favorite SVN client to retrieve the latest source code release from the repository. 
+<UL><LI>Download the latest source code archive</LI>
+<LI>Unzip the source code zip to any folder on your disk. For instance: </LI> 
+c:\development\
+<LI>You will see a HelloWorld_X_Y (where X_Y is version) source folder. For instance: </LI></UL>  
+c:\development\HelloWorld_X_Y 
 ]]></Installation>												
 
 		</Project>

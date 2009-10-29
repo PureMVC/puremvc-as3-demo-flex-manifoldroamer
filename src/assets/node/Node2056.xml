@@ -16,7 +16,8 @@
 			pic="PureMVC-Framework-AS3-MC.png">
 
 <Description><![CDATA[
-PureMVC is a lightweight framework for creating applications based upon the classic  Model-View-Controller design meta-pattern. This is an implementation for the AS3 language, which supports multiple PureMVC Cores through the use of Multitons instead of Singletons.
+PureMVC is a lightweight framework for creating applications based upon the classic  Model-View-Controller design meta-pattern. 
+This is an implementation for the AS3 language, which supports multiple PureMVC Cores through the use of Multitons instead of Singletons.
 ]]></Description>						
 
 <ReleaseNotes><![CDATA[<B>Summary of Changes in 1.0.5</B>
