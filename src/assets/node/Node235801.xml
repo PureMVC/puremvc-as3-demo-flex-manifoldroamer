@@ -19,22 +19,24 @@
 This demo illustrates techniques for performing routine maintenance operations in a PureMVC-based Java/GWT application. 
 ]]></Description>						
 
-<ReleaseNotes><![CDATA[<B>Features in Version 1.0</B>
-  * A port of the classic EmployeeAdmin Demo for ActionScript3
-  * Uses the  Google Web Toolkit (GWT) for UI components.
+<ReleaseNotes><![CDATA[
+<B>Features in Version 1.0</B>
+<UL><LI>A port of the classic EmployeeAdmin Demo for ActionScript3</LI>
+<LI>Uses the  Google Web Toolkit (GWT) for UI components.</LI></UL> 
 ]]></ReleaseNotes>						
-
-<Installation><![CDATA[<B>Installing the Project Source Code</B>
-<U>From the Archive</U>
-  * Download the latest source code archive.
-  * Unzip the source code zip to any folder on your disk. 
-  	For instance: c:\development\
-  * You will see a EmployeeAdmin_X_Y (where X_Y is version) source folder. 
-  	For instance: c:\development\EmployeeAdmin_X_Y  
-
+												
+<Installation><![CDATA[
+<B>Installing the Project Source Code</B>
+<U>From the archive</U>
+<UL><LI>Download the latest source code archive</LI>
+<LI>Unzip the source code zip to any folder on your disk. For instance: </LI> 
+c:\development\
+<LI>You will see a EmployeeAdmin_X_Y (where X_Y is version) source folder. For instance: </LI></UL>  
+c:\development\EmployeeAdmin_X_Y 
 <U>From the Repository</U>
-  * Use your favorite SVN client to retrieve the latest source code release from the repository. 
-]]></Installation>												
+<UL><LI>Use your  favorite SVN client to retrieve the latest source code release from the repository. </LI></UL> 
+]]></Installation>	
+
 		</Project>
 	</NodeMap>
 </Node>

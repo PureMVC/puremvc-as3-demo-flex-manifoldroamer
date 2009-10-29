@@ -20,27 +20,27 @@
 This demo illustrates the use of Haxe to cross-compile an application for Flash 8, Flash 9 and JavaScript from the same source code, and then to communicate with each from external JavaScript code.   
 ]]></Description>						
 
-<ReleaseNotes><![CDATA[<B>Features in Version 1.0</B>
-I've left the demo to his bare minimum, so this demo is about js/flash communication (and not about js/swf file loading/sync). If you experience some problem (i.e.: some boxes nor moving), try just refreshing the page.
-
-Writing a multiplatform application is very easy. Just follow the best pratices for any PureMVC application and go on writing the core. You can choose any platform as the basis (as for flash, versions 8/9 are are available as haxe remoting supports them only).
-
-The only difference from a 'traditional' application is that you have to consider the various views/uis in an abstract way.
-
-Enter PureMVC Mediators... As you'll see from the code the BoxMediator controls a BoxContainer type. The BoxContainer can be a real view component (in this example a js DOM element) or an "abstract" view component. In this example an abstract view is simply an external flash application with a box drawn on it. Communication is then obtained using haxe remoting.
+<ReleaseNotes><![CDATA[
+<B>Features in Version 1.0</B>
+<UL><LI>I've left the demo to his bare minimum, so this demo is about js/flash communication (and not about js/swf file loading/sync). If you experience some problem (i.e.: some boxes nor moving), try just refreshing the page.</LI>
+<LI>Writing a multiplatform application is very easy. Just follow the best pratices for any PureMVC application and go on writing the core. You can choose any platform as the basis (as for flash, versions 8/9 are are available as haxe remoting supports them only).</LI>
+<LI>The only difference from a 'traditional' application is that you have to consider the various views/uis in an abstract way.</LI>
+<LI>Enter PureMVC Mediators... As you'll see from the code the BoxMediator controls a BoxContainer type. The BoxContainer can be a real view component (in this example a js DOM element) or an "abstract" view component. In this example an abstract view is simply an external flash application with a box drawn on it. Communication is then obtained using haxe remoting.</LI></UL>
 
  ]]></ReleaseNotes>	
 
-<Installation><![CDATA[<B>Installing the Project Source Code</B>
+<Installation><![CDATA[
+<B>Prerequisites</B>
+<UL><LI>You must have <font color="#0000FF"><A href="http://haxe.org" target="_blank">Haxe 2</A></font> installed.</LI></UL>
+<B>Installing the Project Source Code</B>
 <U>From the archive</U>
-  * Download the latest source code archive.
-  * Unzip the source code zip to any folder on your disk. 
-	For instance: c:\development\
-  * You will see a MultiplatformComm_X_Y (where X_Y is version) source folder. 
-	For instance: c:\development\MultiplatformComm_X_Y 
-
+<UL><LI>Download the latest source code archive</LI>
+<LI>Unzip the source code zip to any folder on your disk. For instance: </LI> 
+c:\development\
+<LI>You will see a MultiplatformComm_X_Y (where X_Y is version) source folder. For instance: </LI></UL>  
+c:\development\MultiplatformComm_X_Y 
 <U>From the Repository</U>
-  * Use your  favorite SVN client to retrieve the latest source code release from the repository. 
+<UL><LI>Use your  favorite SVN client to retrieve the latest source code release from the repository. </LI></UL> 
 ]]></Installation>												
 
 		</Project>

@@ -14,60 +14,63 @@
 			owner_node="321"
 			pic="PureMVC-Framework-Haxe-Std.png">
 
-<Description><![CDATA[<P>PureMVC is a lightweight framework for creating applications based upon the classic  Model-View-Controller design meta-pattern. This is the specific implementation of the Standard Version for the Haxe platform.</P>]]></Description>						
+<Description><![CDATA[
+PureMVC is a lightweight framework for creating applications based upon the classic  Model-View-Controller design meta-pattern. 
+This is the specific implementation of the Standard Version for the Haxe platform.
+]]></Description>						
 
-<ReleaseNotes><![CDATA[<B>Summary of Changes in 1.2</B>
-    * Libraries now include version number. - CLH 
+<ReleaseNotes><![CDATA[
+<B>Summary of Changes in 1.2</B>
+<UL><LI>Libraries now include version number. - CLH </LI></UL>
 
 <B>Summary of Changes in 1.1.1</B>
-    * Alignment to pureMVC (AS3) 2.0.4.
-    * Disallowed re-registration of Mediators in View.registerMediator.
-    * Modified View.notifyObservers to notify from a copy of the observer list rather than the actual observer list, which may change during the notification loop. 
+<UL><LI>Alignment to pureMVC (AS3) 2.0.4.</LI>
+<LI>Disallowed re-registration of Mediators in View.registerMediator.</LI>
+<LI>Modified View.notifyObservers to notify from a copy of the observer list rather than the actual observer list, which may change during the notification loop. </LI></UL>
 
 <B>Summary of Changes in 1.1</B>
-    * Haxe 2.0 compatibility. This version is no longer compatible with older versions of Haxe. 
+<UL><LI>Haxe 2.0 compatibility. This version is no longer compatible with older versions of Haxe. </LI></UL>
 
 <B>Summary of Changes in 1.0.4</B>
-    * Unit Tests removed from project and moved to their own repository. 
+<UL><LI>Unit Tests removed from project and moved to their own repository. </LI></UL>
 
 <B>Summary of Changes in 1.0.3</B>
-    * Removed bug with removing and re-registering Commands originated from the AS3 porting.
-    * Added missing testReregisterAndExecuteCommand test.
-    * Refactoring of core elements moved at 'core' package level. Unit tests updated accordingly.
-    * Added binaries for flas6-9 and compiled code for javascript. This is particularly useful if you want to use pureMVC with javascript without haXe.
-    * Unit tests now run on all supported platforms.
-    * Change skin for API docs. 
+<UL><LI>Removed bug with removing and re-registering Commands originated from the AS3 porting.</LI>
+<LI>Added missing testReregisterAndExecuteCommand test.</LI>
+<LI>Refactoring of core elements moved at 'core' package level. Unit tests updated accordingly.</LI>
+<LI>Added binaries for flas6-9 and compiled code for javascript. This is particularly useful if you want to use pureMVC with javascript without haXe.</LI>
+<LI>Unit tests now run on all supported platforms.</LI>
+<LI>Change skin for API docs. </LI></UL>
 
 <B>Summary of Changes in 1.0.2</B>
-    * Alignment to pureMVC 2.0.3 (AS3) 
-    * Added notifyObservers to IFacade, where it is required if you are sending custom Notifications. No unit tests required. 
-    * Refactored View.removeMediator method, moving the logic for removing an observer into a removeObserver method (also on IView), which is now called by the Controller.removeCommand method as well as the view.removeMediator method.
-    * The Model.removeProxy method only attempts to remove the Proxy if it is registered. 
+<UL><LI>Alignment to pureMVC 2.0.3 (AS3) </LI>
+<LI>Added notifyObservers to IFacade, where it is required if you are sending custom Notifications. No unit tests required. </LI>
+<LI>Refactored View.removeMediator method, moving the logic for removing an observer into a removeObserver method (also on IView), which is now called by the Controller.removeCommand method as well as the view.removeMediator method.</LI>
+<LI>The Model.removeProxy method only attempts to remove the Proxy if it is registered. </LI></UL>
 
 <B>Summary of Changes in 1.0.1</B>
-    * Removed demos. Their are moved to their own repositories.
-    * Added compiled unit tests bin for all supported platform and instructions on how to run them.
-    * A couple of bugfixes on tests (not in the framework) to make them cross-platform. 
+<UL><LI>Removed demos. Their are moved to their own repositories.</LI>
+<LI>Added compiled unit tests bin for all supported platform and instructions on how to run them.</LI>
+<LI>A couple of bugfixes on tests (not in the framework) to make them cross-platform. </LI></UL>
 
 <B>Version 1.0</B>
-    * First official release on PureMVC.org for haXe.
-    * Framework source, Demos and Docs are all in the same project with build files for each. These need to be refactored into separate projects and with directions for building when the framework source referenced from an installed location rather than being included along with each project's source. 
+<UL><LI>First official release on PureMVC.org for haXe.</LI>
+<LI>Framework source, Demos and Docs are all in the same project with build files for each. These need to be refactored into separate projects and with directions for building when the framework source referenced from an installed location rather than being included along with each project's source.</LI></UL> 
 ]]></ReleaseNotes>						
     
-<Installation><![CDATA[<B>Prerequisites</B>
-    * You must have Haxe 2 installed. -  <A href="http://haxe.org">http://haxe.org</A> 
-
+<Installation><![CDATA[
+<B>Prerequisites</B>
+<UL><LI>You must have <font color="#0000FF"><A href="http://haxe.org" target="_blank">Haxe 2</A></font> installed.</LI></UL>
 <B>Installing the Project Source Code</B>
-    * <U>From the archive</U>
-          * Download the latest source code archive.
-          * Unzip the source code zip to any folder on your disk. 
-            For instance: c:\development\
-          * You will see a PureMVC_Haxe_X_Y (where X_Y is version) source folder.
-            For instance: c:\development\PureMVC_Haxe_X_Y 
-
-    * <U>From the Repository</U>
-          * Use your  favorite SVN client to retrieve the latest source code release from the repository.
-]]></Installation>
+<U>From the archive</U>
+<UL><LI>Download the latest source code archive</LI>
+<LI>Unzip the source code zip to any folder on your disk. For instance: </LI> 
+c:\development\
+<LI>You will see a PureMVC_Haxe_X_Y (where X_Y is version) source folder. For instance: </LI></UL>  
+c:\development\PureMVC_Haxe_X_Y 
+<U>From the Repository</U>
+<UL><LI>Use your  favorite SVN client to retrieve the latest source code release from the repository. </LI></UL> 
+]]></Installation>												
 												
 			</Project>
 	</NodeMap>

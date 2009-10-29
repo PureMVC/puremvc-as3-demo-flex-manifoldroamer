@@ -14,36 +14,53 @@
 			owner="Marco Secchi"
 			owner_node="321"
 			pic="PureMVC-Framework-Haxe-Std.png">
-<Description><![CDATA[These are the unit tests for the current release of the PureMVC Standard Framework for Haxe.]]></Description>						
+<Description><![CDATA[
+These are the unit tests for the current release of the PureMVC Standard Framework for Haxe.
+]]></Description>						
 
-<ReleaseNotes><![CDATA[<B>Features in Version 1.2</B>
-    * Unit tests for 1.2 version of Standard framework. This release include tests for all supported platforms. 
+<ReleaseNotes><![CDATA[
+<B>Features in Version 1.2</B>
+<UL><LI>Unit tests for 1.2 version of Standard framework. This release include tests for all supported platforms. </LI></UL>
 ]]></ReleaseNotes>						
 
-<Installation><![CDATA[<B>Prerequisites</B>
-    * You must have you must have  Haxe installed.
-    * You must have the latest release of PureMVC Framework for haXe installed.
-    * You may optionally have  NekoVM installed. 
+<Installation><![CDATA[
+<B>Prerequisites</B>
+<UL><LI>You must have <font color="#0000FF"><A href="http://haxe.org" target="_blank">Haxe 2</A></font> installed.</LI>
+<LI>You must have the latest release of PureMVC Framework for haXe installed.</LI>
+<LI>You may optionally have <font color="#0000FF"><A href="http://nekovm.org" target="_blank">NekoVM</A></font> installed.</LI></UL>
+
+<B>Installing the Project Source Code</B>
+<U>From the archive</U>
+<UL><LI>Download the latest source code archive</LI>
+<LI>Unzip the source code zip to any folder on your disk. For instance: </LI> 
+c:\development\
+<LI>You will see a PureMVC_Haxe_UnitTests_X_Y (where X_Y is version) source folder. For instance: </LI></UL>  
+c:\development\PureMVC_Haxe_UnitTests_X_Y 
+<U>From the Repository</U>
+<UL><LI>Use your  favorite SVN client to retrieve the latest source code release from the repository. </LI></UL> 
 
 <B>Compiling the Unit Tests</B>
-    * Edit the build_tests.hxml file:
-          * Find the lines with '# -cp path to PureMVC'
-          * Replace 'path to PureMVC' with the absolute location of the PureMVC source folder on your system
-          * Uncomment the line (remove the leading #)
-          * Save the file. 
-    * Open terminal and change the directory path to the PureMVC folder.
-    * Next type 'haxe build_test.hxml'
-    * On Windows systems you can simply double-click on the 'build_test.hxml' file. 
+<UL><LI>Edit the build_tests.hxml file</LI>
+<LI>Find the lines with '# -cp path to PureMVC'</LI>
+<LI>Replace 'path to PureMVC' with the absolute location of the PureMVC source folder on your system</LI>
+<LI>Uncomment the line (remove the leading #)</LI>
+<LI>Save the file. </LI>
+<LI>Open terminal and change the directory path to the PureMVC folder.</LI>
+<LI>Next type 'haxe build_test.hxml'</LI>
+<LI>On Windows systems you can simply double-click on the 'build_test.hxml' file.  </LI></UL>
 
 <B>Running Unit Tests</B>
 You can run unit tests for all supported platforms:
-    * Flash 6, 7, 8, 9:
-          * Open the 'indexFl.html' file located in 'test_deploy' 
-    * JavaScript:
-          * Open the 'indexJs.html' file located in 'test_deploy' (there seems to be a bug on Safari and test messages are not traced) 
-    * Neko:
-          * Open terminal and change the direcotry path to the 'test_deploy' folder.
-          * Next type 'neko testRunner.n' ]]></Installation>												
+<U>Flash 6, 7, 8, 9:</U>
+<UL><LI>Open the 'indexFl.html' file located in 'test_deploy' </LI></UL>
+
+<U>JavaScript:</U>
+<UL><LI>Open the 'indexJs.html' file located in 'test_deploy' (there seems to be a bug on Safari and test messages are not traced) </LI></UL>
+
+<U>Neko:</U>
+<UL><LI>Open terminal and change the direcotry path to the 'test_deploy' folder.</LI>
+<LI>Next type 'neko testRunner.n' </LI></UL>
+]]></Installation>												
 			</Project>
 	</NodeMap>
 </Node>

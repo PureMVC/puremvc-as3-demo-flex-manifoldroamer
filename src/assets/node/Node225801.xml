@@ -20,23 +20,26 @@
 This demo illustrates the use of the StateMachine Utility to define and navigate the states of a Finite State Machine or FSM of a working StopWatch. Xinf is used for the user interface.  
 ]]></Description>						
 
-<ReleaseNotes><![CDATA[<B>Features in Version 1.0</B>
-  * A port of the StopWatch Demo for ActionScript 3
-  * Standard and MultiCore versions are included.
-  * Uses the PureMVC / Haxe StateMachine Utility
-  * <font color="#0000FF"><a href="http://xinf.org/" target="_blank">Xinf</a></font> is used for the user interface. 
+<ReleaseNotes><![CDATA[
+<B>Features in Version 1.0</B>
+<UL><LI>A port of the StopWatch Demo for ActionScript 3</LI>
+<LI>Uses the PureMVC / Haxe StateMachine Utility</LI>
+<LI>Standard and MultiCore versions are included.</LI>
+<LI><font color="#0000FF"><a href="http://xinf.org/" target="_blank">Xinf</a></font> is used for the user interface. </LI></UL>
 ]]></ReleaseNotes>						
 
-<Installation><![CDATA[<B>Installing the Project Source Code</B>
+<Installation><![CDATA[
+<B>Prerequisites</B>
+<UL><LI>You must have <font color="#0000FF"><A href="http://haxe.org" target="_blank">Haxe 2</A></font> installed.</LI></UL>
+<B>Installing the Project Source Code</B>
 <U>From the archive</U>
-  * Download the latest source code archive.
-  * Unzip the source code zip to any folder on your disk. 
-	For instance: c:\development\
-  * You will see a StopWatch_X_Y (where X_Y is version) source folder. 
-	For instance: c:\development\StopWatch_X_Y 
-
+<UL><LI>Download the latest source code archive</LI>
+<LI>Unzip the source code zip to any folder on your disk. For instance: </LI> 
+c:\development\
+<LI>You will see a Demo_Haxe_Xinf_StopWatch_X_Y (where X_Y is version) source folder. For instance: </LI></UL>  
+c:\development\Demo_Haxe_Xinf_StopWatch_X_Y 
 <U>From the Repository</U>
-  * Use your  favorite SVN client to retrieve the latest source code release from the repository. 
+<UL><LI>Use your  favorite SVN client to retrieve the latest source code release from the repository. </LI></UL> 
 ]]></Installation>												
 
 		</Project>

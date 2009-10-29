@@ -21,24 +21,22 @@ This utility adds undo / redo capability to your PureMVC Haxe application.
 ]]></Description>						
 
 <ReleaseNotes><![CDATA[<B>Features in Version 1.1</B>
-  * A port of the Undo Utility for ActionScript 3
-  * Standard and MultiCore versions are included.
+<UL><LI>A port of the Undo Utility for ActionScript 3</LI>
+<LI>Standard and MultiCore versions are included.</LI></UL>
 ]]></ReleaseNotes>						
 
-<Installation><![CDATA[<B>Prerequisites</B>
-    * You must have <font color="#0000FF"><a href="http://haxe.org/" target="_blank">Haxe</A></font> installed.
-    * You must have PureMVC Haxe Standard or MultiCore installed. 
-    
+<Installation><![CDATA[
+<B>Prerequisites</B>
+<UL><LI>You must have <font color="#0000FF"><A href="http://haxe.org" target="_blank">Haxe 2</A></font> installed.</LI></UL>
 <B>Installing the Project Source Code</B>
 <U>From the archive</U>
-  * Download the latest source code archive.
-  * Unzip the source code zip to any folder on your disk. 
-	For instance: c:\development\
-  * You will see a Undo_X_Y (where X_Y is version) source folder. 
-	For instance: c:\development\Undo_X_Y 
-
+<UL><LI>Download the latest source code archive</LI>
+<LI>Unzip the source code zip to any folder on your disk. For instance: </LI> 
+c:\development\
+<LI>You will see a Undo_X_Y (where X_Y is version) source folder. For instance: </LI></UL>  
+c:\development\Undo_X_Y 
 <U>From the Repository</U>
-  * Use your  favorite SVN client to retrieve the latest source code release from the repository. 
+<UL><LI>Use your  favorite SVN client to retrieve the latest source code release from the repository. </LI></UL> 
 ]]></Installation>												
 
 		</Project>

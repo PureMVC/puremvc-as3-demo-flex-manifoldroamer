@@ -14,32 +14,35 @@
 			owner_node="328"
 			pic="PureMVC-Framework-Java-Std.png">
 			
-<Description><![CDATA[PureMVC is a lightweight framework for creating applications based upon the classic  Model-View-Controller design meta-pattern. This is the specific implementation for the Java language. See the Release Notes for this version for differences from the reference implementation. 
+<Description><![CDATA[
+PureMVC is a lightweight framework for creating applications based upon the classic Model-View-Controller design meta-pattern. 
+This is the specific implementation for the Java language. 
 ]]></Description>			
 			
-<ReleaseNotes><![CDATA[<B>Summary of Changes in 0.3</B>
-   * Junit tests from Futurescale have been added. 
-   * build.xml file was refactored to make easier to build modules. 
-   * New Project Owner: Donald Stinchfield 
+<ReleaseNotes><![CDATA[
+<B>Summary of Changes in 0.3</B>
+<UL><LI>JUnit tests from Futurescale have been added. </LI> 
+<LI>build.xml file was refactored to make easier to build modules. </LI>
+<LI>New Project Owner: Donald Stinchfield </LI></UL> 
 
 <B>Summary of Changes in 0.2</B>
-   * Current version is partially compatible with AS3 version 2.0.1
-   * Still needs onRegister/onRemove in Mediators and Proxies, and a few other things. 
-   * Added JavaDocs.
-   * Contribution of original port by: Thomas Schuessler, Michael Watzek, Philipp Hemker, and Jan Grimmer 
+<UL><LI>Current version is partially compatible with AS3 version 2.0.1</LI>
+<LI>Still needs onRegister/onRemove in Mediators and Proxies, and a few other things. </LI>
+<LI>Added JavaDocs.</LI>
+<LI>Contribution of original port by: Thomas Schuessler, Michael Watzek, Philipp Hemker, and Jan Grimmer </LI></UL> 
 ]]></ReleaseNotes>		
 				
-<Installation><![CDATA[<B>Installing the Project Source Code</B>
-    * <U>From the archive</U>
-          * Download the latest source code archive.
-          * Unzip the source code zip to any folder on your disk. 
-            For instance: c:\development\
-          * You will see a PureMVC_Java_X_Y (where X_Y is version) source folder. 
-            For instance: c:\development\PureMVC_Java_X_Y 
-
-    * <U>From the Repository</U>
-          * Use your  favorite SVN client to retrieve the latest source code release from the repository. 
-]]></Installation>			
+<Installation><![CDATA[
+<B>Installing the Project Source Code</B>
+<U>From the archive</U>
+<UL><LI>Download the latest source code archive</LI>
+<LI>Unzip the source code zip to any folder on your disk. For instance: </LI> 
+c:\development\
+<LI>You will see a PureMVC_Java_X_Y (where X_Y is version) source folder. For instance: </LI></UL>  
+c:\development\PureMVC_Java_X_Y 
+<U>From the Repository</U>
+<UL><LI>Use your  favorite SVN client to retrieve the latest source code release from the repository. </LI></UL> 
+]]></Installation>												
 									
 			</Project>
 	</NodeMap>

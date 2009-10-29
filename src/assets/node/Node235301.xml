@@ -19,26 +19,27 @@
 This demo illustrates the use of the PureMVC framework within Java ME. It is a simple application that displays a splash screen, login screen and main screen. 
 ]]></Description>						
 
-<ReleaseNotes><![CDATA[<B>Features in Version 1.0</B>
-  * This example can be used as the basis to any mobile Java project. 
-  * Currently the application uses version 0.2 of the PureMVC Standard Version for Java.
+<ReleaseNotes><![CDATA[
+<B>Features in Version 1.0</B>
+<UL><LI>This example can be used as the basis to any mobile Java project. </LI>
+<LI>Currently the application uses version 0.2 of the PureMVC Standard Version for Java.</LI></UL>
 ]]></ReleaseNotes>						
 
-<Installation><![CDATA[<B>Prerequisites</B>
+<Installation><![CDATA[
+<B>Prerequisites</B>
 <U>You must have a wireless toolkit</U>
-  * <font color="#0000FF"><A href="http://java.sun.com/javame/downloads/index.jsp" target="_blank">Sun Java Wireless Toolkit 2.5.2 for CLDC</A></font> 
-  * <font color="#0000FF"><A href="http://developer.sprint.com/site/global/develop/mobile_platforms/java_me/javame.jsp" target="_blank">Sprint Wireless Toolkit</A></font> 
+<UL><LI><font color="#0000FF"><A href="http://java.sun.com/javame/downloads/index.jsp" target="_blank">Sun Java Wireless Toolkit 2.5.2 for CLDC</A></font> </LI> 
+<LI><font color="#0000FF"><A href="http://developer.sprint.com/site/global/develop/mobile_platforms/java_me/javame.jsp" target="_blank">Sprint Wireless Toolkit</A></font> </LI></UL>
 
 <B>Installing the Project Source Code</B>
 <U>From the archive</U>
-  * Download the latest source code archive.
-  * Unzip the source code zip to any folder on your disk. 
-	For instance: c:\development\
-  * You will see a Login_X_Y (where X_Y is version) source folder. 
-	For instance: c:\development\Login_X_Y 
-
+<UL><LI>Download the latest source code archive</LI>
+<LI>Unzip the source code zip to any folder on your disk. For instance: </LI> 
+c:\development\
+<LI>You will see a Login_X_Y (where X_Y is version) source folder. For instance: </LI></UL>  
+c:\development\Login_X_Y 
 <U>From the Repository</U>
-  * Use your  favorite SVN client to retrieve the latest source code release from the repository. 
+<UL><LI>Use your  favorite SVN client to retrieve the latest source code release from the repository. </LI></UL> 
 ]]></Installation>												
 
 		</Project>

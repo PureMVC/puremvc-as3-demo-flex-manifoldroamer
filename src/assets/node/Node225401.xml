@@ -20,29 +20,27 @@
 The AsyncCommand utility offers a solution to the problem of executing a series of commands each of which may need to complete one or more asynchronous operations before the next command is executed. 
 ]]></Description>						
 
-<ReleaseNotes><![CDATA[<B>Features in Version 1.0</B>
-  * A port of the AsyncCommand Utility for ActionScript 3
-  * IAsyncCommand interface defines the methods required for an asynchronous command, which at the moment is only setOnComplete, which sets a callback method for the IAsyncCommand implementer to call when it has completed its task.
-  * AsyncCommand class extends the framework SimpleCommand class and implements IAsyncCommand.
-  * AsyncMacroCommand class extends Notifier and implements IAsyncCommand. Accepts IAsyncCommands or ICommands for subcommands. This means any combination of SimpleCommand, MacroCommand, AsyncCommand or AsyncMacroCommand.
-  * Standard and MultiCore versions included. 
-  * Standard and MultiCore versions are included.
+<ReleaseNotes><![CDATA[
+<B>Features in Version 1.0</B>
+<UL><LI>A port of the AsyncCommand Utility for ActionScript 3</LI>
+<LI>IAsyncCommand interface defines the methods required for an asynchronous command, which at the moment is only setOnComplete, which sets a callback method for the IAsyncCommand implementer to call when it has completed its task.</LI>
+<LI>AsyncCommand class extends the framework SimpleCommand class and implements IAsyncCommand.</LI>
+<LI>AsyncMacroCommand class extends Notifier and implements IAsyncCommand. Accepts IAsyncCommands or ICommands for subcommands. This means any combination of SimpleCommand, MacroCommand, AsyncCommand or AsyncMacroCommand.</LI>
+<LI>Standard and MultiCore versions are included.</LI></UL>
 ]]></ReleaseNotes>						
 
-<Installation><![CDATA[<B>Prerequisites</B>
-    * You must have <font color="#0000FF"><a href="http://haxe.org/" target="_blank">Haxe</A></font> installed.
-    * You must have PureMVC Haxe Standard or MultiCore installed. 
-    
+<Installation><![CDATA[
+<B>Prerequisites</B>
+<UL><LI>You must have <font color="#0000FF"><A href="http://haxe.org" target="_blank">Haxe 2</A></font> installed.</LI></UL>
 <B>Installing the Project Source Code</B>
 <U>From the archive</U>
-  * Download the latest source code archive.
-  * Unzip the source code zip to any folder on your disk. 
-	For instance: c:\development\
-  * You will see a AsyncCommand_X_Y (where X_Y is version) source folder. 
-	For instance: c:\development\AsyncCommand_X_Y 
-
+<UL><LI>Download the latest source code archive</LI>
+<LI>Unzip the source code zip to any folder on your disk. For instance: </LI> 
+c:\development\
+<LI>You will see a AsyncCommand_X_Y (where X_Y is version) source folder. For instance: </LI></UL>  
+c:\development\AsyncCommand_X_Y 
 <U>From the Repository</U>
-  * Use your  favorite SVN client to retrieve the latest source code release from the repository. 
+<UL><LI>Use your  favorite SVN client to retrieve the latest source code release from the repository. </LI></UL> 
 ]]></Installation>												
 
 		</Project>

@@ -15,24 +15,27 @@
 			owner_node="329"
 			pic="PureMVC-Framework-Java-MC.png">
 
-<Description><![CDATA[ These are the unit tests for the PureMVC MultiCore Version for Java. 
+<Description><![CDATA[ 
+These are the unit tests for the PureMVC MultiCore Version for Java. 
 ]]></Description>			
 			
-<ReleaseNotes><![CDATA[These are the standard JUnit Tests.
-]]></ReleaseNotes>			
-			
-<Installation><![CDATA[<B>Installing the Project Source Code</B>
+<ReleaseNotes><![CDATA[
+<B>Features in 1.0.6</B>
+<UL><LI>A port of the unit tests for the AS3 MultiCore Version </LI> 
+<LI>These are standard JUnit Tests.</LI></UL>
+]]></ReleaseNotes>				
+
+<Installation><![CDATA[
+<B>Installing the Project Source Code</B>
 <U>From the archive</U>
-   * Download the latest source code archive.
-   * Unzip the source code zip to any folder on your disk. 
-     * For instance: c:\development\
-   * You will see a PureMVC_Java_MultiCore_UnitTests_X_Y (where X_Y is version) source folder. 
-     * For instance: c:\development\PureMVC_Java_MultiCore_UnitTests_X_Y 
-
+<UL><LI>Download the latest source code archive</LI>
+<LI>Unzip the source code zip to any folder on your disk. For instance: </LI> 
+c:\development\
+<LI>You will see a PureMVC_Java_MultiCore_UnitTests_X_Y (where X_Y is version) source folder. For instance: </LI></UL>  
+c:\development\PureMVC_Java_MultiCore_UnitTests_X_Y 
 <U>From the Repository</U>
-   * Use your  favorite SVN client to retrieve the latest source code release from the repository. 
+<UL><LI>Use your  favorite SVN client to retrieve the latest source code release from the repository. </LI></UL> 
 ]]></Installation>	
-
 			</Project>
 	</NodeMap>
 </Node>

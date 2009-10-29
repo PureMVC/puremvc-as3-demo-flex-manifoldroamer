@@ -14,33 +14,38 @@
 			owner_node="321"
 			pic="PureMVC-Framework-Haxe-MC.png">
 
-<Description><![CDATA[PureMVC is a lightweight framework for creating applications based upon the classic  Model-View-Controller design meta-pattern. This is the specific implementation of the MultiCore version for the Haxe platform.]]></Description>						
+<Description><![CDATA[
+PureMVC is a lightweight framework for creating applications based upon the classic  Model-View-Controller design meta-pattern. 
+This is the specific implementation of the MultiCore version for the Haxe platform.
+]]></Description>						
 
-<ReleaseNotes><![CDATA[<B>Summary of Changes in 1.2</B>
-    * Libraries now include version number. - CLH 
+<ReleaseNotes><![CDATA[
+<B>Summary of Changes in 1.2</B>
+<UL><LI>Libraries now include version number. - CLH </LI></UL>
 
 <B>Summary of Changes in 1.1</B>
-    * Haxe 2.0 compatibility. This version is no longer compatible with older versions of Haxe. 
+<UL><LI>Haxe 2.0 compatibility. This version is no longer compatible with older versions of Haxe. </LI></UL>
 
 <B>Summary of Features in Version 1.0</B>
-    * First official release on PureMVC.org for haXe. .
-    * Compatible with AS3 MultiCore reference version 1.0.5 
+<UL><LI>First official release on PureMVC.org for Haxe. </LI>
+<LI>Compatible with AS3 MultiCore reference version 1.0.5 </LI></UL>
+
 ]]></ReleaseNotes>						
 
-<Installation><![CDATA[<B>Prerequisites</B>
-    * You must have Haxe 2 installed. -  <A href="http://haxe.org">http://haxe.org</A> 
-
+<Installation><![CDATA[
+<B>Prerequisites</B>
+<UL><LI>You must have <font color="#0000FF"><A href="http://haxe.org" target="_blank">Haxe 2</A></font> installed.</LI></UL>
 <B>Installing the Project Source Code</B>
-    * <U>From the archive</U>
-          * Download the latest source code archive.
-          * Unzip the source code zip to any folder on your disk. 
-            For instance: c:\development\
-          * You will see a PureMVC_Haxe_MultiCore_X_Y (where X_Y is version) source folder.
-            For instance: c:\development\PureMVC_Haxe_MultiCore_X_Y 
-
-    * <U>From the Repository</U>
-          * Use your  favorite SVN client to retrieve the latest source code release from the repository.
+<U>From the archive</U>
+<UL><LI>Download the latest source code archive</LI>
+<LI>Unzip the source code zip to any folder on your disk. For instance: </LI> 
+c:\development\
+<LI>You will see a PureMVC_Haxe_MultiCore_X_Y (where X_Y is version) source folder. For instance: </LI></UL>  
+c:\development\PureMVC_Haxe_MultiCore_X_Y 
+<U>From the Repository</U>
+<UL><LI>Use your  favorite SVN client to retrieve the latest source code release from the repository. </LI></UL> 
 ]]></Installation>												
+
 			</Project>
 	</NodeMap>
 </Node>

@@ -14,29 +14,33 @@
 			owner_node="329"
 			pic="PureMVC-Framework-Java-MC.png">
 			
-<Description><![CDATA[PureMVC is a lightweight framework for creating applications based upon the classic  Model-View-Controller design meta-pattern. This is a Java port of the AS3 reference implementation of the MultiCore Version. It supports modular programming through the use of Multiton Core actors (instead of the Singletons used in the Standard Version). 
+<Description><![CDATA[
+PureMVC is a lightweight framework for creating applications based upon the classic  Model-View-Controller design meta-pattern. 
+This is a Java port of the AS3 reference implementation of the MultiCore Version. 
+It supports modular programming through the use of Multiton Core actors (as opposed to the Singletons used in the Standard Version). 
 ]]></Description>			
 			
-<ReleaseNotes><![CDATA[<B>Summary of Changes thru 1.0.6</B>
-  * Collection are more generic
-  * Java 1.5
-  * Emulation of as3 capability to have more or less parameters.
+<ReleaseNotes><![CDATA[
+<B>Summary of Changes thru 1.0.6</B>
+<UL><LI>Collections are more generic</LI>
+<LI>Java 1.5</LI>
+<LI>Emulation of as3 capability to have more or less parameters.</LI></UL>
 
 <B>Features in 1.0</B>
-   * Implements the features of the PureMVC AS3 MultiCore Reference Implementation 1.0.5
+<UL><LI>Implements the features of the PureMVC AS3 MultiCore Reference Implementation 1.0.5</LI></UL>  
 
 ]]></ReleaseNotes>			
 			
-<Installation><![CDATA[<B>Installing the Project Source Code</B>
+<Installation><![CDATA[
+<B>Installing the Project Source Code</B>
 <U>From the archive</U>
-   * Download the latest source code archive.
-   * Unzip the source code zip to any folder on your disk. 
-     * For instance: c:\development\
-   * You will see a PureMVC_Java_MultiCore_X_Y (where X_Y is version) source folder. 
-     * For instance: c:\development\PureMVC_Java_UnitTests_X_Y 
-
+<UL><LI>Download the latest source code archive</LI>
+<LI>Unzip the source code zip to any folder on your disk. For instance: </LI> 
+c:\development\
+<LI>You will see a PureMVC_Java_UnitTests_X_Y (where X_Y is version) source folder. For instance: </LI></UL>  
+c:\development\PureMVC_Java_UnitTests_X_Y 
 <U>From the Repository</U>
-   * Use your  favorite SVN client to retrieve the latest source code release from the repository. 
+<UL><LI>Use your  favorite SVN client to retrieve the latest source code release from the repository. </LI></UL> 
 ]]></Installation>	
 			</Project>
 	</NodeMap>

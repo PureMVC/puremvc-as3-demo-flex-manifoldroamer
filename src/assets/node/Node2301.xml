@@ -14,24 +14,28 @@
 			owner_node="326"
 			pic="PureMVC-Framework-JS-Std.png">
 
-<Description><![CDATA[PureMVC is a lightweight framework for creating applications based upon the classic  Model-View-Controller design meta-pattern. This is the specific implementation for the JavaScript language. See the Release Notes for this version for differences from the reference implementation.]]></Description>						
+<Description><![CDATA[
+PureMVC is a lightweight framework for creating applications based upon the classic Model-View-Controller design meta-pattern. 
+This is the specific implementation for the JavaScript language. 
+]]></Description>						
 
-<ReleaseNotes><![CDATA[<B>Features in 1.0</B>
-    * Fully-functional port of the PureMVC AS3 Standard Reference Version.
-    * Employee Admin demo fully reproduced. ]]></ReleaseNotes>						
+<ReleaseNotes><![CDATA[
+<B>Features in 1.0</B>
+<UL><LI>Fully-functional port of the PureMVC AS3 Standard Reference Version.</LI>
+<LI>Employee Admin demo fully reproduced. </LI></UL>  
+]]></ReleaseNotes>						
 
-<Installation><![CDATA[<B>Installing the Project Source Code</B>
+<Installation><![CDATA[
+<B>Installing the Project Source Code</B>
 <U>From the archive</U>
-  * Download the latest source code archive.
-  * Unzip the source code zip to any folder on your disk. 
-	For instance: c:\development\
-  * You will see a PureMVC_JS_X_Y (where X_Y is version) source folder. 
-	For instance: c:\development\PureMVC_JS_X_Y 
-
+<UL><LI>Download the latest source code archive</LI>
+<LI>Unzip the source code zip to any folder on your disk. For instance: </LI> 
+c:\development\
+<LI>You will see a PureMVC_JS_X_Y (where X_Y is version) source folder. For instance: </LI></UL>  
+c:\development\PureMVC_JS_X_Y 
 <U>From the Repository</U>
-  * Use your  favorite SVN client to retrieve the latest source code release from the repository. 
+<UL><LI>Use your  favorite SVN client to retrieve the latest source code release from the repository. </LI></UL> 
 ]]></Installation>												
-
 			</Project>
 	</NodeMap>
 </Node>
