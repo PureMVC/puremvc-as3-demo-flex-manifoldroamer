@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node id="205311" name="Hello Flash" thumb="box">	
+	<NodeMap>
+		<Project 
+			name="Hello Flash Demo for AS3" 
+			status="Production"
+			repo="Demo_AS3_Flash_HelloFlash" 
+			tag="HelloFlash_1_1"
+			version="1.1"
+			archive="AS3/Demo_AS3_Flash_HelloFlash.zip" 
+			srcview="http://puremvc.org/pages/demos/AS3/Demo_AS3_Flash_HelloFlash/srcview"
+			live="AS3/Demo_AS3_Flash_HelloFlash/"
+			forum="topic=268.0"
+			owner="Cliff Hall"
+			owner_node="300"
+			pic="PureMVC-Framework-AS3-Std.png"
+			shot="PureMVC-Shot-AS3-Flash-HelloFlash.png">
+			
+<Description><![CDATA[
+This demo illustrates the use of the PureMVC framework within a Flash application. A lonely little blue box appears, moving in a grey room. Interact with it.
+]]></Description>						
+
+<ReleaseNotes><![CDATA[
+<B>Summary of Changes in 1.1</B>
+<UL><LI>Migrated to PureMVC_AS3 2.0</LI></UL>
+
+<B>Features in Version 1.0</B>
+<UL><LI>Works with Flash CS3</LI>
+<LI>Starting the application via the ApplicationFacade on a 1-Frame Flash Movie</LI>
+<LI>Sending a Notification to trigger a Startup Command</LI>
+<LI>Initilializing the Model and View from a Command</LI>
+<LI>Dynamically created View Components and Mediators with unique instance names</LI>
+<LI>View components communicating with their Mediators</LI>
+<LI>Mediators communicating with a Proxy</LI>
+<LI>Use of a Proxy to hold Model data</LI>
+<LI>Mediators communicating with other Mediators via Notification </LI></UL>
+
+<U>Discussion</U>
+<UL><LI>A lonely little blue box appears, moving in a grey room. Interact with it.</LI>
+<LI>When it hits a wall it changes direction and shrinks.</LI>
+<LI>If you grab it and drag it around, diffrently colored boxes trail out going the opposite of the direction you drag.</LI>
+<LI>The colors are from a short palette of about 5 colors and they cycle.</LI>
+<LI>If you roll your mouse-wheel all the boxes scale up or down in size depending on the direction you scroll it. (Sorry Safari, Mac and Linux folks, I don't think Flash player supports your mousewheel yet.)</LI>
+<LI>When the boxes are all tiny, its hard to grab them, so you might scale them all up.</LI>
+<LI>Catch one and hold on to it. Allow the others to decay in size a bit by bouncing off the walls. Then drag around to emit some, let them decay, etc.</LI>
+<LI>Scale them up until they all look like a jigging mass of Jellotm. Then scroll farther, most wrap around and become small, but some stay large. Let them decay. </LI></UL>
+]]></ReleaseNotes>						
+
+<Installation><![CDATA[
+<B>Prerequisites</B>
+<UL><LI>First, make sure you have downloaded the PureMVC_AS3 framework and unzipped it to a folder on your hard disk (for instance: c:\development\PureMVC_AS3_X_Y where X_Y is the version)</LI></UL>
+<B>Installing the Project Source Code</B>
+<U>From the archive</U>
+<UL><LI>Download the latest source code archive.</LI>
+<LI>Unzip the source code zip to any folder on your disk.</LI> 
+<LI>For instance: c:\development\</LI>
+<LI>You will see a HelloFlash_X_Y (where X_Y is version) source folder.</LI> 
+<LI>For instance: c:\development\HelloFlash_X_Y</LI></UL>
+<U>From the Repository</U>
+<UL><LI>Use your  favorite SVN client to retrieve the latest source code release from the repository.</LI></UL>   
+<U>Setup and Compile the Demo Using Flex Builder 3</U>
+<UL><LI>Create a new ActionScript Project called 'HelloFlash' in Flex Builder 3, pointing to the new HelloFlash_X_Y source folder.</LI>
+<LI>Add the required libraries to the project's build path.</LI>
+<LI>From the Flex Builder menu do: Project -> Properties -> Flex Build Path -> Library Path -> Add SWC Folder</LI>
+<LI>Browse and select: PureMVC_AS3_X_Y/bin</LI>
+<LI>Run HelloFlash.as</LI></UL>  
+<U>Setup and Compile the Demo Using Flash CS3</U>
+<UL><LI>PureMVC-enable your Flash CS3 installation using the instructions contained in the text file in the HelloFlash_X_Y folder</LI>
+<LI>Open HelloFlash.fla</LI>
+<LI>Test the movie.</LI>
+<U>Note:</U>
+<LI>HelloFlash.fla has the same code on Frame 1 as the body of HelloFlash.as.</LI>
+<LI>You can remove the Frame 1 Actions and set HelloFlash.as to be the document class for the movie as well. </LI></UL>
+]]></Installation>												
+
+		</Project>
+	</NodeMap>
+</Node>
