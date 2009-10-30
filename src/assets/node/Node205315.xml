@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node id="205315" name="Bookstore" thumb="box">	
+	<NodeMap>
+		<Project 
+			name="Bookstore Demo for AS3" 
+			status="Production"
+			repo="Demo_AS3_Flex_WebORB_Bookstore" 
+			tag="Bookstore_1_2"
+			version="1.2"
+			archive="AS3/Demo_AS3_Flex_WebORB_Bookstore.zip" 
+			srcview="http://puremvc.org/pages/demos/AS3/Demo_AS3_Flex_WebORB_Bookstore/srcview"
+			live=""
+			forum="topic=171.0"
+			owner="David Deraedt"
+			owner_node="309"
+			pic="PureMVC-Framework-AS3-Std.png"
+			shot="PureMVC-Shot-AS3-Flex-BookStore.png">
+			
+<Description><![CDATA[
+This demo illustrates the use of WebORB with PureMVC to perform CRUD operations using a RemoteObject. 
+]]></Description>						
+
+<ReleaseNotes><![CDATA[
+<B>Summary of Changes in 1.2</B>
+<UL><LI>Removed most of the commands, and moved the RPC communication code to the Proxy.</LI>
+<LI>Changed the Mediators to have them directly call the remote Proxy.</LI></UL>
+
+<B>Summary of Changes in 1.1</B>
+<UL><LI>Updated to PureMVC 2.0.1 </LI>
+<U>Made several best practice related changes including:</U>
+<LI>Refactoring business under model where it is recommended for PureMVC</LI> 
+<LI>Renaming control to controller, renaming INIT_APP and InitAppCommand to STARTUP and StartupCommand</LI></UL>
+
+<B>Features in Version 1.0</B>
+<UL><LI>PureMVC initialization in a Flex application</LI>
+<LI>Call of an AMF Service using the RemoteObject class</LI>
+<LI>Use of a Value Object reflecting the server-side business object's data.</LI>
+<LI>Update of views as a consequence to those calls </LI></UL>
+
+<U>Discussion</U>
+<UL><LI>This demo was primary intented to understand the main differences between the PureMVC and Cairngorm frameworks regarding the architecture of a basic Flex Remoting application performing simple CRUD (Create Read Update Delete) operations. It uses a Bookstore as an illustration. A datagrid shows a list of Books. The user can select a Book, edit it, or delete it. He/She can also create new Books.</LI>
+<LI>This example uses Commands to call the Service methods and to listen to their response. To do so, the Commands additionally implement  IResponder, a Flex interface.</LI>
+<LI>When a response is received from the Service, the Commands send a Notification so that the views that display the corresponding are updated accordingly.</LI>
+<LI>Please note that this is not the recommended way to use remote Services with PureMVC. The best practices suggest that a Proxy (ie the Model layer), not a Command, should do this job. One of this example's goal is to show that it is also possible to do so the "Cairngorm way".</LI></UL> 
+]]></ReleaseNotes>						
+
+<Installation><![CDATA[
+<B>Installing the Project Source Code</B>
+<U>From the archive</U>
+<UL><LI>Download the latest source code archive.</LI>
+<LI>Unzip the source code zip to any folder on your disk.</LI> 
+<LI>For instance: c:\development\</LI>
+<LI>You will see a Bookstore_X_Y (where X_Y is version) source folder.</LI> 
+<LI>For instance: c:\development\Bookstore_X_Y</LI></UL>
+<U>From the Repository</U>
+<UL><LI>Use your  favorite SVN client to retrieve the latest source code release from the repository.</LI></UL>   
+<U>Add the Services</U>
+<UL><LI>The Service layer is written in PHP for use with WebORB PHP, but it should also work with very little changes with others AMF PHP Gateways like AMFPHP1.9 or SabreAMF.</LI>
+<LI>Copy all files located in folder named "Services" into {yourWebORBInstallationFolder}/Weborb/Services/</LI></UL> 
+<U>Setup and Compile the Demo Using Flex Builder 3</U>
+<UL><LI>Create a new Flex Project called 'Bookstore' in Flex Builder 3, pointing to the new Bookstore source folder.</LI>
+<LI>Set Application Server Type = ColdFusion</LI>
+<LI>Remote Object access service = ColdFusion Flash Remoting</LI>
+<LI>On the Configure ColdFusion page of the wizard, enter your ColdFusion root folder and web root.</LI>
+<LI>For the Output Folder browse to the server-based Bookstore folder you created above. </LI>
+<LI>Add the required libraries to the project's build path.</LI>
+<LI>From the Flex Builder menu do: Project -> Properties -> Flex Build Path -> Library Path -> Add SWC Folder</LI>
+<LI>Browse and select: Bookstore/libs</LI>
+<LI>Run Bookstore.mxml</LI></UL>  
+]]></Installation>												
+
+		</Project>
+	</NodeMap>
+</Node>

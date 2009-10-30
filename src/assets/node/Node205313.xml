@@ -54,7 +54,7 @@ This demo illustrates the use of Coldfusion with PureMVC to perform a file uploa
 <UL><LI>In the server root folder (typically wwwroot for ColdFusion) create a new folder named FileUpload for the server side script.</LI>
 <LI>Copy the contents of the Services folder from the distribution into the FileUpload folder on the server. </LI></UL> 
 <U>Setup and Compile the Demo Using Flex Builder 3</U>
-<UL><LI>Create a new Flex Project called 'RSSHeadlines' in Flex Builder 3, pointing to the new FileUpload_X_Y source folder.</LI>
+<UL><LI>Create a new Flex Project called 'FileUpload' in Flex Builder 3, pointing to the new FileUpload_X_Y source folder.</LI>
 <LI>Set Application Server Type = ColdFusion</LI>
 <LI>Remote Object access service = ColdFusion Flash Remoting</LI>
 <LI>On the Configure ColdFusion page of the wizard, enter your ColdFusion root folder and web root.</LI>
