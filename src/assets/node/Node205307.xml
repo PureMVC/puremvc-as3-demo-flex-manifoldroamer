@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node id="205307" name="Employee Admin" thumb="box">	
+	<NodeMap>
+		<Project 
+			name="Employee Admin Demo for AS3" 
+			status="Production"
+			repo="Demo_AS3_Flex_EmployeeAdmin" 
+			tag="EmployeeAdmin_1_3"
+			version="1.3"
+			archive="AS3/Demo_AS3_Flex_EmployeeAdmin.zip" 
+			srcview="http://puremvc.org/pages/demos/AS3/Demo_AS3_Flex_EmployeeAdmin/srcview"
+			live="AS3/Demo_AS3_Flex_EmployeeAdmin/"
+			forum="topic=175.0"
+			owner="Cliff Hall"
+			owner_node="300"
+			pic="PureMVC-Framework-AS3-Std.png"
+			shot="PureMVC-Shot-AS3-Flex-EmployeeAdmin.png">
+			
+<Description><![CDATA[
+This demo illustrates techniques for performing routine maintenance operations in a PureMVC-based Flex application. 
+]]></Description>						
+
+<ReleaseNotes><![CDATA[
+<B>Summary of Changes in 1.3</B>
+<UL><LI>Updated to 2.0.1 release of PureMVC</LI></UL>
+
+<B>Summary of Changes in 1.2</B>
+<UL><LI>Migrated to PureMVC 2.0</LI></UL>
+
+<B>Summary of Changes in 1.1</B>
+<UL><LI>Refactored to new package structure and implemented 'startup method on facade' idiom</LI></UL>
+
+<B>Features in Version 1.0</B>
+<UL><LI>Use of Enum and VO classes as data holders.</LI>
+<LI>Several interface elements responding to a single Notification.</LI>
+<LI>Data binding within custom Flex view components </LI></UL>
+    
+<U>Discussion</U>
+<UL><LI>The demo presents an user interface for adding, changing and deleting Users, as well as assigning or removing their Roles and changing the User's Department.</LI></UL>
+
+<U>Enums for Static Lists</U>
+<UL><LI>There are two lists within the demo Roles and Departments, represented within the system as with the classes RoleEnum and DepartmentEnum.</LI>
+<LI>These classes implement the Typesafe Enum pattern, which essentially gives you a list, but the ability to refer to the values in the list by constant name, which keeps you from making unexpected errors by mistyping a literal string that you may be matching against in code.</LI>
+<LI>This implementation also provides a handy functionality for including a comboList property that contains the list as prepared for use in a Flex ComboBox, with a NONE_SELECTED entry.</LI></UL>
+
+<U>Value Object (VO)</U>
+<UL><LI>The Users that are being edited are represented within the system as instances of the UserVO class.</LI>
+<LI>UserVO is just a data holder class that has properties for the user data. This system does not implement service interaction, but there are a number of ways that services are exposed for associations like the User's Roles.</LI>
+<LI>The Roles could appear on the UserVO as an Array Collection of RoleEnums. This would be straightforward to send the VO back and forth, but then the service has to inspect that ArrayCollection to see if it has changed when you send an updated VO back to the server.</LI>
+<LI>This is why some service implementations like to handle associations separately. This client maintains a separate list of RoleVO's in the RoleProxy, each of which merely tie a username to a Role. The RoleProxy would call a service when a new association is made or an existing one is broken, and the CRUD service for the User would not have to be heavier for having to manage this association.</LI></UL>
+
+<U>Dynamic Interface Configuration</U>
+<UL><LI>When you select a user in the UserList, an event is dispatched and heard by the UserListMediator, who sends a USER_SELECTED notification along with a reference to the UserVO that was selected.</LI>
+<LI>Rather than having some centralized Command that prepares the entire interface for editing the selected user, we simply let the Mediators for the UserForm and the RolePanel listen for the USER_SELECTED notification, and they configure themselves accordingly. In this way, each part of the interface is responsible for configuring itself in response to various user gestures, wherever they come from.</LI>
+<LI>Similarly, clicking the 'Update User' or 'Cancel' button on the UserForm causes the RolePanel and the UserList to reconfigure in response.</LI></UL>
+
+<U>Data Binding Inside View Components</U>
+<UL><LI>Many people ask about the role of Flex data binding inside a PureMVC application. This demo shows how to use data binding within a custom Flex view component to do a variety of things. The UserForm uses binding to populate the form fields as well as to handle button availability and labeling based upon locally kept state variables and expressions.</LI>
+<LI>Note that unlike other Flex-compatible frameworks, we do not bind to the Model from within our view component. The Mediator for the component sets a reference to the data object and then we bind locally to that reference. As a result, the view component has no dependencies to the PureMVC framework to which it is attached, only to the Value Object defined to shuttle data across tiers.</LI></UL> 
+]]></ReleaseNotes>						
+
+<Installation><![CDATA[
+<B>Installing the Project Source Code</B>
+<U>From the archive</U>
+<UL><LI>Download the latest source code archive.</LI>
+<LI>Unzip the source code zip to any folder on your disk.</LI> 
+<LI>For instance: c:\development\</LI>
+<LI>You will see a EmployeeAdmin_X_Y (where X_Y is version) source folder.</LI> 
+<LI>For instance: c:\development\EmployeeAdmin_X_Y</LI></UL>
+<U>From the Repository</U>
+<UL><LI>Use your  favorite SVN client to retrieve the latest source code release from the repository.</LI></UL>   
+<U>Setup and Compile the Demo Using Flex Builder 3</U>
+<UL><LI>Create a new Flex Project called 'EmployeeAdmin' in Flex Builder 3, pointing to the new EmployeeAdmin_X_Y source folder.</LI>
+<LI>Add the required libraries to the project's build path.</LI>
+<LI>From the Flex Builder menu do: Project -> Properties -> Flex Build Path -> Library Path -> Add SWC Folder</LI>
+<LI>Browse and select: EmployeeAdmin/libs</LI>
+<LI>Run EmployeeAdmin.as</LI></UL>  
+]]></Installation>												
+
+		</Project>
+	</NodeMap>
+</Node>
