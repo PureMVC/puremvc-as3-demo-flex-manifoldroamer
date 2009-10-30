@@ -18,7 +18,7 @@
 			
 <Description><![CDATA[
 This demo illustrates the use of the PureMVC framework within an Adobe AIR desktop application. 
-CodePeek communicates with the  Google Code API to do searches for code examples in ActionScript, ColdFusion and other relevant RIA languages. 
+CodePeek communicates with the Google Code API to do searches for code examples in ActionScript, ColdFusion and other relevant RIA languages. 
 ]]></Description>						
 
 <ReleaseNotes><![CDATA[

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node id="205303" name="RSSHeadlines" thumb="box">	
+	<NodeMap>
+		<Project 
+			name="RSSHeadlines Demo for AS3" 
+			status="Production"
+			repo="Demo_AS3_AIR_RSSHeadlines" 
+			tag="RSSHeadlines_1_2"
+			version="1.2"
+			archive="AS3/Demo_AS3_AIR_RSSHeadlines.zip" 
+			srcview="http://puremvc.org/pages/demos/AS3/Demo_AS3_AIR_RSSHeadlines/srcview"
+			live=""
+			forum="topic=178.0"
+			owner="Simon Bailey"
+			owner_node="302"
+			pic="PureMVC-Framework-AS3-Std.png"
+			shot="PureMVC-Shot-AS3-AIR-RSSHeadlines.png">
+			
+<Description><![CDATA[
+This demo illustrates the use of PureMVC with AIR to fetch an RSS feed, and display the headlines in a cycling display in small window on the desktop. 
+]]></Description>						
+
+<ReleaseNotes><![CDATA[
+</LI></UL>
+<B>Summary of Changes in 1.2</B>
+<UL><LI>Works with AIR 1.0 and PureMVC 2.0.1</LI></UL>
+
+<B>Summary of Changes in 1.1</B>
+<UL><LI>Works with AIR Beta 3 + PureMVC 2.0 + DesktopCitizen - CLH</LI></UL>
+
+<B>Features in Version 1.0</B>
+<UL><LI>Demonstrates use of DesktopCitizen utility to persist window size, position, and maximized state</LI>
+<LI>Load a feed xml file, filter through the necessary nodes and assign the data to a value object.</LI>
+<LI>Cycle through through the data refreshing content displayed in a view component.</LI>
+<LI>Adjust cycle duration using a command to communicate with a proxy.</LI>
+<LI>Change feed a feed url dispatching data from a view component and transferring this through the framework to a proxy. </LI></UL>
+
+<U>Discussion</U>
+<UL><LI>The goal of this demo was to show how to import external XML feed data into a AIR application, dispatch this feed information to a view component and change the displayed content at a regular interval.</LI>
+<LI>Using Flex, the importing of the feed is managed by the ServiceProxy and it is here that the data is analysed, broken down and assigned to a value object.</LI>
+<LI>A timer then sends new notifications at set intervals with a new feed value object each cycle. The timer interval can be adjusted using a horizontal slider.</LI>
+<LI>When the value of the slider is changed a command is notified to instruct the ServiceProxy to adjust the feed interval accordingly.</LI>
+<LI>There is also an option to change the current feed and once again this is achieved typical to the PureMVC framework by the necessary view component sending an event to its mediator.</LI>
+<LI>The mediator informs the facade and the relative command is fired to pass on the relevant information. </LI></UL>
+]]></ReleaseNotes>						
+
+<Installation><![CDATA[
+<B>Installing the Project Source Code</B>
+<U>From the archive</U>
+<UL><LI>Download the latest source code archive.</LI>
+<LI>Unzip the source code zip to any folder on your disk.</LI> 
+<LI>For instance: c:\development\</LI>
+<LI>You will see a RSSHeadlines_X_Y (where X_Y is version) source folder.</LI> 
+<LI>For instance: c:\development\RSSHeadlines_X_Y</LI></UL>
+<U>From the Repository</U>
+<UL><LI>Use your  favorite SVN client to retrieve the latest source code release from the repository.</LI></UL>   
+<U>Setup and Compile the Demo Using Flex Builder 3</U>
+<UL><LI>Create a new AIR Project called 'RSSHeadlines' in Flex Builder 3, pointing to the new RSSHeadlines_X_Y source folder.</LI>
+<LI>Add the required libraries to the project's build path.</LI>
+<LI>From the Flex Builder menu do: Project -> Properties -> Flex Build Path -> Library Path -> Add SWC Folder</LI>
+<LI>Browse and select: RSSHeadlines/libs</LI>
+<LI>Run RSSHeadlines.as</LI></UL>  
+]]></Installation>												
+
+		</Project>
+	</NodeMap>
+</Node>
