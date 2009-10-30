@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node id="205311" name="Loadup for Assets" thumb="box">	
+	<NodeMap>
+		<Project 
+			name="Loadup for Assets Demo for AS3" 
+			status="Production"
+			repo="Demo_AS3_Flex_LoadupForAssets" 
+			tag="LoadupForAssets_2_0 "
+			version="2.0"
+			archive="AS3/Demo_AS3_Flex_LoadupForAssets.zip" 
+			srcview="http://puremvc.org/pages/demos/AS3/Demo_AS3_Flex_LoadupForAssets/srcview"
+			live="AS3/Demo_AS3_Flex_LoadupForAssets/"
+			forum="topic=1395.0"
+			owner="Philip Sexton"
+			owner_node="327"
+			pic="PureMVC-Framework-AS3-Std.png"
+			shot="PureMVC-Shot-AS3-Flex-LoadupForAssets.png">
+			
+<Description><![CDATA[
+This demo illustrates the use of the PureMVC framework, the Loadup Utility, and its asset management classes to load display assets at anytime during runtime. 
+]]></Description>						
+
+<ReleaseNotes><![CDATA[
+<B>Summary of Changes in 2.0</B>
+<UL><LI>Upgraded to use the refactored and renamed Loadup utility.</LI>
+<LI>Now demonstrates concurrent loading of single assets and a group of assets.</LI></UL> 
+
+<B>Features in 1.0</B>
+<UL><LI>This demo shows how the StartupManager utility can be used as a solution to the problem of loading external assets. As part of the development of this demo, the StartupManager utility has been expanded to include an optional asset loader feature. Hence, the demo requires StartupManager version 1.5.</LI></UL>  
+
+]]></ReleaseNotes>						
+
+<Installation><![CDATA[
+<B>Installing the Project Source Code</B>
+<U>From the archive</U>
+<UL><LI>Download the latest source code archive.</LI>
+<LI>Unzip the source code zip to any folder on your disk.</LI> 
+<LI>For instance: c:\development\</LI>
+<LI>You will see a LoadupForAssets_X_Y (where X_Y is version) source folder.</LI> 
+<LI>For instance: c:\development\LoadupForAssets_X_Y</LI></UL>
+<U>From the Repository</U>
+<UL><LI>Use your  favorite SVN client to retrieve the latest source code release from the repository.</LI></UL>   
+<U>Setup and Compile the Demo Using Flex Builder 3</U>
+<UL><LI>Create a new Flex Project called 'LoadupForAssets' in Flex Builder 3, pointing to the new LoadupForAssets_X_Y source folder.</LI>
+<LI>Add the required libraries to the project's build path.</LI>
+<LI>From the Flex Builder menu do: Project -> Properties -> Flex Build Path -> Library Path -> Add SWC Folder</LI>
+<LI>Browse and select: LoadupForAssets/libs</LI>
+<LI>Run LoadupForAssets.mxml</LI></UL>  
+]]></Installation>												
+
+		</Project>
+	</NodeMap>
+</Node>
