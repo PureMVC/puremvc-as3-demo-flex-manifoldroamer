@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node id="205308" name="History Panel" thumb="box">	
+	<NodeMap>
+		<Project 
+			name="History Panel Demo for AS3" 
+			status="Production"
+			repo="Demo_AS3_Flex_HistoryPanel" 
+			tag="HistoryPanel_1_1"
+			version="1.1"
+			archive="AS3/Demo_AS3_Flex_HistoryPanel.zip" 
+			srcview="http://puremvc.org/pages/demos/AS3/Demo_AS3_Flex_HistoryPanel/srcview"
+			live="AS3/Demo_AS3_Flex_HistoryPanel/"
+			forum="topic=176.0"
+			owner="Dragos Dascalita"
+			owner_node="310"
+			pic="PureMVC-Framework-AS3-Std.png"
+			shot="PureMVC-Shot-AS3-Flex-HistoryPanel.png">
+			
+<Description><![CDATA[
+This demo illustrates the use of the AS3 Undo utility your PureMVC-based Flex application. 
+]]></Description>						
+
+<ReleaseNotes><![CDATA[
+<B>Summary of Changes in 1.1</B>
+<UL><LI>Updated layout to general PureMVC demo style.</LI>
+<LI>Put the canvas in a panel, with Ctrl-Z/Ctrl-Y usage note in status</LI>
+<LI>Added hint to canvas to move, resize, stretch and rotate images.</LI>
+<LI>Removed unused HistoryPanel, HistoryPanelMediator and registration</LI>
+<LI>Refactored Mediator constructor activity to onRegister. CLH</LI></UL>
+
+<B>Features in Version 1.0.1</B>
+<UL><LI>Updated a fix for the GraphicItemMediator: the name of the mediator is now: NAME + graphicItemVO.uid</LI></UL>
+
+<B>Features in Version 1.0</B>
+<UL><LI>Alpha 1 version:</LI>
+<LI>Move , Rotate, Resize graphic items</LI>
+<LI>Use keyboard shortcuts to undo ( Ctrl + Z ) and redo ( Ctrl + Y ) </LI></UL>
+
+]]></ReleaseNotes>						
+
+<Installation><![CDATA[
+<B>Installing the Project Source Code</B>
+<U>From the archive</U>
+<UL><LI>Download the latest source code archive.</LI>
+<LI>Unzip the source code zip to any folder on your disk.</LI> 
+<LI>For instance: c:\development\</LI>
+<LI>You will see a HistoryPanel_X_Y (where X_Y is version) source folder.</LI> 
+<LI>For instance: c:\development\HistoryPanel_X_Y</LI></UL>
+<U>From the Repository</U>
+<UL><LI>Use your  favorite SVN client to retrieve the latest source code release from the repository.</LI></UL>   
+<U>Setup and Compile the Demo Using Flex Builder 3</U>
+<UL><LI>Create a new Flex Project called 'HistoryPanel' in Flex Builder 3, pointing to the new HistoryPanel_X_Y source folder.</LI>
+<LI>Add the required libraries to the project's build path.</LI>
+<LI>From the Flex Builder menu do: Project -> Properties -> Flex Build Path -> Library Path -> Add SWC Folder</LI>
+<LI>Browse and select: HistoryPanel/libs</LI>
+<LI>Run HistoryPanel.as</LI></UL>  
+]]></Installation>												
+
+		</Project>
+	</NodeMap>
+</Node>
