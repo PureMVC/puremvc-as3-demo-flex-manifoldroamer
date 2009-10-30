@@ -68,7 +68,7 @@ This demo illustrates simple usage of the PureMVC AS3 MultiCore Framework using 
 <UL><LI>Use your  favorite SVN client to retrieve the latest source code release from the repository.</LI></UL>   
 <U>Setup and Compile the Demo Using Flex Builder 3</U>
 <UL><LI>Create a new ActionScript Project called 'Modularity' in Flex Builder 3, pointing to the new Modularity_X_X source folder.</LI>
-<LI>Add the required libraries to the Modularity project's build path.</LI>
+<LI>Add the required libraries to the project's build path.</LI>
 <LI>From the Flex Builder menu do: Project -> Properties -> Flex Build Path -> Library Path -> Add SWC Folder</LI>
 <LI>Browse and select: Modularity/libs.</LI>
 <U>Before closing the Properties Wizard add the Modules to the Project's Flex Module List </U>

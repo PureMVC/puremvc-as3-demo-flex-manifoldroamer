@@ -32,7 +32,8 @@ This demo illustrates usage of the PureMVC AS3 MultiCore Framework and the Multi
 <UL><LI>Corrected the bug that was causing the double notifications.</LI> </UL>
 
 <B>Features in 1.0</B>
-<UL><LI>The focus of this demo is on intermodular communications between PureMVC Cores using the MultiCore Pipes utility. While the modules used could be refactored to a separate codebase, compiled into SWFs and loaded dynamically at runtime. However, they are simply instantiated when needed inside this demo. This means a simple compile of the main app will do, and there is no need to compile the modules separately.</LI> 
+<UL><LI>The focus of this demo is on inter-modular communications between PureMVC Cores using the MultiCore Pipes utility. </LI>
+<LI>While the modules used could be refactored to a separate codebase, compiled into SWFs and loaded dynamically at runtime. However, they are simply instantiated when needed inside this demo. This means a simple compile of the main app will do, and there is no need to compile the modules separately.</LI> 
 <LI>There are 2 types of modules in the app: one will be instantiated as many times as you like, the other only once. </LI>
 <LI>A fully functional cross-module, multi-level error/info/debug logger is implemented. </LI>
 <LI>A fully functional RSS feed reader that parses ATOM1.0, RSS1.0 and RSS2.0 is implemented. </LI>
@@ -67,7 +68,7 @@ This demo illustrates usage of the PureMVC AS3 MultiCore Framework and the Multi
 <UL><LI>Use your  favorite SVN client to retrieve the latest source code release from the repository.</LI></UL>   
 <U>Setup and Compile the Demo Using Flex Builder 3</U>
 <UL><LI>Create a new ActionScript Project called 'PipeWorks' in Flex Builder 3, pointing to the new PipeWorks_X_Y source folder.</LI>
-<LI>Add the required libraries to the Modularity project's build path.</LI>
+<LI>Add the required libraries to the project's build path.</LI>
 <LI>From the Flex Builder menu do: Project -> Properties -> Flex Build Path -> Library Path -> Add SWC Folder</LI>
 <LI>Browse and select: PipeWorks/libs.</LI>
 <LI>Run PipeWorks.mxml</LI></UL>  

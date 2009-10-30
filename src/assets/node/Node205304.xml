@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node id="205304" name="StopWatch" thumb="box">	
+	<NodeMap>
+		<Project 
+			name="StopWatch Demo for AS3" 
+			status="Production"
+			repo="Demo_AS3_Flex_StopWatch" 
+			tag="StopWatch_1_0"
+			version="1.0"
+			archive="AS3/Demo_AS3_Flex_StopWatch.zip" 
+			srcview="http://puremvc.org/pages/demos/AS3/Demo_AS3_Flex_StopWatch/srcview/"
+			live="AS3/Demo_AS3_Flex_StopWatch/"
+			forum="topic=861"
+			owner="Cliff Hall"
+			owner_node="300"
+			pic="PureMVC-Framework-AS3-MC.png"
+			shot="PureMVC-Shot-AS3-Flex-StopWatch.png">
+			
+<Description><![CDATA[
+This demo illustrates the use of the StateMachine Utility to define and navigate the States of a Finite State Machine (FSM) of a working StopWatch. 
+]]></Description>						
+
+<ReleaseNotes><![CDATA[
+<B>Features in 1.0</B>
+<UL><LI>The demo implements the FSM of a working stopwatch, widely referred to as a familiar way to explain state machines in general. </LI>
+<LI>If you're confused what 'split/unsplit' mean, it is when you have the timer running, and you split the display to show a frozen lap time as of the moment you hit split, along with a continuing counter. This lets a coach easily note the lap times of individual runners in a race, for instance.</LI> 
+<LI>It makes use of the FSMInjector which accepts an XML representation of the FSM for a stopwatch, registers the resultant StateMachine with the Facade.</LI> 
+<LI>Check out the InjectFSMCommand for to see how easy it is to define the FSM and have it injected into your app.</LI> 
+<U>The question will certainly arise: </U>
+<I>Why wasn't <font color="#0000FF"><A href="http://en.wikipedia.org/wiki/SCXML" target="_blank">SCXML</A></font> chosen to define the FSM?</I>
+<U>Several reasons: </U>
+<LI>Much more complex than we wanted to attempt.</LI>
+<LI>Conditional logic is ugly because you have to escape ampersands in xml.</LI>
+<LI>We wanted entering and exiting notifications for each state.</LI>
+<LI>The word 'event' would inevitably cause confusion to the Flash community, so we chose 'action'.</LI></UL> 
+]]></ReleaseNotes>						
+
+<Installation><![CDATA[
+<B>Installing the Project Source Code</B>
+<U>From the archive</U>
+<UL><LI>Download the latest source code archive.</LI>
+<LI>Unzip the source code zip to any folder on your disk.</LI> 
+<LI>For instance: c:\development\</LI>
+<LI>You will see a StopWatch_X_Y (where X_Y is version) source folder.</LI> 
+<LI>For instance: c:\development\StopWatch_X_Y</LI></UL>
+<U>From the Repository</U>
+<UL><LI>Use your  favorite SVN client to retrieve the latest source code release from the repository.</LI></UL>   
+<U>Setup and Compile the Demo Using Flex Builder 3</U>
+<UL><LI>Create a new Flex Project called 'StopWatch' in Flex Builder 3, pointing to the new StopWatch_X_Y source folder.</LI>
+<LI>Add the required libraries to the project's build path.</LI>
+<LI>From the Flex Builder menu do: Project -> Properties -> Flex Build Path -> Library Path -> Add SWC Folder</LI>
+<LI>Browse and select: StopWatch/libs.</LI>
+<LI>Run StopWatch.mxml</LI></UL>  
+]]></Installation>												
+
+		</Project>
+	</NodeMap>
+</Node>

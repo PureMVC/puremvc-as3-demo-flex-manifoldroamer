@@ -14,7 +14,7 @@
 			owner="Duncan Hall"
 			owner_node="312"
 			pic="PureMVC-Framework-AS3-Std-MC.png"
-			shot="PureMVC-Shot-AS3-Sequential.png">
+			shot="PureMVC-Shot-AS3-Flash-Sequential.png">
 			
 <Description><![CDATA[
 This demo illustrates the use of the AsyncCommand utility to execute a series of commands, some of which must complete asynchronous operations before the next command can be executed. 
@@ -38,8 +38,8 @@ This demo illustrates the use of the AsyncCommand utility to execute a series of
 <U>From the Repository</U>
 <UL><LI>Use your  favorite SVN client to retrieve the latest source code release from the repository.</LI></UL>   
 <U>Setup and Compile the Demo Using Flex Builder 3</U>
-<UL><LI>Create a new ActionScript Project called 'Sequential' in Flex Builder 3, pointing to the new Sequential source folder.</LI>
-<LI>Add the required libraries to the Sequential project's build path.</LI>
+<UL><LI>Create a new ActionScript Project called 'Sequential' in Flex Builder 3, pointing to the new Sequential_X_Y source folder.</LI>
+<LI>Add the required libraries to the project's build path.</LI>
 <LI>From the Flex Builder menu do: Project -> Properties -> Flex Build Path -> Library Path -> Add SWC Folder</LI>
 <LI>Browse and select: Sequential/lib-standard or Sequential/lib-multicore depending on the version of PureMVC you will be using.</LI>
 <LI>Set the Main Source Folder to src-standard or src-multicore depending on the version of PureMVC you will be using.</LI> 

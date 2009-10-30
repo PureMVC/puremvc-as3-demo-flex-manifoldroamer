@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node id="205302" name="CodePeek" thumb="box">	
+	<NodeMap>
+		<Project 
+			name="CodePeek Demo for AS3" 
+			status="Production"
+			repo="Demo_AS3_AIR_CodePeek" 
+			tag="CodePeek_2_0"
+			version="2.0"
+			archive="AS3/Demo_AS3_AIR_CodePeek.zip" 
+			srcview="http://puremvc.org/pages/demos/AS3/Demo_AS3_AIR_CodePeek/srcview"
+			live=""
+			forum="topic=179.0"
+			owner="Cliff Hall"
+			owner_node="300"
+			pic="PureMVC-Framework-AS3-Std.png"
+			shot="PureMVC-Shot-AS3-AIR-CodePeek.png">
+			
+<Description><![CDATA[
+This demo illustrates the use of the PureMVC framework within an Adobe AIR desktop application. 
+CodePeek communicates with the  Google Code API to do searches for code examples in ActionScript, ColdFusion and other relevant RIA languages. 
+]]></Description>						
+
+<ReleaseNotes><![CDATA[
+</LI></UL>
+<B>Summary of Changes in 2.0</B>
+<UL><LI>Updated to AIR 1.0 / PureMVC 2.0.1</LI></UL>
+
+<B>Summary of Changes in 1.9</B>
+<UL><LI>Updated with latest DesktopCitizen and XMLDatabase utilities</LI></UL>
+
+<B>Summary of Changes in 1.8</B>
+<UL><LI>Works with AIR Beta 3 and PureMVC 2.0</LI>
+<LI>Refactored package space from com.futurescale to org.puremvc.</LI>
+<LI>Migrated to PureMVC for AS3 2.0</LI>
+<LI>Refactored window metrics handling into an AIR utility called DesktopCitizen. </LI>
+<LI>Refactored XML Database handling into an AIR utility called XMLDatabase.</LI></UL>
+      
+<B>Summary of Changes in 1.7</B>
+<UL><LI>Works with AIR Beta 2.</LI></UL>
+
+<B>Summary of Changes in 1.6</B>
+<UL><LI>Bleeding edge AIR Beta minor update.</LI></UL>
+
+<B>Summary of Changes in 1.5</B>
+<UL><LI>Refactored to take advantage of the first functional enhancement to the PureMVC framework. </LI></UL>
+
+<B>Summary of Changes in 1.4</B>
+<UL><LI>Updated for AIR/Flex 3.</LI></UL>
+
+<B>Summary of Changes in 1.3</B>
+<UL><LI>Refactoring of the ViewDisplayStateChangedCommand logic into StageMediator</LI>
+<LI>Refactoring of the ViewResizedCommand logic into StageMediator</LI></UL>
+      
+<B>Summary of Changes in 1.2</B>
+<UL><LI>Refactoring of AbstractDatabaseProxy.</LI></UL>
+
+<B>Summary of Changes in 1.1</B>
+<UL><LI>Minor UI tweaks.</LI></UL>
+
+<B>Features in Version 1.0</B>
+<UL><LI>Works with Apollo alpha.</LI>
+<LI>Demonstrates best practice use of all classes of the PureMVC framework.</LI>
+<LI>Demonstrates use of DesktopCitizen utility to persist window size, position, and maximized state</LI>
+<LI>Demonstrates use of XMLDatabase utility to persist searches by language</LI>
+<LI>Communicates with a remote service to retrieve dynamic data</LI>
+<LI>Only displays application once Model, View and Controller are initialized and window state is set.</LI></UL> 
+
+<U>Discussion</U>
+<UL><LI>CodePeek demonstrates the use of PureMVC to search the Google Code API, in the (Adobe friendly) RIA language of your choice, and saves your searches by language to a local XML database for later.</LI>
+<LI>Being an AIR application it takes advantage of the environment to manage and persist its window location and search history as XML databases, stored on the user's disk. It also communicates with a remote service, takes the bulky XML returned, and extracts just the info we need, translating it to entries in our search database, and showing the search results in an HTML component.</LI></UL> 
+
+<U>Extensible XML Database Implementation</U>
+<UL><LI>AIR applications can to store, retrieve and manipulate structured data. A great way to do this is with XML, since AS3 gives us powerful tools in E4X for manipulation of the data.</LI>
+<LI>The application maintains two XML Databases, one for window metrics and one for application data. A utility called XMLDatabase takes care of the grunt work of maintaining the XML data stores. The application uses the utility to store application data, and the DesktopCitizen utility also uses XMLDatabase to store the window metrics.</LI>
+<LI>When instantiated, these classes check to see if their XML files exist on the disk, and load them if so. Otherwise, the build method is called. This is implemented in each concrete XMLDatabaseProxy, and returns a default XML structure to use. The structure is then written to disk, and the parse method is called.</LI>
+<LI>The idea is that you snap off pieces of the XML tree like twigs, handing each twig to a Proxy class for management. This way the concrete XMLDatabaseProxy subclass remains simple, and each of the individual Proxies do as well.</LI>
+<LI>Running as a native window on the operating system desktop, it also must save its location and display state (maximized/minimized/restored) information. The Desktop Citizen utility stores this information in the XML database using the XMLDatabase Utility.</LI>
+<LI>The application uses the XMLDatabase Utility to store User searches in an XML database. There is only one entity, Searches, which is managed by the SearchesProxy, however multiple entities would normally be used and a separate proxy for each would be used.</LI> 
+<LI>At startup and shutdown the application data and preferences databases are both retrieved and persisted to the local filesystem.</LI></UL>
+
+<U>Remote Proxy Implementation</U>
+<LI>CodePeek also demonstrates the use of a Remote Proxy in a PureMVC application - CodeSearchProxy.</LI>
+<LI>Communicating with Google Code API, the CodeSearchProxy has a search method which is invoked by the AppControlBarMediator, when the user has entered a search criteria in the AppControlBar and clicked the 'Search' button.</LI>
+<LI>When the result (or fault) comes back from the service call, the CODE_SEARCH_SUCCESS (or CODE_SEARCH_FAILED ) Notification is sent, and the both the AppControlBarMediator and the ApplicationMediator respond. The AppControlBarMediator resets the search controls, while the ApplicationMediator displays the content.</LI></UL> 
+]]></ReleaseNotes>						
+
+<Installation><![CDATA[
+<B>Installing the Project Source Code</B>
+<U>From the archive</U>
+<UL><LI>Download the latest source code archive.</LI>
+<LI>Unzip the source code zip to any folder on your disk.</LI> 
+<LI>For instance: c:\development\</LI>
+<LI>You will see a CodePeek_X_Y (where X_Y is version) source folder.</LI> 
+<LI>For instance: c:\development\CodePeek_X_Y</LI></UL>
+<U>From the Repository</U>
+<UL><LI>Use your  favorite SVN client to retrieve the latest source code release from the repository.</LI></UL>   
+<U>Setup and Compile the Demo Using Flex Builder 3</U>
+<UL><LI>Create a new AIR Project called 'CodePeek' in Flex Builder 3, pointing to the new CodePeek_X_Y source folder.</LI>
+<LI>Add the required libraries to the project's build path.</LI>
+<LI>From the Flex Builder menu do: Project -> Properties -> Flex Build Path -> Library Path -> Add SWC Folder</LI>
+<LI>Browse and select: CodePeek/libs</LI>
+<LI>Run CodePeek.as</LI></UL>  
+]]></Installation>												
+
+		</Project>
+	</NodeMap>
+</Node>
