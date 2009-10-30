@@ -14,7 +14,7 @@
 			owner="Marco Secchi"
 			owner_node="321"
 			pic="PureMVC-Framework-Haxe-Std.png"
-			shot="PureMVC-Shot-Haxe-Std-SimpleAdmin.png">
+			shot="PureMVC-Shot-Haxe-SimpleAdmin.png">
 			
 <Description><![CDATA[
 This demo illustrates the use of Haxe to create a simple list administration application that cross-compiles to both Flash and JavaScript from the same source code.   

@@ -20,7 +20,8 @@
 This utility adds undo / redo capability to your PureMVC Haxe application. 
 ]]></Description>						
 
-<ReleaseNotes><![CDATA[<B>Features in Version 1.1</B>
+<ReleaseNotes><![CDATA[
+<B>Features in Version 1.1</B>
 <UL><LI>A port of the Undo Utility for ActionScript 3</LI>
 <LI>Standard and MultiCore versions are included.</LI></UL>
 ]]></ReleaseNotes>						

@@ -13,7 +13,7 @@
 			owner="Brian Knorr"
 			owner_node="317"
 			pic="PureMVC-Framework-ObjectiveC-Std.png"
-			shot="PureMVC-Shot-ObjectiveC-Std-EmployeeAdmin.png">
+			shot="PureMVC-Shot-ObjectiveC-EmployeeAdmin.png">
 			
 <Description><![CDATA[
 This demo illustrates techniques for performing routine maintenance operations in a PureMVC-based ObjectiveC application. 

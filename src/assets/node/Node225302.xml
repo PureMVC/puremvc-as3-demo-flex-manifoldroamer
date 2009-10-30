@@ -14,7 +14,7 @@
 			owner="Marco Secchi"
 			owner_node="321"
 			pic="PureMVC-Framework-Haxe-Std.png"
-			shot="PureMVC-Shot-Haxe-Std-MultiplatformComm.png">
+			shot="PureMVC-Shot-Haxe-MultiplatformComm.png">
 			
 <Description><![CDATA[
 This demo illustrates the use of Haxe to cross-compile an application for Flash 8, Flash 9 and JavaScript from the same source code, and then to communicate with each from external JavaScript code.   

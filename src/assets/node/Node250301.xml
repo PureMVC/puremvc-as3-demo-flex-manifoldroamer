@@ -13,7 +13,7 @@
 			owner="Toby de Havilland"
 			owner_node="314"
 			pic="PureMVC-Framework-Python-Std.png"
-			shot="PureMVC-Shot-Python-Std-EmployeeAdmin.png">
+			shot="PureMVC-Shot-Python-EmployeeAdmin.png">
 <Description><![CDATA[
 This demo illustrates techniques for performing routine maintenance operations in a PureMVC-based application using wxPython view components.
 ]]></Description>						

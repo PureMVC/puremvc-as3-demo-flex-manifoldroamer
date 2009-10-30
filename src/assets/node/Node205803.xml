@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node id="205803" name="PipeWorks" thumb="box">	
+	<NodeMap>
+		<Project 
+			name="PipeWorks Demo for AS3" 
+			status="Production"
+			repo="Demo_AS3_MultiCore_Flex_PipeWorks" 
+			tag="PipeWorks_1_3"
+			version="1.3"
+			archive="AS3/Demo_AS3_MultiCore_Flex_PipeWorks.zip" 
+			srcview="http://puremvc.org/pages/demos/AS3/Demo_AS3_MultiCore_Flex_PipeWorks/srcview/"
+			live="AS3/Demo_AS3_MultiCore_Flex_PipeWorks/"
+			forum="topic=480"
+			owner="Cliff Hall"
+			owner_node="300"
+			pic="PureMVC-Framework-AS3-MC.png"
+			shot="PureMVC-Shot-AS3-Flex-PipeWorks.png">
+			
+<Description><![CDATA[
+This demo illustrates usage of the PureMVC AS3 MultiCore Framework and the MultiCore Pipes Utility using Flex Modules. 
+]]></Description>						
+
+<ReleaseNotes><![CDATA[
+<B>Summary of Changes in 1.3</B>
+<UL><LI>Refactored IPipeAware and JunctionMediator into Pipes Utility. </LI> 
+<LI>Added LoggingJunctionMediator to give logging functionality to any Core that uses it.</LI> </UL>
+
+<B>Summary of Changes in 1.2</B>
+<UL><LI>Corrected the STDOUT pipename in the ShellJunctionMediator and updated the PrattleCommand ASDoc.</LI> </UL>
+
+<B>Summary of Changes in 1.1</B>
+<UL><LI>Corrected the bug that was causing the double notifications.</LI> </UL>
+
+<B>Features in 1.0</B>
+<UL><LI>The focus of this demo is on intermodular communications between PureMVC Cores using the MultiCore Pipes utility. While the modules used could be refactored to a separate codebase, compiled into SWFs and loaded dynamically at runtime. However, they are simply instantiated when needed inside this demo. This means a simple compile of the main app will do, and there is no need to compile the modules separately.</LI> 
+<LI>There are 2 types of modules in the app: one will be instantiated as many times as you like, the other only once. </LI>
+<LI>A fully functional cross-module, multi-level error/info/debug logger is implemented. </LI>
+<LI>A fully functional RSS feed reader that parses ATOM1.0, RSS1.0 and RSS2.0 is implemented. </LI>
+<LI>The main application or 'Shell' will coordinate instantiation of modules and interconnect them using named, directional pipes. </LI>
+<LI>The module that is instantiated multiple times primarily generates messages, while the other primarily consumes them. </LI>
+<LI>They all communicate with the Shell, which produces and consumes messages as well. </LI>
+<LI>Use of a Filter to consume a control message and subsequently change its behavior with regard to the messages passing through it.</LI></UL>  
+
+<U>Prattlers</U>
+<UL><LI>The Main application (Shell) allows instantiation of multiple instances of an RSS feed reader module, which read and parse random feeds, and display their entries one at a time at an adjustable 'reading rate'. In addition to being fully functional clients communicating with services and doing non-trivial parsing of three different types of RSS feeds, these modules prattle a lot! They produce copious quantities of log messages. Everything from errors to key state change info to detailed debug information is generated, and the more of them you launch the more massive the message stream. They're called Prattlers.</LI></UL> 
+
+<U>Logger</U>
+<UL><LI>The Main app instantiates a single instance of a Logger module, which it connects each new feed reader to via pipes. It exports to the main application 2 UI components - a button that always displays the current number of messages, and a window (opened by that button) that displays the messages in a window.</LI></UL> 
+
+<U>Log Level Filter</U>
+<UL><LI>The pipes from the various readers are merged and passed through a filter which rejects them if they are above the currently set log level. The Main app has a combo box that allows the selection of the desired log level, and it sends a sepecial FilterControlMessage to that filter telling it to change it's log level parameter to the new value. Thus you can see how to throttle or modify traffic on a pipe by sending messages to a filter on that pipe. No need to keep a reference to the Filter itself, it has a name and you can address messages to it.</LI></UL> 
+
+<U>Junctions</U>
+<UL><LI>PipeWorks also illustrates the use of Pipe Junctions to create named, directional pipes. The Module creates a Mediator that keeps the reference to the Junction for that module. Any incoming communcations from other modules is handled there, as well as Notifications from elsewhere in the module or 'Core' requesting outgoing messages be sent.</LI></UL>
+  
+]]></ReleaseNotes>						
+
+<Installation><![CDATA[
+<B>Installing the Project Source Code</B>
+<U>From the archive</U>
+<UL><LI>Download the latest source code archive.</LI>
+<LI>Unzip the source code zip to any folder on your disk.</LI> 
+<LI>For instance: c:\development\</LI>
+<LI>You will see a PipeWorks_X_Y (where X_Y is version) source folder.</LI> 
+<LI>For instance: c:\development\PipeWorks_X_Y</LI></UL>
+<U>From the Repository</U>
+<UL><LI>Use your  favorite SVN client to retrieve the latest source code release from the repository.</LI></UL>   
+<U>Setup and Compile the Demo Using Flex Builder 3</U>
+<UL><LI>Create a new ActionScript Project called 'PipeWorks' in Flex Builder 3, pointing to the new PipeWorks_X_Y source folder.</LI>
+<LI>Add the required libraries to the Modularity project's build path.</LI>
+<LI>From the Flex Builder menu do: Project -> Properties -> Flex Build Path -> Library Path -> Add SWC Folder</LI>
+<LI>Browse and select: PipeWorks/libs.</LI>
+<LI>Run PipeWorks.mxml</LI></UL>  
+]]></Installation>												
+
+		</Project>
+	</NodeMap>
+</Node>

@@ -13,7 +13,7 @@
 			owner="Nathan Levesque"
 			owner_node="319"
 			pic="PureMVC-Framework-Python-Std.png"
-			shot="PureMVC-Shot-Python-Std-Blog.png">
+			shot="PureMVC-Shot-Python-Blog.png">
 <Description><![CDATA[
 This demo illustrates techniques for creating a simple blog in a PureMVC-based Python application using the Google App Engine. 
 ]]></Description>						

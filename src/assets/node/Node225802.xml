@@ -21,8 +21,8 @@ This is the Unit Tests Project for the Pipes utility, which provides the capabil
 ]]></Description>						
 
 <ReleaseNotes><![CDATA[<B>Features in Version 1.0</B>
-  * A port of the Pipes Utility Unit Tests for ActionScript 3
-  * This release include tests for all supported platforms.
+<UL><LI>A port of the Pipes Utility Unit Tests for ActionScript 3</LI>
+<LI>This release include tests for all supported platforms.</LI></UL>
 ]]></ReleaseNotes>						
 
 <Installation><![CDATA[

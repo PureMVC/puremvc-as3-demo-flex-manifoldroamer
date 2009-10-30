@@ -14,7 +14,9 @@
 			owner_node="317"
 			pic="PureMVC-Framework-ObjectiveC-Std.png">
 
-<Description><![CDATA[PureMVC is a lightweight framework for creating applications based upon the classic  Model-View-Controller design meta-pattern. This is the specific implementation for the Objective C language based on the Standard Version AS3 reference.
+<Description><![CDATA[
+PureMVC is a lightweight framework for creating applications based upon the classic Model-View-Controller design meta-pattern. 
+This is the specific implementation for the Objective C language based on the Standard Version AS3 reference.
 ]]></Description>	
 					
 <ReleaseNotes><![CDATA[

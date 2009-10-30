@@ -13,11 +13,15 @@
 			forum="topic=418.0"
 			owner="James Knight"
 			owner_node="316"
-			pic="PureMVC-Framework-AS2-Std.png">
+			pic="PureMVC-Framework-AS2-Std.png"
+			shot="PureMVC-AS2-Shot-Std-UnitTests.png">
 
-<Description><![CDATA[<P>These are the Unit Tests for the PureMVC AS2 Standard Version Framework.</P>]]></Description>						
+<Description><![CDATA[
+These are the Unit Tests for the PureMVC AS2 Standard Version Framework.
+]]></Description>						
 
 <ReleaseNotes><![CDATA[
+<B>Features in 0.7</B>
 <UL><LI>The Unit Tests for the PureMVC Framework for ActionScript 2 use AsUnit2.5. </LI>
 <LI>The distribution package is in ZIP format contains the AS2 source code for the unit tests, API documentation, and the required AsUnit2.5 and PureMVC AS2 Framework libraries.</LI>
 <LI>Every method of every framework class has at least one unit test associated with it, sometimes more. Each unit test, in turn generally makes several assertions.</LI>

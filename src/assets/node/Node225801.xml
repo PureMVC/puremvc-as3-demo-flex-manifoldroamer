@@ -14,7 +14,7 @@
 			owner="Zjnue Brzavi"
 			owner_node="305"
 			pic="PureMVC-Framework-Haxe-Std-MC.png"
-			shot="PureMVC-Shot-Haxe-MC-StopWatch.png">
+			shot="PureMVC-Shot-Haxe-StopWatch.png">
 			
 <Description><![CDATA[
 This demo illustrates the use of the StateMachine Utility to define and navigate the states of a Finite State Machine or FSM of a working StopWatch. Xinf is used for the user interface.  

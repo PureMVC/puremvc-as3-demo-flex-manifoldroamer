@@ -20,7 +20,8 @@
 This utility provides a simple yet effective Finite State Machine implementation, which allows the definition of discrete states, and the valid transitions to other states available from any given state, and the actions which trigger the transitions. A mechanism is provided for defining the entire state machine in XML and having a fully populated StateMachine injected into the PureMVC app. 
 ]]></Description>						
 
-<ReleaseNotes><![CDATA[<B>Features in Version 1.0</B>
+<ReleaseNotes><![CDATA[
+<B>Features in Version 1.0</B>
 <UL><LI>A port of the StateMachine Utility for ActionScript 3</LI>
 <LI>Standard and MultiCore versions are included.</LI></UL>
 ]]></ReleaseNotes>																	

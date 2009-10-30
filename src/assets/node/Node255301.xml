@@ -13,7 +13,7 @@
 			owner="Jake Dempsey"
 			owner_node="308"
 			pic="PureMVC-Framework-Ruby-Std.png"
-			shot="PureMVC-Shot-Ruby-Std-EmployeeAdmin.png">
+			shot="PureMVC-Shot-Ruby-EmployeeAdmin.png">
 
 <Description><![CDATA[
 This demo illustrates techniques for performing routine maintenance operations in a PureMVC-based application using wxRuby view components.

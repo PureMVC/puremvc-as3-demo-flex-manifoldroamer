@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node id="205802" name="Modularity" thumb="box">	
+	<NodeMap>
+		<Project 
+			name="Modularity Demo for AS3" 
+			status="Production"
+			repo="Demo_AS3_MultiCore_Flex_Modularity" 
+			tag="Modularity_1_4"
+			version="1.4"
+			archive="AS3/Demo_AS3_MultiCore_Flex_Modularity.zip" 
+			srcview="http://puremvc.org/pages/demos/AS3/Demo_AS3_MultiCore_Flex_Modularity/srcview/"
+			live="AS3/Demo_AS3_MultiCore_Flex_Modularity/"
+			forum="topic=294"
+			owner="Cliff Hall"
+			owner_node="300"
+			pic="PureMVC-Framework-AS3-MC.png"
+			shot="PureMVC-Shot-AS3-Flex-Modularity.png">
+			
+<Description><![CDATA[
+This demo illustrates simple usage of the PureMVC AS3 MultiCore Framework using Flex Modules. 
+]]></Description>						
+
+<ReleaseNotes><![CDATA[
+<B>Features in 1.4</B>
+<UL><LI>Full PureMVC applications running inside Modules (simulating third party apps) running inside a another Flex app.</LI>
+<LI>Defining interfaces for communications between Modules and the host application.</LI>
+<LI>Interacting with the host application from a module. </LI></UL>  
+
+<B>Discussion</B>
+<UL><LI>This demo instantiates and interacts with several Flex Modules, which are separate swf files loaded at runtime. The PureMVC AS3 MultiCore port has no problem running multiple Modules or loaded Flash applications based on PureMVC and running them simultaneously, and this demo shows that. Further, it demonstrates how to approach the next step of designing your MultiCore application, which is to define the APIs the host application and the Modules or 'cores' will use to talk to each other.</LI>
+<LI>The demo presumes a widget hosting application wherein Widgets created by third party developers can run within the host. There is an interface that Widgets must implement in order to be hosted, and an interface for the host to implement in order for the Widgets to interact with it.</LI>
+<LI>If you are familiar with PureMVC programming, you'll note only a few minor differences. One is that each ApplicationFacade's getInstance factory method takes a string argument now. The Modularity application passes in its name. The Widgets pass in a unique 'widget key'. What's going on here? Well in the MultiCore framework, the Facade, Model, View and Controller, are all Multitons.</LI>
+<LI>This is a slight variation on the Singleton pattern where the Singleton instance becomes an instance map, with many instances, referenced by key. Thus each PureMVC 'core' must have a unique key. The Main app is only run once so we use a constant string 'Modularity'. However the widgets could possibly be instantiated more than once (they're not, but they could be), so they have a 'getWidgetKey' method that generates a new key based on the instance id and a unique URI for the widget.</LI>
+<LI>In this simple demo, the host application (Modularity) has a Flex ApplicationToolBar which the widgets are actually instantiated in. This is done declaratively in MXML. More evolved Module loading mechanisms are beyond the scope of this demo.</LI>
+<LI>The ApplicationToolBar is actually a custom component called WidgetShell which implements the IWidgetShell interface. So this toolbar holds the widgets and implements the API that the widgets use to interact with the host application.</LI>
+<LI>The Widgets do similar things, but are in separate packages, and separate swf files, which could be made by separate companies. </LI></UL> 
+
+<U>Both Widgets do this:</U>
+<UL><LI>Have their setWidgetShell method called</LI>
+<LI>Have a Button with their name on it as the sole visual component.</LI>
+<LI>The button dispatches an event.</LI>
+<LI>Startup like normal (albiet very simple) PureMVC apps</LI></UL>
+<U>Widget Module Startup consists of:</U>
+<UL><LI>Registering a Proxy with some data</LI>
+<LI>Registering a Mediator that manages the Widget application</LI>
+<LI>The mediator listens for the event dispatched when the user clicks the widget's button.</LI></UL>
+
+<U>When a widget's button is pressed:</U>
+<UL><LI>The Mediator creates a new button and calls the WidgetShell's addComponent method</LI>
+<LI>Adds an event listener to the button, (so that this mediator can later hear its click and have it removed)</LI>
+<LI>The WidgetShell sends a custom event (within the host app) of called AddComponent, passing the new button,</LI>
+<LI>The WidgetShellMediator (in the host app) hears this translates it into a notification which it sends</LI>
+<LI>The WidgetCanvasMediator (in the host app) hears the Notification and adds the component to its WidgetCanvas (really a Flex VBox).</LI>
+<LI>The Mediator also calls the WidgetShell's setStatusMessage method with some text </LI></UL>
+<LI>When the new button is added to the WidgetCanvas, it is a part of the host app's display hierarchy, but still mediated by the Widget application!</LI>
+<LI>When the added button is clicked, the mediator in the Widget initiates another process similar to adding a component, only to have it removed. </LI></UL> 
+]]></ReleaseNotes>						
+
+<Installation><![CDATA[
+<B>Installing the Project Source Code</B>
+<U>From the archive</U>
+<UL><LI>Download the latest source code archive.</LI>
+<LI>Unzip the source code zip to any folder on your disk.</LI> 
+<LI>For instance: c:\development\</LI>
+<LI>You will see a Modularity_X_Y (where X_Y is version) source folder.</LI> 
+<LI>For instance: c:\development\Modularity_X_Y</LI></UL>
+<U>From the Repository</U>
+<UL><LI>Use your  favorite SVN client to retrieve the latest source code release from the repository.</LI></UL>   
+<U>Setup and Compile the Demo Using Flex Builder 3</U>
+<UL><LI>Create a new ActionScript Project called 'Modularity' in Flex Builder 3, pointing to the new Modularity_X_X source folder.</LI>
+<LI>Add the required libraries to the Modularity project's build path.</LI>
+<LI>From the Flex Builder menu do: Project -> Properties -> Flex Build Path -> Library Path -> Add SWC Folder</LI>
+<LI>Browse and select: Modularity/libs.</LI>
+<U>Before closing the Properties Wizard add the Modules to the Project's Flex Module List </U>
+<LI>Select "Flex Modules" from the Properties list</LI>
+<LI>Click add, then browse to and select: src\com\widgetmakers\coolwidget\view\components\CoolWidget.mxml</LI>
+<LI>Click add, then browse to and select: src\com\widgetworks\superwidget\view\components\SuperWidget.mxml </LI>
+<LI>Run Modularity.mxml</LI></UL>  
+]]></Installation>												
+
+		</Project>
+	</NodeMap>
+</Node>

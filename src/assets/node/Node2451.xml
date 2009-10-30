@@ -14,7 +14,7 @@
 			owner="Hasan Otuome"
 			owner_node="323"
 			pic="PureMVC-Framework-PHP-Std.png"
-			shot="PureMVC-Shot-PHP-Std-CSSZenGarden.png">
+			shot="PureMVC-Shot-PHP-CSSZenGarden.png">
 <Description><![CDATA[
 PureMVC is a lightweight framework for creating applications based upon the classic Model-View-Controller design meta-pattern. 
 This is the specific implementation for the PHP language based on the Standard Version AS3 reference. 
