@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Node id="205303" name="RSSHeadlines" thumb="box">	
+<Node id="205303" name="RSS Headlines" thumb="box">	
 	<NodeMap>
 		<Project 
-			name="RSSHeadlines Demo for AS3" 
+			name="RSS Headlines Demo for AS3" 
 			status="Production"
 			repo="Demo_AS3_AIR_RSSHeadlines" 
 			tag="RSSHeadlines_1_2"
