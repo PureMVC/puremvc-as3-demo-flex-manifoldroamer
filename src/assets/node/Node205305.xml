@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node id="205305" name="App Skeleton" thumb="box">	
+	<NodeMap>
+		<Project 
+			name="App Skeleton Demo for AS3" 
+			status="Production"
+			repo="Demo_AS3_Flex_AppSkeleton" 
+			tag="AppSkeleton_1_1"
+			version="1.1"
+			archive="AS3/Demo_AS3_Flex_AppSkeleton.zip" 
+			srcview="http://puremvc.org/pages/demos/AS3/Demo_AS3_Flex_AppSkeleton/srcview"
+			live="AS3/Demo_AS3_Flex_AppSkeleton/"
+			forum="topic=177.0"
+			owner="Daniele Ugoletti"
+			owner_node="330"
+			pic="PureMVC-Framework-AS3-Std.png"
+			shot="">
+			
+<Description><![CDATA[
+This demo illustrates a startup process for a PureMVC-based Flex application that displays a splash screen with a progress bar until several resources have loaded, after which the user is presented with the actual UI. 
+]]></Description>						
+
+<ReleaseNotes><![CDATA[
+</LI></UL>
+<B>Summary of Changes in 1.1</B>
+<UL><LI>Migrated to PureMVC 2.0.1.</LI> 
+<LI>Changed logo.</LI>
+<LI>Refactored assets,and source into src folder.</LI> 
+<LI>Moved configuration files into assets.</LI></UL>
+
+<B>Features in Version 1.0</B>
+<UL><LI>Load multiple resources at startup</LI>
+<LI>Parse a configuration file to provide localized strings </LI></UL>
+
+<U>Discussion</U>
+<UL><LI>This demo was an early exploration into the problem of loading assets asynchronously at startup time.</LI>
+<LI>It is an excellent example to study to understand the problem. However, before attempting to recreate the process in your own application, please note that the resource loading functionality that this demo originally provided has since been turned into a reusable utility.</LI>
+<LI>The file config.xml is parsed and the language element is retrieved. This value is used to dynamically create the url for the localized strings that the application displays once loaded.</LI>
+<LI>The utility, Loadup handles timeout and retry, progress notification and other advanced features that this demo inspired.</LI>
+<LI>Be sure to check out the corresponding demos Loadup as Ordered and Loadup for Assets.</LI></UL> 
+]]></ReleaseNotes>						
+
+<Installation><![CDATA[
+<B>Installing the Project Source Code</B>
+<U>From the archive</U>
+<UL><LI>Download the latest source code archive.</LI>
+<LI>Unzip the source code zip to any folder on your disk.</LI> 
+<LI>For instance: c:\development\</LI>
+<LI>You will see a AppSkeleton_X_Y (where X_Y is version) source folder.</LI> 
+<LI>For instance: c:\development\AppSkeleton_X_Y</LI></UL>
+<U>From the Repository</U>
+<UL><LI>Use your  favorite SVN client to retrieve the latest source code release from the repository.</LI></UL>   
+<U>Setup and Compile the Demo Using Flex Builder 3</U>
+<UL><LI>Create a new Flex Project called 'AppSkeleton' in Flex Builder 3, pointing to the new AppSkeleton_X_Y source folder.</LI>
+<LI>Add the required libraries to the project's build path.</LI>
+<LI>From the Flex Builder menu do: Project -> Properties -> Flex Build Path -> Library Path -> Add SWC Folder</LI>
+<LI>Browse and select: AppSkeleton/libs</LI>
+<LI>Run AppSkeleton.as</LI></UL>  
+]]></Installation>												
+
+		</Project>
+	</NodeMap>
+</Node>
