@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node id="205313" name="File Upload" thumb="box">	
+	<NodeMap>
+		<Project 
+			name="File Upload Demo for AS3" 
+			status="Production"
+			repo="Demo_AS3_Flex_CF_FileUpload" 
+			tag="FileUpload_1_2"
+			version="1.2"
+			archive="AS3/Demo_AS3_Flex_CF_FileUpload.zip" 
+			srcview="http://puremvc.org/pages/demos/AS3/Demo_AS3_Flex_CF_FileUpload/srcview"
+			live=""
+			forum="topic=174.0"
+			owner="Simon Bailey"
+			owner_node="302"
+			pic="PureMVC-Framework-AS3-Std.png"
+			shot="PureMVC-Shot-AS3-Flex-FileUpload.png">
+			
+<Description><![CDATA[
+This demo illustrates the use of Coldfusion with PureMVC to perform a file upload from a Flex client. Features include progress reporting, restriction on file type, and file organisation on upload according to file type. 
+]]></Description>						
+
+<ReleaseNotes><![CDATA[
+</LI></UL>
+<B>Summary of Changes in 1.2</B>
+<UL><LI>Updated to PureMVC 2.0.1</LI></UL>
+
+<B>Summary of Changes in 1.1</B>
+<UL><LI>Migrated to PureMVC 2.0, moved source code to src folder</LI></UL>
+
+<B>Features in Version 1.0</B>
+<UL><LI>Works with PureMVC 1.7.1</LI>
+<LI>Building a proxy that filters file type, handle errors and browses the users hard drive and handles other key aspects of the upload process.</LI>
+<LI>Construct simple command classes to instruct elements of the framework to perform various tasks.</LI>
+<LI>Extend the PopUpManager to create popups within the framework. </LI></UL>
+
+<U>Discussion</U>
+<UL><LI>The goal of this demo was to show how to create a simple upload component in Flex using the framework.</LI>
+<LI>In this example we demonstrate how to pass information such as progress status to different aspects of the framework and show a series of simple commands to clearly manage various aspects of the upload process such as browse, cancel and upload.</LI>
+<LI>Another feature demonstrated in this example is how to extend the PopUpManager class implementing popup windows in the framework. This involves registering mediators when each popup window is dynamically created as required.</LI></UL> 
+]]></ReleaseNotes>						
+
+<Installation><![CDATA[
+<B>Installing the Project Source Code</B>
+<U>From the archive</U>
+<UL><LI>Download the latest source code archive.</LI>
+<LI>Unzip the source code zip to any folder on your disk.</LI> 
+<LI>For instance: c:\development\</LI>
+<LI>You will see a FileUpload_X_Y (where X_Y is version) source folder.</LI> 
+<LI>For instance: c:\development\FileUpload_X_Y</LI></UL>
+<U>From the Repository</U>
+<UL><LI>Use your  favorite SVN client to retrieve the latest source code release from the repository.</LI></UL>   
+<U>Add the Services</U>
+<UL><LI>In the server root folder (typically wwwroot for ColdFusion) create a new folder named FileUpload for the server side script.</LI>
+<LI>Copy the contents of the Services folder from the distribution into the FileUpload folder on the server. </LI></UL> 
+<U>Setup and Compile the Demo Using Flex Builder 3</U>
+<UL><LI>Create a new Flex Project called 'RSSHeadlines' in Flex Builder 3, pointing to the new FileUpload_X_Y source folder.</LI>
+<LI>Set Application Server Type = ColdFusion</LI>
+<LI>Remote Object access service = ColdFusion Flash Remoting</LI>
+<LI>On the Configure ColdFusion page of the wizard, enter your ColdFusion root folder and web root.</LI>
+<LI>For the Output Folder browse to the server-based FileUpload folder you created above. </LI>
+<LI>Add the required libraries to the project's build path.</LI>
+<LI>From the Flex Builder menu do: Project -> Properties -> Flex Build Path -> Library Path -> Add SWC Folder</LI>
+<LI>Browse and select: FileUpload_/libs</LI>
+<LI>Run FileUpload.mxml</LI></UL>  
+]]></Installation>												
+
+		</Project>
+	</NodeMap>
+</Node>
