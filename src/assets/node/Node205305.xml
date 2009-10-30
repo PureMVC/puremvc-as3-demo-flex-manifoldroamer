@@ -55,7 +55,7 @@ This demo illustrates a startup process for a PureMVC-based Flex application tha
 <LI>Add the required libraries to the project's build path.</LI>
 <LI>From the Flex Builder menu do: Project -> Properties -> Flex Build Path -> Library Path -> Add SWC Folder</LI>
 <LI>Browse and select: AppSkeleton/libs</LI>
-<LI>Run AppSkeleton.as</LI></UL>  
+<LI>Run AppSkeleton.mxml</LI></UL>  
 ]]></Installation>												
 
 		</Project>

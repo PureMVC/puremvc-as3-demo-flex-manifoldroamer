@@ -53,7 +53,7 @@ This demo illustrates the use of the AS3 Undo utility your PureMVC-based Flex ap
 <LI>Add the required libraries to the project's build path.</LI>
 <LI>From the Flex Builder menu do: Project -> Properties -> Flex Build Path -> Library Path -> Add SWC Folder</LI>
 <LI>Browse and select: HistoryPanel/libs</LI>
-<LI>Run HistoryPanel.as</LI></UL>  
+<LI>Run HistoryPanel.mxml</LI></UL>  
 ]]></Installation>												
 
 		</Project>

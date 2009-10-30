@@ -59,7 +59,7 @@ This demo illustrates the use of PureMVC with AIR to fetch an RSS feed, and disp
 <LI>Add the required libraries to the project's build path.</LI>
 <LI>From the Flex Builder menu do: Project -> Properties -> Flex Build Path -> Library Path -> Add SWC Folder</LI>
 <LI>Browse and select: RSSHeadlines/libs</LI>
-<LI>Run RSSHeadlines.as</LI></UL>  
+<LI>Run RSSHeadlines.mxml</LI></UL>  
 ]]></Installation>												
 
 		</Project>

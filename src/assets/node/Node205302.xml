@@ -100,7 +100,7 @@ CodePeek communicates with the Google Code API to do searches for code examples 
 <LI>Add the required libraries to the project's build path.</LI>
 <LI>From the Flex Builder menu do: Project -> Properties -> Flex Build Path -> Library Path -> Add SWC Folder</LI>
 <LI>Browse and select: CodePeek/libs</LI>
-<LI>Run CodePeek.as</LI></UL>  
+<LI>Run CodePeek.mxml</LI></UL>  
 ]]></Installation>												
 
 		</Project>

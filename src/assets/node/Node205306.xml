@@ -56,7 +56,7 @@ This demo was originally written for Cairngorm, another framework for Flex. It i
 <LI>Add the required libraries to the project's build path.</LI>
 <LI>From the Flex Builder menu do: Project -> Properties -> Flex Build Path -> Library Path -> Add SWC Folder</LI>
 <LI>Browse and select: CafeTownsend/libs</LI>
-<LI>Run CafeTownsend.as</LI></UL>  
+<LI>Run CafeTownsend.mxml</LI></UL>  
 ]]></Installation>												
 
 		</Project>

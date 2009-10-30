@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node id="205309" name="Slacker" thumb="box">	
+	<NodeMap>
+		<Project 
+			name="Slacker Demo for AS3" 
+			status="Production"
+			repo="Demo_AS3_Flex_Slacker" 
+			tag="1.0"
+			version="1.0"
+			archive="AS3/Demo_AS3_Flex_Slacker.zip" 
+			srcview="http://puremvc.org/pages/demos/AS3/Demo_AS3_Flex_Slacker/srcview"
+			live="AS3/Demo_AS3_Flex_Slacker/"
+			forum="topic=635.0"
+			owner="Cliff Hall"
+			owner_node="300"
+			pic="PureMVC-Framework-AS3-Std.png"
+			shot="PureMVC-Shot-AS3-Flex-Slacker.png">
+			
+<Description><![CDATA[
+Demonstrates a method for responding to deferred instantiation of view components with lazy Mediator registration in PureMVC.
+]]></Description>						
+
+<ReleaseNotes><![CDATA[
+<B>Features in 1.0</B>
+<UL><LI>Children of a Flex Viewstack are created as they are navigated</LI>
+<LI>Mediators for those children are created by a Mediator for the Main display when it receives an event generated when they are created.</LI></UL>
+
+<U>Discussion:</U>
+<UL><LI>The simplest startup scenario for a Flex or AIR app is that the MXML application creates itself first (the view components), then the PureMVC apparatus we build attaches itself to the MXML app by registering Mediators with references to the already constructed view components in the display hierarchy.</LI>
+<LI>However a powerful feature of Flex is deferred instantiation of view components, and the default behavior of Flex with regard to this feature is something you must understand in order to reliably create Flex applications, regardless of whether you're using PureMVC.</LI>
+<LI>In a ViewStack or TabNavigator, for instance, although several children may be defined in the MXML, only the first visible child will be instantiated by default (creationPolicy="auto"). The other children will be instantiated only when you navigate to them.</LI> 
+<LI>This is nice because avoiding the unnecessary object creation helps the startup go faster, feeling more responsive to the user. And since the user may not navigate to all the children, both time memory is conserved. The user may encounter a small delay when navigating to a child for the first time, as he incurs this deferred object creation cost. Unfortunately, now our simple PureMVC startup scenario described above is no longer enough, because at startup time, we don't have references to all the view components that will eventually need mediation.</LI>
+<LI>Although we could register the Mediators and later give them references to the view components as they are created, that sort of defeats the point of deferred instantiation.</LI>
+<LI>We usually want to defer the creation and registration of the Mediator until its corresponding view component exists. </LI>
+<LI>This demo illustrates show to create and register Mediators for those deferred children when they are eventually created.</LI></UL>
+
+<U>Here's what happens:</U>
+<UL><LI>The Main MXML Application (Slacker) gets the ApplicationFacade instance *during* its creation.</LI>
+<LI>This initializes the Model, View, Controller and Facade instances, and registers STARTUP/StartupCommand with the controller.</LI>
+<LI>Slacker completes its MXML creation process, instantiating an ApplicationControlBar with several buttons, as well as an instance of the MainDisplay component with the id 'mainDisplay'. The creation of MainDisplay led to the creation only of its first child SplashView.</LI>
+<LI>On creationComplete, Slacker calls facade.startup(this);</LI>
+<LI>The ApplicationFacade.startup method sends the STARTUP notification, passing the reference to Slacker, the app.</LI>
+<LI>The StartupCommand registers the ApplicationMediator passing it the reference to the app.</LI>
+<LI>Once registered, the ApplicationMediator registers the MainDisplayMediator passing it the reference to app.mainDisplay. It also adds event listeners to the app for Slacker.SHOW_GALLERY, Slacker.SHOW_EDITOR and Slacker.SHOW_PROFILE. It doesn't listen for or handle any Notifications, the ApplicationMediator merely relays your button presses into the system.</LI>
+<LI>When MainDisplayMediator is registered, its interests are listed as ApplicationFacade.GALLERY_MODE, ApplicationFacade.EDITOR_MODE and ApplicationFacade.PROFILE_MODE. It also adds event listeners to the mainDisplay for MainDisplay.GALLERY_CREATED, MainDisplay.EDITOR_CREATED and MainDisplay.PROFILE_CREATED</LI>
+<LI>The system now awaits your input.</LI>
+<LI>You click one of the buttons on Slacker's ApplicationControlBar (Gallery, Editor or Profile)</LI>
+<LI>Slacker sends the corresponding event; Slacker.SHOW_GALLERY, Slacker.SHOW_EDITOR or Slacker.SHOW_PROFILE.</LI>
+<LI>The ApplicationMediator responds by sending a corresponding system notification ApplicationFacade.GALLERY_MODE, ApplicationFacade.EDITOR_MODE or ApplicationFacade.PROFILE_MODE</LI>
+<LI>The MainDisplayMediator handles the Notification by setting the mainDisplay.currentViewSelector to the corresponding selector value: MainDisplay.GALLERY, MainDisplay.EDITOR or MainDisplay.PROFILE</LI>
+<LI>Inside MainDisplay, the selectedIndex of the ViewStack is bound to the currentViewSelector property, and so it changes to display the child you have selected by button press.</LI>
+<LI>If this is the first navigation to the selected child, it will be instantiated at this time, and on creationComplete, it will send MainDisplay.GALLERY_CREATED, MainDisplay.EDITOR_CREATED and MainDisplay.PROFILE_CREATED.</LI>
+<LI>Regardless if it was the first navigation, Flex binding inside the MainDisplay component will set its activeView property to the selectedChild of the ViewStack.</LI>
+<LI>The MainDisplayMediator will respond by calling its checkForMediator method, which will register the appropriate mediator for the selected child mainDisplay.activeView only if it doesn't already exist.</LI>
+<LI>The Mediators for the children (GalleryViewMediator, EditorViewMediator or ProfileViewMediator) all do the same thing for the purposes of this demo.</LI>
+<LI>Once registered, the child's Mediator will set its child's message property to 'Hello from the newly created SomethingMediator'. It will also set an event listener on its child for the FlexEvent.HIDE event. Since the Mediator's just been registered, we'd like this initial message to show the first time, we'll change it when you navigate away so that when you come back, it displays a different message.</LI>
+<LI>When you click on a different button this child's HIDE event is fired, and its Mediator sets its message to 'Hi again from your old friend SomethingMediator'. It removes the event listener for the HIDE event, as we only wanted to capture it the first time to change this message.</LI>
+<LI>Another child is displayed, with its 'Hello from the newly created SomethingMediator' message if it is the first time for that child.</LI>
+<LI>You click the first button again, displaying a child you've already selected.</LI>
+<LI>Again, steps 10-16 are executed, only this time its not the first time that child was selected. The child is still displayed and now shows the message that was written to it when it was hidden.</LI></UL> 
+]]></ReleaseNotes>						
+
+<Installation><![CDATA[
+<B>Installing the Project Source Code</B>
+<U>From the archive</U>
+<UL><LI>Download the latest source code archive.</LI>
+<LI>Unzip the source code zip to any folder on your disk.</LI> 
+<LI>For instance: c:\development\</LI>
+<LI>You will see a Slacker_X_Y (where X_Y is version) source folder.</LI> 
+<LI>For instance: c:\development\Slacker_X_Y</LI></UL>
+<U>From the Repository</U>
+<UL><LI>Use your  favorite SVN client to retrieve the latest source code release from the repository.</LI></UL>   
+<U>Setup and Compile the Demo Using Flex Builder 3</U>
+<UL><LI>Create a new Flex Project called 'Slacker' in Flex Builder 3, pointing to the new Slacker_X_Y source folder.</LI>
+<LI>Add the required libraries to the project's build path.</LI>
+<LI>From the Flex Builder menu do: Project -> Properties -> Flex Build Path -> Library Path -> Add SWC Folder</LI>
+<LI>Browse and select: Slacker/libs</LI>
+<LI>Run Slacker.mxml</LI></UL>  
+]]></Installation>												
+
+		</Project>
+	</NodeMap>
+</Node>
