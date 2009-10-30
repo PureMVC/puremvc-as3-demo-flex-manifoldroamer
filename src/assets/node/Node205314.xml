@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node id="205314" name="Query a CFC" thumb="box">	
+	<NodeMap>
+		<Project 
+			name="Query a CFC Demo for AS3" 
+			status="Production"
+			repo="Demo_AS3_Flex_CF_QueryCFC" 
+			tag="QueryCFC_1_1"
+			version="1.1"
+			archive="AS3/Demo_AS3_Flex_CF_QueryCFC.zip" 
+			srcview="http://puremvc.org/pages/demos/AS3/Demo_AS3_Flex_CF_QueryCFC/srcview"
+			live=""
+			forum="topic=173.0"
+			owner="Simon Bailey"
+			owner_node="302"
+			pic="PureMVC-Framework-AS3-Std.png"
+			shot="PureMVC-Shot-AS3-Flex-QueryCFC.png">
+			
+<Description><![CDATA[
+This demo illustrates the use of Coldfusion with PureMVC to perform a query against a remote CFC from a Flex client. 
+]]></Description>						
+
+<ReleaseNotes><![CDATA[
+</LI></UL>
+<B>Summary of Changes in 1.1</B>
+<UL><LI>Updated to PureMVC 2.0.1. Refactored client code into src folder</LI>
+<LI>Renamed app to QueryCFC</LI></UL>
+
+<B>Features in Version 1.0</B>
+<UL><LI>Works with PureMVC 1.7.1</LI>
+<LI>Connect to a ColdFusion components methods using a combination of a Proxy and a Remote Delegate class.</LI>
+<LI>Display the data retrieved from the database in a ComboBox.</LI>
+<LI>Adjust cycle duration using a command to communicate with a proxy.</LI>
+<LI>Edit, delete and add data to a MySQL database.  </LI></UL>
+
+<U>Discussion</U>
+<UL><LI>The goal of this demo was to show how to query a MySQL database from a Flex application using ColdFusion as a server side language. </LI>
+<LI>In this example its clearly shown how to query a ColdFusion component from a proxy class and assign that data to value objects and populate an ArrayCollection. </LI>
+<LI>Once the ArrayCollection is populated the example goes on to demonstrate how to display the data in the view aspect of the framework. </LI>
+<LI>Data can then be edited and updated, deleted and then added using mediators and commands. </LI></UL>
+
+]]></ReleaseNotes>						
+
+<Installation><![CDATA[
+<B>Installing the Project Source Code</B>
+<U>From the archive</U>
+<UL><LI>Download the latest source code archive.</LI>
+<LI>Unzip the source code zip to any folder on your disk.</LI> 
+<LI>For instance: c:\development\</LI>
+<LI>You will see a QueryCFC_X_Y (where X_Y is version) source folder.</LI> 
+<LI>For instance: c:\development\QueryCFC_X_Y</LI></UL>
+<U>From the Repository</U>
+<UL><LI>Use your  favorite SVN client to retrieve the latest source code release from the repository.</LI></UL>   
+<U>Add the Services</U>
+<UL><LI>Set up a ColdFusion datasource (this example uses a datasource named flexcf) and point to a MySQL database with single table named users and 3 fields, user_id, username and password.</LI>
+<LI>In the server root folder (typically wwwroot for ColdFusion) create a new folder named QueryCFC for the server side script.</LI>
+<LI>Copy the contents of the Services folder from the distribution into the QueryCFC folder on the server. </LI></UL> 
+<U>Setup and Compile the Demo Using Flex Builder 3</U>
+<UL><LI>Create a new Flex Project called 'QueryCFC' in Flex Builder 3, pointing to the new QueryCFC_X_Y source folder.</LI>
+<LI>Set Application Server Type = ColdFusion</LI>
+<LI>Remote Object access service = ColdFusion Flash Remoting</LI>
+<LI>On the Configure ColdFusion page of the wizard, enter your ColdFusion root folder and web root.</LI>
+<LI>For the Output Folder browse to the server-based QueryCFC folder you created above. </LI>
+<LI>Add the required libraries to the project's build path.</LI>
+<LI>From the Flex Builder menu do: Project -> Properties -> Flex Build Path -> Library Path -> Add SWC Folder</LI>
+<LI>Browse and select: QueryCFC/libs</LI>
+<LI>Run QueryCFC.mxml</LI></UL>  
+]]></Installation>												
+
+		</Project>
+	</NodeMap>
+</Node>
