@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node id="205310" name="Loadup as Ordered" thumb="box">	
+	<NodeMap>
+		<Project 
+			name="Loadup as Ordered Demo for AS3" 
+			status="Production"
+			repo="Demo_AS3_Flex_LoadupAsOrdered" 
+			tag="LoadupAsOrdered_2_0 "
+			version="2.0"
+			archive="AS3/Demo_AS3_Flex_LoadupAsOrdered.zip" 
+			srcview="http://puremvc.org/pages/demos/AS3/Demo_AS3_Flex_LoadupAsOrdered/srcview"
+			live="AS3/Demo_AS3_Flex_LoadupAsOrdered/"
+			forum="topic=1396.0"
+			owner="Philip Sexton"
+			owner_node="327"
+			pic="PureMVC-Framework-AS3-Std.png"
+			shot="PureMVC-Shot-AS3-Flex-LoadupAsOrdered.png">
+			
+<Description><![CDATA[
+This demo illustrates the use of the PureMVC framework, the Loadup Utility, and the Asynchronous Stub utility to orchestrate an ordered startup process, where Model resources must be loaded in a specific order.
+]]></Description>						
+
+<ReleaseNotes><![CDATA[
+<B>Summary of Changes in 2.0</B>
+<UL><LI>Migrated to work with Loadup utility v2, the evolution of and replacement for the StartupManager utility.  The demo has consequently been renamed from StartupAsOrdered to LoadupAsOrdered.</LI></UL> 
+
+<B>Summary of Changes in 1.6</B>
+<UL><LI>Presentation improved, to conform better to demo presentation standards.  Libs now has PureMVC 2.0.4 and StartupManager 1.6.1. </LI></UL> 
+
+<B>Summary of Changes in 1.5</B>
+<UL><LI>Updated to comply with StartupManager 1.3</LI></UL> 
+
+<B>Summary of Changes in 1.4</B>
+<UL><LI>Updated to PureMVC 2.0.1 - CLH</LI></UL> 
+
+<B>Summary of Changes in 1.3</B>
+<UL><LI>Update for AsyncStub 1.2 and StartupManager 1.2, no functional changes, those utilities were just repackaged, and revved. Updating here just for tidyness.</LI></UL> 
+
+<B>Summary of Changes in 1.2</B>
+<UL><LI>Minor bug fix and DRY optimizations to Proxies. - CLH</LI></UL> 
+
+<B>Summary of Changes in 1.1</B>
+<UL><LI>Upgrade for AsyncStub 1.1 and StartupManager 1.1, and add panel of notifications received</LI></UL> 
+
+<B>Features in 1.0</B>
+<UL><LI>Use of Loadup utility</LI>
+<LI>Use of AsyncStub utility</LI>
+<LI>Defining resource load-order dependencies</LI>
+<LI>Retrying when a resource times out</LI>
+<LI>Implementing a per resource retry count</LI>
+<LI>Originally called StartupAsOrdered, and used the StartupManager utility (later renamed to Loadup).</LI></UL> 
+
+<U>Discussion:</U>
+<UL><LI>Startup as Ordered shows how the Loadup utility can be used to manage the loading of resources at application startup. The AsyncStub utility is used to simulate the asynchronous loading of resources by using a random time delay. Hence it should behave a little differently each time it is run.</LI>
+<LI>It can be run from the desktop in Flash Player, there is no special environment required.</LI>
+<U>When you run the application you will see three panels:</U>
+<LI>A panel contaning controls for adjusting the retry policy</LI>
+<LI>A panel below that on the left containing list of resources that are queued to be loaded. Some have no order dependencies and load right away. Some must wait until others have loaded before proceeding.</LI>
+<LI>The panel on the right is a stack that shows the notifications being sent. </LI>
+<LI>You can observe the overall progress of the load and a retry button will occasionally appear if a timeout or failure is generated. When you click retry, the process will pick back up where it left off, trying to load the resource that failed. No limit is placed on the number of retries for a given resource, but that could be added in the failed() method of each EntityProxy subclass on an individual basis, or in the EntityProxy class as a default retry limit.</LI>
+<LI>When you run it you'll see that it insures all model data is brought successfully into the application data despite annoying real world issues like load-order dependency, failure and timeout.</LI></UL> 
+]]></ReleaseNotes>						
+
+<Installation><![CDATA[
+<B>Installing the Project Source Code</B>
+<U>From the archive</U>
+<UL><LI>Download the latest source code archive.</LI>
+<LI>Unzip the source code zip to any folder on your disk.</LI> 
+<LI>For instance: c:\development\</LI>
+<LI>You will see a LoadupAsOrdered_X_Y (where X_Y is version) source folder.</LI> 
+<LI>For instance: c:\development\LoadupAsOrdered_X_Y</LI></UL>
+<U>From the Repository</U>
+<UL><LI>Use your  favorite SVN client to retrieve the latest source code release from the repository.</LI></UL>   
+<U>Setup and Compile the Demo Using Flex Builder 3</U>
+<UL><LI>Create a new Flex Project called 'LoadupAsOrdered' in Flex Builder 3, pointing to the new LoadupAsOrdered_X_Y source folder.</LI>
+<LI>Add the required libraries to the project's build path.</LI>
+<LI>From the Flex Builder menu do: Project -> Properties -> Flex Build Path -> Library Path -> Add SWC Folder</LI>
+<LI>Browse and select: LoadupAsOrdered/libs</LI>
+<LI>Run LoadupAsOrdered.mxml</LI></UL>  
+]]></Installation>												
+
+		</Project>
+	</NodeMap>
+</Node>
