@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Node id="205311" name="Hello Flash" thumb="box">	
+<Node id="205311" name="HelloFlash" thumb="box">	
 	<NodeMap>
 		<Project 
-			name="Hello Flash Demo for AS3" 
+			name="HelloFlash Demo for AS3" 
 			status="Production"
 			repo="Demo_AS3_Flash_HelloFlash" 
 			tag="HelloFlash_1_1"

@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Node id="2058" name="Demos (4)" thumb="flake">
+<Node id="2058" name="Demos (5)" thumb="flake">
 	<NodeMap>
 		<Nodes>
 			<Node id="205801" name="Sequential" type="stub" thumb="box"/>	
 			<Node id="205802" name="Modularity" type="stub" thumb="box"/>	
 			<Node id="205803" name="PipeWorks" type="stub" thumb="box"/>	
 			<Node id="205804" name="StopWatch" type="stub" thumb="box"/>	
+			<Node id="205805" name="Pipes Unit Tests" type="stub" thumb="box"/>	
 		</Nodes>
 	</NodeMap>
 </Node> 	

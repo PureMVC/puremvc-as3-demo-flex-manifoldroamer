@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node id="205805" name="Pipes Unit Tests" thumb="box">	
+	<NodeMap>
+		<Project 
+			name="Pipes Utility Unit Tests for AS3" 
+			status="Production"
+			repo="Utility_AS3_MultiCore_Pipes_UnitTests" 
+			tag="Pipes_UnitTests_1_0"
+			version="1.1"
+			archive="AS3/Utility_AS3_MultiCore_Pipes_UnitTests.zip" 
+			srcview="http://puremvc.org/pages/docs/AS3/multicore/pipes_unit_tests_source"
+			live="AS3/Utility_AS3_MultiCore_Pipes_UnitTests/"
+			docs="AS3/multicore/pipes_unit_tests_asdoc"
+			forum="topic=457"
+			owner="Cliff Hall"
+			owner_node="300"
+			pic="PureMVC-Framework-AS3-MC.png"
+			shot="PureMVC-Shot-AS3-Pipes-UnitTests.png">
+			
+<Description><![CDATA[
+This is the Unit Tests Project for the Pipes utility, which provides the capability for creating pipelines that pass messages between Cores in a PureMVC AS3 MultiCore-based application. 
+Pipelines can contain filters, queues, splitting and merging tees, and more.
+]]></Description>						
+
+<ReleaseNotes><![CDATA[
+<B>Features in 1.0</B>
+<UL><LI>These Unit Tests exercise each method of every class in the utility, and ensure that everything works as expected.</LI>
+<LI>The tests are arranged to run from simplest to most complex, so that assertions can be skipped on pieces that have been tested prior to any given test. </LI></UL>   
+]]></ReleaseNotes>						
+
+<Installation><![CDATA[
+<B>Installing the Project Source Code</B>
+<U>From the archive</U>
+<UL><LI>Download the latest source code archive.</LI>
+<LI>Unzip the source code zip to any folder on your disk.</LI> 
+<LI>For instance: c:\development\</LI>
+<LI>You will see a Pipes_UnitTests_X_Y (where X_Y is version) source folder.</LI> 
+<LI>For instance: c:\development\Pipes_UnitTests_X_Y</LI></UL>
+<U>From the Repository</U>
+<UL><LI>Use your  favorite SVN client to retrieve the latest source code release from the repository.</LI></UL>   
+<U>Setup and Compile the Demo Using Flex Builder 3</U>
+<UL><LI>Create a new ActionScript Project called 'Pipes_UnitTests' in Flex Builder 3, pointing to the new Pipes_UnitTests_X_Y source folder.</LI>
+<LI>Add the required libraries to the project's build path.</LI>
+<LI>From the Flex Builder menu do: Project -> Properties -> Flex Build Path -> Library Path -> Add SWC Folder</LI>
+<LI>Browse and select: Pipes_UnitTests/libs.</LI>
+<LI>Run Pipes_UnitTests.mxml</LI></UL>  
+]]></Installation>												
+
+		</Project>
+	</NodeMap>
+</Node>

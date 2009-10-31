@@ -2,7 +2,7 @@
 <Node id="3" name="Contributors" thumb="flake">
 	<NodeMap>
 		<Nodes>
-			<Node id="300" name="Clifford Hall" thumb="box"><NodeMap/></Node>
+			<Node id="300" name="Cliff Hall" thumb="box"/>
 			<Node id="301" name="Andy Adamczak" thumb="box"><NodeMap/></Node>
 			<Node id="302" name="Simon Bailey" thumb="box"><NodeMap/></Node>
 			<Node id="303" name="Matt Brailsford" thumb="box"><NodeMap/></Node>

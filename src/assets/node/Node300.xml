@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node id="300" name="Cliff Hall" thumb="flake">
+	<NodeMap>
+		<Nodes>
+			<Node id="2051" 	name="Framework: AS3 Standard" 		type="stub"	thumb="box"/>
+			<Node id="2052" 	name="Tests: AS3 Standard" 			type="stub"	thumb="box"/>
+			<Node id="205302" 	name="Demo: AS3 CodePeek" 			type="stub"	thumb="box"/>
+			<Node id="205304"	name="Demo: AS3 StopWatch"  		type="stub"	thumb="box"/>
+			<Node id="205307" 	name="Demo: AS3 Employee Admin"		type="stub"	thumb="box"/>
+			<Node id="205309" 	name="Demo: AS3 Slacker" 			type="stub"	thumb="box"/>
+			<Node id="205311" 	name="Demo: AS3 HelloFlash" 		type="stub"	thumb="box"/>
+			<Node id="205406" 	name="Util: AS3 Deployment Config" 	type="stub"	thumb="box"/>
+			<Node id="205407" 	name="Util: AS3 XML Database" 		type="stub"	thumb="box"/>
+			<Node id="205408" 	name="Util: AS3 Desktop Citizen" 	type="stub"	thumb="box"/>
+			<Node id="2056" 	name="Framework: AS3 MultiCore" 	type="stub"	thumb="box"/>
+			<Node id="2057" 	name="Tests: AS3 MultiCore" 		type="stub"	thumb="box"/>
+			<Node id="205802" 	name="Demo: AS3 Modularity"			type="stub"	thumb="box"/>	
+			<Node id="205803" 	name="Demo: AS3 PipeWorks" 			type="stub"	thumb="box"/>	
+			<Node id="205905" 	name="Util: AS3 Pipes" 				type="stub"	thumb="box"/>	
+		</Nodes>
+	</NodeMap>
+</Node>

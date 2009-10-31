@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Node id="2057" name="Unit Tests" thumb="box">
+<Node id="2057" name="AS3 MC Unit Tests" thumb="box">
 	<NodeMap>
 		<Project 
 			name="PureMVC AS3 MultiCore Unit Tests" 

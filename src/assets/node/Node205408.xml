@@ -59,7 +59,7 @@ Project -> Properties -> Flex Build Path -> Library Path -> Add SWC
 <LI>Browse and select the SWC, for instance:</LI> 
 c:\development\DesktopCitizen_X_Y\bin\Utility_AS3_AIR_DesktopCitizen_X_Y.swc
 <LI>Click Finish.</LI></UL>  
-
+]]></Installation>	
 		</Project>
 	</NodeMap>
 </Node>
