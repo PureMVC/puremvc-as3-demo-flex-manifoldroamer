@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node id="322" name="Michael Oddis" thumb="flake">
+	<NodeMap>
+		<Nodes>
+			<Node id="2201" name="Framework: CF Standard and Tests"  type="stub" thumb="box"/>
+			<Node id="220301" name="Demo: CF Hello World"  type="stub" thumb="box"/>
+			<Node id="220302" name="Demo: CF Login"  type="stub" thumb="box"/>
+		</Nodes>
+	</NodeMap>
+</Node>

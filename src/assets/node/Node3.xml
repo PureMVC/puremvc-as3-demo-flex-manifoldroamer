@@ -1,38 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Node id="3" name="Contributors" thumb="flake">
+<Node id="3" name="Project Owners" thumb="flake">
 	<NodeMap>
 		<Nodes>
 			<Node id="300" name="Cliff Hall" thumb="box"/>
-			<Node id="301" name="Andy Adamczak" thumb="box"><NodeMap/></Node>
-			<Node id="302" name="Simon Bailey" thumb="box"><NodeMap/></Node>
-			<Node id="303" name="Matt Brailsford" thumb="box"><NodeMap/></Node>
-			<Node id="304" name="Pedr Browne" thumb="box"><NodeMap/></Node>
-			<Node id="305" name="Zjnue Brzavi" thumb="box"><NodeMap/></Node>
-			<Node id="306" name="Sean Carnell" thumb="box"><NodeMap/></Node>
-			<Node id="307" name="Chandima Cumaranatunge" thumb="box"><NodeMap/></Node>
-			<Node id="308" name="Jake Dempsey" thumb="box"><NodeMap/></Node>
-			<Node id="309" name="David Deraedt" thumb="box"><NodeMap/></Node>
-			<Node id="310" name="Dragos Dascalita" thumb="box"><NodeMap/></Node>
-			<Node id="311" name="Cédric Floury" thumb="box"><NodeMap/></Node>
-			<Node id="312" name="Duncan Hall" thumb="box"><NodeMap/></Node>
-			<Node id="313" name="Joel Hooks" thumb="box"><NodeMap/></Node>
-			<Node id="314" name="Toby de Havilland" thumb="box"><NodeMap/></Node>
-			<Node id="315" name="Jari Kemppinen" thumb="box"><NodeMap/></Node>
-			<Node id="316" name="James Knight" thumb="box"><NodeMap/></Node>
-			<Node id="317" name="Brian Knorr" thumb="box"><NodeMap/></Node>
-			<Node id="318" name="Jens Krause" thumb="box"><NodeMap/></Node>
-			<Node id="319" name="Nathan Levesque" thumb="box"><NodeMap/></Node>
-			<Node id="320" name="Neil Manuell" thumb="box"><NodeMap/></Node>
-			<Node id="321" name="Marco Secchi" thumb="box"><NodeMap/></Node>
-			<Node id="322" name="Michael Oddis" thumb="box"><NodeMap/></Node>
-			<Node id="323" name="Hasan Otuome" thumb="box"><NodeMap/></Node>
-			<Node id="324" name="Michael Ramirez" thumb="box"><NodeMap/></Node>
-			<Node id="325" name="Jim Robson" thumb="box"><NodeMap/></Node>
-			<Node id="326" name="Frederic Saunier" thumb="box"><NodeMap/></Node>
-			<Node id="327" name="Philip Sexton" thumb="box"><NodeMap/></Node>
-			<Node id="328" name="Donald Stinchfield" thumb="box"><NodeMap/></Node>
-			<Node id="329" name="Anthony Quinault" thumb="box"><NodeMap/></Node>
-			<Node id="330" name="Daniele Ugoletti" thumb="box"><NodeMap/></Node>
+			<Node id="301" name="Andy Adamczak" thumb="box"/>
+			<Node id="302" name="Simon Bailey" thumb="box"/>
+			<Node id="303" name="Matt Brailsford" thumb="box"/>
+			<Node id="304" name="Pedr Browne" thumb="box"/>
+			<Node id="305" name="Zjnue Brzavi" thumb="box"/>
+			<Node id="306" name="Sean Carnell" thumb="box"/>
+			<Node id="307" name="Chandima Cumaranatunge" thumb="box"/>
+			<Node id="308" name="Jake Dempsey" thumb="box"/>
+			<Node id="309" name="David Deraedt" thumb="box"/>
+			<Node id="310" name="Dragos Dascalita" thumb="box"/>
+			<Node id="312" name="Duncan Hall" thumb="box"/>
+			<Node id="314" name="Toby de Havilland" thumb="box"/>
+			<Node id="315" name="Jari Kemppinen" thumb="box"/>
+			<Node id="316" name="James Knight" thumb="box"/>
+			<Node id="317" name="Brian Knorr" thumb="box"/>
+			<Node id="318" name="Jens Krause" thumb="box"/>
+			<Node id="319" name="Nathan Levesque" thumb="box"/>
+			<Node id="320" name="Neil Manuell" thumb="box"/>
+			<Node id="321" name="Marco Secchi" thumb="box"/>
+			<Node id="322" name="Michael Oddis" thumb="box"/>
+			<Node id="323" name="Hasan Otuome" thumb="box"/>
+			<Node id="324" name="Michael Ramirez" thumb="box"/>
+			<Node id="325" name="Jim Robson" thumb="box"/>
+			<Node id="326" name="Frederic Saunier" thumb="box"/>
+			<Node id="327" name="Philip Sexton" thumb="box"/>
+			<Node id="328" name="Donald Stinchfield" thumb="box"/>
+			<Node id="329" name="Anthony Quinault" thumb="box"/>
+			<Node id="330" name="Daniele Ugoletti" thumb="box"/>
 		</Nodes>
 	</NodeMap>
 </Node>

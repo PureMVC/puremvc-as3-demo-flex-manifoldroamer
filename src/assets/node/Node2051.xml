@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Node id="2051" name="AS3 Standard Framework" thumb="box">	
+<Node id="2051" name="Framework: AS3 Standard" thumb="box">	
 	<NodeMap>
 		<Project 
 			name="PureMVC Standard for ActionScript 3" 

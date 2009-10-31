@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node id="314" name="Toby de Havilland" thumb="flake">
+	<NodeMap>
+		<Nodes>
+			<Node id="2501" name="Framework: Python Standard and Tests" type="stub" thumb="box"/>
+			<Node id="250301" name="Demo: Python Employee Admin" type="stub" thumb="box"/>
+		</Nodes>
+	</NodeMap>
+</Node>

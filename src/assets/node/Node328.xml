@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node id="328" name="Donald Stinchfield" thumb="flake">
+	<NodeMap>
+		<Nodes>
+			<Node id="2351" name="Framework: Java Standard" type="stub" thumb="box"/>
+			<Node id="2352" name="Tests: Java Standard" type="stub" thumb="box"/>
+		</Nodes>
+	</NodeMap>
+</Node>

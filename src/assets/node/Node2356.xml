@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Node id="2356" name="Framework" thumb="box">	
+<Node id="2356" name="Framework: Java MultiCore" thumb="box">	
 	<NodeMap>
 		<Project 
 			name="PureMVC MultiCore for Java" 

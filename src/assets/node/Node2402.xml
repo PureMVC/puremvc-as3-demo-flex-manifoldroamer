@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Node id="2402" name="Unit Tests" thumb="box">
+<Node id="2402" name="Tests: Objective C Standard" thumb="box">
 	<NodeMap>
 		<Project 
 			name="PureMVC Objective C Standard Version Unit Tests" 

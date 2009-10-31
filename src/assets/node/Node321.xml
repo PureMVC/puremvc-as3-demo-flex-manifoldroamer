@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node id="321" name="Marco Secchi" thumb="flake">
+	<NodeMap>
+		<Nodes>
+			<Node id="2251" name="Framework: Haxe Standard"  type="stub" thumb="box"/>
+			<Node id="2252" name="Tests: Haxe Standard"  type="stub" thumb="box"/>
+			<Node id="225302" name="Demo: Haxe Multiplatform Comm" type="stub" thumb="box"/>
+			<Node id="225303" name="Demo: Haxe Simple Admin" type="stub" thumb="box"/>
+			<Node id="2256" name="Framework: Haxe MultiCore"  type="stub" thumb="box"/>
+			<Node id="2257" name="Tests: Haxe MultiCore" type="stub" thumb="box"/>
+			<Node id="225903" name="Util: Haxe Pipes"  type="stub" thumb="box"/>
+			<Node id="225802" name="Tests: Haxe Pipes"  type="stub" thumb="box"/>
+		</Nodes>
+	</NodeMap>
+</Node>

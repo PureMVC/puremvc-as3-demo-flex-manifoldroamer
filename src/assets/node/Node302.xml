@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node id="302" name="Simon Bailey" thumb="flake">
+	<NodeMap>
+		<Nodes>
+			<Node id="205303" name="Demo: AS3 RSS Headlines" 	type="stub"	thumb="box"/>
+			<Node id="205313" name="Demo: AS3 File Upload"  	type="stub"	thumb="box"/>
+			<Node id="205314" name="Demo: AS3 Query a CFC" 		type="stub"	thumb="box"/>
+		</Nodes>
+	</NodeMap>
+</Node>

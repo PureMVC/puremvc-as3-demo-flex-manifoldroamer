@@ -17,6 +17,7 @@
 			<Node id="205802" 	name="Demo: AS3 Modularity"			type="stub"	thumb="box"/>	
 			<Node id="205803" 	name="Demo: AS3 PipeWorks" 			type="stub"	thumb="box"/>	
 			<Node id="205905" 	name="Util: AS3 Pipes" 				type="stub"	thumb="box"/>	
+			<Node id="200301" 	name="Demo: AS2 Balloonatroid" 		type="stub"	thumb="box"/>
 		</Nodes>
 	</NodeMap>
 </Node>

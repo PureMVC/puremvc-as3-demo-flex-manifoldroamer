@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Node id="2002" name="Unit Tests" thumb="box">
+<Node id="2002" name="AS2 Standard Tests" thumb="box">
 	<NodeMap>
 		<Project 
 			name="PureMVC AS2 Standard Unit Tests" 
@@ -14,7 +14,7 @@
 			owner="James Knight"
 			owner_node="316"
 			pic="PureMVC-Framework-AS2-Std.png"
-			shot="PureMVC-AS2-Shot-Std-UnitTests.png">
+			shot="PureMVC-Shot-AS2-Std-UnitTests.png">
 
 <Description><![CDATA[
 These are the Unit Tests for the PureMVC AS2 Standard Version Framework.

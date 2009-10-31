@@ -2,7 +2,7 @@
 <Node id="8" name="Community" thumb="flake">
 	<NodeMap>
 		<Nodes>
-			<Node id="3" 	name="Contributors"		thumb="box"/>
+			<Node id="3" 	name="Project Owners"	thumb="box"/>
 			<Node id="4" 	name="Showcase" 		thumb="box"/>
 			<Node id="7" 	name="Presentations"	thumb="box"/>
 			<Node id="9" 	name="Interact"			thumb="box"/>			

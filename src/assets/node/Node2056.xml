@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Node id="2056" name="AS3 MultiCore Framework" thumb="box">	
+<Node id="2056" name="Framework: AS3 MultiCore" thumb="box">	
 	<NodeMap>
 		<Project 
 			name="PureMVC MultiCore for ActionScript 3" 

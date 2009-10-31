@@ -1,4 +1,5 @@
-<Node id="2452" name="Unit Tests" thumb="box">
+<?xml version="1.0" encoding="UTF-8"?>
+<Node id="2452" name="Tests: PHP Standard" thumb="box">
 	<NodeMap>
 		<Project 
 			name="PureMVC PHP Standard Version Unit Tests" 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Node id="2551" name="Framework" thumb="box">	
+<Node id="2551" name="Framework: Ruby Standard" thumb="box">	
 	<NodeMap>
 		<Project 
 			name="PureMVC Standard for Ruby" 
