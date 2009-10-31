@@ -4,7 +4,6 @@
 		<Nodes>
 			<Node id="2" name="Code" 			thumb="box"/>
 			<Node id="5" name="Docs" 			thumb="box"/>
-			<Node id="6" name="License"			thumb="box"><NodeMap/></Node>
 			<Node id="8" name="Community"		thumb="box"/>
 		</Nodes>
 	</NodeMap>
