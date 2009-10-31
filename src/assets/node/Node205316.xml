@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node id="205316" name="Index Cards" thumb="box">	
+	<NodeMap>
+		<Project 
+			name="Index Cards Demo for AS3" 
+			status="Production"
+			repo="Demo_AS3_Flex_Rails_IndexCards" 
+			tag="IndexCards_1_1"
+			version="1.1"
+			archive="AS3/Demo_AS3_Flex_Rails_IndexCards.zip" 
+			srcview="http://puremvc.org/pages/demos/AS3/Demo_AS3_Flex_Rails_IndexCards/srcview"
+			live=""
+			forum="topic=266.0"
+			owner="Jim Robson"
+			owner_node="325"
+			pic="PureMVC-Framework-AS3-Std.png"
+			shot="PureMVC-Shot-AS3-Flex-IndexCards.png">
+			
+<Description><![CDATA[
+This demo illustrates the use of PureMVC with Rails to create a unique conceptual mapper / study aid application.
+]]></Description>						
+
+<ReleaseNotes><![CDATA[
+<B>Summary of Changes in 1.1</B>
+<UL><LI>Updated to PureMVC 2.0.1 </LI>
+<LI>Made several best practice-related changes</LI></UL>
+
+<B>Features in Version 1.0</B>
+<UL><LI>Interacting with a Ruby service</LI>
+<LI>Data stored in MySQL database </LI></UL>
+
+<U>Discussion</U>
+<UL><LI>From a user experience perspective, the application's metaphor is very simple: you use index cards to help you study.</LI>
+<LI>On one side of the index card, you write the name of a concept that you wish to learn, and on the back you write a definition and/or description of that concept.</LI>
+<LI>Of course, you’ll have a separate set of index cards for each subject that you study, and within each subject you will further divide your index cards based on topics or categories.</LI>
+<LI>You put all of the cards for each topic or category in a rubber band to keep your cards from becoming disorganized. For example, if the subject you’re studying is elementary statistics, you might have one rubber band to hold cards with descriptive analysis concepts, another rubber band for probability, and so on.</LI></UL>
+
+]]></ReleaseNotes>						
+
+<Installation><![CDATA[
+<B>Prerequisites</B>
+<U>You need Ruby on Rails running on your development machine. Two recommended options are:</U> 
+<UL><LI><font color="#0000FF"><A href="http://instantrails.rubyforge.org/wiki/wiki.pl" target="_blank">InstantRails</A></font></LI>
+<LI><font color="#0000FF"><A href="http://bitnami.org/stack/rubystack" target="_blank">RubyStack</A></font></LI></UL>
+<B>Installing the Project Source Code</B>
+<U>From the archive</U>
+<UL><LI>Download the latest source code archive.</LI>
+<LI>Unzip the source code zip to any folder on your disk.</LI> 
+<LI>For instance: c:\development\</LI>
+<LI>You will see a IndexCards_X_Y (where X_Y is version) source folder.</LI> 
+<LI>For instance: c:\development\IndexCards_X_Y</LI></UL>
+<U>From the Repository</U>
+<UL><LI>Use your  favorite SVN client to retrieve the latest source code release from the repository.</LI></UL>
+<U>Setting Up the Rails Application</U>
+<UL><LI>Create a new Rails directory structure and copy the Ruby source files from the zip into the corresponding Rails directories.</LI>
+<LI>Open a command window in your Rails applications directory. (If you're using Instant Rails, this is usually the rails_apps subdirectory of the Instant Rails folder. If you're using RubyStack, look for the BitNami RubyStack projects directory.)</LI>
+<LI>At the command prompt, type rails index_cards. Your directory tree should now be generated for you. Keep the command window open; you will use it to set up the database.</LI>
+<LI>Copy the contents of the org/puremvc/as3/demos/flex/rails/indexcards/app directory of the zip into the app subdirectory of the Rails application structure that you just created in step 2.</LI></UL>    
+<U>Setting Up the MySQL Database</U>
+<UL><LI>Create the empty database, then run the create.sql script included in the zip.</LI>
+<LI>Copy the file create.sql from the rails/db directory of the zip the the db subdirectory of the Rails application structure that you created above.</LI>
+<LI>If you haven't already, open a command window as in step 1 of setting up the Rails application.</LI>
+<LI>Log in to MySQL with the appropriate user name and password, then create a database called index_cards_development.</LI>
+<LI>Still in the command window, navigate to the db subdirectory of your new Rails application and run the create.sql script. Leave the command window open.</LI></UL>
+<U>Starting the Rails Application</U>
+<UL><LI>With a command window open at the root directory of your new Rails application</LI>
+<LI>Type the following line to start the application: ruby script/server</LI></UL>
+<U>Rails port</U>
+<UL><LI>In a standard Rails development setup, your Rails application is most likely running on  http://localhost:3000/. </LI>
+<LI>If you are using a different configuration, you'll have to make a change to the ActionScript code. In the source folder of your new Flex project, open the file model/utils/URL.as and modify the value of the constant Stub to match your configuration.</LI></UL>
+<U>Setup and Compile the Demo Using Flex Builder 3</U>
+<UL><LI>Create a new Flex Project called 'IndexCards' in Flex Builder 3, pointing to the new IndexCards source folder.</LI>
+<LI>Set Application Server Type = None</LI>
+<LI>For the Output Folder browse to the server-based IndexCards folder you created above. </LI>
+<LI>Add the required libraries to the project's build path.</LI>
+<LI>From the Flex Builder menu do: Project -> Properties -> Flex Build Path -> Library Path -> Add SWC Folder</LI>
+<LI>Browse and select: IndexCards/libs</LI>
+<LI>Run IndexCards.mxml</LI></UL>  
+]]></Installation>												
+
+		</Project>
+	</NodeMap>
+</Node>
