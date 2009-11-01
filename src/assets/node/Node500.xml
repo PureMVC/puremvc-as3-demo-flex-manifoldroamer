@@ -2,7 +2,7 @@
 <Node id="500" name="English"  thumb="flag-usa">
 	<NodeMap>
 		<Nodes>
-			<Node id="5000" name="Goals &amp; Benefits" thumb="box">
+			<Node id="5000" name="Goals &amp; Benefits" thumb="site-document">
 					<NodeMap>
 						<Document 
 							name="PureMVC Goals and Benefits Overview"
@@ -14,7 +14,7 @@
 							</Document>
 					</NodeMap>
 			</Node>
-			<Node id="5001" name="Conceptual Diagram" thumb="box">
+			<Node id="5001" name="Conceptual Diagram" thumb="site-document">
 					<NodeMap>
 						<Document 
 							name="PureMVC Conceptual Diagram"
@@ -25,7 +25,7 @@
 ]]>						</Document>
 					</NodeMap>
 			</Node>
-			<Node id="5002" name="Framework Overview" thumb="box">
+			<Node id="5002" name="Framework Overview" thumb="site-document">
 					<NodeMap>
 						<Document 
 							name="PureMVC Framework Overview with UML"
@@ -36,7 +36,7 @@
 ]]>						</Document>
 					</NodeMap>
 			</Node>
-			<Node id="5003" name="Best Practices" thumb="box">
+			<Node id="5003" name="Best Practices" thumb="site-document">
 					<NodeMap>
 						<Document 
 							name="PureMVC Best Practices and Implementation Idioms"

@@ -2,7 +2,7 @@
 <Node id="502" name="German"  thumb="flag-germany">
 	<NodeMap>
 		<Nodes>
-			<Node id="5020" name="Best Practices" thumb="box">
+			<Node id="5020" name="Best Practices" thumb="site-document">
 					<NodeMap>
 						<Document 
 							name="Best Practices and Implementation Idioms (German Translation)"

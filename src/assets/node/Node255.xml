@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Node id="255" name="Ruby" thumb="flake">
+<Node id="255" name="Ruby" thumb="section-language">
 	<NodeMap>
 		<Nodes>
 			<Node id="2550" name="Standard Version" thumb="box"/>

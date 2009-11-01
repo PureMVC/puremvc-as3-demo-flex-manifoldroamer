@@ -3,7 +3,7 @@
 	<NodeMap>
 		<Nodes>
 			<Node id="3" 	name="Project Owners"	thumb="section-project-owners"/>
-			<Node id="4" 	name="Showcase" 		thumb="box"/>
+			<Node id="4" 	name="Showcase" 		thumb="section-showcase"/>
 			<Node id="7" 	name="Presentations"	thumb="section-presentations"/>
 			<Node id="9" 	name="Interact"			thumb="section-interact"/>			
 			<Node id="10" 	name="Supporters"		thumb="section-supporters"/>			

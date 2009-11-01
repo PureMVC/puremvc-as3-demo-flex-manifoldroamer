@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Node id="4" name="Showcase" thumb="flake">
+<Node id="4" name="Showcase" thumb="section-showcase">
 	<NodeMap>
 		<Nodes>
 			<!-- EXPLORING ETFs -->
-			<Node id="400" name="Exploring ETFs" thumb="box">
+			<Node id="400" name="Exploring ETFs" thumb="site-showcase">
 				<NodeMap>
 					<Showcase 
 						name="Barclay's Global: Exploring ETFs" 
@@ -18,7 +18,7 @@
 			</Node>
 
 			<!-- FOCUS ON FASHION -->
-			<Node id="401" name="Focus on Fashion" thumb="box">
+			<Node id="401" name="Focus on Fashion" thumb="site-showcase">
 				<NodeMap>
 					<Showcase 
 						name="Mercedes Benz: Focus on Fashion" 
@@ -34,7 +34,7 @@
 			</Node>
 			
 			<!-- MOONLIGHTING -->
-			<Node id="402" name="Moonlighting" thumb="box">
+			<Node id="402" name="Moonlighting" thumb="site-showcase">
 				<NodeMap>
 					<Showcase 
 						name="Moonlighting Film Production Services" 
@@ -50,7 +50,7 @@
 			</Node>
 			
 			<!-- RADUS -->
-			<Node id="403" name="RADUS" thumb="box">			
+			<Node id="403" name="RADUS" thumb="site-showcase">			
 				<NodeMap>
 					<Showcase 
 						name="RADUS" 
@@ -65,7 +65,7 @@
 			</Node>
 			
 			<!-- MINITASK -->
-			<Node id="404" name="MiniTask" thumb="box">			
+			<Node id="404" name="MiniTask" thumb="site-showcase">			
 				<NodeMap>
 					<Showcase 
 						name="MiniTask" 
@@ -79,7 +79,7 @@
 			</Node>
 			
 			<!-- WS-SLIDESHOW -->
-			<Node id="405" name="WS-Slideshow" thumb="box">			
+			<Node id="405" name="WS-Slideshow" thumb="site-showcase">			
 				<NodeMap>
 					<Showcase 
 						name="WS-Slideshow" 
@@ -94,7 +94,7 @@
 			</Node>
 			
 			<!-- BRAINWAVE -->
-			<Node id="406" name="Brainwave" thumb="box">			
+			<Node id="406" name="Brainwave" thumb="site-showcase">			
 				<NodeMap>
 					<Showcase 
 						name="Brainwave" 
@@ -109,7 +109,7 @@
 			</Node>
 			
 			<!-- ECO RANGERS -->
-			<Node id="407" name="Eco Rangers" thumb="box">			
+			<Node id="407" name="Eco Rangers" thumb="site-showcase">			
 				<NodeMap>
 					<Showcase 
 						name="Professor Green and the Eco Rangers" 
@@ -124,7 +124,7 @@
 			</Node>
 			
 			<!-- RENJU -->
-			<Node id="408" name="Renju, The Game" thumb="box">			
+			<Node id="408" name="Renju, The Game" thumb="site-showcase">			
 				<NodeMap>
 					<Showcase 
 						name="Renju, The Game" 
@@ -138,7 +138,7 @@
 			</Node>
 			
 			<!-- SLIDING PUZZLE -->
-			<Node id="409" name="Sliding Puzzle" thumb="box">			
+			<Node id="409" name="Sliding Puzzle" thumb="site-showcase">			
 				<NodeMap>
 					<Showcase 
 						name="Sliding Puzzle" 
@@ -153,7 +153,7 @@
 			</Node>
 			
 			<!-- PANFU -->
-			<Node id="410" name="Panfu" thumb="box">			
+			<Node id="410" name="Panfu" thumb="site-showcase">			
 				<NodeMap>
 					<Showcase 
 						name="Panfu: Your friends and you!" 
@@ -167,7 +167,7 @@
 			</Node>
 			
 			<!-- WORLDS BIGGEST ADD -->
-			<Node id="411" name="The World's Biggest Ad" thumb="box">			
+			<Node id="411" name="The World's Biggest Ad" thumb="site-showcase">			
 				<NodeMap>
 					<Showcase 
 						name="The World's Biggest Ad" 
@@ -182,7 +182,7 @@
 			</Node>
 
 			<!-- SEA OF ARROWS -->
-			<Node id="412" name="Sea of Arrows" thumb="box">			
+			<Node id="412" name="Sea of Arrows" thumb="site-showcase">			
 				<NodeMap>
 					<Showcase 
 						name="Sea of Arrows" 
