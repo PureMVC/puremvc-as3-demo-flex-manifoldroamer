@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Node id="8" name="Community" thumb="flake">
+<Node id="8" name="Community" thumb="section-community">
 	<NodeMap>
 		<Nodes>
-			<Node id="3" 	name="Project Owners"	thumb="box"/>
+			<Node id="3" 	name="Project Owners"	thumb="section-project-owners"/>
 			<Node id="4" 	name="Showcase" 		thumb="box"/>
-			<Node id="7" 	name="Presentations"	thumb="box"/>
-			<Node id="9" 	name="Interact"			thumb="box"/>			
-			<Node id="10" 	name="Supporters"		thumb="box"/>			
+			<Node id="7" 	name="Presentations"	thumb="section-presentations"/>
+			<Node id="9" 	name="Interact"			thumb="section-interact"/>			
+			<Node id="10" 	name="Supporters"		thumb="section-supporters"/>			
 		</Nodes>
 	</NodeMap>
 </Node>

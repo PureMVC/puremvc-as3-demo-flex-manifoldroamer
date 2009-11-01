@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Node id="7" name="Presentations" thumb="flake">
+<Node id="7" name="Presentations" thumb="section-presentations">
 	<NodeMap>
 		<Nodes>
 		
 			<!-- STANDARD VERSION OVERVIEW -->
-			<Node id="700" name="Standard Overview" thumb="box">
+			<Node id="700" name="Standard Overview" thumb="section-presentation">
 				<NodeMap>
 					<Presentation 
 						name="PureMVC Standard Version Overview" 
@@ -20,7 +20,7 @@
 			</Node>
 
 			<!-- MULTICORE VERSION OVERVIEW -->
-			<Node id="701" name="MultiCore Overview" thumb="box">
+			<Node id="701" name="MultiCore Overview" thumb="section-presentation">
 				<NodeMap>
 					<Presentation 
 						name="PureMVC MultiCore Version Overview" 
@@ -36,7 +36,7 @@
 			</Node>
 
 			<!-- STATE MACHINE OVERVIEW -->
-			<Node id="702" name="State Machine Overview" thumb="box">
+			<Node id="702" name="State Machine Overview" thumb="section-presentation">
 				<NodeMap>
 					<Presentation 
 						name="PureMVC State Machine Utility Overview" 
@@ -52,7 +52,7 @@
 			</Node>
 
 			<!-- GETTING IN THE GROOVE -->
-			<Node id="703" name="Getting in the Groove" thumb="box">
+			<Node id="703" name="Getting in the Groove" thumb="section-presentation">
 				<NodeMap>
 					<Presentation 
 						name="Getting in the Groove" 
@@ -74,7 +74,7 @@
 			</Node>
 
 			<!-- FRAMEWORK SHOOTOUT -->
-			<Node id="704" name="Framework Shootout" thumb="box">
+			<Node id="704" name="Framework Shootout" thumb="section-presentation">
 				<NodeMap>
 					<Presentation 
 						name="Framework Shootout at the SilvaFUG Corral" 
@@ -96,7 +96,7 @@
 			</Node>
 			
 			<!-- ATL USER GROUP -->
-			<Node id="705" name="Atlanta Meetup" thumb="box">
+			<Node id="705" name="Atlanta Meetup" thumb="section-presentation">
 				<NodeMap>
 					<Presentation 
 						name="PureMVC @ Atlanta Meetup 12/18/2008" 
@@ -112,7 +112,7 @@
 			</Node>
 
 			<!-- SAN DIEGO USER GROUP -->
-			<Node id="706" name="San Diego Meetup" thumb="box">
+			<Node id="706" name="San Diego Meetup" thumb="section-presentation">
 				<NodeMap>
 					<Presentation 
 						name="PureMVC @ San Diego Meetup 1/21/2009" 
@@ -128,7 +128,7 @@
 			</Node>
 
 			<!-- HELLO WORLD GROUP -->
-			<Node id="707" name="'Hello World' Introduction" thumb="box">
+			<Node id="707" name="'Hello World' Introduction" thumb="section-presentation">
 				<NodeMap>
 					<Presentation 
 						name="Adobe TV: 'Hello World' Intro to PureMVC" 
@@ -144,7 +144,7 @@
 			</Node>
 
 			<!-- PIRATE HQ -->
-			<Node id="707" name="Pirate HQ @ MAX '08" thumb="box">
+			<Node id="707" name="Pirate HQ @ MAX '08" thumb="section-presentation">
 				<NodeMap>
 					<Presentation 
 						name="Pirate Internet Radio Conference Takeover @ MAX '08" 

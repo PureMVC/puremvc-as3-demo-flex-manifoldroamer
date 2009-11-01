@@ -1,38 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Node id="10" name="Supporters" thumb="flake">
+<Node id="10" name="Supporters" thumb="section-supporters">
 	<NodeMap>
 		<Nodes>
 		
 			<!-- CVSDude -->
-			<Node id="101" name="CVSDude" thumb="box">
+			<Node id="101" name="CVSDude" thumb="site-cvsdude">
 				<NodeMap>
 					<Site 
 						name="CVSDude: The Version Control Experts" 
 						site_url="http://cvsdude.com"
 						pic="PureMVC-Site-CVSDude.png"><![CDATA[
-<P>CVSDude is the leading provider of Subversion Hosting, making web-based collaborative development safe and affordable. </P>
-<P>Long-time supporters of Open Source projects, CVSDude has provided technical support and reliable hosting for the Trac-integrated Subversion repositories for our 90+ PureMVC ports, demos and utilities.</P>
-<P>Without CVSDude, the PureMVC project would not be possible. Thanks, 'Dudes.</P> 
+CVSDude is the leading provider of Subversion Hosting, making web-based collaborative development safe and affordable. Long-time supporters of Open Source projects, CVSDude has provided technical support and reliable hosting for the Trac-integrated Subversion repositories for our 90+ PureMVC ports, demos and utilities.
+Without CVSDude, the PureMVC project would not be possible. Thanks, 'Dudes. 
 ]]>							
 					</Site>
 				</NodeMap>
 			</Node>
 
 			<!-- Futurescale -->
-			<Node id="102" name="Futurescale" thumb="box">
+			<Node id="102" name="Futurescale" thumb="site-futurescale">
 				<NodeMap>
 					<Site 
 						name="Futurescale, Inc" 
 						site_url="http://futurescale.com"
 						pic="PureMVC-Site-Futurescale.png"><![CDATA[
-<P>Futurescale offers architectural guidance and development expertise to aid in the implementation of Rich Internet Applications, specifically on the ActionScript-based Flex, Flash, AIR platforms.</P>
-<P>Since PureMVC's introduction in late 2006, Futurescale founder and framework architect Cliff Hall has worked tirelessly to support the project. Over that time, he has logged logged nearly 18 man-days answering questions in forums, given in-person PureMVC developer talks in 4 countries and online to global audiences.</P>
-<P>Futurescale supports the project financially by providing architecture, development, hosting, and administrative maintenance for the 90+ PureMVC ports, demos and utilities currently making up the project.</P>
+Futurescale offers architectural guidance and development expertise to aid in the implementation of Rich Internet Applications, specifically on the ActionScript-based Flex, Flash, AIR platforms. 
+Futurescale supports the project financially by providing architecture, development, hosting, and administrative maintenance for the 90+ PureMVC ports, demos and utilities currently making up the project.
 ]]>							
 					</Site>
 				</NodeMap>
 			</Node>
 
+			<!-- WebAppers -->
+			<Node id="103" name="WebAppers" thumb="site-webappers">
+				<NodeMap>
+					<Site 
+						name="Ray Cheung's WebAppers Blog" 
+						site_url="http://www.webappers.com/2008/02/12/webappers-released-free-web-application-icons-set/"
+						pic="PureMVC-Site-WebAppers.png"><![CDATA[
+<P>WebAppers is a blog dedicated to share top quality open source resources for web developer and web designer daily. The creator of WebAppers is Ray Cheung, a web developer and designer who has a passion on web design and web application development.</P>
+<P>Several of the icons used in the Darkstar PureMVC Manifold Roamer application are provided free by Webappers under the Creative Commons 3.0 License.</P> 
+]]>							
+					</Site>
+				</NodeMap>
+			</Node>
+
+			<!-- Dry Icons -->
+			<Node id="104" name="Dry Icons" thumb="site-dryicons">
+				<NodeMap>
+					<Site 
+						name="Dry Icons" 
+						site_url="http://dryicons.com/free-icons/"
+						pic="PureMVC-Site-DryIcons.png"><![CDATA[ 
+<P>Rabotilnica (Workshop) doo, is a small creative studio working in the creative design and web development industry. This is an independent company founded and run by 4 good friends. The team is comprised of two programmers and two designers, all engaging, skilled, committed and highly competent persons with more than 6 years of experience in their fields of interest.</P> 
+<P>DryIcons is Rabotilnica's first born (project). Not like any other icon developing website, DryIcons creates unique icons and icon sets and gives them away freely, that way giving priority to independent coders/developers, small design firms and organizations - against larger, well-funded corporations.</P> 
+]]>							
+					</Site>
+				</NodeMap>
+			</Node>
 
 		</Nodes>
 	</NodeMap>

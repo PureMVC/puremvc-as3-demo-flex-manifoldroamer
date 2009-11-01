@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Node id="314" name="Toby de Havilland" thumb="flake">
+<Node id="314" name="Toby de Havilland" thumb="section-project-owner">
 	<NodeMap>
 		<Nodes>
 			<Node id="2501" name="Framework: Python Standard and Tests" type="stub" thumb="box"/>

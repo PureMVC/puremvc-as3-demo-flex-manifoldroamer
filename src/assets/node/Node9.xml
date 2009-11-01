@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Node id="9" name="Interact" thumb="flake">
+<Node id="9" name="Interact" thumb="section-interact">
 	<NodeMap>
 		<Nodes>
 		
 			<!-- TWITTER -->
-			<Node id="900" name="Twitter" thumb="box">
+			<Node id="900" name="Twitter" thumb="site-twitter">
 				<NodeMap>
 					<Site 
 						name="PureMVC on Twitter" 
@@ -16,7 +16,7 @@
 			</Node>
 
 			<!-- BLOG-O-SPHERE -->
-			<Node id="901" name="Blog-O-Sphere" thumb="box">
+			<Node id="901" name="Blog-O-Sphere" thumb="site-google">
 				<NodeMap>
 					<Site 
 						name="Bloggers on PureMVC" 
@@ -29,7 +29,7 @@
 			</Node>
 
 			<!-- LINKED-IN -->
-			<Node id="902" name="Linked-In" thumb="box">
+			<Node id="902" name="Linked-In" thumb="site-linkedin">
 				<NodeMap>
 					<Site 
 						name="PureMVC Developers Group on Linked-In" 
@@ -42,7 +42,7 @@
 			</Node>
 
 			<!-- FORUMS -->
-			<Node id="903" name="Forums" thumb="box">
+			<Node id="903" name="Forums" thumb="site-forums">
 				<NodeMap>
 					<Site 
 						name="PureMVC Forums" 
@@ -56,7 +56,7 @@
 			</Node>
 
 			<!-- JOBS-->
-			<Node id="904" name="Jobs" thumb="box">
+			<Node id="904" name="Jobs" thumb="site-jobs">
 				<NodeMap>
 					<Site 
 						name="PureMVC Job Postings Around the Web" 
@@ -71,7 +71,7 @@
 
 			
 			<!-- WIKIPEDIA -->
-			<Node id="905" name="Wikipedia" thumb="box">
+			<Node id="905" name="Wikipedia" thumb="site-wikipedia">
 				<NodeMap>
 					<Site 
 						name="Wikipedia on PureMVC" 
@@ -83,7 +83,7 @@
 			</Node>
 			
 			<!-- FACEBOOK -->
-			<Node id="906" name="Facebook" thumb="box">
+			<Node id="906" name="Facebook" thumb="site-facebook">
 				<NodeMap>
 					<Site 
 						name="PureMVC on Facebook" 

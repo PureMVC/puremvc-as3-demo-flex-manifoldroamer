@@ -2,9 +2,9 @@
 <Node id="1" name="PureMVC" thumb="flake">
 	<NodeMap>
 		<Nodes>
-			<Node id="2" name="Code" 			thumb="box"/>
-			<Node id="5" name="Docs" 			thumb="box"/>
-			<Node id="8" name="Community"		thumb="box"/>
+			<Node id="2" name="Code" 			thumb="section-code"/>
+			<Node id="5" name="Docs" 			thumb="section-docs"/>
+			<Node id="8" name="Community"		thumb="section-community"/>
 		</Nodes>
 	</NodeMap>
 </Node>

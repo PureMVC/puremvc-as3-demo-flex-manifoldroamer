@@ -9,7 +9,7 @@
 	rollOverEffect="{fxNodeOver}"
 	>
 
-	<mx:Image source="{data.data.@thumb}"/>
+	<mx:Image source="{data.data.@thumb}" width="45" height="45"/>
 	<mx:Text fontSize="13" text="{data.data.@name}" color="#FFFFFF" selectable="false"/>	
 	<view:MoreButton 
 		id="btnMore" showMore="sendEvent(EXPAND)" 
