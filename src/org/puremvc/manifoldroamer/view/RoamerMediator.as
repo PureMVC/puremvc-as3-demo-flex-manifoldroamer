@@ -10,7 +10,7 @@ package org.puremvc.manifoldroamer.view
 	import org.puremvc.as3.patterns.mediator.Mediator;
 	import org.puremvc.manifoldroamer.ApplicationFacade;
 	import org.puremvc.manifoldroamer.model.GraphProxy;
-	import org.puremvc.manifoldroamer.model.vo.NodeDataVO;
+	import org.puremvc.manifoldroamer.model.ManifoldProxy;
 	import org.puremvc.manifoldroamer.view.components.Node;
 	import org.puremvc.manifoldroamer.view.components.Roamer;
 	
@@ -36,6 +36,7 @@ package org.puremvc.manifoldroamer.view
 		{
 			return [ 
 					 ApplicationFacade.RESET,
+					 ApplicationFacade.REFRESH,
 					 ApplicationFacade.SHOW_HISTORY,
 					 ApplicationFacade.SCALE_GRAPH, 
 					 GraphProxy.GRAPH_CHANGED
@@ -52,6 +53,12 @@ package org.puremvc.manifoldroamer.view
 					roamer.autoFit=true;
 					roamer.showHistory = false;
 					roamer.refresh();
+					break;
+
+				case ApplicationFacade.REFRESH:
+					var nid:String = String(Item(roamer.currentItem).data.@id);
+					restoreHistory(nid);
+					roamer.setCurrentItemByID( nid );
 					break;
 				
 				case ApplicationFacade.SHOW_HISTORY:
@@ -87,6 +94,19 @@ package org.puremvc.manifoldroamer.view
 					break;
 			}
 		}
+		
+		private function restoreHistory(id:String):void
+		{
+			var history:Array = roamer.getHistory();
+			roamer.dataProvider = graphProxy.graph;
+			roamer.resetHistory();
+			roamer.showHistory = true;
+			for (var i:int=0; i<history.length; i++)
+			{
+				roamer.setCurrentItemByID( String(Item(history[i]).data.@id) );
+			}
+		}
+		
 		
 		protected function handleNodeSelect(event:Event):void
 		{

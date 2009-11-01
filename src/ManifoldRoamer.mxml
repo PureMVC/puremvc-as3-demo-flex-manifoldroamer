@@ -3,7 +3,7 @@
 	 xmlns:view="org.puremvc.manifoldroamer.view.components.*"
 	 layout="absolute" paddingTop="0" paddingBottom="0" paddingRight="0" paddingLeft="0"
 	 minWidth="920" minHeight="540"
-	 creationComplete="initApp()"
+	 creationComplete="facade.startup(this);"
 	 frameRate="12" preloader="DarkStarPreloader" 
 	 pageTitle="Darkstar: PureMVC Manifold Roamer V1"
 	 >
@@ -14,15 +14,6 @@
 			import flash.events.*;
 			private var facade:ApplicationFacade = ApplicationFacade.getInstance();
 			
-			public function initApp():void
-			{
-				//systemManager.stage.addEventListener(Event.RESIZE, onResize);
-				facade.startup(this);	
-			}
-			private function onResize( event:Event = null ):void
-			{				
-				explorer.sendEvent(ApplicationFacade.RESET);
-			}
             private function toggleFullScreen(oneWay:Boolean=false):void {
                 if (oneWay == true && systemManager.stage.displayState == StageDisplayState.FULL_SCREEN) return;
                 try {

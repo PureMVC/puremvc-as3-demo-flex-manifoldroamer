@@ -11,6 +11,8 @@ package org.puremvc.manifoldroamer
         // Notification and Event name constants
         public static const STARTUP:String   		= "startup";
         public static const RESET:String 			= "reset";
+        public static const REFRESH:String 			= "refresh";
+        public static const RESIZING:String 		= "resizing";
         public static const NODE_CLICK:String 		= "nodeClick";
         public static const NODE_SELECTED:String 	= "nodeSelected";
         public static const NODE_EXPANDED:String 	= "nodeExpanded";

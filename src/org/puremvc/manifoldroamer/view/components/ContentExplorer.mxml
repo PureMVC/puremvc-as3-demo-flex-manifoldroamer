@@ -34,7 +34,7 @@
 			}
 			private function reset():void
 			{
-				sendEvent(ApplicationFacade.RESET);
+				sendEvent(ApplicationFacade.REFRESH);
 			}
 			
 			public function sendEvent(name:String):void
@@ -54,7 +54,7 @@
 		rollOverEffect="{fxDarkStarOver}"
 		source="@Embed('/assets/ui/logo.png')" 
 		mouseDownEffect="{fxDarkStarClick}"
-		click="reset()"
+		click="sendEvent(ApplicationFacade.RESET);"
 		toolTip="Reset to top and clear navigation trails."/>
 
 	<view:ContentPanel 
