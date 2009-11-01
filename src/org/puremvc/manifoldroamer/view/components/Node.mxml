@@ -122,5 +122,5 @@
 		]]>
 	</mx:Script>
 	
-	<mx:Glow id="fxNodeOver" blurXTo="30" blurYTo="30" color="#0000FF" duration="750"/>
+	<mx:Glow id="fxNodeOver" blurXTo="50" blurYTo="50" color="#2255FF" duration="750"/>
 </mx:HBox>
