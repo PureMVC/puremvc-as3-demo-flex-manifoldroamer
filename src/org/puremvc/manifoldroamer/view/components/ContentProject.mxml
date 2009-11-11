@@ -14,10 +14,12 @@
 			import org.puremvc.manifoldroamer.model.vo.ProjectVO;
 			[Bindable] public var nodeData:ProjectVO;
 			[Bindable] public var targetURL:String;
+			[Bindable] public var targetURLDescription:String;
 
-			public function readURL(url:String):void
+			public function readURL(url:String, desc:String=''):void
 			{
 				targetURL=url;
+				targetURLDescription=desc;
 				dispatchEvent( new Event('readURL',true) );
 			}
 			
@@ -47,14 +49,14 @@
 			<!-- BUTTONS -->
 			<mx:HBox verticalAlign="middle" horizontalGap="10">
 				<mx:Button label="Discuss" click="readURL(nodeData.forum)"/>
-				<mx:Button label="SVN" click="readURL(nodeData.tag)"/>
+				<mx:Button label="SVN" click="readURL(nodeData.tag, 'PureMVC SVN: '+nodeData.name)"/>
 				<mx:Button label="Trac" click="readURL(nodeData.html)"/>
-				<mx:Button label="Download" click="readURL(nodeData.archive)"/>
+				<mx:Button label="Download" click="readURL(nodeData.archive, 'PureMVC Download: '+nodeData.name)"/>
 			</mx:HBox>
 			<mx:HBox verticalAlign="middle" horizontalGap="{(nodeData.docs!='')?10:5}">
-				<mx:Button label="Demo" click="readURL(nodeData.live)" visible="{nodeData.live!=''}"/>
-				<mx:Button label="API Docs" click="readURL(nodeData.docs)" visible="{nodeData.docs!=''}" width="{(nodeData.docs!='')?75:0}"/>
-				<mx:Button label="View Source" click="readURL((nodeData.srcview != '')?nodeData.srcview:nodeData.tag)" visible="{(nodeData.srcview!='' || nodeData.tag!='') }"/>
+				<mx:Button label="Demo" click="readURL(nodeData.live, 'PureMVC Demo: '+nodeData.name)" visible="{nodeData.live!=''}"/>
+				<mx:Button label="API Docs" click="readURL(nodeData.docs, 'PureMVC API Docs: '+nodeData.name)" visible="{nodeData.docs!=''}" width="{(nodeData.docs!='')?75:0}"/>
+				<mx:Button label="View Source" click="readURL(nodeData.srcview, 'PureMVC Source: '+nodeData.name)" visible="{(nodeData.srcview!='')}"/>
 			</mx:HBox>
 	
 			<!-- PROJECT OWNER -->

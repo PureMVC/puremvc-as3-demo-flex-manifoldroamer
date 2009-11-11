@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
+<html>
+<head>
+<title>PureMVC Manifold Content</title>
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<meta name="description" content="A PureMVC Manfiold content page">
+<script type="text/javascript">
+<!--
+function startup(){
+
+   var url=getQSValue("url");
+   window.content.location.href=url;
+   
+   var desc=getQSValue("desc");
+   var description = decodeURIComponent(desc.replace(/\+/g,  " "))
+   parent.header.showDescription(description, url);
+   document.title = description;
+}
+
+function getQSValue(key) 
+{
+	query = window.location.search.substring(1);
+	node = query.split("&");
+	for (i=0;i<node.length;i++) 
+	{
+		pair = node[i].split("=");
+		if (pair[0] == key) 
+		{
+		   return pair[1];
+		}
+	}
+}
+
+
+window.onload=startup;
+-->
+</script>
+</head>
+<frameset rows="50, *" frameborder="no">
+<frame src="header.html" id="header" name="header" noresize="noresize" scrolling="no" 
+	   style="border-bottom: thin solid #0099cc; border-bottom-width:2;">
+<frame src="content.html" id="content" name="content" style="border: none;">
+</frameset> 
+</html>

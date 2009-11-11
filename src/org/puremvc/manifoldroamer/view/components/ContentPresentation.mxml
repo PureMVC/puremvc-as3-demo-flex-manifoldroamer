@@ -14,10 +14,12 @@
 			import org.puremvc.manifoldroamer.model.vo.PresentationVO;
 			[Bindable] public var nodeData:PresentationVO;
 			[Bindable] public var targetURL:String;
+			[Bindable] public var targetURLDescription:String;
 
-			public function readURL(url:String):void
+			public function readURL(url:String, desc:String):void
 			{
 				targetURL=url;
+				targetURLDescription= ( targetURL.indexOf("#") > 0 )?'':targetURLDescription=desc; 
 				dispatchEvent( new Event('readURL',true) );
 			}
 			
@@ -42,8 +44,8 @@
 	
 			<!-- BUTTONS -->
 			<mx:HBox verticalAlign="middle">
-				<mx:Button label="Visit Speaker"  click="readURL(nodeData.speaker_url)"/>
-				<mx:Button label="View Presentation" click="readURL(nodeData.site_url)"/>
+				<mx:Button label="Visit Speaker"  click="readURL(nodeData.speaker_url,'PureMVC Speaker Website: '+nodeData.speaker)"/>
+				<mx:Button label="View Presentation" click="readURL(nodeData.site_url,'PureMVC Presentation: ' + nodeData.name)"/>
 			</mx:HBox>
 	
 			<!-- ABOUT -->

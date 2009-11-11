@@ -14,10 +14,12 @@
 			import org.puremvc.manifoldroamer.model.vo.DocumentVO;
 			[Bindable] public var nodeData:DocumentVO;
 			[Bindable] public var targetURL:String;
+			[Bindable] public var targetURLDescription:String;
 
-			public function readURL(url:String):void
+			public function readURL(url:String, desc:String):void
 			{
 				targetURL=url;
+				targetURLDescription=desc;
 				dispatchEvent( new Event('readURL',true) );
 			}
 			
@@ -42,7 +44,7 @@
 	
 			<!-- BUTTONS -->
 			<mx:HBox verticalAlign="middle">
-				<mx:Button label="Read Document" click="readURL(nodeData.doc_url)"/>
+				<mx:Button label="Read Document" click="readURL(nodeData.doc_url, 'PureMVC Docs: '+nodeData.name)"/>
 			</mx:HBox>
 	
 			<!-- ABOUT -->
