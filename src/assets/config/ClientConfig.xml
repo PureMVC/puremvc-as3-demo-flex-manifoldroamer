@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ClientConfig>
-	<Service version="local-1.0" config="assets/config/ServiceConfig.xml"/>
+	<Service version="darkstar-1.0" config="assets/config/ServiceConfig.xml"/>
 </ClientConfig>

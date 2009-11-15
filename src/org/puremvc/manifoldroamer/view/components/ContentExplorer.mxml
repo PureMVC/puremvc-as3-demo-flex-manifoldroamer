@@ -44,12 +44,7 @@
 		]]>
 	</mx:Script>
 
-	<mx:Fade id="fadeIn" alphaFrom="0" alphaTo="1" duration="500"/>
-	<mx:Fade id="fadeOut" alphaFrom="1" alphaTo="0" duration="500"/>
-
-	<!--mx:LinkButton right="10" top="10" label="Toggle Fullscreen" color="#FFFFFF" click="sendEvent(FULL_SCREEN)"/-->
-
-	<!-- Logo / App Title -->
+	<!-- FULLSCREEN ICON -->
 	<mx:Image id="fullscreen" right="10" top="10"
 		rollOverEffect="{fxDarkStarOver}" rollOutEffect="{fxDarkStarClick}"
 		source="@Embed('/assets/ui/fullscreen.png')" 
@@ -57,7 +52,7 @@
 		click="sendEvent(FULL_SCREEN);"
 		toolTip="Toggle Fullscreen."/>
 
-	<!-- Logo / App Title -->
+	<!-- DARKSTAR LOGO / RESET ICON -->
 	<mx:Image id="logo" left="10" bottom="10" 
 		rollOverEffect="{fxDarkStarOver}"
 		source="@Embed('/assets/ui/logo.png')" 
@@ -65,6 +60,7 @@
 		click="sendEvent(ApplicationFacade.RESET);"
 		toolTip="Reset to top and clear navigation trails."/>
 
+	<!-- CONTENT PANEL -->
 	<view:ContentPanel 
 		backgroundColor="#FFFFFF"
 		showEffect="{fadeIn}" 
@@ -75,7 +71,11 @@
 		hideContent="showContent=false;"
 		/>	
 
-		<mx:Glow id="fxDarkStarOver" blurXTo="15" blurYTo="15" color="#2255FF" duration="750"/>
-		<mx:Glow id="fxDarkStarClick" blurXTo="30" blurYTo="30" color="#2255FF" duration="1500"/>
+	<!-- EFFECTS -->
+	<mx:Glow id="fxDarkStarOver" blurXTo="15" blurYTo="15" color="#2255FF" duration="750"/>
+	<mx:Glow id="fxDarkStarClick" blurXTo="30" blurYTo="30" color="#2255FF" duration="1500"/>
+	<mx:Fade id="fadeIn" alphaFrom="0" alphaTo="1" duration="500"/>
+	<mx:Fade id="fadeOut" alphaFrom="1" alphaTo="0" duration="500"/>
+
 	
 </mx:Canvas>

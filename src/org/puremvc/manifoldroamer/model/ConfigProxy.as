@@ -22,20 +22,19 @@ package org.puremvc.manifoldroamer.model
 		
 		override public function onRegister():void
 		{
-			// Get Client Configuration immediately
-			fetchClientConfig();				   
-		}
-		
-		protected function fetchClientConfig():void
-		{
 			configService.url = clientConfigURL;
 			configService.addEventListener(ResultEvent.RESULT, result);
 			configService.addEventListener(FaultEvent.FAULT, fault);
 			configService.resultFormat="e4x";
+
+			// Get Client Configuration immediately
 			var token:AsyncToken = configService.send();
 			token.config=CLIENT_CONFIG;
 		}
 
+		/**
+		 * Handle results from either service call.
+		 */
 		public function result(event:ResultEvent):void
 		{
 			switch (event.token.config) 
