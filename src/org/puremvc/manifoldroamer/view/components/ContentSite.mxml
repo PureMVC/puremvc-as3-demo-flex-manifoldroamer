@@ -16,10 +16,10 @@
 			[Bindable] public var targetURL:String;
 			[Bindable] public var targetURLDescription:String;
 
-			public function readURL(url:String, desc:String):void
+			public function readURL(url:String):void
 			{
 				targetURL=url;
-				targetURLDescription=desc;
+				targetURLDescription='';
 				dispatchEvent( new Event('readURL',true) );
 			}
 			
@@ -38,7 +38,7 @@
 		
 			<!-- BUTTONS -->
 			<mx:HBox verticalAlign="middle">
-				<mx:Button label="Visit Site" click="readURL(nodeData.site_url,'PureMVC Community: '+nodeData.name)"/>
+				<mx:Button label="Visit Site" click="readURL(nodeData.site_url)"/>
 			</mx:HBox>
 	
 			<!-- ABOUT -->
