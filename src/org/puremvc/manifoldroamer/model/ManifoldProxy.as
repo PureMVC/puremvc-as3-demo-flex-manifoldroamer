@@ -11,8 +11,8 @@ package org.puremvc.manifoldroamer.model
 	{
 		public static const NAME:String = "ManifoldProxy";
 		
-		public static const NODE_RECEIVED:String = "nodeReceived";
-		public static const STUB_NODE_FILLED:String = "stubNodeFilled";
+		public static const NODE_RETRIEVED:String = NAME+"/node/received";
+		public static const STUB_NODE_FILLED:String = NAME+"stub/node/filled";
 		
 		public function ManifoldProxy( data:Object=null )
 		{
@@ -24,7 +24,6 @@ package org.puremvc.manifoldroamer.model
 		{
 			// Proxy collaborators
 			configProxy = facade.retrieveProxy( ConfigProxy.NAME ) as ConfigProxy;
-			graphProxy = facade.retrieveProxy( GraphProxy.NAME ) as GraphProxy;
 			
 			// Service listeners
 			service.addEventListener(ResultEvent.RESULT, result);
@@ -54,7 +53,6 @@ package org.puremvc.manifoldroamer.model
 		 * stub node with the populated node.</P>
 		 * 
 		 * @param the stub node from the local data structure
-		 * @param the type of fetch "auto" if auto fetching
 		 */
 		public function fetchNode( node:XML ):void
 		{
@@ -110,19 +108,13 @@ package org.puremvc.manifoldroamer.model
 			var node:XML = event.result as XML;
 		
 			// replace the placeholder node in the Manifold tree
-			setNode(node);
+			setNode( event.result as XML );
 			
-			// add the node to the graph
-			graphProxy.addNode( node );
-			
-			// add the nodes under this one to the graph
-			graphProxy.traverseNode( node );
-			
-			// notify that graph was changed
-			sendNotification( GraphProxy.GRAPH_CHANGED, String( node.@id ) );
+			// notify that the node was retrieved
+			sendNotification( NODE_RETRIEVED, node );
 
-			// If the node was type stub, send the notification that has been filled
-			if ( event.token.type == "stub") sendNotification( STUB_NODE_FILLED, node);
+			// If the node was type stub, also send the notification that has been filled
+			if ( event.token.type == "stub") sendNotification( STUB_NODE_FILLED, node );
 
 		}
 			
@@ -162,7 +154,6 @@ package org.puremvc.manifoldroamer.model
 		}
 		
 		protected var service:HTTPService = new HTTPService();
-		protected var graphProxy:GraphProxy;
 		protected var configProxy:ConfigProxy;
 	}
 }

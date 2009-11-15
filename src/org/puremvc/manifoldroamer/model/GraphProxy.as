@@ -1,7 +1,6 @@
 package org.puremvc.manifoldroamer.model
 {
 	import org.puremvc.as3.patterns.proxy.*;
-	import mx.collections.XMLListCollection;
 
 	public class GraphProxy extends Proxy
 	{
@@ -44,18 +43,23 @@ package org.puremvc.manifoldroamer.model
 			
 			// link it to it's parent if defined
 			if (parent) graph.edges.appendChild(<Edge fromID={parent.@id} toID={graphNode.@id}/>);
-		}		
-
+			
+		}
+		
 		public function traverseNode( node:XML ):void
 		{
-
+			
 			// add child Nodes to the graph
 			for each ( var child:XML in node.NodeMap.Nodes..Node )
 			{
 				addNode( child, node );
 			}
+
+			// notify that graph was changed
+			sendNotification( GraphProxy.GRAPH_CHANGED, String( node.@id ) );
+			
 		}
-		
+
 		public function get graph():XML
 		{
 			return data as XML;

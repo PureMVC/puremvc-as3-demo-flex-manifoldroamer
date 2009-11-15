@@ -43,7 +43,11 @@ package org.puremvc.manifoldroamer
             
             // User clicked to expand node
             registerCommand( NODE_EXPANDED, NodeExpandedCommand ); 
-            // User clicked Stub, which was filled and now should expand
+            
+            // Node was retrieved, update the graph
+            registerCommand( ManifoldProxy.NODE_RETRIEVED, UpdateGraphCommand ); 
+            
+            // User clicked Stub, which was filled and should now be expanded
             registerCommand( ManifoldProxy.STUB_NODE_FILLED, NodeExpandedCommand ); 
         }
         
