@@ -3,7 +3,7 @@
 	<NodeMap>
 		<Project 
 			name="PureMVC Standard and Tests for ColdFusion" 
-			status="Production"
+			status="Beta"
 			repo="PureMVC_CF"
 			tag="1.0" 						
 			version="1.0"
@@ -16,7 +16,9 @@
 
 <Description><![CDATA[
 PureMVC is a lightweight framework for creating applications based upon the classic Model-View-Controller design meta-pattern.
-This is the specific implementation of the Standard Version and its Unit Tests for ColdFusion. ]]></Description>						
+This is the specific implementation of the Standard Version and its Unit Tests for ColdFusion. 
+The port is currently designed for use with HTML rather than RIA front ends. There have been several releases of CF since this port was done, and Michael Oddis, port owner is currently reevaluating the implementation and we would appreciate any input that CF developers may have on the future direction of this port.
+]]></Description>						
 
 <ReleaseNotes><![CDATA[
 <B>Running Unit Tests</B>
