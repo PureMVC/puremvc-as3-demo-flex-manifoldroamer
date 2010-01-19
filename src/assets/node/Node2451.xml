@@ -9,7 +9,7 @@
 			version="1.0.2"
 			archive="PHP/PureMVC_PHP.zip" 
 			docs="PHP/docs"
-			live="PHP/Demo_PHP_CSSZenGarden/?c=cssco"
+			live="PHP/Demo_PHP_CSSZenGarden/"
 			forum="board=75.0"
 			owner="Hasan Otuome"
 			owner_node="323"
