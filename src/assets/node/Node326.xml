@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Node id="326" name="Frederic Saunier" thumb="section-project-owner">
+<Node id="326" name="Justin Wilaby" thumb="section-project-owner">
 	<NodeMap>
 		<Nodes>
 			<Node id="2301" name="Framework: JS Standard"  type="stub" thumb="box"/>
-			<Node id="230301" name="Demo: JS Employee Admin" type="stub" thumb="box"/>
+			<Node id="230301" name="Demo: JS Box Splash" type="stub" thumb="box"/>
 		</Nodes>
 	</NodeMap>
 </Node>

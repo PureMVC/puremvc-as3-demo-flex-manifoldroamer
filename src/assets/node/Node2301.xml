@@ -5,23 +5,39 @@
 			name="PureMVC Standard for JavaScript" 
 			status="Production"
 			repo="PureMVC_JS" 
-			tag="1.0"
-			version="1.0"
+			tag="2.0"
+			version="2.0"
 			archive="JS/PureMVC_JS.zip" 
-			docs=""
+			docs="JS/standard"
 			forum="board=73.0"
-			owner="Frederic Saunier"
+			owner="Justin Wilaby"
 			owner_node="326"
 			pic="PureMVC-Framework-JS-Std.png">
 
 <Description><![CDATA[
 PureMVC is a lightweight framework for creating applications based upon the classic Model-View-Controller design meta-pattern. 
 This is the specific implementation for the JavaScript language. 
+The current version uses MooTools for simulation of class relationships. 
 ]]></Description>						
 
 <ReleaseNotes><![CDATA[
+<B>Features in 2.0</B>
+
+<UL><LI>Complete rewrite based on MooTools for class simulation.</LI>
+<LI>Fully-functional port of the AS3 Standard Reference Version.</LI>
+<LI>Complete documentation of all classes and methods.</LI>
+<LI>Commented and Minified versions if the framework include file.</LI>
+<LI>Box Splash demo (also fully documented). </LI>
+<LI>Fully-functional port of the PureMVC AS3 Standard Reference Version.</LI></UL>  
+
+<B>As of 2.0, the Objs-based Port is Deprecated</B>
+
+<UL><LI>The deprecated  Objs-based port is still available on a branch.</LI>
+
 <B>Features in 1.0</B>
-<UL><LI>Fully-functional port of the PureMVC AS3 Standard Reference Version.</LI>
+
+<UL><LI>Based on  Objs framework for class simulation</LI>
+<LI>Fully-functional port of the PureMVC AS3 Standard Reference Version.</LI>
 <LI>Employee Admin demo fully reproduced. </LI></UL>  
 ]]></ReleaseNotes>						
 
