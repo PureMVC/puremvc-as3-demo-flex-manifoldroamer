@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node id="230302" name="Employee Admin" thumb="box">	
+	<NodeMap>
+		<Project 
+			name="Employee Admin Demo for JavaScript" 
+			status="Production"
+			repo="Demo_JS_MooTools_EmployeeAdmin" 
+			tag="EmployeeAdmin_1_1_1"
+			version="1.1.1"
+			archive="JS/Demo_JS_MooTools_EmployeeAdmin.zip" 
+			live="JS/Demo_JS_MooTools_EmployeeAdmin/"
+			forum="topic=1638.0"
+			owner="Frederic Saunier"
+			owner_node="331"
+			pic="PureMVC-Framework-JS-Std.png"
+			shot="PureMVC-Shot-JS-EmployeeAdmin.png">
+			
+<Description><![CDATA[
+This demo illustrates techniques for performing routine UI operations in a PureMVC-based JavaScript/MooTools application.  
+]]></Description>						
+
+<ReleaseNotes><![CDATA[
+<B>Changes in Version 1.1.1</B>
+<UL><LI>First public release on puremvc.org</LI>
+<LI>Form validation improvement and non-absolute design</LI></UL>
+<B>Changes in Version 1.1</B>
+<UL><LI>Form validation implementation.</LI></UL> 
+<B>Features in Version 1.0</B>
+<UL><LI>irst public release on tekool.net</LI>
+<LI>Port of the classic AS3 Employee Admin demo</LI></UL> 
+]]></ReleaseNotes>						
+
+<Installation><![CDATA[
+<B>Installing the Project Source Code</B>
+<U>From the archive</U>
+<UL><LI>Download the latest source code archive</LI>
+<LI>Unzip the source code zip to any folder on your disk. For instance: </LI> 
+c:\development\
+<LI>You will see a EmployeeAdmin_X_Y (where X_Y is version) source folder. For instance: </LI></UL>  
+c:\development\EmployeeAdmin_X_Y 
+<U>From the Repository</U>
+<UL><LI>Use your  favorite SVN client to retrieve the latest source code release from the repository. </LI></UL> 
+]]></Installation>												
+
+		</Project>
+	</NodeMap>
+</Node>
