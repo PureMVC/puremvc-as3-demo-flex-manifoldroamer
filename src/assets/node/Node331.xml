@@ -3,6 +3,7 @@
 	<NodeMap>
 		<Nodes>
 			<Node id="230302" name="Demo: JS Employee Admin" type="stub" thumb="box"/>
+			<Node id="215302" name="Demo: C# / Silverlight Employee Admin" type="stub" thumb="box"/>
 		</Nodes>
 	</NodeMap>
 </Node>
