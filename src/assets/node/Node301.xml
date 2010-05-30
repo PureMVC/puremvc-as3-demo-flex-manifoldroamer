@@ -3,6 +3,7 @@
 	<NodeMap>
 		<Nodes>
 			<Node id="2151" name="Framework and Tests: C# Standard" type="stub" thumb="box"/>
+			<Node id="215303" name="Demo: C# / WPF Employee Admin" type="stub" thumb="box"/>
 		</Nodes>
 	</NodeMap>
 </Node>
