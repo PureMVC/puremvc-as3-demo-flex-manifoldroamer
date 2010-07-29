@@ -5,8 +5,8 @@
 			name="Loadup Utility for AS3" 
 			status="Production"
 			repo="Utility_AS3_Loadup" 
-			tag="Loadup_2_0"
-			version="2.0"
+			tag="Loadup_2_1"
+			version="2.1"
 			archive="AS3/Utility_AS3_Loadup.zip" 
 			docs="AS3/Utility_AS3_Loadup/asdoc/"
 			live=""
@@ -27,6 +27,13 @@ In the context of the PureMVC framework, the application typically has a Startup
 <LI>Be aware of the progress of the resource loading.</LI>
 <LI>Know when the resource loading is complete.</LI>
 <LI>Asset loading.</LI></UL> 
+
+<B>Summary of Changes in 2.1</B>
+<UL><LI>Enhancements to asset loader feature
+<UL><LI>new audio asset, based on Sound class, for mp3 files</LI>
+<LI>new video asset, for flv/f4v files</LI>
+<LI>all asset types now have a flash version and a flex version.</LI></UL></UL>
+<UL><LI>As a consequence of the flash support, in order to provide swcs that exclude flex content, there are now 4 swcs instead of 2. A new ant script build.xml defines the 4 builds. The swcs have been renamed, to express the flex/flash distinction. As regards source code changes, the existing asset classes that were flex-specfic have been renamed to include "Flex" in the class name.</LI></UL>
 
 <B>Changes in Version 2.0</B>
 <UL><LI>This version of the utility is called Loadup instead of StartupManager, to remove the inference that the utility is only relevant at application startup. Class names and some other names have changed accordingly, see the separate migration instructions, migrationToV2.txt. Apart from the name change, features that are new are set out below.</LI>

@@ -5,8 +5,8 @@
 			name="Loadup for Assets Demo for AS3" 
 			status="Production"
 			repo="Demo_AS3_Flex_LoadupForAssets" 
-			tag="LoadupForAssets_2_0 "
-			version="2.0"
+			tag="LoadupForAssets_2_1"
+			version="2.1"
 			archive="AS3/Demo_AS3_Flex_LoadupForAssets.zip" 
 			srcview="http://puremvc.org/pages/demos/AS3/Demo_AS3_Flex_LoadupForAssets/srcview"
 			live="AS3/Demo_AS3_Flex_LoadupForAssets/"
@@ -21,6 +21,10 @@ This demo illustrates the use of the PureMVC framework, the Loadup Utility, and 
 ]]></Description>						
 
 <ReleaseNotes><![CDATA[
+<B>Summary of Changes in 2.1</B>
+<UL><LI>Minimal code changes to comply with Loadup utility v2.1; no new functionality; code changes are simply that Loadup class AssetTypeMap is now called FlexAssetTypeMap.</LI>
+<LI>Also, in Mediator classes, many instances of private access have been changed to protected.</LI></UL>
+
 <B>Summary of Changes in 2.0</B>
 <UL><LI>Upgraded to use the refactored and renamed Loadup utility.</LI>
 <LI>Now demonstrates concurrent loading of single assets and a group of assets.</LI></UL> 
