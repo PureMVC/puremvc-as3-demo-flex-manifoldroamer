@@ -7,6 +7,7 @@
 			<Node id="502" name="German" thumb="flag-germany"/>
 			<Node id="503" name="Chinese" thumb="flag-china"/>
 			<Node id="504" name="Russian" thumb="flag-russia"/>
+			<Node id="505" name="Spanish" thumb="flag-spain"/>
 		</Nodes>
 	</NodeMap>
 </Node>

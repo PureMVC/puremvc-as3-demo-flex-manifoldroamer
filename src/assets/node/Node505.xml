@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node id="505" name="Spanish"  thumb="flag-spain">
+	<NodeMap>
+		<Nodes>
+			<Node id="5050" name="Best Practices" thumb="site-document">
+					<NodeMap>
+						<Document 
+							name="Best Practices and Implementation Idioms (Spanish Translation)"
+							author="Cliff Hall (Translated by Daniel Garay)"
+							doc_url="PureMVC_IIBP_Spanish.pdf"
+							pic="PureMVC-IIBP-Spanish.png"><![CDATA[
+<P>Today, I'm pleased to announce the availability of the Spanish translation of the PureMVC Implementation Idioms and Best Practices document ( Estilo de Aplicacion y Mejores PrÃ¡cticas ) thanks to the efforts of Cristian Daniel Garay Sosa of Paraquay.
+<P>This brings PureMVC Best Practices to over 20 Spanish-speaking countries.</P>
+<P>Muchas gracias, Daniel for all your hard work and revisions. Your efforts are much appreciated!<BR/>
+-=Cliff&gt;</P>
+]]>						
+							</Document>
+					</NodeMap>
+			</Node>
+		</Nodes>
+	</NodeMap>
+</Node>
