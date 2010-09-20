@@ -19,6 +19,15 @@ This is the specific implementation for the Python language based on the Standar
 ]]></Description>						
 
 <ReleaseNotes><![CDATA[
+<B>Summary of Changes in 1.2</B>
+<UL><LI>Added install command to fab file</LI>
+<LI>Renamed tests folder</LI>
+<LI>Ignore build dir</LI>
+<LI>Remove use of old-style classes (fixes potential MRO conflicts)</LI>
+<LI>Mediator name and Proxy name cannot be None (raises a ValueError?)</LI>
+<LI>Fix problem where a notification removes a observer (Unit test added)</LI>
+<LI>Fixed IProxy method definitions</LI></UL>
+
 <B>Summary of Changes in 1.1</B>
 <UL><LI>Updated Fabfile.</LI>
 <LI>Fixed FIFO bug in MacroCommand.execute()</LI>
