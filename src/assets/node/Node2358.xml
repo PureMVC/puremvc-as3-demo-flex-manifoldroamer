@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Node id="2358" name="Demos (1)" thumb="flake">
+<Node id="2358" name="Demos (2)" thumb="flake">
 	<NodeMap>
 		<Nodes>
 			<Node id="235801" name="Employee Admin" type="stub" thumb="box"/>	
+			<Node id="235802" name="Employee Admin Mobile" type="stub" thumb="box"/>	
 		</Nodes>
 	</NodeMap>
 </Node>

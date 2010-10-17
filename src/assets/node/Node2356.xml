@@ -5,8 +5,8 @@
 			name="PureMVC MultiCore for Java" 
 			status="Production"
 			repo="PureMVC_Java_MultiCore" 
-			tag="1.0.6"
-			version="1.0.6"
+			tag="1.0.8"
+			version="1.0.8"
 			archive="Java/PureMVC_Java_MultiCore.zip" 
 			docs="Java/multicore/doc"
 			forum="board=60.0"
@@ -21,6 +21,12 @@ It supports modular programming through the use of Multiton Core actors (as oppo
 ]]></Description>			
 			
 <ReleaseNotes><![CDATA[
+<B>Summary of Changes thru 1.0.8</B>
+<UL><LI>Compatible with JavaFx</LI></UL>
+
+<B>Summary of Changes in 1.0.7</B>
+<UL><LI>HashMap with synchronized block issue corrected</LI></UL>
+
 <B>Summary of Changes thru 1.0.6</B>
 <UL><LI>Collections are more generic</LI>
 <LI>Java 1.5</LI>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node id="235802" name="Employee Admin" thumb="box">	
+	<NodeMap>
+		<Project 
+			name="Employee Admin Mobile Demo for Java MultiCore" 
+			status="Production"
+			repo="Demo_Java_MultiCore_EmployeeAdminMobile" 
+			tag="EmployeeAdminMobile_1_0"
+			version="1.0"
+			archive="Java/Demo_Java_MultiCore_EmployeeAdminMobile.zip" 
+			docs=""
+			live="http://employeemobile.appspot.com/"
+			forum="topic=1807.0"
+			owner="Anthony Quinault"
+			owner_node="329"
+			pic="PureMVC-Framework-Java-MC.png"
+			shot="PureMVC-Shot-Java-EmployeeAdmin.png">
+<Description><![CDATA[
+This demo illustrates techniques for performing routine maintenance operations in a PureMVC-based Java/GWT mobile application such as Android, iPhone and iPad. 
+]]></Description>						
+
+<ReleaseNotes><![CDATA[
+<B>Features in Version 1.0</B>
+<UL><LI>A port of the classic EmployeeAdmin Demo for ActionScript3</LI>
+<LI>Uses the  Google Web Toolkit (GWT) for UI components.</LI>
+<LI>Please note that you must have an HTML5-capable browser to run this application, such as Safari or Chrome </LI></UL> 
+]]></ReleaseNotes>						
+												
+<Installation><![CDATA[
+<B>Installing the Project Source Code</B>
+<U>From the archive</U>
+<UL><LI>Download the latest source code archive</LI>
+<LI>Unzip the source code zip to any folder on your disk. For instance: </LI> 
+c:\development\
+<LI>You will see a EmployeeAdminMobile_X_Y (where X_Y is version) source folder. For instance: </LI></UL>  
+c:\development\EmployeeAdminMobile_X_Y 
+<U>From the Repository</U>
+<UL><LI>Use your  favorite SVN client to retrieve the latest source code release from the repository. </LI></UL> 
+]]></Installation>	
+
+		</Project>
+	</NodeMap>
+</Node>
