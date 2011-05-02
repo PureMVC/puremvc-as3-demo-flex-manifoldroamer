@@ -4,6 +4,7 @@
 		<Nodes>
 			<Node id="2451" name="Framework: PHP Standard and Demo"  type="stub" thumb="box"/>
 			<Node id="2452" name="Tests: PHP Standard"  type="stub" thumb="box"/>
+			<Node id="2453" name="Demos (1)"  type="stub" thumb="box"/>
 		</Nodes>
 	</NodeMap>
 </Node>

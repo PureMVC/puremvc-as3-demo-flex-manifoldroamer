@@ -10,6 +10,7 @@
 			<Node id="230" name="JavaScript" 		thumb="section-language"/>
 			<Node id="235" name="Java" 				thumb="section-language"/>
 			<Node id="240" name="Objective C" 		thumb="section-language"/>
+			<Node id="260" name="Perl" 				thumb="section-language"/>
 			<Node id="245" name="PHP" 				thumb="section-language"/>
 			<Node id="250" name="Python" 			thumb="section-language"/>
 			<Node id="255" name="Ruby" 				thumb="section-language"/>

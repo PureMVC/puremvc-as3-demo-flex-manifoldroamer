@@ -13,8 +13,8 @@
 	<mx:Text fontSize="13" text="{data.data.@name}" color="#FFFFFF" selectable="false"/>	
 	<view:MoreButton 
 		id="btnMore" showMore="sendEvent(EXPAND)" 
-		visible="{(isStub(data.data) || hasContent(data.data))}" 
-		width="{btnMore.visible?25:0}"/>
+		visible="{hasContent(data.data)}" 
+		width="{btnMore.visible?25:0}"/><!--visible="{(isStub(data.data) || hasContent(data.data))}" -->
 		
 	<mx:Script>
 		<![CDATA[

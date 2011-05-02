@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node id="245301" name="Employee Admin" thumb="box">	
+	<NodeMap>
+		<Project 
+			name="Employee Admin Demo for PHP" 
+			status="Production"
+			repo="Demo_PHP_GTK_EmployeeAdmin" 
+			tag="EmployeeAdmin_1_0"
+			version="1.0"
+			archive="PHP/Demo_PHP_GTK_EmployeeAdmin.zip" 
+			docs=""
+			forum="topic=1882.0"
+			owner="Sasa Tarbuk"
+			owner_node="332"
+			pic="PureMVC-Framework-PHP-Std.png"
+			shot="PureMVC-Shot-PHP-EmployeeAdmin.png">
+<Description><![CDATA[
+This demo illustrates techniques for performing routine maintenance operations in a PureMVC-based application using GTK view components for PHP.
+]]></Description>						
+
+<ReleaseNotes><![CDATA[
+<B>Features in Version 1.0</B>
+<UL><LI>A port of the classic EmployeeAdmin Demo for ActionScript3</LI>
+<LI>Uses the  GTK toolkit for UI components.</LI></UL>
+]]></ReleaseNotes>						
+
+<Installation><![CDATA[
+<B>Prerequisites</B>
+<U>You will need PHP GTK installed.</U>
+<UL><LI>You can download PHP GTK here: <font color="#0000FF"><A href="http://gtk.php.net/" target="_blank">http://gtk.php.net/</A></font></LI></UL>
+
+<B>Installing the Project Source Code</B>
+<U>From the Archive</U>
+<UL><LI>Download the latest source code archive.</LI>
+<LI>Unzip the source code zip to any folder on your disk. For instance:</LI>
+c:\development\
+<LI>You will see a EmployeeAdmin_X_Y (where X_Y is version) source folder. For instance:</LI></UL>
+c:\development\EmployeeAdmin_X_Y  
+
+<U>From the Repository</U>
+<UL><LI>Use your favorite SVN client to retrieve the latest source code release from the repository.</LI></UL> 
+]]></Installation>												
+		</Project>
+	</NodeMap>
+</Node>

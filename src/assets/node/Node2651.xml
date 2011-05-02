@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node id="2651" name="Framework: Perl Standard" thumb="box">	
+	<NodeMap>
+		<Project 
+			name="PureMVC Standard for Perl" 
+			status="Production"
+			repo="PureMVC_Perl" 
+			tag="1.0"
+			version="1.0"
+			archive="Perl/PureMVC_Perl.zip" 
+			docs="Perl/perldoc/"
+			forum="board=89.0"
+			owner="Frederic Sullet"
+			owner_node="328"
+			pic="PureMVC-Framework-Perl-Std.png">
+
+<Description><![CDATA[
+PureMVC is a lightweight framework for creating applications based upon the classic  Model-View-Controller design meta-pattern. 
+This is the specific implementation for the Perl language based on the Standard Version AS3 reference. 
+]]></Description>						
+
+<ReleaseNotes><![CDATA[
+<B>Features in Version 1.0</B>
+<UL><LI>First production release, based on AS3 Standard version 2.0.4.</LI> 
+<LI>Released with complete with Unit Tests and documetation. </LI></UL>
+]]></ReleaseNotes>						
+
+<Installation><![CDATA[
+<U>From the Archive</U>
+<UL><LI>Download the latest source code archive.</LI>
+<LI>Unzip the source code zip to any folder on your disk. For instance: </LI>
+c:\development\
+<LI>You will see a PureMVC_Perl_X_Y (where X_Y is version) source folder. For instance: </LI></UL> 
+c:\development\PureMVC_Perl_X_Y  
+
+<U>From the Repository</U>
+<UL><LI>Use your favorite SVN client to retrieve the latest source code release from the repository. </LI></UL> 
+]]></Installation>												
+			</Project>
+	</NodeMap>
+</Node>

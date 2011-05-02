@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Node id="2650" name="Standard Version" thumb="flake">
+	<NodeMap>
+		<Nodes>
+			<Node id="2651" name="Framework and Unit Tests" type="stub" thumb="box"/>
+			<Node id="2653" name="Demos(0)" thumb="box"><NodeMap/></Node>
+			<Node id="2654" name="Utilities (0)" thumb="box"><NodeMap/></Node>
+		</Nodes>
+	</NodeMap>
+</Node>
